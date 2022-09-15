@@ -51,6 +51,7 @@
 /// if they have a gun permit
 #define PERMIT_HUD "26"
 //SKYRAT EDIT END
+#define SQUAD_HUD	"27"
 
 //by default everything in the hud_list of an atom is an image
 //a value in hud_list with one of these will change that behavior
@@ -69,6 +70,7 @@
 #define DATA_HUD_AI_DETECT 9
 #define DATA_HUD_FAN 10
 #define DATA_HUD_PERMIT 11 //SKYRAT EDIT
+#define DATA_HUD_SQUAD					32 //NSV13
 
 // Notification action types
 #define NOTIFY_JUMP "jump"
@@ -131,3 +133,5 @@
 #define SECHUD_RELIGIOUS_RESPONSE_OFFICER "hudreligiousresponseofficer"
 #define SECHUD_JANITORIAL_RESPONSE_OFFICER "hudjanitorialresponseofficer"
 #define SECHUD_ENTERTAINMENT_RESPONSE_OFFICER "hudentertainmentresponseofficer"
+
+#define ANTAG_HUD_BLOODLING	31 //Nsv13

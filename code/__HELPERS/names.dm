@@ -56,52 +56,12 @@ GLOBAL_VAR(command_name)
 
 
 /proc/new_station_name()
-	var/random = rand(1,5)
 	var/name = ""
 	var/new_station_name = ""
-
-	//Rare: Pre-Prefix
-	if (prob(10))
-		name = pick(GLOB.station_prefixes)
-		new_station_name = name + " "
-		name = ""
-
-	if(prob(0.1))
-		random = 999999999 //ridiculously long name in written numbers
-
-	// Prefix
-	var/holiday_name = pick(SSevents.holidays)
-	if(holiday_name)
-		var/datum/holiday/holiday = SSevents.holidays[holiday_name]
-		if(istype(holiday, /datum/holiday/friday_thirteenth))
-			random = 13
-		name = holiday.getStationPrefix()
-		//get normal name
 	if(!name)
 		name = pick(GLOB.station_names)
-	if(name)
-		new_station_name += name + " "
+	new_station_name = "NSV [name]"
 
-	// Suffix
-	name = pick(GLOB.station_suffixes)
-	new_station_name += name + " "
-
-	// ID Number
-	switch(random)
-		if(1)
-			new_station_name += "[rand(1, 99)]"
-		if(2)
-			new_station_name += pick(GLOB.greek_letters)
-		if(3)
-			new_station_name += "\Roman[rand(1,99)]"
-		if(4)
-			new_station_name += pick(GLOB.phonetic_alphabet)
-		if(5)
-			new_station_name += convert_integer_to_words(rand(-1,99), capitalise = TRUE)
-		if(13)
-			new_station_name += pick("13","XIII","Thirteen")
-		if(999999999)
-			new_station_name += convert_integer_to_words(rand(111111111,999999999), capitalise = TRUE)
 	return new_station_name
 
 /proc/syndicate_name()

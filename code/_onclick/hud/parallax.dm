@@ -7,12 +7,15 @@
 
 	if(!length(C.parallax_layers_cached))
 		C.parallax_layers_cached = list()
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, screenmob)
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, screenmob)
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, screenmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, C.view, screenmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, C.view, screenmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/ftl_parallax
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, C.view, screenmob)
+		/*
 		if(SSparallax.random_layer)
 			C.parallax_layers_cached += new SSparallax.random_layer(null, screenmob)
 		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3(null, screenmob)
+		*/
 
 	C.parallax_layers = C.parallax_layers_cached.Copy()
 
@@ -253,6 +256,8 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/parallax_layer)
 	var/offset_y = 0
 	var/view_sized
 	var/absolute = FALSE
+	var/mob/current_mob
+	var/tesselate = TRUE
 	blend_mode = BLEND_ADD
 	plane = PLANE_SPACE_PARALLAX
 	screen_loc = "CENTER-7,CENTER-7"
@@ -294,6 +299,10 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/parallax_layer)
 	cut_overlays()
 	add_overlay(new_overlays)
 	view_sized = view
+
+/atom/movable/screen/parallax_layer/proc/update_status(mob/M)
+	current_mob = M
+	return
 
 /atom/movable/screen/parallax_layer/layer_1
 	icon_state = "layer1"
