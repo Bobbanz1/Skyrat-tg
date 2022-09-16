@@ -3,9 +3,10 @@
 	antagpanel_category = "Boarder"
 	roundend_category = "boarders"
 	should_equip = FALSE
-	tips = 'html/antagtips/boarder.html'
+	//tips = 'html/antagtips/boarder.html'
 	show_to_ghosts = TRUE
 
+/*
 /datum/antagonist/traitor/boarder/forge_human_objectives()
 	var/martyr_chance = prob(20)
 	if (!(locate(/datum/objective/hijack) in objectives))
@@ -25,3 +26,4 @@
 		martyr_objective.owner = owner
 		add_objective(martyr_objective)
 		return
+*/

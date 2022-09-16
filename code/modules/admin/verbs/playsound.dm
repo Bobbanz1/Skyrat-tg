@@ -1,7 +1,3 @@
-//world/proc/shelleo
-#define SHELLEO_ERRORLEVEL 1
-#define SHELLEO_STDOUT 2
-#define SHELLEO_STDERR 3
 
 /client/proc/play_sound(S as sound)
 	set category = "Admin.Fun"

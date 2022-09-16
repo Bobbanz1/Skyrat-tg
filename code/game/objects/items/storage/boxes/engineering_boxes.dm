@@ -78,6 +78,18 @@
 	illustration = "writing"
 	custom_materials = list(/datum/material/plastic = 1000) //You lose most if recycled.
 
+// Engineer survival box
+/obj/item/storage/box/engineer/PopulateContents()
+	new /obj/item/clothing/mask/breath(src)
+	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/clothing/head/helmet/space/skinsuit(src) //NSV13 - rollup skinsuit
+	new /obj/item/clothing/suit/space/skinsuit(src) //NSV13 - rollup skinsuit
+
+	if(!isplasmaman(loc))
+		new /obj/item/tank/internals/emergency_oxygen/engi(src)
+	else
+		new /obj/item/tank/internals/plasmaman/belt(src)
+
 /obj/item/storage/box/emergencytank
 	name = "emergency oxygen tank box"
 	desc = "A box of emergency oxygen tanks."

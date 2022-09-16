@@ -16,7 +16,7 @@ GLOBAL_DATUM_INIT(lore_terminal_controller, /datum/lore_controller, new)
 
 /obj/machinery/computer/lore_terminal/command //Put sensitive information on this one
 	access_tag = "ntcommand"
-	req_access = list(ACCESS_HEADS)
+	req_access = list(ACCESS_COMMAND)
 
 /obj/machinery/computer/lore_terminal/awaymission //Example for having a terminal preloaded with only a set list of files.
 	access_tag = "awaymission_default"

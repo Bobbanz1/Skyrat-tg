@@ -22,6 +22,12 @@
 #define CHANNEL_PCV 1009
 //SKYRAT EDIT CHANGE END
 
+#define CHANNEL_SHIP_ALERT 1008 //nsv13 - sound channel for looping ship alerts, EG general quarters
+#define CHANNEL_REACTOR_ALERT 1007 //nsv13 - sound channel for the nuclear storm drive meltdown sfx.
+#define CHANNEL_SHIP_FX 1006 //nsv13 - sound channel for general ship ambience / FX
+#define CHANNEL_IMPORTANT_SHIP_ALERT 1005 //nsv13 - sound channel for really REALLY IMPORTANT ship
+
+
 ///Default range of a sound.
 #define SOUND_RANGE 17
 #define MEDIUM_RANGE_SOUND_EXTRARANGE -5
@@ -37,7 +43,7 @@
 //THIS SHOULD ALWAYS BE THE LOWEST ONE!
 //KEEP IT UPDATED
 
-#define CHANNEL_HIGHEST_AVAILABLE 1008 //SKYRAT EDIT CHANGE - JUKEBOX > ORIGINAL VALUE 1015
+#define CHANNEL_HIGHEST_AVAILABLE 1011 //SKYRAT EDIT CHANGE - JUKEBOX > ORIGINAL VALUE 1015
 
 #define MAX_INSTRUMENT_CHANNELS (128 * 6)
 

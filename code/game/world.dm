@@ -135,6 +135,7 @@ GLOBAL_VAR(restart_counter)
 	GLOB.sql_error_log = "[GLOB.log_directory]/sql.log"
 	GLOB.query_debug_log = "[GLOB.log_directory]/query_debug.log"
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
+	GLOB.world_objective_log = "[GLOB.log_directory]/objectives.log"
 	GLOB.world_asset_log = "[GLOB.log_directory]/asset.log"
 	GLOB.world_attack_log = "[GLOB.log_directory]/attack.log"
 	GLOB.world_cloning_log = "[GLOB.log_directory]/cloning.log"

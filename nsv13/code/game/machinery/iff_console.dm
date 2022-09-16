@@ -103,6 +103,7 @@ If someone hacks it, you can always rebuild it.
 	return data
 
 /obj/machinery/computer/iff_console/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "IFF")

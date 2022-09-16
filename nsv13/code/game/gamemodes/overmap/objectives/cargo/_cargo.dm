@@ -171,7 +171,7 @@
 		// Individual freight_type datums cannot check for non-objective trash because they do not have the full context of other freight_types in the same list
 
 		var/list/allContents = list()
-		for ( var/atom/a in shipment.GetAllContents() )
+		for ( var/atom/a in shipment.get_all_contents() )
 			if( !is_type_in_typecache( a.type, GLOB.blacklisted_paperwork_itemtypes ) )
 				allContents += a
 

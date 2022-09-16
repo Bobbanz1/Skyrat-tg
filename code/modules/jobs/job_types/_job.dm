@@ -85,6 +85,8 @@
 	/// If this job's mail goodies compete with generic goodies.
 	var/exclusive_mail_goodies = FALSE
 
+	var/display_rank = "" //nsv13 - Displays the player's actual rank alongside their name, such as GSGT Sergei Koralev
+
 	/// Bitfield of departments this job belongs to. These get setup when adding the job into the department, on job datum creation.
 	var/departments_bitflags = NONE
 
@@ -128,6 +130,10 @@
 	/// Does this job ignore human authority?
 	var/ignore_human_authority = FALSE
 
+	//NSV13 - set default plasmaman outfit
+	var/list/species_outfits = list(
+		SPECIES_PLASMAMAN = /datum/outfit/plasmaman
+	)
 
 /datum/job/New()
 	. = ..()
@@ -555,3 +561,6 @@
 /datum/job/proc/after_latejoin_spawn(mob/living/spawning)
 	SHOULD_CALL_PARENT(TRUE)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_JOB_AFTER_LATEJOIN_SPAWN, src, spawning)
+//NSV13
+/datum/job/proc/get_rank()
+	return display_rank

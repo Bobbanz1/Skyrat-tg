@@ -391,7 +391,7 @@ Adding tasks is easy! Just define a datum for it.
 			try_hail( user, console.linked )
 		return FALSE
 
-	for(var/a in launcher.chambered.GetAllContents())
+	for(var/a in launcher.chambered.get_all_contents())
 		if(is_type_in_typecache(a, GLOB.blacklisted_cargo_types))
 			if ( !istype( a, /mob/living/simple_animal ) ) // Allow the transfer of specimens specifically for cargo missions
 				to_chat(user, "<span class='warning'>[launcher] Cargo Shuttle Brand lifeform checker blinks an error, \
@@ -481,44 +481,44 @@ Adding tasks is easy! Just define a datum for it.
 /obj/structure/overmap/proc/make_paperwork( var/datum/freight_delivery_receipt/receipt, var/approval )
 	// Cargo DRADIS automatically synthesizes and attaches the requisition form to the cargo torp
 	var/obj/item/paper/paper = new /obj/item/paper()
-	paper.info = "<h2>[receipt.vessel] Shipping Manifest</h2><hr/>"
+	paper.default_raw_text = "<h2>[receipt.vessel] Shipping Manifest</h2><hr/>"
 
 	if ( length( receipt.completed_objectives ) == 1 )
 		var/datum/overmap_objective/cargo/objective = receipt.completed_objectives[ 1 ]
-		paper.info += "Order: #[GLOB.round_id]-[objective.objective_number]<br/> \
+		paper.default_raw_text += "Order: #[GLOB.round_id]-[objective.objective_number]<br/> \
 			Destination: [src]<br/> \
 			Item: [objective.crate_name]<br/>"
 	else
-		paper.info += "Order: N/A<br/> \
+		paper.default_raw_text += "Order: N/A<br/> \
 			Destination: [src]<br/> \
 			Item: Unregistered Shipment<br/>"
 
-	paper.info += "Contents:<br/><ul>"
+	paper.default_raw_text += "Contents:<br/><ul>"
 
 	if ( istype( receipt.shipment, /obj/item/ship_weapon/ammunition/torpedo/freight ) )
 		var/obj/item/ship_weapon/ammunition/torpedo/freight/shipment = receipt.shipment
 
 		// Reveal all contents of the torpedo tube
-		for ( var/atom/item in shipment.GetAllContents() )
+		for ( var/atom/item in shipment.get_all_contents() )
 			// Remove redundant objects that would otherwise always appear on the list
 			if ( !is_type_in_typecache( item.type, GLOB.blacklisted_paperwork_itemtypes ) )
-				paper.info += "<li>[item]</li>"
+				paper.default_raw_text += "<li>[item]</li>"
 	else
-		paper.info += "<li>miscellaneous unpackaged objects</li>"
+		paper.default_raw_text += "<li>miscellaneous unpackaged objects</li>"
 
-	paper.info += "</ul><h4>Stamp below to confirm receipt of goods:</h4>"
+	paper.default_raw_text += "</ul><h4>Stamp below to confirm receipt of goods:</h4>"
 
-	paper.stamped = list()
-	paper.stamps = list()
+	paper.stamp_cache = list()
+	paper.stamp_cache = list()
 	var/datum/asset/spritesheet/sheet = get_asset_datum(/datum/asset/spritesheet/simple/paper)
 
 	// Extremely cheap stamp code because the only way to add stamps is through tgui
 	if ( approval )
-		paper.stamped += "stamp-ok"
-		paper.stamps = list( list(sheet.icon_class_name("stamp-ok"), 1, 1, 0) )
+		paper.stamp_cache += "stamp-ok"
+		paper.stamp_cache = list( list(sheet.icon_class_name("stamp-ok"), 1, 1, 0) )
 	else
-		paper.stamped += "stamp-deny"
-		paper.stamps = list( list(sheet.icon_class_name("stamp-deny"), 1, 1, 0) )
+		paper.stamp_cache += "stamp-deny"
+		paper.stamp_cache = list( list(sheet.icon_class_name("stamp-deny"), 1, 1, 0) )
 
 	paper.update_icon()
 	return paper
@@ -625,7 +625,7 @@ Adding tasks is easy! Just define a datum for it.
 		relay('nsv13/sound/effects/ship/freespace2/computer/textdraw.wav', "<h3>Outbound hail to: [ship_name][player_string]</h3><hr><span class='danger'>[text]</span><br>")
 	else
 		relay('nsv13/sound/effects/ship/freespace2/computer/textdraw.wav', "<h1>Incoming hail from: [ship_name][player_string]</h1><hr><span class='userdanger'>[text]</span><br>")
-
+/*
 /proc/get_internet_sound(web_sound_input)
 	if(!web_sound_input)
 		return
@@ -669,7 +669,7 @@ Adding tasks is easy! Just define a datum for it.
 				message_admins("<span class='warning'>The media provider returned a content URL that isn't using the HTTP or HTTPS protocol</span>")
 				return
 			return list(web_sound_url, music_extra_data)
-
+*/
 /datum/fleet/proc/encounter(obj/structure/overmap/OM)
 	set waitfor = FALSE
 
@@ -680,8 +680,8 @@ Adding tasks is easy! Just define a datum for it.
 		if(OM.alpha >= 150) //Sensor cloaks my boy, sensor cloaks
 			OM.hail(pick(taunts), name)
 			last_encounter_time = world.time
-			if(audio_cues?.len)
-				OM.play_music(pick(audio_cues))
+			//if(audio_cues?.len)
+			//	OM.play_music(pick(audio_cues))
 
 			//Ghost Ship Spawn Here
 			if(SSovermap_mode.override_ghost_ships)
@@ -713,15 +713,15 @@ Adding tasks is easy! Just define a datum for it.
 			var/target_location = locate(rand(round(world.maxx/2) + 10, world.maxx - 39), rand(40, world.maxy - 39), OM.z)
 			var/obj/structure/overmap/selected_ship = pick(ship_list)
 			var/target_ghost
-			var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [initial(selected_ship.faction)] [initial(selected_ship.name)]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
+			/*var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [initial(selected_ship.faction)] [initial(selected_ship.name)]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
 			if(LAZYLEN(candidates))
 				var/mob/dead/observer/C = pick(candidates)
 				target_ghost = C
 				var/obj/structure/overmap/GS = new selected_ship(target_location)
 				GS.ghost_ship(target_ghost)
+*/
 
-
-///Pass in a youtube link, have it played ONLY on that overmap. This should be called by code or admins only.
+/*//Pass in a youtube link, have it played ONLY on that overmap. This should be called by code or admins only.
 /obj/structure/overmap/proc/play_music(url)
 	set waitfor = FALSE //Don't hold up the jump
 	if(!istext(url))
@@ -737,7 +737,7 @@ Adding tasks is easy! Just define a datum for it.
 				var/client/C = M.client
 				C.tgui_panel?.stop_music()
 				C.tgui_panel?.play_music(web_sound_url, music_extra_data)
-
+*/
 //Syndicate Fleets
 
 /datum/fleet/neutral
@@ -1031,8 +1031,8 @@ Adding tasks is easy! Just define a datum for it.
 			else
 				OM.hail(pick(taunts), name)
 			last_encounter_time = world.time
-			if(audio_cues?.len)
-				OM.play_music(pick(audio_cues))
+			//if(audio_cues?.len)
+			//	OM.play_music(pick(audio_cues))
 
 /datum/fleet/solgov/interdiction/proc/check_bullet(obj/structure/overmap/source, obj/item/projectile/P)
 	if(P.overmap_firer?.role == MAIN_OVERMAP)
@@ -1089,7 +1089,7 @@ Adding tasks is easy! Just define a datum for it.
 	applied_size = CLAMP(applied_size, FLEET_DIFFICULTY_EASY, INFINITY)
 	faction = SSstar_system.faction_by_id(faction_id)
 	reward *= applied_size //Bigger fleet = larger reward
-	if(istype(SSticker.mode, /datum/game_mode/pvp)) //Disables notoriety during Galactic Conquest. 
+	if(istype(SSticker.mode, /datum/game_mode/pvp)) //Disables notoriety during Galactic Conquest.
 		threat_elevation_allowed = FALSE
 	if(SSovermap_mode && threat_elevation_allowed)
 		applied_size += round(SSovermap_mode.threat_elevation / TE_POINTS_PER_FLEET_SIZE)	//Threat level modifies danger
@@ -1772,7 +1772,7 @@ Seek a ship thich we'll station ourselves around
 * See: https://stackoverflow.com/a/3487761
 * If they're literally moving faster than a bullet just aim right at them
 */
-/obj/structure/overmap/proc/calculate_intercept(obj/structure/overmap/target, obj/item/projectile/P, miss_chance=5, max_miss_distance=5)
+/obj/structure/overmap/proc/calculate_intercept(obj/structure/overmap/target, obj/projectile/P, miss_chance=5, max_miss_distance=5)
 	if(!target || !istype(target) || !target.velocity || !P || !istype(P))
 		return target
 	var/turf/my_center = get_center()
@@ -1950,8 +1950,8 @@ Seek a ship thich we'll station ourselves around
 		return
 	enemies += target
 	if(OM.role == MAIN_OVERMAP)
-		if(GLOB.security_level < SEC_LEVEL_RED)	//Lets not pull them out of Zebra / Delta
-			set_security_level(SEC_LEVEL_RED) //Action stations when the ship is under attack, if it's the main overmap.
+		if(SSsecurity_level.get_current_level_as_number() < SEC_LEVEL_RED)	//Lets not pull them out of Zebra / Delta
+			SSsecurity_level.set_level(SEC_LEVEL_RED) //Action stations when the ship is under attack, if it's the main overmap.
 		SSovermap_mode.update_reminder()
 	if(OM.tactical)
 		var/sound = pick('nsv13/sound/effects/computer/alarm.ogg','nsv13/sound/effects/computer/alarm_3.ogg','nsv13/sound/effects/computer/alarm_4.ogg')
@@ -1989,7 +1989,7 @@ Seek a ship thich we'll station ourselves around
 	if(ignore_all_collisions)
 		return	//FULL SPEED AHEAD!
 	//Raycasting! Should finally give the AI ships their driver's license....
-	for(var/turf/T in getline(src, target))
+	for(var/turf/T in get_line(src, target))
 		var/dist = overmap_dist(get_turf(src), T)
 		if(dist >= 8) //ignore collisions this far away, no need to dodge that.
 			break

@@ -31,7 +31,7 @@
 	if((dir != NORTH) && (dir != SOUTH))
 		LEGACY_OVERLAYS = TRUE
 		anim_parts = ""
-		rebuild_parts()
+		//rebuild_parts()
 		update_icon()
 
 /*
@@ -237,9 +237,9 @@ odir = EAST / WEST. We need it to face forwards so you can get through
 	. = ..()
 	set_smooth_dir()
 	if((dir != NORTH) && (dir != SOUTH))
-		LEGACY_OVERLAYS = TRUE
+		//LEGACY_OVERLAYS = TRUE
 		anim_parts = ""
-		rebuild_parts()
+		//rebuild_parts()
 		update_icon()
 
 /obj/structure/door_assembly/ship/highsecurity
@@ -252,7 +252,7 @@ odir = EAST / WEST. We need it to face forwards so you can get through
 /obj/machinery/door/airlock/wood
 	icon = 'nsv13/goonstation/icons/airlock_wood.dmi'
 	overlays_file = 'nsv13/goonstation/icons/airlock_wood.dmi'
-	protected_door = TRUE
+	//protected_door = TRUE
 	LEGACY_OVERLAYS = TRUE
 	anim_parts=""
 
@@ -271,7 +271,7 @@ odir = EAST / WEST. We need it to face forwards so you can get through
 	if((dir != NORTH) && (dir != SOUTH))
 		LEGACY_OVERLAYS = TRUE
 		anim_parts = ""
-		rebuild_parts()
+		//rebuild_parts()
 		update_icon()
 
 /obj/structure/door_assembly/ship/vault

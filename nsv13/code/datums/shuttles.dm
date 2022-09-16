@@ -64,7 +64,7 @@
 	description = "Not even a shuttle."
 	admin_notes = "Used for escape pod only maps"
 	credit_cost = 0
-	can_be_bought = FALSE
+	//can_be_bought = FALSE
 
 /datum/map_template/shuttle/emergency/atlas
 	suffix = "atlas"

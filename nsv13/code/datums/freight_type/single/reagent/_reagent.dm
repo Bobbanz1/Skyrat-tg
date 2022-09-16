@@ -25,7 +25,7 @@
 	var/datum/freight_contents_index/index = new /datum/freight_contents_index()
 	freight_contents_index = index
 
-	for ( var/obj/item/reagent_containers/a in freight_type_check.container.GetAllContents() )
+	for ( var/obj/item/reagent_containers/a in freight_type_check.container.get_all_contents() )
 		if ( is_type_in_list( a, containers ) )
 			var/datum/reagents/reagents = a.reagents
 			for ( var/datum/reagent/R in reagents.reagent_list )

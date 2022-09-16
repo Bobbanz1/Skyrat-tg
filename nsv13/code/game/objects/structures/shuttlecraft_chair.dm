@@ -3,7 +3,7 @@
 	desc = "A box with all the parts you need to make a wall-mounted shuttlecraft chair."
 	icon = 'nsv13/icons/obj/structures/shuttlecraft_seat.dmi'
 	icon_state = "install_package"
-	materials = list(/datum/material/iron = 10000)
+	//materials = list(/datum/material/iron = 10000)
 	w_class = WEIGHT_CLASS_BULKY
 	result_path = /obj/structure/chair/shuttlecraft_chair
 	pixel_shift = -10
@@ -79,6 +79,7 @@
         update_icon()
 
 /obj/structure/chair/shuttlecraft_chair/update_icon()
+	..()
 	if(!opened)
 		icon_state = "shuttle_seat"
 	else

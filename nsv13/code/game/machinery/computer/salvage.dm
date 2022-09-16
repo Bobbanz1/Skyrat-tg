@@ -34,6 +34,7 @@
 	radio.recalculateChannels()
 
 /obj/machinery/computer/ship/salvage/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "SalvageConsole")

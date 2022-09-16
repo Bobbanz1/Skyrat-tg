@@ -11,6 +11,7 @@
 	return ..()
 
 /obj/machinery/computer/ship/tactical/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	if(isobserver(user))
 		return
 	if(!has_overmap())
@@ -125,6 +126,7 @@
 	return TRUE
 
 /obj/machinery/computer/ship/tactical/internal/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "GhostTacticalConsole")

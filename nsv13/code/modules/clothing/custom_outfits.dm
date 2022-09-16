@@ -4,7 +4,7 @@
 	back = null
 	l_pocket = null
 	belt = null
-	id = /obj/item/card/id/syndicate_command //create new id at some point
+	id = /obj/item/card/id/advanced/black/syndicate_command //create new id at some point
 	tc = 0
 
 /datum/outfit/syndicate/sleeper/soldier
@@ -12,9 +12,9 @@
 	suit = /obj/item/clothing/suit/armor/vest
 	head = /obj/item/clothing/head/helmet
 	back = null
-	l_pocket = /obj/item/kitchen/knife/combat/survival
+	l_pocket = /obj/item/knife/combat/survival
 	belt = null
-	id = /obj/item/card/id/syndicate_command //create new id at some point
+	id = /obj/item/card/id/advanced/black/syndicate_command //create new id at some point
 	tc = 0
 
 /datum/outfit/sleeper/prisoner
@@ -31,30 +31,26 @@
 	gloves = /obj/item/clothing/gloves/combat
 	mask = /obj/item/clothing/mask/gas/syndicate
 	ears = /obj/item/radio/headset/syndicate/alt
-	id = /obj/item/card/id/syndicate
+	id = /obj/item/card/id/advanced/black/syndicate_command
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = ITEM_SLOT_SUITSTORE
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/APS
 	tc = 0
-	can_be_admin_equipped = FALSE // Base should not be equippable, only derivitaves
 
 /datum/outfit/syndicate/odst/smg
 	name = "Syndicate Boarder - SMG Kit"
 	back = /obj/item/storage/backpack/duffelbag/syndie/c20rbundle
-	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/kitchen/knife/combat/survival=1, /obj/item/ammo_box/magazine/smgm45=1)
-	can_be_admin_equipped = TRUE
+	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/knife/combat/survival=1, /obj/item/ammo_box/magazine/smgm45=1)
 
 /datum/outfit/syndicate/odst/shotgun
 	name = "Syndicate Boarder - Shotgun Kit"
 	back = /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle
-	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/kitchen/knife/combat/survival=1, /obj/item/grenade/flashbang=1)
-	can_be_admin_equipped = TRUE
+	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/knife/combat/survival=1, /obj/item/grenade/flashbang=1)
 
 /datum/outfit/syndicate/odst/medic
 	name = "Syndicate Boarder - Medic Kit"
 	back = /obj/item/storage/backpack/duffelbag/syndie/med/medicalbundle
-	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/kitchen/knife/combat/survival=1, /obj/item/ammo_box/magazine/pistolm9mm=1)
-	can_be_admin_equipped = TRUE
+	backpack_contents = list(/obj/item/storage/box/syndie=1,/obj/item/knife/combat/survival=1, /obj/item/ammo_box/magazine/m9mm_aps=1)
 
 /datum/outfit/pirate/space/boarding
 	name = "Space Pirate Boarder - Base"
@@ -68,28 +64,24 @@
 	ears = /obj/item/radio/headset/pirate
 	id = /obj/item/card/id
 	r_pocket = /obj/item/gps
-	can_be_admin_equipped = FALSE // Base should not be equippable, only derivitaves
 
 /datum/outfit/pirate/space/boarding/lead
 	name = "Space Pirate Boarder - Lead Kit"
 	suit = /obj/item/clothing/suit/space/pirate/boarder/lead
 	head = /obj/item/clothing/head/helmet/space/pirate/boarder
-	l_pocket = /obj/item/melee/transforming/energy/sword/pirate
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/glock/makarov=1, /obj/item/ammo_box/magazine/glock=3, /obj/item/storage/firstaid/regular=1, /obj/item/loot_locator=1)
-	can_be_admin_equipped = TRUE
+	//l_pocket = /obj/item/melee/energy/sword/pirate
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/glock/makarov=1, /obj/item/ammo_box/magazine/glock=3, /obj/item/loot_locator=1)
 
 /datum/outfit/pirate/space/boarding/sapper
 	name = "Space Pirate Boarder - Sapper Kit"
-	l_pocket = /obj/item/kitchen/knife
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/glock/makarov=1, /obj/item/ammo_box/magazine/glock=2, /obj/item/grenade/smokebomb=2, /obj/item/grenade/plastic/x4=2)
-	can_be_admin_equipped = TRUE
+	l_pocket = /obj/item/knife
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/glock/makarov=1, /obj/item/ammo_box/magazine/glock=2, /obj/item/grenade/smokebomb=2)
 
 /datum/outfit/pirate/space/boarding/gunner
 	name = "Space Pirate Boarder - Gunner Kit"
 	r_hand = /obj/item/gun/ballistic/rifle/boltaction
-	l_pocket = /obj/item/kitchen/knife/combat/survival
+	l_pocket = /obj/item/knife/combat/survival
 	backpack_contents = list(/obj/item/ammo_box/a762=4)
-	can_be_admin_equipped = TRUE
 
 /obj/item/storage/box/hug/clown_uniform
 	name = "Clown's formal attire"
@@ -133,7 +125,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/headset_cent/commander
 	head = /obj/item/clothing/head/beret/ship/admiral
-	belt = /obj/item/melee/classic_baton/telescopic/stunsword
+	//belt = /obj/item/melee/classic_baton/telescopic/stunsword
 	r_pocket = /obj/item/lighter
 	back = /obj/item/storage/backpack/satchel/leather
 	id = /obj/item/card/id
@@ -162,8 +154,7 @@
 
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
-	W.access = get_all_accesses()
-	W.access += get_centcom_access("Admiral")
+	W.access = SSid_access.get_region_access_list(list(REGION_CENTCOM, REGION_ALL_STATION))
 	W.assignment = "Admiral"
 	W.registered_name = H.real_name
 	W.update_label()
@@ -188,10 +179,9 @@
 
 /datum/outfit/ert/engineer/plus
 	name = "ERT Engineer+"
-	id = /obj/item/card/id/ert/Engineer
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/engi
+	id = /obj/item/card/id/advanced/centcom/ert/engineer
 	glasses =  /obj/item/clothing/glasses/meson/engine
-	back = /obj/item/storage/backpack/ert/engineer
+	back = /obj/item/mod/control/pre_equipped/responsory/engineer
 	belt = /obj/item/storage/belt/utility/full
 	mask = /obj/item/clothing/mask/gas
 	suit_store = /obj/item/tank/internals/oxygen
@@ -199,7 +189,7 @@
 	l_pocket = /obj/item/modular_computer/tablet/preset/advanced
 	r_pocket = /obj/item/geiger_counter
 	backpack_contents = list(/obj/item/storage/box/engineer=1,\
-		/obj/item/storage/firstaid/medical=1,\
+		/obj/item/storage/medkit/regular=1,\
 		/obj/item/analyzer=1,\
 		/obj/item/construction/rcd/loaded=1,\
 		/obj/item/rcd_ammo/large=1,\
@@ -219,18 +209,18 @@ For when the marines are being irritating.
 	desc = "A durable uniform worn by generals in the blue phalanx PMC corp serving under WhiteRapids."
 	icon_state = "general"
 	item_color = "general"
-	item_state = "bl_suit"
+	inhand_icon_state = "bl_suit"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 10,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/suit/ship/squad/military_police/general
 	name = "blue phalanx general armour"
 	desc = "A suit of armour worn by generals in the blue phalanx PMC corps. Count yourself lucky to have seen one..."
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 25, "energy" = 10, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 35, "acid" = 50)
-
+/*
 /obj/item/clothing/suit/ship/squad/military_police/general/Initialize(mapload, datum/squad/squad)
 	. = ..()
 	generate_clothing_overlay(src, "[icon_state]_stripes", "#278A45")
-
+*/
 /obj/item/clothing/head/beret/ship/admiral/general
 	name = "general's beret"
 	desc = "A durable green beret signifying its owner as holding the rank of General."
@@ -267,7 +257,6 @@ For when the marines are being irritating.
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	backpack_contents = list(/obj/item/storage/box/syndie=1, /obj/item/gun/ballistic/automatic/pistol=1,  /obj/item/ammo_box/magazine/m10mm=5)
 	tc = 0
-	can_be_admin_equipped = FALSE // This presents problems
 
 /datum/outfit/syndicate/knpc_smg
 	name = "Syndicate Boarder - SMG (KNPC)"
@@ -282,7 +271,6 @@ For when the marines are being irritating.
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	backpack_contents = list(/obj/item/storage/box/syndie=1, /obj/item/gun/ballistic/automatic/c20r=1,  /obj/item/ammo_box/magazine/smgm45=5)
 	tc = 0
-	can_be_admin_equipped = FALSE // This presents problems
 
 /datum/outfit/syndicate/knpc_shotgun
 	name = "Syndicate Boarder - Shotgun (KNPC)"
@@ -297,7 +285,6 @@ For when the marines are being irritating.
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	backpack_contents = list(/obj/item/storage/box/syndie=1, /obj/item/gun/ballistic/shotgun/bulldog=1,  /obj/item/ammo_box/magazine/m12g=5)
 	tc = 0
-	can_be_admin_equipped = FALSE // This presents problems
 
 //Space Pirate - TEMP UNTIL REWORK
 /datum/outfit/space_pirate/knpc_pistol
@@ -317,7 +304,6 @@ For when the marines are being irritating.
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/glock/makarov/lethal
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/glock/makarov/lethal=1, /obj/item/ammo_box/magazine/glock/lethal=5)
-	can_be_admin_equipped = FALSE // This presents problems
 
 /datum/outfit/space_pirate/knpc_auto_pistol
 	name = "Space Pirate Boarder - Auto Pistol (KNPC)"
@@ -335,8 +321,7 @@ For when the marines are being irritating.
 	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/glock/makarov/lethal
 	back = /obj/item/storage/backpack/satchel
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/APS=1, /obj/item/ammo_box/magazine/pistolm9mm=5)
-	can_be_admin_equipped = FALSE // This presents problems
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/APS=1, /obj/item/ammo_box/magazine/m9mm_aps=5)
 
 /datum/outfit/boarding_droid
 	name = "Boarding Droid Loadout"

@@ -29,10 +29,10 @@
 	desc = "It contains a few cookies for good patients."
 
 /obj/item/storage/box/cookie/PopulateContents()
-	new /obj/item/reagent_containers/food/snacks/cookie( src )
-	new /obj/item/reagent_containers/food/snacks/cookie( src )
-	new /obj/item/reagent_containers/food/snacks/cookie( src )
-	new /obj/item/reagent_containers/food/snacks/oatmealcookie( src )
-	new /obj/item/reagent_containers/food/snacks/oatmealcookie( src )
-	new /obj/item/reagent_containers/food/snacks/sugarcookie/spookyskull( src )
-	new /obj/item/reagent_containers/food/snacks/sugarcookie/spookyskull( src )
+	new /obj/item/food/cookie( src )
+	new /obj/item/food/cookie( src )
+	new /obj/item/food/cookie( src )
+	new /obj/item/food/cookie/oatmeal( src )
+	new /obj/item/food/cookie/oatmeal( src )
+	new /obj/item/food/cookie/sugar( src )
+	new /obj/item/food/cookie/sugar( src )

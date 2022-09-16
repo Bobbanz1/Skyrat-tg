@@ -197,6 +197,7 @@
 	return FALSE
 
 /obj/structure/falsewall/update_icon()
+	..()
 	var/image/I = null
 	if(opening)
 		if(density)

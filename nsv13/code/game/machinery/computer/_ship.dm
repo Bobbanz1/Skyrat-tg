@@ -43,6 +43,7 @@ GLOBAL_LIST_INIT(computer_beeps, list('nsv13/sound/effects/computer/beep.ogg','n
 	return
 
 /obj/machinery/computer/ship/ui_interact(mob/user)
+	..()
 	if(isobserver(user))
 		return FALSE
 	if(!has_overmap())
@@ -116,6 +117,7 @@ GLOBAL_LIST_INIT(computer_beeps, list('nsv13/sound/effects/computer/beep.ogg','n
 	linked.start_piloting(user, OVERMAP_USER_ROLE_OBSERVER)
 
 /obj/machinery/computer/ship/viewscreen/ui_interact(mob/user)
+	..()
 	if(!has_overmap())
 		return
 	if(isobserver(user))

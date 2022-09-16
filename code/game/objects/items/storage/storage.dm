@@ -61,3 +61,12 @@
 /// Don't do anything stupid, please
 /obj/item/storage/proc/get_types_to_preload()
 	return
+
+// Syndie survival box
+/obj/item/storage/box/syndie/PopulateContents()
+	new /obj/item/clothing/mask/gas/syndicate(src)
+
+	if(!isplasmaman(loc))
+		new /obj/item/tank/internals/emergency_oxygen/engi(src)
+	else
+		new /obj/item/tank/internals/plasmaman/belt(src)

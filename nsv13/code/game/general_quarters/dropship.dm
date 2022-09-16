@@ -51,13 +51,13 @@
 	name = "NSV Sephora"
 	icon_state = "shuttle"
 	requires_power = FALSE
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	//dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	has_gravity = STANDARD_GRAVITY
 	always_unpowered = FALSE
-	lighting_colour_tube = "#e6af68"
-	lighting_colour_bulb = "#e6af68"
+	//lighting_colour_tube = "#e6af68"
+	//lighting_colour_bulb = "#e6af68"
 	area_flags = 0 // Not a unique area and spawns are not allowed
-	teleport_restriction = TELEPORT_ALLOW_NONE
+	//teleport_restriction = TELEPORT_ALLOW_NONE
 
 //If we ever want to let them build these things..
 /area/dropship/generic
@@ -65,8 +65,8 @@
 
 /area/dropship/generic/syndicate
 	name = "dropship"
-	lighting_colour_tube = "#d34330"
-	lighting_colour_bulb = "#d34330"
+	//lighting_colour_tube = "#d34330"
+	//lighting_colour_bulb = "#d34330"
 
 /obj/item/fighter_component/fuel_tank/tier2/dropship
 	name = "Dropship Fuel Tank"
@@ -147,7 +147,7 @@
 		AR.parallax_movedir = (ftl_start ? EAST : null)
 	for(var/mob/M in mobs_in_ship)
 		if(M && M.client && M.hud_used && length(M.client.parallax_layers))
-			M.hud_used.update_parallax(force=TRUE)
+			M.hud_used.update_parallax()
 
 /obj/machinery/computer/ship/helm/console/dropship
 	name = "Dropship Flight Station"
@@ -174,6 +174,7 @@
 			Press <b>C<b> to cycle mouse free movement.</span>")
 
 /obj/machinery/computer/ship/helm/console/dropship/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "FighterControls")

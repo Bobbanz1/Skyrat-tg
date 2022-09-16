@@ -27,7 +27,7 @@
 	var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 	s.set_up(6, 0, src)
 	s.start()
-	light_color = LIGHT_COLOR_RED
+	light_color = COLOR_RED_LIGHT
 	set_light(3)
 
 /**

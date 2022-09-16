@@ -11,6 +11,7 @@
 	preview_outfit = /datum/outfit/traitor
 	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
+	var/should_equip = TRUE
 	///give this traitor an uplink?
 	var/give_uplink = TRUE
 	///if TRUE, this traitor will always get hijacking as their final objective
@@ -79,6 +80,10 @@
 	if(uplink_handler)
 		uplink_handler.has_objectives = FALSE
 	return ..()
+
+/datum/antagonist/traitor/proc/add_objective(datum/objective/O)
+	objectives += O
+	log_objective(owner, O.explanation_text)
 
 /datum/antagonist/traitor/proc/traitor_objective_to_html(datum/traitor_objective/to_display)
 	var/string = "[to_display.name]"

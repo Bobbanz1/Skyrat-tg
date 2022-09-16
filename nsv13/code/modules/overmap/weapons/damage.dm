@@ -25,7 +25,7 @@ Bullet reactions
 
 
 /obj/structure/overmap/bullet_act(obj/item/projectile/P)
-	if(istype(P, /obj/item/projectile/beam/overmap/aiming_beam))
+	if(istype(P, /obj/projectile/beam/overmap/aiming_beam))
 		return
 	if(shields && shields.absorb_hit(P.damage))
 		var/damage_sound = pick('nsv13/sound/effects/ship/damage/shield_hit.ogg', 'nsv13/sound/effects/ship/damage/shield_hit2.ogg')

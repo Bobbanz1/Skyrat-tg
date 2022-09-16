@@ -48,8 +48,8 @@
 	user.visible_message("<span class='warning'>[user] starts climbing onto [src].</span>", \
 								"<span class='notice'>You start climbing onto [src]...</span>")
 	var/adjusted_climb_time = climb_time
-	if(user.restrained()) //climbing takes twice as long when restrained.
-		adjusted_climb_time *= 2
+	//if(user.restrained()) //climbing takes twice as long when restrained.
+		//adjusted_climb_time *= 2
 	if(isalien(user))
 		adjusted_climb_time *= 0.25 //aliens are terrifyingly fast
 	if(HAS_TRAIT(user, TRAIT_FREERUNNING)) //do you have any idea how fast I am???

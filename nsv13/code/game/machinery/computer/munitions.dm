@@ -58,6 +58,7 @@
 	return TRUE
 
 /obj/machinery/computer/ship/munitions_computer/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "MunitionsComputer")
@@ -150,6 +151,7 @@
 	circuit = /obj/item/circuitboard/computer/ship/ordnance_computer
 
 /obj/machinery/computer/ship/ordnance/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(ui)
 		return

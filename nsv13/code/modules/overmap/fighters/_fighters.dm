@@ -183,7 +183,7 @@ Been a mess since 2018, we'll fix it someday (probably)
 	return data
 
 /obj/structure/overmap/small_craft/ui_act(action, params, datum/tgui/ui)
-	if(..() || ((usr != pilot) && (!IsAdminGhost(usr))))
+	if(..() || ((usr != pilot)))
 		return
 	if(disruption && prob(min(95, disruption)))
 		to_chat(src, "The controls buzz angrily.")
@@ -525,7 +525,7 @@ Been a mess since 2018, we'll fix it someday (probably)
 		OM.mobs_in_ship -= user
 	user.forceMove(src)
 	mobs_in_ship |= user
-	if((user.client?.prefs.toggles & SOUND_AMBIENCE) && user.can_hear_ambience() && engines_active()) //Disable ambient sounds to shut up the noises.
+	if((user.client?.prefs.toggles & SOUND_AMBIENCE) && engines_active()) //Disable ambient sounds to shut up the noises.
 		SEND_SOUND(user, sound('nsv13/sound/effects/fighters/cockpit.ogg', repeat = TRUE, wait = 0, volume = 50, channel=CHANNEL_SHIP_ALERT))
 
 /obj/structure/overmap/small_craft/stop_piloting(mob/living/M, eject_mob=TRUE, force=FALSE)
@@ -668,7 +668,7 @@ Been a mess since 2018, we'll fix it someday (probably)
 
 /obj/structure/overmap/small_craft/attackby(obj/item/W, mob/user, params)   //fueling and changing equipment
 	add_fingerprint(user)
-	if(istype(W, /obj/item/card/id) || istype(W, /obj/item/pda) && length(operators))
+	if(istype(W, /obj/item/card/id) && length(operators))
 		if(!allowed(user))
 			var/ersound = pick('nsv13/sound/effects/computer/error.ogg','nsv13/sound/effects/computer/error2.ogg','nsv13/sound/effects/computer/error3.ogg')
 			playsound(src, ersound, 100, 1)
@@ -1312,7 +1312,7 @@ due_to_damage: If the removal was caused voluntarily (FALSE), or if it was cause
 		return FALSE //No need to add more air to an already pressurized environment
 
 	//Oxygenator just makes sure you have atmosphere. It doesn't care where it comes from.
-	OM.cabin_air.set_temperature(T20C)
+	OM.cabin_air.temperature = T20C
 	//Gives you a little bit of air.
 	refill(OM)
 	return TRUE
@@ -1736,4 +1736,4 @@ Utility modules can be either one of these types, just ensure you set its slot t
 /obj/structure/overmap/small_craft/proc/toggle_canopy()
 	canopy_open = !canopy_open
 	playsound(src, 'nsv13/sound/effects/fighters/canopy.ogg', 100, 1)
- 
+

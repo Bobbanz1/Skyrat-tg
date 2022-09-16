@@ -1,4 +1,4 @@
-
+/*
 
 /datum/outfit/syndicate/no_crystals
 	implants = list()
@@ -82,7 +82,7 @@
 	..()
 	GLOB.syndi_crew_leader_spawns += loc
 	return INITIALIZE_HINT_QDEL
-
+*/
 /obj/machinery/conquest_beacon
 	name = "lighthouse beacon"
 	desc = "An advanced navigational beacon capable of forming jump-bridges, allowing entire fleets to jump to a system it designates without needing to use a hyperlane. These devices take an incredible amount of power to operate, and are extremely obvious when activated."

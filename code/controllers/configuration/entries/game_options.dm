@@ -47,6 +47,7 @@
 /datum/config_entry/flag/disable_human_mood
 
 /datum/config_entry/flag/disable_secborg // disallow secborg model to be chosen.
+/datum/config_entry/flag/starmap_persistence_enabled //NSV13 should we enable starmap auto-saving?
 
 /datum/config_entry/flag/disable_peaceborg
 

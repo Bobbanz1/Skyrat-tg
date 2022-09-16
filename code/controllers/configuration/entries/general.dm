@@ -69,6 +69,8 @@
 /// log client say
 /datum/config_entry/flag/log_say
 
+/datum/config_entry/flag/log_objective
+
 /// log admin actions
 /datum/config_entry/flag/log_admin
 	protection = CONFIG_ENTRY_LOCKED

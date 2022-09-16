@@ -188,11 +188,8 @@ GLOBAL_LIST_EMPTY(simple_teamchats)
 	//Precondition: Comms must be online.
 	for(var/obj/machinery/telecomms/B in GLOB.telecomms_list)
 		if(istype(B, /obj/machinery/telecomms/relay) || istype(B, /obj/machinery/telecomms/hub)  || istype(B, /obj/machinery/telecomms/server))
-			if(B.is_operational() && B.on)
-				if(isatom(get_user()) && B.z != get_user().z)
-					continue
-				ourBroadcaster = B
-				break
+			ourBroadcaster = B
+			break
 	if(ourBroadcaster && ourBroadcaster.on)
 		return TRUE
 	//Play a static sound to signify that it failed.

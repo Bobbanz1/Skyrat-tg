@@ -78,7 +78,7 @@ GLOBAL_LIST_INIT( blacklisted_paperwork_itemtypes, typecacheof( list(
 
 	for ( var/atom/i in itemTargets )
 		if ( approve_inner_contents )
-			for ( var/atom/a in i.GetAllContents() )
+			for ( var/atom/a in i.get_all_contents() )
 				innerContents += a
 
 	itemTargets += innerContents
@@ -142,7 +142,7 @@ GLOBAL_LIST_INIT( blacklisted_paperwork_itemtypes, typecacheof( list(
 
 	var/datum/freight_contents_index/index = new /datum/freight_contents_index()
 
-	for ( var/atom/a in container.GetAllContents() )
+	for ( var/atom/a in container.get_all_contents() )
 		if( !is_type_in_typecache( a, GLOB.blacklisted_paperwork_itemtypes ) || ( is_type_in_typecache( item_type, GLOB.blacklisted_paperwork_itemtypes ) && is_type_in_typecache( a, GLOB.blacklisted_paperwork_itemtypes ) ) )
 			if ( LAZYFIND( prepackaged_items, a ) ) // Is this the item we're looking for?
 				// Add to contents index for more checks

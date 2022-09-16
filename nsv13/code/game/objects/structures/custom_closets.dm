@@ -13,7 +13,7 @@
 	new /obj/item/clothing/suit/ship/maa_jacket(src)
 	new /obj/item/clothing/suit/hazardvest(src)
 	new /obj/item/clothing/head/bomb_hood(src)
-	new /obj/item/clothing/suit/bomb_suit(src)
+	//new /obj/item/clothing/suit/bomb_suit(src)
 	new /obj/item/clothing/head/hardhat/orange(src)
 	new /obj/item/clothing/head/ship/maa_hat(src)
 	new /obj/item/pet_carrier(src)
@@ -102,7 +102,7 @@
 
 /obj/structure/closet/secure_closet/bridge
 	name = "bridge staff's locker"
-	req_access = list(ACCESS_HEADS)
+	req_access = list(ACCESS_COMMAND)
 	icon = 'nsv13/icons/obj/custom_closets.dmi'
 	icon_state = "bridge"
 	anchored = FALSE

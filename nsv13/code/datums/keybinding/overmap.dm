@@ -5,12 +5,13 @@
 
 // Strafing AND turning? It's more likely than you think!
 /datum/keybinding/overmap/rotate_left
-	key = "Q"
+	hotkey_keys = "Q"
 	name = "rotate_left"
 	full_name = "Rotate Left"
 	description = ""
 
 /datum/keybinding/overmap/rotate_left/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -33,12 +34,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/rotate_right
-	key = "E"
+	hotkey_keys = "E"
 	name = "rotate_right"
 	full_name = "Rotate Right"
 	description = ""
 
 /datum/keybinding/overmap/rotate_right/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -62,12 +64,13 @@
 
 // Keys that are held down in other binding modes need both a down and an up to override correctly
 /datum/keybinding/overmap/boost
-	key = "Shift"
+	hotkey_keys = "Shift"
 	name = "boost"
 	full_name = "Boost"
 	description = ""
 
 /datum/keybinding/overmap/boost/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -87,12 +90,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/toggle_brakes
-	key = "Alt"
+	hotkey_keys = "Alt"
 	name = "toggle_brakes"
 	full_name = "Toggle Brakes"
 	description = ""
 
 /datum/keybinding/overmap/toggle_brakes/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -116,12 +120,13 @@
 
 // Other ship controls
 /datum/keybinding/overmap/toggle_inertia
-	key = "X"
+	hotkey_keys = "X"
 	name = "toggle_inertia"
 	full_name = "Toggle Inertial Assistance"
 	description = ""
 
 /datum/keybinding/overmap/toggle_inertia/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -135,12 +140,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/toggle_move_mode
-	key = "C"
+	hotkey_keys = "C"
 	name = "toggle_move_mode"
 	full_name = "Toggle Mouse Movement"
 	description = ""
 
 /datum/keybinding/overmap/toggle_move_mode/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -154,12 +160,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/cycle_firemode
-	key = "Space"
+	hotkey_keys = "Space"
 	name = "cycle_firemode"
 	full_name = "Cycle Firemode"
 	description = ""
 
 /datum/keybinding/overmap/cycle_firemode/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -175,12 +182,13 @@
 // Small craft - safeties and countermeasures
 
 /datum/keybinding/overmap/deploy_countermeasure
-	key = "5"
+	hotkey_keys = "5"
 	name = "deploy_countermeasure"
 	full_name = "Deploy Countermeasure"
 	description = ""
 
 /datum/keybinding/overmap/deploy_countermeasure/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/small_craft/OM = M.overmap_ship
@@ -191,12 +199,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/toggle_safety
-	key = "Capslock"
+	hotkey_keys = "Capslock"
 	name = "toggle_safety"
 	full_name = "Toggle Safeties"
 	description = ""
 
 /datum/keybinding/overmap/toggle_safety/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/small_craft/OM = M.overmap_ship
@@ -211,12 +220,13 @@
 
 // Weapon selection - this is overly complicated but probably useful as a proof of concept
 /datum/keybinding/overmap/weapon_1
-	key = "1"
+	hotkey_keys = "1"
 	name = "weapon_1"
 	full_name = "Weapon 1"
 	description = ""
 
 /datum/keybinding/overmap/weapon_1/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -227,12 +237,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/weapon_2
-	key = "2"
+	hotkey_keys = "2"
 	name = "weapon_2"
 	full_name = "Weapon 2"
 	description = ""
 
 /datum/keybinding/overmap/weapon_2/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -243,12 +254,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/weapon_3
-	key = "3"
+	hotkey_keys = "3"
 	name = "weapon_3"
 	full_name = "Weapon 3"
 	description = ""
 
 /datum/keybinding/overmap/weapon_3/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship
@@ -259,12 +271,13 @@
 	return TRUE
 
 /datum/keybinding/overmap/weapon_4
-	key = "4"
+	hotkey_keys = "4"
 	name = "weapon_4"
 	full_name = "Weapon 4"
 	description = ""
 
 /datum/keybinding/overmap/weapon_4/down(client/user)
+	..()
 	if(!user.mob) return
 	var/mob/M = user.mob
 	var/obj/structure/overmap/OM = M.overmap_ship

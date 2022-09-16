@@ -17,7 +17,7 @@
 	reagent_state = LIQUID
 	color = "#D92323"
 	overdose_threshold = 5
-	addiction_threshold = 5
+	//addiction_threshold = 5
 	metabolization_rate = 0.75 * REAGENTS_METABOLISM
 
 /datum/reagent/drug/bloody_eye/on_mob_metabolize(mob/living/L)

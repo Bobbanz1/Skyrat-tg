@@ -49,7 +49,7 @@
 		return
 	next_beam = world.time + 0.05 SECONDS
 	aiming_lastangle = lastangle
-	var/obj/item/projectile/beam/overmap/aiming_beam/P = new
+	var/obj/projectile/beam/overmap/aiming_beam/P = new
 	P.gun = src
 	P.color = "#99ff99"
 	var/turf/curloc = get_turf(src)
@@ -79,14 +79,14 @@
 	QDEL_LIST(current_tracers)
 
 /obj/structure/overmap/CanPass(atom/movable/mover, turf/target)
-	if(istype(mover, /obj/item/projectile/beam/overmap/aiming_beam))
-		var/obj/item/projectile/beam/overmap/aiming_beam/AB = mover
+	if(istype(mover, /obj/projectile/beam/overmap/aiming_beam))
+		var/obj/projectile/beam/overmap/aiming_beam/AB = mover
 		if(src == AB.gun)
 			return TRUE
 	return ..()
 
 
-/obj/item/projectile/beam/overmap/aiming_beam
+/obj/projectile/beam/overmap/aiming_beam
 	name = "aiming beam"
 	icon = null
 	hitsound = null
@@ -94,7 +94,7 @@
 	damage = 0				//Handled manually.
 	nodamage = TRUE
 	damage_type = BURN
-	flag = "energy"
+	armor_flag = ENERGY
 	range = 150
 	jitter = 10
 	var/obj/structure/overmap/gun
@@ -107,12 +107,12 @@
 	hitscan_light_color_override = "#99ff99"
 	var/constant_tracer = TRUE
 
-/obj/item/projectile/beam/overmap/aiming_beam/generate_hitscan_tracers(cleanup = TRUE, duration = 5, impacting = TRUE, highlander)
+/obj/projectile/beam/overmap/aiming_beam/generate_hitscan_tracers(cleanup = TRUE, duration = 5, impacting = TRUE, highlander)
 	set waitfor = FALSE
 	if(isnull(highlander))
 		highlander = constant_tracer
 	if(highlander && istype(gun))
-		var/list/obj/item/projectile/beam/overmap/aiming_beam/new_tracers = list()
+		var/list/obj/projectile/beam/overmap/aiming_beam/new_tracers = list()
 		for(var/datum/point/p in beam_segments)
 			// I don't know why these "dead zones" appear and override the normal lines, but there is a pattern, so I'm gonna use it
 			if((p.x != 273) && (p.x != 7889) && (p.y != 273) && (p.y != 7889))

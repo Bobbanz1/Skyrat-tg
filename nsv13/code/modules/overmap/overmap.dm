@@ -16,7 +16,7 @@
 	dir = NORTH
 	layer = ABOVE_MOB_LAYER
 	animate_movement = NO_STEPS // Override the inbuilt movement engine to avoid bouncing
-	req_one_access = list(ACCESS_HEADS, ACCESS_MUNITIONS, ACCESS_SEC_DOORS, ACCESS_ENGINE) //Bridge assistants/heads, munitions techs / fighter pilots, security officers, engineering personnel all have access.
+	req_one_access = list(ACCESS_COMMAND, ACCESS_MUNITIONS, ACCESS_SECURITY, ACCESS_ENGINEERING) //Bridge assistants/heads, munitions techs / fighter pilots, security officers, engineering personnel all have access.
 
 	move_resist = MOVE_FORCE_OVERPOWERING //THIS MAY BE A BAD IDEA - (okay I downgraded from INFINITE)
 	anchored = FALSE
@@ -39,7 +39,7 @@
 	var/list/linked_areas = list() //List of all areas that we control
 	var/datum/gas_mixture/cabin_air //Cabin air mix used for small ships like fighters (see overmap/fighters/fighters.dm)
 	var/obj/machinery/portable_atmospherics/canister/internal_tank //Internal air tank reference. Used mostly in small ships. If you want to sabotage a fighter, load a plasma tank into its cockpit :)
-	CanAtmosPass = ATMOS_PASS_YES
+	can_atmos_pass = ATMOS_PASS_YES
 
 	// Health, armor, and damage
 	max_integrity = 300 //Max internal integrity
@@ -222,7 +222,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 	if(folder && interior_map_files) //If this thing comes with an interior.
 		var/previous_maxz = world.maxz //Ok. Store the current number of Zs. Anything that we add on top of this due to this proc will then be conted as decks of our ship.
 		var/list/errorList = list()
-		var/list/loaded = SSmapping.LoadGroup(errorList, "[OM.name] interior Z level", "[folder]", interior_map_files, traits, default_traits, silent = TRUE, orbital_body_type = null)
+		var/list/loaded = SSmapping.LoadGroup(errorList, "[OM.name] interior Z level", "[folder]", interior_map_files, traits, default_traits, silent = TRUE)
 		if(errorList.len)	// failed to load :(
 			message_admins("[_path]'s interior failed to load! Check you used instance_overmap correctly...")
 			log_game("[_path]'s interior failed to load! Check you used instance_overmap correctly...")
@@ -288,9 +288,9 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 	for(var/atype in subtypesof(/datum/ams_mode))
 		ams_modes.Add(new atype)
 
-	if(obj_integrity != max_integrity)
-		message_admins("Failsafe triggered: [src] Initialized with integrity of [obj_integrity], but max integrity of [max_integrity]. Setting integrity to max integrity to prevent issues.")
-		obj_integrity = max_integrity	//Failsafe
+	if(atom_integrity != max_integrity)
+		message_admins("Failsafe triggered: [src] Initialized with integrity of [atom_integrity], but max integrity of [max_integrity]. Setting integrity to max integrity to prevent issues.")
+		atom_integrity = max_integrity	//Failsafe
 
 	if(!combat_dice_type)
 		message_admins("[src] didn't get any combat dice! This may lead to problems in npc fleet combat and shouldn't happen.")
@@ -298,7 +298,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 		npc_combat_dice = new combat_dice_type()
 
 	if(!istype(src, /obj/structure/overmap/asteroid))
-		GLOB.poi_list += src
+		SSpoints_of_interest.other_points_of_interest += src
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/overmap/LateInitialize()
@@ -324,7 +324,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 	if(mass > MASS_TINY && !use_armour_quadrants && role != MAIN_MINING_SHIP)
 		use_armour_quadrants = TRUE
 		//AI ships get weaker armour to allow you to kill them more easily.
-		var/armour_efficiency = (role > NORMAL_OVERMAP) ? obj_integrity / 2 : obj_integrity / 4
+		var/armour_efficiency = (role > NORMAL_OVERMAP) ? atom_integrity / 2 : atom_integrity / 4
 		armour_quadrants = list("forward_port" = list("name" = "Forward Port", "max_armour" = armour_efficiency, "current_armour" = armour_efficiency),\
 							"forward_starboard" = list("name" = "Forward Starboard", "max_armour" = armour_efficiency, "current_armour" = armour_efficiency),\
 							"aft_port" = list("name" = "Aft Port", "max_armour" = armour_efficiency, "current_armour" = armour_efficiency),\
@@ -336,13 +336,13 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 			side_maxthrust = 2
 			max_angular_acceleration = 100
 			cabin_air = new
-			cabin_air.set_temperature(T20C)
-			cabin_air.set_volume(200)
+			cabin_air.temperature = T20C
+			cabin_air.volume = 200
 			//101 kPa =
 			// PV=nRT
 			// PV/RT = n
-			cabin_air.set_moles(GAS_O2, O2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
-			cabin_air.set_moles(GAS_N2, N2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
+			cabin_air.add_gas(GAS_O2, O2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
+			cabin_air.add_gas(GAS_N2, N2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
 			bounce_factor = 1 //Stops dead in its tracks
 			lateral_bounce_factor = 1
 			move_by_mouse = TRUE //You'll want this. Trust.
@@ -453,7 +453,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 		message_admins("[src] has occupants and will not be deleted")
 		return QDEL_HINT_LETMELIVE
 
-	GLOB.poi_list -= src
+	SSpoints_of_interest.other_points_of_interest -= src
 	if(current_system)
 		current_system.system_contents.Remove(src)
 		if(faction != "nanotrasen" && faction != "solgov")
@@ -479,9 +479,9 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 	overmap_explode(linked_areas)
 	if(role == MAIN_OVERMAP)
 		priority_announce("WARNING: ([rand(10,100)]) Attempts to establish DRADIS uplink with [station_name()] have failed. Unable to ascertain operational status. Presumed status: TERMINATED","Central Intelligence Unit", 'nsv13/sound/effects/ship/reactor/explode.ogg')
-		Cinematic(CINEMATIC_NSV_SHIP_KABOOM,world)
+		//Cinematic(CINEMATIC_NSV_SHIP_KABOOM,world)
 		SSticker.mode.check_finished(TRUE)
-		SSticker.news_report = SHIP_DESTROYED
+		//SSticker.news_report = SHIP_DESTROYED
 		SSticker.force_ending = 1
 	SEND_SIGNAL(src,COMSIG_SHIP_KILLED)
 	QDEL_LIST(current_tracers)
@@ -525,7 +525,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 	if(weapon_safety && !can_friendly_fire())
 		return FALSE
 	var/list/params_list = params2list(params)
-	if(target == src || istype(target, /atom/movable/screen) || (target in user.GetAllContents()) || params_list["alt"] || params_list["shift"])
+	if(target == src || istype(target, /atom/movable/screen) || (target in user.get_all_contents()) || params_list["alt"] || params_list["shift"])
 		return FALSE
 	if(LAZYFIND(gauss_gunners, user)) //Special case for gauss gunners here. Takes priority over them being the regular gunner.
 		var/datum/component/overmap_gunning/user_gun = user.GetComponent(/datum/component/overmap_gunning)
@@ -642,6 +642,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 
 // This is overly expensive, most of these checks are already ran in physics. TODO: optimize
 /obj/structure/overmap/update_icon() //Adds an rcs overlay
+	..()
 	apply_damage_states()
 	if(last_fired) //Swivel the most recently fired gun's overlay to aim at the last thing we hit
 		last_fired.icon = icon
@@ -690,7 +691,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 /obj/structure/overmap/proc/apply_damage_states()
 	if(!damage_states)
 		return
-	var/progress = obj_integrity //How damaged is this shield? We examine the position of index "I" in the for loop to check which directional we want to check
+	var/progress = atom_integrity //How damaged is this shield? We examine the position of index "I" in the for loop to check which directional we want to check
 	var/goal = max_integrity //How much is the max hp of the shield? This is constant through all of them
 	progress = CLAMP(progress, 0, goal)
 	progress = round(((progress / goal) * 100), 25)//Round it down to 20%. We now apply visual damage

@@ -98,8 +98,9 @@
 
 /obj/item/paper/fab_error //For disabled designs
 	name = "Fabrication Error Report"
-	info = "<p>Divide by cucumber error. Please reinstall universe and reboot.</p>"
+	default_raw_text = "<p>Divide by cucumber error. Please reinstall universe and reboot.</p>"
 
+/*
 /obj/item/kirbyplants/random/plush
 	name = "plush potted plant"
 	desc = "A little bit of nature contained in a pot. This one is softer than the other potted plants on this ship."
@@ -111,3 +112,4 @@
 /obj/item/kirbyplants/random/plush/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE, force_unwielded=0, force_wielded=0, wieldsound='sound/items/bikehorn.ogg')
+*/

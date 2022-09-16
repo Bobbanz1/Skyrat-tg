@@ -1,7 +1,7 @@
-/obj/effect/spawner/lootdrop/random_seeds
+/obj/effect/spawner/random/lootdrop/random_seeds
 	name = "random seed spawner"
-	lootcount = 10
-	fan_out_items = TRUE
+	spawn_loot_count = 10
+	spawn_loot_split = TRUE
 	loot = list(
 				/obj/item/seeds/ambrosia,
 				/obj/item/seeds/apple,
@@ -41,7 +41,7 @@
 				/obj/item/seeds/wheat,
 				/obj/item/seeds/whitebeet
 				)
-/obj/effect/spawner/lootdrop/anti_air
+/obj/effect/spawner/random/lootdrop/anti_air
 	name = "anti-air gun supplies spawner"
 	loot = list(
 		/obj/item/ammo_box/magazine/nsv/anti_air = 15,
@@ -49,26 +49,26 @@
 		/obj/machinery/ship_weapon/anti_air = 1,
 		/obj/machinery/ship_weapon/anti_air/heavy = 1
 		)
-	lootcount = 1
+	spawn_loot_count = 1
 
-/obj/effect/spawner/lootdrop/pdc
+/obj/effect/spawner/random/lootdrop/pdc
 	name = "\improper PDC supplies spawner"
 	loot = list(
 		/obj/item/ammo_box/magazine/nsv/pdc = 10,
 		/obj/machinery/ship_weapon/pdc_mount = 2
 	)
-	lootcount = 1
+	spawn_loot_count = 1
 
-/obj/effect/spawner/lootdrop/railgun
+/obj/effect/spawner/random/lootdrop/railgun
 	name = "railgun supplies spawner"
 	loot = list(
 		/obj/item/ship_weapon/ammunition/railgun_ammo = 15,
 		/obj/item/circuitboard/computer/ship/munitions_computer = 2,
 		/obj/machinery/ship_weapon/railgun = 1
 		)
-	lootcount = 2
+	spawn_loot_count = 2
 
-/obj/effect/spawner/lootdrop/nac_ammo
+/obj/effect/spawner/random/lootdrop/nac_ammo
 	name = "\improper NAC ammo spawner"
 	loot = list(
 		/obj/item/ship_weapon/ammunition/naval_artillery = 1,
@@ -77,9 +77,9 @@
 		/obj/item/powder_bag/plasma = 1,
 		/obj/item/ship_weapon/ammunition/naval_artillery/cannonball = 1
 		)
-	lootcount = 3
+	spawn_loot_count = 3
 
-/obj/effect/spawner/lootdrop/nac_supplies
+/obj/effect/spawner/random/lootdrop/nac_supplies
 	name = "\improper NAC stuff spawner"
 	loot = list(
 		/obj/item/powder_bag = 10,
@@ -89,18 +89,18 @@
 		/obj/machinery/deck_turret/autoelevator = 1,
 		/obj/machinery/deck_turret/powder_gate = 1
 		)
-	lootcount = 1
+	spawn_loot_count = 1
 
-/obj/effect/spawner/lootdrop/syndicate_fighter
+/obj/effect/spawner/random/lootdrop/syndicate_fighter
 	name = "syndicate fighter / raptor / frame spawner"
 	loot = list(
 		/obj/structure/overmap/small_craft/combat/light/syndicate = 2,
 		/obj/structure/overmap/small_craft/transport/sabre/syndicate = 1,
 		/obj/structure/fighter_frame = 1
 		)
-	lootcount = 1
+	spawn_loot_count = 1
 
-/obj/effect/spawner/lootdrop/fighter
+/obj/effect/spawner/random/lootdrop/fighter
 	name = "nanotrasen fighter / raptor / frame spawner"
 	loot = list(
 		/obj/structure/overmap/small_craft/combat/light = 2,
@@ -108,4 +108,4 @@
 		/obj/structure/overmap/small_craft/combat/heavy = 1,
 		/obj/structure/fighter_frame = 1
 		)
-	lootcount = 1
+	spawn_loot_count = 1

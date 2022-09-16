@@ -20,7 +20,7 @@ GLOBAL_VAR_INIT(boarding_guns_z_locked, TRUE)
 		if(GLOB.boarding_guns_z_locked)
 			return FALSE
 		else // Otherwise check the alert level
-			return (GLOB.security_level >= SEC_LEVEL_RED)
+			return (SSsecurity_level.get_current_level_as_number() >= SEC_LEVEL_RED)
 	else // We're on a boarding level, fire away
 		return TRUE
 
@@ -49,7 +49,7 @@ GLOBAL_VAR_INIT(boarding_guns_z_locked, TRUE)
 	desc = "Used to remotely lockdown or authorize weapons with boarding firing pins installed."
 	req_access = list(ACCESS_ARMORY)
 	circuit = /obj/item/circuitboard/computer/boarding_guns
-	light_color = LIGHT_COLOR_RED
+	light_color = COLOR_RED_LIGHT
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 /obj/item/circuitboard/computer/boarding_guns
@@ -60,7 +60,7 @@ GLOBAL_VAR_INIT(boarding_guns_z_locked, TRUE)
 	. = ..()
 
 	var/dat = "[GLOB.boarding_guns_z_locked ? "Guns are set to Away only." : "Guns are set to General Quarters."]<br>"
-	dat += "Current alert level: [get_security_level()]<br>"
+	dat += "Current alert level: [SSsecurity_level.get_current_level_as_text()]<br>"
 
 	if(!GLOB.boarding_guns_z_locked)
 		dat += "<A href='?src=[REF(src)];locked=true'>Lock weapons on ship.</A><br>"

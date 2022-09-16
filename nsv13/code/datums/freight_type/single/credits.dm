@@ -19,7 +19,7 @@
 	var/datum/freight_contents_index/index = new /datum/freight_contents_index()
 	freight_contents_index = index
 
-	for ( var/obj/item/holochip/a in freight_type_check.container.GetAllContents() )
+	for ( var/obj/item/holochip/a in freight_type_check.container.get_all_contents() )
 		if( !is_type_in_typecache( a, GLOB.blacklisted_paperwork_itemtypes ) || ( is_type_in_typecache( item_type, GLOB.blacklisted_paperwork_itemtypes ) && is_type_in_typecache( a, GLOB.blacklisted_paperwork_itemtypes ) ) )
 			if( istype( a, item_type ) )
 				if ( in_required_loc_or_is_required_loc( a ) )

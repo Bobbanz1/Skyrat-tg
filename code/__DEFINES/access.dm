@@ -141,6 +141,25 @@
 /// Access to the Lawyer's office.
 #define ACCESS_LAWYER "lawyer"
 
+#define ACCESS_MUNITIONS 69 //NSV13 - Departmental ACCESS
+#define ACCESS_MAA 70 //NSV13 - MAA gets an office
+#define ACCESS_MUNITIONS_STORAGE 71 //NSV13 - Access to ordinance
+#define ACCESS_COMBAT_PILOT 72 //NSV13 - Fighternerds
+#define ACCESS_TRANSPORT_PILOT 73 //NSV13 - Imagine getting your ATPLs
+#define ACCESS_MINING_ENGINEERING 74
+#define ACCESS_MINING_BRIDGE 75
+#define ACCESS_SEC_RECORDS 77 //! Update security records //NSV13 - changed from 69
+#define ACCESS_PRISONER 78 //! Nsv13 - Genpop. This access is added to prisoner IDs that have served their time.
+#define ACCESS_HANGAR 79 //NSV13 - Access to the hangar
+
+#define ACCESS_SYNDICATE 150 //!General Syndicate Access. Includes Syndicate mechs and ruins.
+#define ACCESS_SYNDICATE_LEADER 151 //!Nuke Op Leader Access
+//Nsv13
+#define ACCESS_SYNDICATE_ENGINEERING 152 //! Syndicate engineering wing
+#define ACCESS_SYNDICATE_REQUISITIONS 153 //! Syndicate cargo division
+#define ACCESS_SYNDICATE_MARINE_ARMOURY 154 //!Syndicate armoury
+
+
 /// - - - AWAY MISSIONS - - -
 /*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict
 	or a 2000 year-old temple? */
@@ -181,8 +200,8 @@
 
 /// - - - ANTAGONIST - - -
 /// SYNDICATE
-#define ACCESS_SYNDICATE "syndicate"
-#define ACCESS_SYNDICATE_LEADER "syndicate_leader"
+//#define ACCESS_SYNDICATE "syndicate"
+//#define ACCESS_SYNDICATE_LEADER "syndicate_leader"
 /// BLOODCULT
 	//Special, for anything that's basically internal
 #define ACCESS_BLOODCULT "bloodcult"

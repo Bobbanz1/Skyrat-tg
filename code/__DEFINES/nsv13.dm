@@ -32,7 +32,7 @@
 #define CONQUEST_ROLE_LINECOOK "Line Cook"
 #define CONQUEST_ROLE_GRUNT "Autofill"
 
-GLOBAL_DATUM_INIT(conquest_role_handler, /datum/conquest_role_handler, new)
+//GLOBAL_DATUM_INIT(conquest_role_handler, /datum/conquest_role_handler, new)
 
 #define COMSIG_ATOM_DAMAGE_ACT "comsig_atom_damage_act" //Used when an atom takes damage.
 

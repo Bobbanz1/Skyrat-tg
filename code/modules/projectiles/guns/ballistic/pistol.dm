@@ -98,6 +98,19 @@
 	//actions_types = list(/datum/action/item_action/toggle_firemode) SKYRAT EDIT REMOVAL
 	suppressor_x_offset = 6
 
+/obj/item/gun/ballistic/automatic/pistol/APS
+	name = "\improper Stechkin APS machine pistol"
+	desc = "A modernized reproduction of an old Soviet machine pistol. It fires quickly, but kicks like a mule. Uses 9mm ammo. Has a threaded barrel for suppressors." //SKYRAT EDIT
+	icon_state = "aps"
+	w_class = WEIGHT_CLASS_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/m9mm_aps
+	can_suppress = TRUE
+	burst_size = 3
+	fire_delay = 1
+	spread = 10
+	//actions_types = list(/datum/action/item_action/toggle_firemode) SKYRAT EDIT REMOVAL
+	suppressor_x_offset = 6
+
 /obj/item/gun/ballistic/automatic/pistol/stickman
 	name = "flat gun"
 	desc = "A 2 dimensional gun.. what?"

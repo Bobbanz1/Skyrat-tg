@@ -51,7 +51,11 @@
 	desc = "A base model for every munitions headset, even comes with ear protection!"
 	icon_state = "mun_headset"
 	keyslot = new /obj/item/encryptionkey/munitions_tech
-	bang_protect = 1
+
+
+/obj/item/radio/headset/munitions/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
 /obj/item/radio/headset/munitions/atc
 	name = "air traffic controller radio headset"
@@ -72,7 +76,10 @@
 	icon = 'nsv13/icons/obj/custom_radio.dmi'
 	icon_state = "mun_headset_alt"
 	keyslot = new /obj/item/encryptionkey/heads/master_at_arms
-	bang_protect = 1
+
+/obj/item/radio/headset/heads/master_at_arms/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
 /obj/item/radio/headset/munitions/munitions_tech
 	name = "munitions technician radio headset"
@@ -85,7 +92,6 @@
 	desc = "The headset used by your local munitions mall cop, but with ear protection! Now you won't go deaf!"
 	icon_state = "munsec_headset_alt"
 	keyslot2 = new /obj/item/encryptionkey/headset_sec
-	bang_protect = 1
 
 /obj/item/radio/headset/munitions/munitions_security
 	name = "munitions-security radio headset"
@@ -100,7 +106,7 @@
 	desc = "A large duffel bag for holding extra munitions supplies."
 	icon = 'nsv13/icons/obj/storage.dmi'
 	icon_state = "duffel-mun"
-	item_state = "duffel-mun"
+	inhand_icon_state = "duffel-mun"
 	lefthand_file = 'nsv13/icons/mob/inhands/backpack_lefthand.dmi'
 	righthand_file = 'nsv13/icons/mob/inhands/backpack_righthand.dmi'
 
@@ -109,7 +115,7 @@
 	desc = "A hardy oil-resistant backpack designed for use in ordanance filled environment."
 	icon = 'nsv13/icons/obj/storage.dmi'
 	icon_state = "munitionspack"
-	item_state = "munitionspack"
+	inhand_icon_state = "munitionspack"
 	lefthand_file = 'nsv13/icons/mob/inhands/backpack_lefthand.dmi'
 	righthand_file = 'nsv13/icons/mob/inhands/backpack_righthand.dmi'
 
@@ -118,7 +124,7 @@
 	desc = "A tough satchel with extra pockets."
 	icon = 'nsv13/icons/obj/storage.dmi'
 	icon_state = "satchel-mun"
-	item_state = "satchel-mun"
+	inhand_icon_state = "satchel-mun"
 	lefthand_file = 'nsv13/icons/mob/inhands/backpack_lefthand.dmi'
 	righthand_file = 'nsv13/icons/mob/inhands/backpack_righthand.dmi'
 
@@ -129,7 +135,7 @@
 	name = "munitions guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is black and orange."
 	icon_state = "muniband"
-	item_color = "muniband"
+	inhand_icon_state = "muniband"
 
 
 ///////BOX////////
@@ -151,7 +157,7 @@
 	desc = "A large set of fluorescent sticks used to direct aircraft around the hangar bay."
 	icon = 'nsv13/icons/objects/lighting.dmi'
 	icon_state = "wavystick"
-	item_state = "glowstick"
+	inhand_icon_state = "glowstick"
 	w_class = WEIGHT_CLASS_SMALL
 	light_range = 6
 	color = LIGHT_COLOR_GREEN
@@ -168,7 +174,7 @@
 	if(istype(A, /datum/action/item_action/pick_color))
 		if(!usr.stat)
 			if(light_color == LIGHT_COLOR_GREEN)
-				light_color = LIGHT_COLOR_RED
+				light_color = COLOR_RED_LIGHT
 				color = COLOR_RED
 			else
 				light_color = LIGHT_COLOR_GREEN
@@ -196,7 +202,7 @@
 			addtimer(VARSET_CALLBACK(src, end_turf, null), 5 SECONDS) //Clear the path after a while
 			visible_message("<span class='warning'>[user] waves [src] around in a controlled motion.</span>")
 			var/turf/last_turf = start_turf
-			for(var/turf/T in getline(start_turf,end_turf))
+			for(var/turf/T in get_line(start_turf,end_turf))
 				var/pdir = SOUTH
 				if(T == start_turf)
 					pdir = testDir

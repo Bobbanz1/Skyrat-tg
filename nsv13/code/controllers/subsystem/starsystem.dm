@@ -36,12 +36,11 @@ SUBSYSTEM_DEF(star_system)
 /datum/controller/subsystem/star_system/fire() //Overmap combat events control system, adds weight to combat events over time spent out of combat
 	if(time_limit && world.time >= time_limit)
 		var/datum/faction/winner = get_winner()
-		if(istype(SSticker.mode, /datum/game_mode/pvp))
-			var/datum/game_mode/pvp/mode = SSticker.mode
-			mode.winner = winner //This should allow the mode to finish up by itself
-			mode.check_finished()
-		else
-			SSticker.force_ending = 1
+		//if(istype(SSticker.mode, /datum/game_mode/pvp))
+		//	var/datum/game_mode/pvp/mode = SSticker.mode
+		//	mode.winner = winner //This should allow the mode to finish up by itself
+		//	mode.check_finished()
+		SSticker.force_ending = 1
 		return
 
 	if(enable_npc_combat)
@@ -226,7 +225,7 @@ Returns a faction datum by its name (case insensitive!)
 		file_data[++file_data.len] = entry
 	//Attempt to write to the file...
 	try
-		listclearnulls(file_data)
+		list_clear_nulls(file_data)
 		fdel(json_file)
 		var/list/to_save = file_data
 		WRITE_FILE(json_file, json_encode(to_save))

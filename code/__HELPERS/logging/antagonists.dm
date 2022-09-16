@@ -27,3 +27,7 @@
 /proc/log_spellbook(text)
 	if (CONFIG_GET(flag/log_uplink))
 		WRITE_LOG(GLOB.world_uplink_log, "SPELLBOOK: [text]")
+
+/proc/log_objective(whom, objective, admin_involved)
+	if (CONFIG_GET(flag/log_objective))
+		WRITE_LOG(GLOB.world_objective_log, "OBJ: [key_name(whom)] was assigned the following objective [admin_involved ? "by [key_name(admin_involved)]" : "automatically"]: [objective]")

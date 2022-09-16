@@ -50,17 +50,6 @@
 		our_turf.underlays += plating_underlay
 	return TRUE
 
-/datum/element/turf_z_transparency/proc/on_multiz_turf_del(turf/our_turf, turf/T, dir)
-	SIGNAL_HANDLER
-	if(dir != DOWN)
-		return
-	update_multiz(our_turf)
-
-/datum/element/turf_z_transparency/proc/on_multiz_turf_new(turf/our_turf, turf/T, dir)
-	SIGNAL_HANDLER
-	if(dir != DOWN)
-		return
-	update_multiz(our_turf)
 
 ///Called when there is no real turf below this turf
 /datum/element/turf_z_transparency/proc/show_bottom_level(turf/our_turf)

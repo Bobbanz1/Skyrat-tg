@@ -5,7 +5,7 @@
 	icon_state = "glass-0"
 	baseturfs = /turf/open/floor/plating
 	floor_tile = /obj/item/stack/tile/glass
-	smooth = SMOOTH_TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	canSmoothWith = list(/turf/open/floor/glass,/turf/open/floor/glass/reinforced)
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT

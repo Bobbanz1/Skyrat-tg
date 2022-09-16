@@ -5,8 +5,7 @@
 	icon_state = "solid"
 	name = "Durasteel hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	smooth = TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	sheet_type = /obj/item/stack/sheet/durasteel
 	hardness = 20
 
@@ -14,8 +13,7 @@
 	icon = 'nsv13/icons/turf/interior_wall.dmi'
 	name = "Durasteel hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	smooth = TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	walltype = /turf/closed/wall/ship
 
 /turf/closed/wall/r_wall/ship
@@ -23,8 +21,7 @@
 	icon_state = "solid"
 	name = "Duranium hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	smooth = TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	color = null
 	sheet_type = /obj/item/stack/sheet/duranium
 	sheet_amount = 1
@@ -35,13 +32,12 @@
 	icon_state = "solid"
 	name = "Duranium hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	smooth = TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	walltype = /turf/closed/wall/r_wall/ship
 	mineral = /obj/item/stack/sheet/duranium
 
 /obj/structure/girder/proc/try_nsv_walls(obj/item/stack/sheet/S, mob/user)
-	if(!S.turf_type) //Let the girder code handle it. It's not one of ours.
+	if(!S.sheettype) //Let the girder code handle it. It's not one of ours.
 		return FALSE
 	if(state != GIRDER_DISPLACED) //Build regular wall
 		if(istype(S, /obj/item/stack/sheet/duranium)) //Duranium wall building
@@ -73,7 +69,7 @@
 			S.use(2)
 			to_chat(user, "<span class='notice'>You add the hull plating.</span>")
 			var/turf/T = get_turf(src)
-			T.PlaceOnTop(S.turf_type)
+			T.PlaceOnTop(S.sheettype)
 			transfer_fingerprints_to(T)
 			qdel(src)
 			return TRUE

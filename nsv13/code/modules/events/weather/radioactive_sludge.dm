@@ -10,9 +10,9 @@
 	var/area/selected_area
 
 /datum/round_event/radioactive_sludge/setup()
-	startWhen = 15
-	endWhen = startWhen + 1
-	announceWhen = 1
+	start_when = 15
+	end_when = start_when + 1
+	announce_when = 1
 	selected_area = pick(GLOB.the_station_areas)
 
 /datum/round_event/radioactive_sludge/start()
@@ -22,7 +22,7 @@
 	for(var/turf/T as anything in selected_turfs)
 		if(num_tiles <= 0)
 			break
-		if(isclosedturf(T) || is_blocked_turf(T, TRUE))
+		if(isclosedturf(T))
 			continue
 		if(locate(/obj/effect/decal/nuclear_waste) in T)
 			continue

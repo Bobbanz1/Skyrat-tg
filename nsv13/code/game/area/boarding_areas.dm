@@ -23,11 +23,11 @@
 /area/ruin/powered/nsv13/boarding_interior
 	name = "Boarding Interior Map"
 	requires_power = FALSE
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	//dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	has_gravity = STANDARD_GRAVITY
 	always_unpowered = FALSE
 
 /area/ruin/unpowered/boarding_interior
 	name = "Boarding Interior Map (Requires Power)"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	//dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	has_gravity = STANDARD_GRAVITY

@@ -71,6 +71,7 @@
 	to_chat(user, "<span class='notice'>Nothing happens...</span>")
 
 /obj/item/vehicle_hardpoint/update_icon()
+	..()
 	owner.update_icon()
 
 //Removal / insertion procs.
@@ -170,6 +171,7 @@
 	return FALSE
 
 /obj/vehicle/sealed/car/realistic/update_icon()
+	..()
 	cut_overlays()
 	for(var/HPtype in hardpoints)
 		var/obj/item/vehicle_hardpoint/HP = hardpoints[HPtype]

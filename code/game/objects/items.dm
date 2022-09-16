@@ -41,6 +41,9 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
 	///The config type to use for greyscaled belt overlays. Both this and greyscale_colors must be assigned to work.
 	var/greyscale_config_belt
 
+	/// Used in picking icon_states based on the string color here. Also used for cables or something. This could probably do with being deprecated.
+	var/item_color = null
+
 	/* !!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!
 
 		IF YOU ADD MORE ICON CRAP TO THIS

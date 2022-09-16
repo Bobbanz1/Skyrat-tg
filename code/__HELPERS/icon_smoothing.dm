@@ -45,7 +45,6 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	"NORTHWEST_JUNCTION" = NORTHWEST_JUNCTION,
 ))
 
-
 #define NO_ADJ_FOUND 0
 #define ADJ_FOUND 1
 #define NULLTURF_BORDER 2
@@ -92,6 +91,13 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		}; \
 	} while(FALSE)
 
+#define SMOOTH_FALSE	0				//not smooth
+#define SMOOTH_TRUE		(1<<0)	//smooths with exact specified types or just itself
+#define SMOOTH_MORE		(1<<1)	//smooths with all subtypes of specified types or just itself (this value can replace SMOOTH_TRUE)
+#define SMOOTH_DIAGONAL	(1<<2)	//if atom should smooth diagonally, this should be present in 'smooth' var
+
+/atom/var/smooth = SMOOTH_FALSE
+/atom/var/legacy_smooth = FALSE
 
 ///Scans all adjacent turfs to find targets to smooth with.
 /atom/proc/calculate_adjacencies()
@@ -150,7 +156,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 
 ///do not use, use QUEUE_SMOOTH(atom)
-/atom/proc/smooth_icon()
+/atom/proc/smooth_icon(atom/A)
 	smoothing_flags &= ~SMOOTH_QUEUED
 	flags_1 |= HTML_USE_INITAL_ICON_1
 	if (!z)
@@ -162,6 +168,16 @@ DEFINE_BITFIELD(smoothing_junction, list(
 			corners_cardinal_smooth(calculate_adjacencies())
 	else if(smoothing_flags & SMOOTH_BITMASK)
 		bitmask_smooth()
+	else if(A.smooth & (SMOOTH_TRUE | SMOOTH_MORE))
+		if(A.legacy_smooth)
+			A.legacy_smooth()
+			return
+		var/adjacencies = calculate_adjacencies(A)
+
+		if(A.smooth & SMOOTH_DIAGONAL)
+			corners_diagonal_smooth(calculate_adjacencies())
+		else
+			corners_cardinal_smooth(calculate_adjacencies())
 	else
 		CRASH("smooth_icon called for [src] with smoothing_flags == [smoothing_flags]")
 	SEND_SIGNAL(src, COMSIG_ATOM_SMOOTHED_ICON)

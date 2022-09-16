@@ -21,15 +21,14 @@
 
 
 /datum/cinematic/nsv_kaboom
-	id = CINEMATIC_NSV_SHIP_KABOOM
 
-/datum/cinematic/nsv_kaboom/content()
+/datum/cinematic/nsv_kaboom/play_cinematic()
 	screen.icon = 'nsv13/icons/effects/station_explosion.dmi'
 	flick("ship_go_byebye",screen)
 	sleep(3.5 SECONDS)
 	screen.icon_state = "summary"
-	cinematic_sound(sound('sound/effects/explosion_distant.ogg'))
-	special()
+	play_cinematic_sound(sound('sound/effects/explosion_distant.ogg'))
+	invoke_special_callback()
 
 /proc/overmap_explode(list/areas)
 	set waitfor = FALSE	//Lets not freeze the game ending and ship del
@@ -44,7 +43,7 @@
 	if(!linked_areas.len)
 		return TRUE
 	if(role == MAIN_OVERMAP)
-		Cinematic(CINEMATIC_ANNIHILATION,world)
+		play_cinematic(/datum/cinematic/nsv_kaboom, world)
 		SSticker.mode.check_finished(TRUE)
 		SSticker.force_ending = 1
 		return TRUE

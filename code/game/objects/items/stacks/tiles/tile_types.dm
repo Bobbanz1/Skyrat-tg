@@ -1281,3 +1281,28 @@
 	turf_type = /turf/open/floor/glass/reinforced/plasma
 	merge_type = /obj/item/stack/tile/rglass/plasma
 	mats_per_unit = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT * 0.125, /datum/material/alloy/plasmaglass = MINERAL_MATERIAL_AMOUNT * 0.25)
+
+/obj/item/stack/tile/mono/steel //NSV13 Start
+	name = "steel mono tile"
+	singular_name = "steel mono tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/monotile
+
+/obj/item/stack/tile/mono/dark
+	name = "dark mono tile"
+	singular_name = "dark mono tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/monotile/dark
+
+/obj/item/stack/tile/mono/light
+	name = "light mono tile"
+	singular_name = "light mono tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/monotile/light
+

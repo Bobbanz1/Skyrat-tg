@@ -6,7 +6,7 @@ GLOBAL_LIST_INIT(pecking_order, world.file2list("config/ranks/pecking_order.txt"
 		var/rankstext = file2text("[rankfile]")
 
 		var/list/missed = list()
-		for(var/datum/job/J in occupations)
+		for(var/datum/job/J in all_occupations)
 			var/regex/jobs = new("[J.title]=(.+)")
 			jobs.Find(rankstext)
 			stoplag() //In case someone gives us a really huge file
@@ -19,7 +19,7 @@ GLOBAL_LIST_INIT(pecking_order, world.file2list("config/ranks/pecking_order.txt"
 				J.display_rank = ""
 		if(!length(missed))
 			return
-		else if(length(missed) < length(occupations))
+		else if(length(missed) < length(all_occupations))
 			//Try to default rank-less jobs to another rank
 			var/datum/job/A = select_substitute_rank()
 			if(A)
@@ -92,7 +92,7 @@ Checks two text ranks, see which one outranks the other. Used for squad rank ass
 		return A
 
 	//Get a random good one
-	var/list/remaining = occupations.Copy()
+	var/list/remaining = all_occupations.Copy()
 	while(remaining.len > 0)
 		stoplag()
 		A = pick(remaining)

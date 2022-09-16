@@ -3,7 +3,7 @@
 	desc = "the banner of the People's Republic of Munitions, masters of arms and ammunition"
 	icon = 'nsv13/icons/obj/banners.dmi'
 	icon_state = "banner_munitions"
-	item_state = "banner_munitions"
+	inhand_icon_state = "banner_munitions"
 	lefthand_file = 'nsv13/icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'nsv13/icons/mob/inhands/equipment/banners_righthand.dmi'
 	job_loyalties = list("Master At Arms", "Munitions Technician", "Pilot", "Air Traffic Controller")

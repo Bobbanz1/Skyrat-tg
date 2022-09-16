@@ -37,6 +37,17 @@
 #define RADIO_KEY_AI_PRIVATE "o"
 #define RADIO_TOKEN_AI_PRIVATE ":o"
 
+#define RADIO_CHANNEL_ATC "Air Traffic Control" //Nsv13 - Air traffic control chat
+#define RADIO_KEY_ATC "q"
+#define RADIO_TOKEN_ATC ":q"
+
+#define RADIO_CHANNEL_MUNITIONS "Munitions" //NSV13 - Munitions department
+#define RADIO_KEY_MUNITIONS "w"
+#define RADIO_TOKEN_MUNITIONS ":w"
+
+#define RADIO_CHANNEL_PIRATE "Space Pirate" //NSV13 - Space Pirates
+#define RADIO_KEY_PIRATE "z"
+#define RADIO_TOKEN_PIRATE ":z"
 
 #define RADIO_CHANNEL_SYNDICATE "Syndicate"
 #define RADIO_KEY_SYNDICATE "t"
@@ -56,11 +67,14 @@
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
 #define FREQ_SYNDICATE 1213  // Nuke op comms frequency, dark brown
+#define FREQ_PIRATE 1214 //! NSV13 - Space Pirates, PURPLE
 #define FREQ_CTF_RED 1215  // CTF red team comms frequency, red
 #define FREQ_CTF_BLUE 1217  // CTF blue team comms frequency, blue
 #define FREQ_CTF_GREEN 1219  // CTF green team comms frequency, green
 #define FREQ_CTF_YELLOW 1221  // CTF yellow team comms frequency, yellow
+#define FREQ_ATC 1237  //! NSV13 - Air traffic control comms frequency, grey
 #define FREQ_CENTCOM 1337  // CentCom comms frequency, gray
+#define FREQ_MUNITIONS 1345 //! NSV13 - Munitions comm frequency, ORANGE
 #define FREQ_SUPPLY 1347  // Supply comms frequency, light brown
 #define FREQ_SERVICE 1349  // Service comms frequency, green
 #define FREQ_SCIENCE 1351  // Science comms frequency, plum

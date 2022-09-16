@@ -21,7 +21,7 @@
 	desc = "This sophisticated machine scans the nearby space for items of value."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "export_scanner"
-	item_state = "radio"
+	inhand_icon_state = "radio"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	item_flags = NOBLUDGEON
@@ -59,9 +59,9 @@
 	name = "space pirate vested spacesuit"
 	desc = "Yarr."
 	icon = 'nsv13/icons/obj/clothing/suits.dmi'
-	alternate_worn_icon = 'nsv13/icons/mob/suit.dmi'
+	worn_icon = 'nsv13/icons/mob/suit.dmi'
 	icon_state = "spacepirate_vest"
-	item_state = "spacepirate_vest"
+	inhand_icon_state = "spacepirate_vest"
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
 	slowdown = 1
 
@@ -69,15 +69,15 @@
 	name = "space pirate coated spacesuit"
 	desc = "Yarr."
 	icon_state = "spacepirate_jacket"
-	item_state = "spacepirate_jacket"
+	inhand_icon_state = "spacepirate_jacket"
 
 /obj/item/clothing/head/helmet/space/pirate/boarder
 	name = "space pirate hatted space helmet"
 	desc = "Yarr."
 	icon = 'nsv13/icons/obj/clothing/hats.dmi'
-	alternate_worn_icon = 'nsv13/icons/mob/head.dmi'
+	worn_icon = 'nsv13/icons/mob/head.dmi'
 	icon_state = "spacepirate_hat"
-	item_state = "spacepirate_hat"
+	inhand_icon_state = "spacepirate_hat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
@@ -85,8 +85,8 @@
 	name = "space pirate bandanaed space helmet"
 	desc = "Yarr."
 	icon = 'nsv13/icons/obj/clothing/hats.dmi'
-	alternate_worn_icon = 'nsv13/icons/mob/head.dmi'
+	worn_icon = 'nsv13/icons/mob/head.dmi'
 	icon_state = "spacepirate_bandana"
-	item_state = "spacepirate_bandana"
+	inhand_icon_state = "spacepirate_bandana"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH

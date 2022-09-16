@@ -9,6 +9,9 @@ GLOBAL_PROTECT(adminlog)
 GLOBAL_LIST_EMPTY(bombers)
 GLOBAL_PROTECT(bombers)
 
+GLOBAL_VAR(world_objective_log)
+GLOBAL_PROTECT(world_objective_log)
+
 GLOBAL_LIST_EMPTY(combatlog)
 GLOBAL_PROTECT(combatlog)
 

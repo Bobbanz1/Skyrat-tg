@@ -14,6 +14,9 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_AI_PRIVATE]" = "aiprivradio",
 	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_CENTCOM]" = "centcomradio",
+	"[FREQ_ATC]" = "centcomradio",
+	"[FREQ_PIRATE]" = "pirateradio",
+	"[FREQ_MUNITIONS]" = "muniradio",
 	"[FREQ_FACTION]" = "suppradio", //SKYRAT EDIT ADDITIION - FACTION
 	"[FREQ_CYBERSUN]" = "syndradio", //SKYRAT EDIT ADDITION - MAPPING
 	"[FREQ_INTERDYNE]" = "syndradio", //SKYRAT EDIT ADDITION - MAPPING
@@ -82,7 +85,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 
 	messagepart = " <span class='message'>[say_emphasis(messagepart)]</span></span>"
 
-	return "[spanpart1][spanpart2][freqpart][languageicon][compose_track_href(speaker, namepart)][namepart][compose_job(speaker, message_language, raw_message, radio_freq)][endspanpart][messagepart]"
+	return "[spanpart1][spanpart2][freqpart][languageicon][compose_track_href(speaker, namepart)][compose_rank(speaker)][namepart][compose_job(speaker, message_language, raw_message, radio_freq)][endspanpart][messagepart]"
 
 /atom/movable/proc/compose_track_href(atom/movable/speaker, message_langs, raw_message, radio_freq)
 	return ""
@@ -194,6 +197,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 //VIRTUALSPEAKERS
 /atom/movable/virtualspeaker
 	var/job
+	var/squad_rank
 	var/atom/movable/source
 	var/obj/item/radio/radio
 

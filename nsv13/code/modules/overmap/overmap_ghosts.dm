@@ -16,12 +16,11 @@
 			if("Cancel")
 				return
 			if("Open")
-				var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [src.faction] [src.name]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
-				if(LAZYLEN(candidates))
-					var/mob/dead/observer/C = pick(candidates)
-					target_ghost = C
-				else
-					return
+				//var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [src.faction] [src.name]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
+				//if(LAZYLEN(candidates))
+					//var/mob/dead/observer/C = pick(candidates)
+					//target_ghost = C
+				return
 			if("Choose")
 				target_ghost = input(usr, "Select player to pilot ghost ship:", "Select Player") as null|anything in GLOB.clients
 
@@ -34,7 +33,7 @@
 /obj/structure/overmap/proc/ghost_ship(mob/target)
 	if(!target)
 		return
-	
+
 	//Prevent the mainship being skeleton crewed
 	if(src.role == MAIN_OVERMAP)
 		message_admins("[src] is the main overmap and cannot be ghost controlled! Take manual control via the Z-level")

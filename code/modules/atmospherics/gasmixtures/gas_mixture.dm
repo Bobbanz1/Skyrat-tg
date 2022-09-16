@@ -396,6 +396,11 @@ GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
 		TOTAL_MOLES(sharer_gases,their_moles)
 		return (temperature_archived*(our_moles + moved_moles) - sharer.temperature_archived*(their_moles - moved_moles)) * R_IDEAL_GAS_EQUATION / volume
 
+/datum/gas_mixture/proc/get_moles(gas_type)
+/datum/gas_mixture/proc/set_moles(gas_type, moles)
+/datum/gas_mixture/proc/adjust_moles(gas_type, amt = 0)
+	set_moles(gas_type, clamp(get_moles(gas_type) + amt,0,INFINITY))
+
 ///Performs temperature sharing calculations (via conduction) between two gas_mixtures assuming only 1 boundary length
 ///Returns: new temperature of the sharer
 /datum/gas_mixture/proc/temperature_share(datum/gas_mixture/sharer, conduction_coefficient, sharer_temperature, sharer_heat_capacity)

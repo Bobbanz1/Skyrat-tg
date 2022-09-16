@@ -149,6 +149,9 @@ LOG_ECON
 ## log traitor objectives
 LOG_TRAITOR
 
+## log antag objectives
+LOG_OBJECTIVE
+
 ## log crew manifest to separate file
 LOG_MANIFEST
 

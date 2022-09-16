@@ -100,6 +100,21 @@
 		return null
 	return text
 
+/// Used to get a properly maximum length capped input.
+/proc/capped_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
+	var/name = input(user, message, title, default) as text|null
+	if(no_trim)
+		return copytext(name, 1, max_length)
+	else
+		return trim(name, max_length)
+
+/// Used to get a properly maximum length capped input, but this time multiline.
+/proc/capped_multiline_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
+	var/name = input(user, message, title, default) as message|null
+	if(no_trim)
+		return copytext(name, 1, max_length)
+	else
+		return trim(name, max_length)
 
 /**
  * Used to get a properly sanitized input. Returns null if cancel is pressed.

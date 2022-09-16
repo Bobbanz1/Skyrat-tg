@@ -5,9 +5,9 @@
 	color = "#545c68" //Curse you baystation
 	icon_state = "catwalk"
 	layer = CATWALK_LAYER
-	smooth = SMOOTH_TRUE
+	smoothing_flags = SMOOTH_CORNERS
 	canSmoothWith = null
-	obj_flags = CAN_BE_HIT | BLOCK_Z_FALL
+	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN
 	var/hatch_open = FALSE //To easily access wiring
 
 /obj/structure/lattice/catwalk/over/ship/dark
@@ -33,14 +33,14 @@
 	. = ..()
 	if(hatch_open)
 		icon_state = "catwalk_hatch_open"
-		obj_flags &= ~BLOCK_Z_FALL //Minecraft trap door.
-		smooth = SMOOTH_FALSE
+		obj_flags &= ~BLOCK_Z_OUT_DOWN //Minecraft trap door.
+		smoothing_flags = SMOOTH_CORNERS
 		clear_smooth_overlays()
 	else
 		icon_state = initial(icon_state)
-		obj_flags |= BLOCK_Z_FALL
-		smooth = SMOOTH_TRUE
-		queue_smooth(src)
+		obj_flags |= BLOCK_Z_OUT_DOWN
+		smoothing_flags = SMOOTH_CORNERS
+		QUEUE_SMOOTH(src)
 
 /obj/structure/lattice/catwalk/over/ship/can_lay_cable()
 	return hatch_open

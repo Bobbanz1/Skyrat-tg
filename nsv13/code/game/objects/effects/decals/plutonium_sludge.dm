@@ -45,4 +45,4 @@
 
 /obj/effect/decal/nuclear_waste/epicenter/Initialize()
 	. = ..()
-	AddComponent(/datum/component/radioactive, 1500, src, 0)
+	AddElement(/datum/element/radioactive, 1500, src, 0)
