@@ -28,6 +28,8 @@ SUBSYSTEM_DEF(mapping)
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
 	var/list/holodeck_templates = list()
+	var/list/random_room_templates = list()
+	var/list/boarding_templates = list() //NSV13 - boarding maps
 
 	var/list/areas_in_z = list()
 
@@ -262,6 +264,8 @@ Used by the AI doomsday and the self-destruct nuke.
 	holodeck_templates = SSmapping.holodeck_templates
 	transit = SSmapping.transit
 	areas_in_z = SSmapping.areas_in_z
+	random_room_templates = SSmapping.random_room_templates
+	boarding_templates = SSmapping.boarding_templates //NSV13 - boarding maps
 
 	config = SSmapping.config
 	next_map_config = SSmapping.next_map_config
@@ -335,6 +339,11 @@ Used by the AI doomsday and the self-destruct nuke.
 	station_start = world.maxz + 1
 	add_startup_message("Loading [config.map_name]...") // SKYRAT EDIT CHANGE
 	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
+	var/obj/structure/overmap/OM = instance_overmap(config.ship_type)
+	pass(OM)
+	// Free boarding overmap/mining level
+	add_new_zlevel("Overmap treadmill [++world.maxz]", ZTRAITS_OVERMAP)
+	OM.free_treadmills += world.maxz
 
 	if(SSdbcore.Connect())
 		var/datum/db_query/query_round_map_name = SSdbcore.NewQuery({"
@@ -349,10 +358,19 @@ Used by the AI doomsday and the self-destruct nuke.
 		++space_levels_so_far
 		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
 
+///NSV13 RECODE OF MINING LOAD SELECTION
+	//Load Mining
+	if(!config.mine_disable)
+		instance_overmap(_path=config.mining_ship_type, folder= config.mine_path ,interior_map_files = config.mine_file, traits=config.mine_traits)
+
+	/*
+	// load mining
 	if(config.minetype == "lavaland")
-		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
-	else if (!isnull(config.minetype) && config.minetype != "none")
+		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND, orbital_body_type = /datum/orbital_object/z_linked/lavaland)
+	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
+	*/
+///NSV13 END
 #endif
 
 	if(LAZYLEN(FailedZs)) //but seriously, unless the server's filesystem is messed up this will never happen
@@ -364,11 +382,6 @@ Used by the AI doomsday and the self-destruct nuke.
 		INIT_ANNOUNCE(msg)
 #undef INIT_ANNOUNCE
 
-	// Custom maps are removed after station loading so the map files does not persist for no reason.
-	if(config.map_path == CUSTOM_MAP_PATH)
-		fdel("_maps/custom/[config.map_file]")
-		// And as the file is now removed set the next map to default.
-		next_map_config = load_default_map_config()
 
 GLOBAL_LIST_EMPTY(the_station_areas)
 
@@ -456,10 +469,6 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	SSvote.initiate_vote(/datum/vote/map_vote, "automatic map rotation", forced = TRUE)
 
 /datum/controller/subsystem/mapping/proc/changemap(datum/map_config/change_to)
-	if(!change_to.MakeNextMap())
-		next_map_config = load_default_map_config()
-		message_admins("Failed to set new map with next_map.json for [change_to.map_name]! Using default as backup!")
-		return
 
 	if (change_to.config_min_users > 0 && GLOB.clients.len < change_to.config_min_users)
 		message_admins("[change_to.map_name] was chosen for the next map, despite there being less current players than its set minimum population range!")
@@ -480,7 +489,28 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	preloadRuinTemplates()
 	preloadShuttleTemplates()
 	preloadShelterTemplates()
+	preloadBoardingTemplates() //NSV13 - boarding maps
+	preloadRandomRoomTemplates()
 	preloadHolodeckTemplates()
+
+/datum/controller/subsystem/mapping/proc/preloadRandomRoomTemplates()
+	for(var/item in subtypesof(/datum/map_template/random_room))
+		var/datum/map_template/random_room/room_type = item
+		if(!(initial(room_type.mappath)))
+			continue
+		var/datum/map_template/random_room/R = new room_type()
+		random_room_templates[R.room_id] = R
+		map_templates[R.room_id] = R
+
+/datum/controller/subsystem/mapping/proc/preloadBoardingTemplates() //NSV13 - boarding maps
+	var/list/all_templates = subtypesof(/datum/map_template/dropship) + subtypesof(/datum/map_template/boarding)
+	for(var/datum/map_template/dropship_type as() in all_templates)
+		if(!(initial(dropship_type.mappath)))
+			continue
+		var/datum/map_template/D = new dropship_type()
+
+		boarding_templates[dropship_type] = D
+		map_templates[dropship_type] = D
 
 /datum/controller/subsystem/mapping/proc/preloadRuinTemplates()
 	// Still supporting bans by filename

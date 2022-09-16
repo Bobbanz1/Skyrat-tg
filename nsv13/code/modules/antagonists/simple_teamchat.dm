@@ -20,7 +20,7 @@ GLOBAL_LIST_EMPTY(simple_teamchats)
 /datum/action/teamchat/proc/can_use(mob/living/user)
 	return (user && user.mind && user.stat == CONSCIOUS)
 
-/datum/action/teamchat/Trigger()
+/datum/action/teamchat/NSV_Trigger()
 	action(holder)
 
 /datum/action/teamchat/proc/action(mob/living/user)

@@ -277,3 +277,9 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 #define is_unassigned_job(job_type) (istype(job_type, /datum/job/unassigned))
 
 #define isprojectilespell(thing) (istype(thing, /datum/action/cooldown/spell/pointed/projectile))
+
+#define isnum_safe(x) ( isnum((x)) && !isnan((x)) && !isinf((x)) )
+
+#define isnan(x) ( (x) != (x) )
+
+#define isinf(x) (isnum((x)) && (((x) == text2num("inf")) || ((x) == text2num("-inf"))))

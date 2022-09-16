@@ -522,6 +522,14 @@
 	GLOB.cmp_field = field
 	return sortTim(record_list, order >= 0 ? /proc/cmp_records_asc : /proc/cmp_records_dsc)
 
+/// sorting any value in a list with any comparator
+/proc/sortList(list/L, cmp=/proc/cmp_text_asc)
+	return sortTim(L.Copy(), cmp)
+
+/// uses sortList() but uses the var's name specifically. This should probably be using mergeAtom() instead
+/proc/sortNames(list/L, order=1)
+	return sortTim(L, order >= 0 ? /proc/cmp_name_asc : /proc/cmp_name_dsc)
+
 ///sort any value in a list
 /proc/sort_list(list/list_to_sort, cmp=/proc/cmp_text_asc)
 	return sortTim(list_to_sort.Copy(), cmp)

@@ -2,24 +2,43 @@
 
 #include "map_files\generic\CentCom.dmm"
 
-#include "map_files\generic\CentCom_skyrat_z2.dmm" //SKYRAT EDIT ADDITION - SMMS
-
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
+		//Debug/Special Maps
 		#include "map_files\Mining\Lavaland.dmm"
 		#include "map_files\debug\runtimestation.dmm"
-		#include "map_files\debug\multiz.dmm"
-		#include "map_files\Deltastation\DeltaStation2.dmm"
-		#include "map_files\KiloStation\KiloStation.dmm"
-		#include "map_files\MetaStation\MetaStation.dmm"
-		#include "map_files\IceBoxStation\IceBoxStation.dmm"
-		#include "map_files\tramstation\tramstation.dmm"
-		// SKYRAT EDIT ADDITON START - Compiling our modular maps too!
-		#include "map_files\Blueshift\BlueShift_upper.dmm"
-		#include "map_files\Blueshift\BlueShift_middle.dmm"
-		#include "map_files\Blueshift\BlueShift_lower.dmm"
-		#include "map_files\VoidRaptor\VoidRaptor.dmm"
-		// SKYRAT EDIT END
+
+		//Atlas
+		#include "map_files\Atlas\Atlas.dmm"
+		#include "map_files\Atlas\Atlas2.dmm"
+
+		//Aetherwhisp
+		#include "map_files\Aetherwhisp\Aetherwhisp2.dmm"
+		#include "map_files\Aetherwhisp\Aetherwhisp1.dmm"
+
+		//Gladius
+		#include "map_files\Gladius\Gladius1.dmm"
+		#include "map_files\Gladius\Gladius2.dmm"
+
+		//Tycoon
+		#include "map_files\Tycoon\Tycoon1.dmm"
+		#include "map_files\Tycoon\Tycoon2.dmm"
+
+		//Eclipse
+		#include "map_files\Eclipse\Eclipse1.dmm"
+		#include "map_files\Eclipse\Eclipse2.dmm"
+
+		//Galactica
+		#include "map_files\Galactica\Galactica1.dmm"
+		#include "map_files\Galactica\Galactica2.dmm"
+
+		//Vago
+		#include "map_files\Vago\vagodeck1.dmm"
+		#include "map_files\Vago\vagodeck2.dmm"
+
+		//Snake
+		#include "map_files\Snake\snake_lower.dmm"
+		#include "map_files\Snake\snake_upper.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

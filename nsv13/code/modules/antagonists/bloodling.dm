@@ -477,7 +477,7 @@ Infestation! If given a human, it makes them a changeling thrall. If given any o
 	to_chat(user, "<span class='aliennotice'>We have regained [amount] biomass.</span>")
 	B.add_biomass(amount)
 
-/datum/action/bloodling/Trigger()
+/datum/action/bloodling/NSV_Trigger()
 	var/mob/user = owner
 	action(user)
 

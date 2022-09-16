@@ -134,6 +134,7 @@
 #define INIT_ORDER_TCG 55
 #define INIT_ORDER_AUTOMAPPER 51 // SKYRAT EDIT ADDITION - We need to load just before mapping.
 #define INIT_ORDER_MAPPING 50
+#define INIT_ORDER_STARSYSTEM	48 //NSV13 - Needs to init before ships....
 #define INIT_ORDER_EARLY_ASSETS 48
 #define INIT_ORDER_RESEARCH 47
 #define INIT_ORDER_TIMETRACK 46
@@ -166,6 +167,7 @@
 #define INIT_ORDER_STATPANELS -97
 #define INIT_ORDER_BAN_CACHE -98
 #define INIT_ORDER_INIT_PROFILER -99 //Near the end, logs the costs of initialize
+#define INIT_ORDER_OVERMAP_MODE		-120 //NSV13 - As late as possible to get a better grab of player numbers
 #define INIT_ORDER_CHAT -100 //Should be last to ensure chat remains smooth during init.
 
 // Subsystem fire priority, from lowest to highest priority
@@ -202,6 +204,8 @@
 #define FIRE_PRIORITY_TGUI 110
 #define FIRE_PRIORITY_TICKER 200
 #define FIRE_PRIORITY_STATPANEL 390
+#define FIRE_PRIORITY_PHYSICS		340 //NSV13 - Processes after SSprojectiles to keep hitboxes consistent for physics projectiles. Probably won't break anything
+#define FIRE_PRIORITY_PROJECTILES 	350 //NSV13 - Projectile fire priority
 #define FIRE_PRIORITY_CHAT 400
 #define FIRE_PRIORITY_RUNECHAT 410
 #define FIRE_PRIORITY_MOUSE_ENTERED 450

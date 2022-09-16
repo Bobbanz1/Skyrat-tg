@@ -16,3 +16,19 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 
 /*-----------------------------------------------------------------------------*/
+
+/area/asteroid
+	name = "Asteroid"
+	icon_state = "asteroid"
+	requires_power = FALSE
+	has_gravity = STANDARD_GRAVITY
+	ambience_index = AMBIENCE_MINING
+	sound_environment = SOUND_AREA_ASTEROID
+	area_flags = UNIQUE_AREA
+
+/area/asteroid/nearstation
+	//dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	ambience_index = AMBIENCE_RUINS
+	always_unpowered = FALSE
+	requires_power = TRUE
+	area_flags = UNIQUE_AREA | BLOBS_ALLOWED

@@ -407,7 +407,7 @@
 	icon_icon = 'nsv13/icons/mob/actions/actions.dmi'
 	var/cooldown = FALSE
 
-/datum/action/item_action/menacing_pose/Trigger()
+/datum/action/item_action/menacing_pose/NSV_Trigger()
 	if(!IsAvailable())
 		return
 	pose(owner)

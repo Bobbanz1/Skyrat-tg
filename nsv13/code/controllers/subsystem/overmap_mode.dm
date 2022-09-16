@@ -412,7 +412,7 @@ SUBSYSTEM_DEF(overmap_mode)
 	S.hidden = FALSE
 	if(!SSovermap_mode.round_extended)	//If we haven't yet extended the round, let us vote!
 		priority_announce("Mission Complete - Vote Pending") //TEMP get better words
-		SSvote.initiate_vote("Press On Or Return Home?", "Centcomm", forced=TRUE, popup=FALSE)
+		SSvote.initiate_vote("Press On Or Return Home?", "Centcomm", forced=TRUE)
 	else	//Begin FTL jump to Outpost 45
 		var/obj/structure/overmap/OM = SSstar_system.find_main_overmap()
 		if(!length(OM.current_system?.enemies_in_system))
@@ -597,12 +597,12 @@ SUBSYSTEM_DEF(overmap_mode)
 				if("Cancel")
 					return
 				if("Open")
-					var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [initial(target_ship.faction)] [initial(target_ship.name)]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
-					if(LAZYLEN(candidates))
-						var/mob/dead/observer/C = pick(candidates)
-						target_ghost = C
-					else
-						return
+					//var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to pilot a [initial(target_ship.faction)] [initial(target_ship.name)]?", ROLE_GHOSTSHIP, null, null, 20 SECONDS, POLL_IGNORE_GHOSTSHIP)
+					//if(LAZYLEN(candidates))
+					//	var/mob/dead/observer/C = pick(candidates)
+					//	target_ghost = C
+					//else
+					return
 				if("Choose")
 					target_ghost = input(usr, "Select player to pilot ghost ship:", "Select Player") as null|anything in GLOB.clients
 
