@@ -46,6 +46,9 @@
 		return
 	. += connected_device.return_air()
 
+/obj/proc/portableConnectorReturnAir()
+	return
+
 /obj/machinery/atmospherics/components/unary/portables_connector/can_unwrench(mob/user)
 	. = ..()
 	if(. && connected_device)

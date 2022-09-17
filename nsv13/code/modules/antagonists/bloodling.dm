@@ -335,10 +335,10 @@ Infestation! If given a human, it makes them a changeling thrall. If given any o
 	. = ..()
 	var/datum/component/C = owner.current.GetComponent(component_type)
 	if(C)
-		C.RemoveComponent()
+		C.ClearFromParent()
 	var/datum/component/simple_teamchat/bloodling/B = owner.current.GetComponent(/datum/component/simple_teamchat/bloodling)
 	if(B)
-		B.RemoveComponent()
+		B.ClearFromParent()
 	remove_antag_hud(antag_hud_type, owner.current)
 
 /datum/antagonist/changeling/bloodling_thrall/update_changeling_icons_added()
@@ -405,7 +405,7 @@ Infestation! If given a human, it makes them a changeling thrall. If given any o
 	//For admin spawned thralls etc...
 	var/datum/component/simple_teamchat/bloodling/B = owner.current.GetComponent(/datum/component/simple_teamchat/bloodling)
 	if(B)
-		B.RemoveComponent()
+		B.ClearFromParent()
 
 //Very similar to larva, for now.
 /datum/hud/bloodling

@@ -42,5 +42,3 @@
 		smoothing_flags = SMOOTH_CORNERS
 		QUEUE_SMOOTH(src)
 
-/obj/structure/lattice/catwalk/over/ship/can_lay_cable()
-	return hatch_open

@@ -22,12 +22,12 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	layer = OPEN_DOOR_LAYER
 	//Seccies and brig phys may always pass, either way.
-	req_one_access = list(ACCESS_BRIG, ACCESS_BRIGPHYS, ACCESS_PRISONER)
+	req_one_access = list(ACCESS_BRIG, ACCESS_PRISONER)
 
 //Executive officer's line variant. For rule of cool.
 /obj/machinery/turnstile/xo
 	name = "\improper XO line turnstile"
-	req_one_access = list(ACCESS_BRIG, ACCESS_HEADS)
+	req_one_access = list(ACCESS_BRIG, ACCESS_COMMAND)
 
 /obj/structure/closet/secure_closet/genpop
 	name = "genpop locker"
@@ -106,7 +106,7 @@
 	. = ..()
 	icon_state = "turnstile"
 
-/obj/machinery/turnstile/CanAtmosPass(turf/T)
+/obj/machinery/turnstile/proc/CanAtmosPass(turf/T)
 	return TRUE
 
 /obj/machinery/turnstile/CanAllowThrough(atom/movable/mover, turf/target)
@@ -170,11 +170,12 @@
 	Radio.set_frequency(FREQ_SECURITY)
 
 /obj/machinery/genpop_interface/update_icon()
-	if(stat & (NOPOWER))
+	..()
+	if(machine_stat & (NOPOWER))
 		icon_state = "frame"
 		return
 
-	if(stat & (BROKEN))
+	if(machine_stat & (BROKEN))
 		set_picture("ai_bsod")
 		return
 	set_picture("genpop")
@@ -236,7 +237,7 @@
 	var/obj/item/card/id/id = new /obj/item/card/id/prisoner(get_turf(src), desired_sentence, desired_crime, desired_name)
 	Radio.talk_into(src, "Prisoner [id.registered_name] has been incarcerated for [desired_sentence] minutes.", FREQ_SECURITY)
 	var/obj/item/paper/paperwork = new /obj/item/paper(get_turf(src))
-	paperwork.info = "<h1 id='record-of-incarceration'>Record Of Incarceration:</h1> <hr> <h2 id='name'>Name: </h2> <p>[desired_name]</p> <h2 id='crime'>Crime: </h2> <p>[desired_crime]</p> <h2 id='sentence-min'>Sentence (Min)</h2> <p>[desired_sentence/60]</p> <p>WhiteRapids Military Council, disciplinary authority</p>"
+	paperwork.default_raw_text = "<h1 id='record-of-incarceration'>Record Of Incarceration:</h1> <hr> <h2 id='name'>Name: </h2> <p>[desired_name]</p> <h2 id='crime'>Crime: </h2> <p>[desired_crime]</p> <h2 id='sentence-min'>Sentence (Min)</h2> <p>[desired_sentence/60]</p> <p>WhiteRapids Military Council, disciplinary authority</p>"
 	desired_sentence = 60
 	desired_crime = null
 	desired_name = null

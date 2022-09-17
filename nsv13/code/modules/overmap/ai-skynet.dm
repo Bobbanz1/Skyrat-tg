@@ -1034,7 +1034,7 @@ Adding tasks is easy! Just define a datum for it.
 			//if(audio_cues?.len)
 			//	OM.play_music(pick(audio_cues))
 
-/datum/fleet/solgov/interdiction/proc/check_bullet(obj/structure/overmap/source, obj/item/projectile/P)
+/datum/fleet/solgov/interdiction/proc/check_bullet(obj/structure/overmap/source, obj/projectile/P)
 	if(P.overmap_firer?.role == MAIN_OVERMAP)
 		players_fired_upon = TRUE
 		for(var/obj/structure/overmap/OM as() in all_ships)
@@ -1089,8 +1089,8 @@ Adding tasks is easy! Just define a datum for it.
 	applied_size = CLAMP(applied_size, FLEET_DIFFICULTY_EASY, INFINITY)
 	faction = SSstar_system.faction_by_id(faction_id)
 	reward *= applied_size //Bigger fleet = larger reward
-	if(istype(SSticker.mode, /datum/game_mode/pvp)) //Disables notoriety during Galactic Conquest.
-		threat_elevation_allowed = FALSE
+	//if(istype(SSticker.mode, /datum/game_mode/pvp)) //Disables notoriety during Galactic Conquest.
+	//	threat_elevation_allowed = FALSE
 	if(SSovermap_mode && threat_elevation_allowed)
 		applied_size += round(SSovermap_mode.threat_elevation / TE_POINTS_PER_FLEET_SIZE)	//Threat level modifies danger
 	if(current_system)

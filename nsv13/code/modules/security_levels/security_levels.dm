@@ -14,16 +14,16 @@
 
 /obj/machinery/door/firedoor/open()
 	. = ..()
-	var/level = GLOB.security_level
+	var/level = SSsecurity_level.get_current_level_as_number()
 	if(level == SEC_LEVEL_ZEBRA) //Zebra is a special case. Nothing else triggers this behaviour.
 		addtimer(CALLBACK(src, .proc/close), 2 SECONDS) //Snap shut again if zebra's still active.
 
 /obj/machinery/door/firedoor/proc/on_alert_level_change()
-	var/level = GLOB.security_level
+	var/level = SSsecurity_level.get_current_level_as_number()
 	if(level == SEC_LEVEL_ZEBRA) //Zebra is a special case. Nothing else triggers this behaviour.
 		close()
 	else
 		var/area/A = get_area(src)
-		if((A.fire) || is_holding_pressure())
+		if((A.fire))
 			return
 		open()

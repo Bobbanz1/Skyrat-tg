@@ -37,9 +37,9 @@
 	bang = FALSE
 
 /obj/machinery/ship_weapon/pdc_mount/flak/animate_projectile(atom/target)
-	var/obj/item/projectile/bullet/B = ..()
-	if(istype(B, /obj/item/projectile/bullet/flak))
-		var/obj/item/projectile/bullet/flak/F = B
+	var/obj/projectile/bullet/B = ..()
+	if(istype(B, /obj/projectile/bullet/flak))
+		var/obj/projectile/bullet/flak/F = B
 		F.steps_left = get_overmap().get_flak_range(target)
 
 /obj/structure/overmap/proc/get_flak_range(atom/target)
@@ -79,31 +79,31 @@
 	//Distance from the "center" of the flak effect.
 	var/dist = get_dist(locs[1], AM)
 	var/severity = (dist > 0) ? 1/dist : 1
-	var/obj/item/projectile/P = AM
+	var/obj/projectile/P = AM
 	if(P.faction != faction) //Stops flak from FFing
-		if(istype(AM, /obj/item/projectile/guided_munition))
+		if(istype(AM, /obj/projectile/guided_munition))
 			P.take_damage(severity*30, BRUTE, "overmap_light")
 		if(isovermap(AM))
 			P.take_damage(severity*20, BRUTE, "overmap_light")
 
-/obj/item/projectile/bullet
+/obj/projectile/bullet
 	obj_integrity = 500 //Flak doesn't shoot this down....
 
-/obj/item/projectile/bullet/flak
+/obj/projectile/bullet/flak
 	icon_state = "bolter"
 	name = "flak round"
 	damage = 2
-	flag = "overmap_light"
+	armor_flag = "overmap_light"
 	alpha = 100
 	var/steps_left = 10 //Flak range, AKA how many tiles can we move before we go kaboom
 	var/exploded = FALSE
 
-/obj/item/projectile/bullet/flak/Initialize(mapload, range=10)
+/obj/projectile/bullet/flak/Initialize(mapload, range=10)
 	. = ..()
 	steps_left = range
 	RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/check_range)
 
-/obj/item/projectile/bullet/flak/proc/explode()
+/obj/projectile/bullet/flak/proc/explode()
 	if(exploded)
 		return FALSE
 	if(!faction)
@@ -121,22 +121,22 @@
 		var/edir = pick(GLOB.alldirs)
 		new /obj/effect/temp_visual/flak(get_turf(get_step(cached, edir)), faction)
 
-/obj/item/projectile/bullet/flak/on_hit(atom/target, blocked = 0)
+/obj/projectile/bullet/flak/on_hit(atom/target, blocked = 0)
 	explode()
 	. = ..()
 
-/obj/item/projectile/bullet/flak/proc/check_range()
+/obj/projectile/bullet/flak/proc/check_range()
 	steps_left --
 	if(steps_left <= 0)
 		explode()
 
-/obj/item/projectile/guided_munition/on_entered(datum/source, atom/movable/AM) //Here, we check if the bullet that hit us is from a friendly ship. If it's from an enemy ship, we explode as we've been flak'd down.
+/obj/projectile/guided_munition/on_entered(datum/source, atom/movable/AM) //Here, we check if the bullet that hit us is from a friendly ship. If it's from an enemy ship, we explode as we've been flak'd down.
 	. = ..()
 
 	if(!isprojectile(AM))
 		return
 
-	var/obj/item/projectile/P = AM //This is hacky, refactor check_faction to unify both of these. I'm bodging it for now.
+	var/obj/projectile/P = AM //This is hacky, refactor check_faction to unify both of these. I'm bodging it for now.
 	if(P.damage <= 0 || P.nodamage)
 		return
 
@@ -149,10 +149,10 @@
 			take_damage(P.damage)
 			new /obj/effect/temp_visual/impact_effect(get_turf(src), rand(0,20), rand(0,20))
 
-/obj/item/projectile/guided_munition/ex_act(severity)
+/obj/projectile/guided_munition/ex_act(severity)
 	explode()
 
-/obj/item/projectile/guided_munition/proc/explode()
+/obj/projectile/guided_munition/proc/explode()
 	if(firer)
 		var/obj/structure/overmap/OM
 		if(ismob(firer))

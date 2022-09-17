@@ -15,25 +15,18 @@
 	slot_flags = ITEM_SLOT_BELT
 	fire_sound = 'sound/weapons/zapbang.ogg'
 	recoil = 2 //BZZZZTTTTTTT
-	can_flashlight = TRUE
-	flight_x_offset = 15
-	flight_y_offset = 12
 
 /obj/item/gun/ballistic/automatic/pistol/glock
 	name = "Glock-13"
 	desc = "A small 9mm handgun used by Nanotrasen security forces. It has a polymer handle and a full durasteel body construction, giving it a nice weight."
 	icon = 'nsv13/icons/obj/guns/projectile.dmi'
 	icon_state = "secglock"
-	item_state = "glock"
+	inhand_icon_state = "glock"
 	fire_sound = 'nsv13/sound/weapons/glock.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/glock
 	can_suppress = TRUE
 	automatic = FALSE
-	can_flashlight = TRUE
-	flight_x_offset = 15
-	flight_y_offset = 12
-	fire_rate = 2
 
 /obj/item/gun/ballistic/automatic/pistol/glock/makarov
 	name = "Makarov NT"
@@ -48,7 +41,7 @@
 	desc = "A military surplus pistol no longer in service, but boasting a higher muzzle velocity than other handguns. It's a reliable damage dealer despite its age."
 	icon = 'nsv13/icons/obj/guns/projectile.dmi'
 	icon_state = "m9"
-	item_state = "glock"
+	inhand_icon_state = "glock"
 	fire_sound = 'nsv13/sound/weapons/glock.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
@@ -103,7 +96,7 @@
 	name = "9mm rubber bullet casing"
 	desc = "A 9mm rubber bullet casing."
 	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/c9mm/rubber
+	projectile_type = /obj/projectile/bullet/c9mm/rubber
 
 /obj/item/ammo_box/c9mm/rubber
 	name = "ammo box (9mm, rubber)"
@@ -111,7 +104,7 @@
 	ammo_type = /obj/item/ammo_casing/c9mm/rubber
 	max_ammo = 30
 
-/obj/item/projectile/bullet/c9mm/rubber
+/obj/projectile/bullet/c9mm/rubber
 	name = "9mm bullet"
 	damage = 20
 	damage_type = STAMINA
@@ -152,17 +145,17 @@
 	caliber = "3mm"
 	icon = 'nsv13/icons/obj/ammo.dmi'
 	icon_state = "tasershell"
-	projectile_type = /obj/item/projectile/energy/electrode/hitscan
-	materials = list(/datum/material/iron=4000)
+	projectile_type = /obj/projectile/energy/electrode/hitscan
+	custom_materials = list(/datum/material/iron=4000)
 	harmful = TRUE
 
-/obj/item/projectile/energy/electrode/hitscan
+/obj/projectile/energy/electrode/hitscan
 	range = 2 //Real life tazers have an effective range of 4.5 meters.
 	damage = 75 //4 second stun by itself
 	damage_type = STAMINA
 	hitscan = TRUE
 
-/obj/item/projectile/energy/electrode/hitscan/on_hit(atom/target, blocked = FALSE)
+/obj/projectile/energy/electrode/hitscan/on_hit(atom/target, blocked = FALSE)
 	if(prob(10) && !blocked) //The czanek corp taser comes with a price. The price is that your victim might have a fucking heartattack.
 		if(iscarbon(target))
 			var/mob/living/carbon/M = target
@@ -177,5 +170,5 @@
 				do_sparks(5, TRUE, M)
 				M.shake_animation(10)
 				M.set_heartattack(TRUE)
-				M.reagents.add_reagent(/datum/reagent/medicine/corazone, 3) // To give the victim a final chance to shock their heart before losing consciousness
+				//M.reagents.add_reagent(/datum/reagent/medicine/corazone, 3) // To give the victim a final chance to shock their heart before losing consciousness
 	. = ..()

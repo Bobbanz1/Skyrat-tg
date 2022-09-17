@@ -558,7 +558,7 @@ Returns a faction datum by its name (case insensitive!)
 /obj/effect/overmap_anomaly/proc/on_entered(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
 
-	if(istype(AM, /obj/item/projectile/bullet/torpedo/probe))
+	if(istype(AM, /obj/projectile/bullet/torpedo/probe))
 		SSresearch.science_tech.add_point_type(TECHWEB_POINT_TYPE_DEFAULT, research_points*1.5) //more points for scanning up close.
 		if(specialist_research_type)
 			SSresearch.science_tech.add_point_type(specialist_research_type, research_points)

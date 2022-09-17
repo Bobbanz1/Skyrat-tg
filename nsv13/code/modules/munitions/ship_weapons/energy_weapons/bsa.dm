@@ -92,6 +92,7 @@
 	ui_interact(user)
 
 /obj/machinery/computer/sts_bsa_control/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "EnergyWeapons")
@@ -163,7 +164,7 @@
 		message_admins("Invalid dir setting on [src]. It only fires EAST / WEST. Please remedy this.")
 		return FALSE
 	var/atom/movable/blocker
-	for(var/T in getline(get_step(point, dir), turf_target))
+	for(var/T in get_line(get_step(point, dir), turf_target))
 		var/turf/tile = T
 		if(tile.density || SEND_SIGNAL(tile, COMSIG_ATOM_BSA_BEAM) & COMSIG_ATOM_BLOCKS_BSA_BEAM)
 			blocker = tile
@@ -192,10 +193,10 @@
 	else
 		. = ..() //Then actually fire it.
 
-/obj/item/projectile/beam/laser/heavylaser/bsa
+/obj/projectile/beam/laser/heavylaser/bsa
 	name = "bluespace artillery beam"
 	damage = 1000
-	flag = "overmap_heavy"
+	armor_flag = "overmap_heavy"
 	hitscan = TRUE //Obscenely powerful
 	icon_state = "omnilaser"
 	light_color = LIGHT_COLOR_BLUE

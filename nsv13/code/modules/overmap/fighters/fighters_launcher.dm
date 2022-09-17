@@ -15,6 +15,7 @@
 			launchers += FT
 
 /obj/machinery/computer/ship/fighter_launcher/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	get_launchers()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)

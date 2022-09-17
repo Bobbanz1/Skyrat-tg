@@ -3,7 +3,7 @@
 	desc = "An exceedingly rare, nigh on priceless weapon which channels a highly unstable current of ions to produce a dazzling blade of pure energy around a durasteel blade. These weapons are highly sought after, and are only given to high ranking officers with a proven track record."
 	icon = 'nsv13/icons/obj/items_and_weapons.dmi'
 	icon_state = "stunsword"
-	item_state = "stunsword"
+	inhand_icon_state = "stunsword"
 	lefthand_file = 'nsv13/icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'nsv13/icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
@@ -19,7 +19,7 @@
 	var/stunforce = 60
 	on_icon_state = "stunsword_active"
 	off_icon_state = "stunsword"
-	on_item_state = "stunsword_active"
+	on_inhand_icon_state = "stunsword_active"
 	force_on = 1 //Youre still getting hit by a metal thing.
 	force_off = 10
 	var/serial_number = 1 //Fluff. Gives it a "rare" collector's feel
@@ -45,7 +45,7 @@
 		playsound(user.loc, 'nsv13/sound/effects/saberon.ogg', 100, 1)
 		to_chat(user, "<span class='notice'>You ignite [src]. Your attacks with it will now stun targets nonlethally.</span>")
 		icon_state = on_icon_state
-		item_state = on_item_state
+		inhand_icon_state = on_inhand_icon_state
 		force = force_on
 		stunforce = stunforce_on
 		attack_verb = list("sliced", "cut", "striken", "immobilized")
@@ -58,9 +58,9 @@
 		visible_message("<span class='warning'>[user] swings [src] around, extinguishing it in the process.</span>")
 		playsound(user.loc, 'nsv13/sound/effects/saberoff.ogg', 100, 1)
 		to_chat(user, "<span class='notice'>You extinguish [src]. It will now physically wound targets on impact.</span>")
-		item_state = "stunsword_extinguish"
+		inhand_icon_state = "stunsword_extinguish"
 		icon_state = off_icon_state
-		item_state = off_icon_state
+		inhand_icon_state = off_icon_state
 		slot_flags = ITEM_SLOT_BELT
 		stunforce = stunforce_off
 		force = force_off

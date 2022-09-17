@@ -17,7 +17,7 @@
 
 	var/current_skin //Has the item been reskinned?
 	var/list/unique_reskin //List of options to reskin.
-	var/obj_integrity = max_integrity
+	var/obj_integrity = 500
 	// Access levels, used in modules\jobs\access.dm
 	var/list/req_access
 	var/req_access_txt = "0"

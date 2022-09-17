@@ -336,6 +336,16 @@ Turf and target are separate in case you want to teleport some distance from a t
 	if (length(turfs))
 		return pick(turfs)
 
+/// Returns TRUE if the turf cannot be moved onto
+/proc/is_blocked_turf(turf/T, exclude_mobs)
+	if(T.density)
+		return 1
+	for(var/i in T)
+		var/atom/A = i
+		if(A.density && (!exclude_mobs || !ismob(A)))
+			return 1
+	return 0
+
 ///Returns a random turf on the station, excludes dense turfs (like walls) and areas that have valid_territory set to FALSE
 /proc/get_safe_random_station_turf(list/areas_to_pick_from = GLOB.the_station_areas)
 	for (var/i in 1 to 5)

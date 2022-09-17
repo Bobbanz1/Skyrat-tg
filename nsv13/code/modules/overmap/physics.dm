@@ -135,7 +135,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 	//Atmos stuff, this updates once every tick
 	if(cabin_air.return_volume() > 0)
 		var/delta = cabin_air.return_temperature() - T20C
-		cabin_air.set_temperature(cabin_air.return_temperature() - max(-10, min(10, round(delta/4,0.1))))
+		cabin_air.temperature = (cabin_air.return_temperature() - max(-10, min(10, round(delta/4,0.1))))
 	if(internal_tank)
 		var/datum/gas_mixture/tank_air = internal_tank.return_air()
 		var/cabin_pressure = cabin_air.return_pressure()
@@ -431,7 +431,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 		var/src_vel_mag = src.velocity.ln()
 		var/other_vel_mag = other.velocity.ln()
 		//I mean, the angle between the two objects is very likely to be the angle of incidence innit
-		var/col_angle = Get_Angle(src, other)
+		var/col_angle = get_angle(src, other)
 
 		// Elastic collision equations
 		var/new_src_vel_x = ((																	\
@@ -576,7 +576,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 	if(!z || QDELETED(src))
 		return FALSE
 	var/turf/T = get_center()
-	var/obj/item/projectile/proj = new proj_type(T)
+	var/obj/projectile/proj = new proj_type(T)
 	if(ai_aim && !homing && !proj.hitscan)
 		target = calculate_intercept(target, proj, miss_chance=miss_chance, max_miss_distance=max_miss_distance)
 	proj.starting = T
@@ -599,7 +599,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 		proj.preparePixelProjectileOvermap(target, src, null, round((rand() - 0.5) * proj.spread), lateral=lateral)
 		proj.fire()
 		if(!lateral)
-			proj.setAngle(src.angle)
+			proj.set_angle(src.angle)
 		//Sometimes we want to override speed.
 		if(speed)
 			proj.set_pixel_speed(speed)
@@ -608,7 +608,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 	return proj
 
 //Jank as hell. This needs to happen to properly set the visual offset :/
-/obj/item/projectile/proc/preparePixelProjectileOvermap(obj/structure/overmap/target, obj/structure/overmap/source, params, spread = 0, lateral=TRUE)
+/obj/projectile/proc/preparePixelProjectileOvermap(obj/structure/overmap/target, obj/structure/overmap/source, params, spread = 0, lateral=TRUE)
 	var/turf/curloc = source.get_center()
 	var/turf/targloc = istype(target, /obj/structure/overmap) ? target.get_center() : get_turf(target)
 	trajectory_ignore_forcemove = TRUE
@@ -617,7 +617,7 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 	starting = curloc
 	original = target
 	if(!lateral)
-		setAngle(source.angle)
+		set_angle(source.angle)
 
 	if(isliving(source) && params)
 		var/list/calculated = calculate_projectile_angle_and_pixel_offsets(source, params)
@@ -625,12 +625,12 @@ This proc is to be used when someone gets stuck in an overmap ship, gauss, WHATE
 		p_y = calculated[3]
 
 		if(lateral)
-			setAngle(calculated[1] + spread)
+			set_angle(calculated[1] + spread)
 	else if(targloc && curloc)
 		yo = targloc.y - curloc.y
 		xo = targloc.x - curloc.x
 		if(lateral)
-			setAngle(overmap_angle(src, targloc) + spread)
+			set_angle(overmap_angle(src, targloc) + spread)
 	else
 		stack_trace("WARNING: Projectile [type] fired without either mouse parameters, or a target atom to aim at!")
 		qdel(src)

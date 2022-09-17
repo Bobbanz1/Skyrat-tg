@@ -23,5 +23,5 @@
 	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/odst
 
 /obj/machinery/suit_storage_unit/syndicate/odst/marine
-	suit_type = /obj/item/clothing/suit/space/syndicate/odst/marine
-	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/odst/marine
+	//suit_type = /obj/item/clothing/suit/space/syndicate/odst/marine
+	//helmet_type = /obj/item/clothing/head/helmet/space/syndicate/odst/marine

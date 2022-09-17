@@ -40,6 +40,7 @@
 	ui_interact(user)
 
 /obj/machinery/computer/ship/navigation/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	if(!linked)
 		return
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -52,7 +53,7 @@
 
 /obj/machinery/computer/ship/navigation/ui_act(action, params, datum/tgui/ui)
 	.=..()
-	if(isobserver(usr) && !IsAdminGhost(usr))
+	if(isobserver(usr) && !isAdminGhostAI(usr))
 		return
 	if(!linked)
 		return

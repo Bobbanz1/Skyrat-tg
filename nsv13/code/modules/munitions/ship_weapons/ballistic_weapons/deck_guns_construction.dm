@@ -32,7 +32,7 @@
 	var/max_barrels = 1
 	var/igniters_added = 0
 	var/barrels_added = 0
-	
+
 	var/num_sheets_frame = 20
 	var/num_sheets_casing = 2
 	var/num_cables = 4
@@ -164,7 +164,7 @@
 					output_path = text2path("/obj/machinery/ship_weapon/deck_turret/_[max_barrels]")
 				var/obj/machinery/ship_weapon/built = new output_path(loc)
 				built.setDir(dir)
-				built.setAnchored(anchored)
+				built.set_anchored(anchored)
 				built.on_construction()
 				built.max_ammo = max_barrels
 
@@ -180,7 +180,7 @@
 				qdel(src)
 				return TRUE
 	return ..()
-	
+
 /obj/structure/ship_weapon/artillery_frame/attack_robot(mob/user)
 	. = ..()
 	attack_hand(user)
@@ -371,10 +371,10 @@
 	name = "Naval Artillery Cannon Triple Barrel Upgrade (Circuit)"
 	desc = "An upgrade that allows you to add two more barrels to a Naval Artillery Cannon."
 	id = "deck_gun_triple"
-	materials = list(/datum/material/titanium = 30000,/datum/material/iron = 25000, /datum/material/diamond = 15000, /datum/material/copper = 35000)
+	materials = list(/datum/material/titanium = 30000,/datum/material/iron = 25000, /datum/material/diamond = 15000)
 	build_path = /obj/item/circuitboard/multibarrel_upgrade/_3
 	category = list("Advanced Munitions")
-	departmental_flags = DEPARTMENTAL_FLAG_MUNITIONS
+	departmental_flags = DEPARTMENT_BITFLAG_MUNITIONS
 
 /obj/item/circuitboard/multibarrel_upgrade/_3
 	name = "Naval Artillery Cannon Triple Barrel Upgrade"
@@ -382,7 +382,7 @@
 	barrels = 3
 	build_path = null
 
-	
+
 /obj/structure/ship_weapon/artillery_frame/setDir()
 	. = ..()
 	switch(dir)

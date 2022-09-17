@@ -68,7 +68,7 @@
 		return
 	// See if we need to make a new beam. Comes after the refuel so we can not do this if we fail any checks.
 	if(QDELETED(current_beam))
-		current_beam = new(us,them,beam_icon='nsv13/icons/effects/beam.dmi',time=INFINITY,maxdistance = INFINITY,beam_icon_state="hose",btype=/obj/effect/ebeam/fuel_hose)
+		current_beam = new(us,them,icon='nsv13/icons/effects/beam.dmi',time=INFINITY,max_distance = INFINITY,icon_state="hose",beam_type=/obj/effect/ebeam/fuel_hose)
 		INVOKE_ASYNC(current_beam, /datum/beam.proc/Start)
 
 /obj/item/fighter_component/primary/utility/refuel/proc/transfer_fuel(obj/structure/overmap/small_craft/us, obj/structure/overmap/small_craft/them)

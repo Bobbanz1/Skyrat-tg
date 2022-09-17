@@ -4,17 +4,17 @@
 /proc/generate_clothing_overlay(obj/item/clothing/target, decal, colour)
 	//Firstly, paint the stripes on the icon_state.
 	target.cut_overlays()
-	target.alternate_worn_icon = initial(target.alternate_worn_icon)
+	//target.alternate_worn_icon = initial(target.alternate_worn_icon)
 	var/mutable_appearance/stripes = new()
 	stripes.icon = target.icon
 	stripes.icon_state = decal
 	stripes.color = colour
 	target.add_overlay(new /mutable_appearance(stripes))
 	//Next, paint the stripes onto the actual worn icon of the clothes.
-	stripes.icon = target.alternate_worn_icon
+	//stripes.icon = target.alternate_worn_icon
 	//How this works is, we're basically making a dummy clothing item that takes the appearance of the worn icon. We then rotate it around to all 4 dirs and take snapshots of it, with its overlays on. Finally, we get an icon out of it with icon_states filled with the output.
 	var/obj/item/clothing/D = new()
-	D.icon = target.alternate_worn_icon
+	//D.icon = target.alternate_worn_icon
 	D.icon_state = target.icon_state
 	var/icon/final = icon()
 	for(var/dir in list(2, 1, 4, 8)) //A little bit hacky, but does the trick. BYOND's icon format starts with a south facing dir, while cardinals starts with NORTH.
@@ -26,7 +26,7 @@
 		COMPILE_OVERLAYS(D) //Prepare it for an image capture
 		var/icon/I = icon(getFlatIcon(D), frame = 1) //And finally clone the appearance of our new dummy character.
 		final.Insert(I, target.icon_state, frame=1, dir=dir) //Then, we add this new icon_state and direction to the icon we're generating. This is then cleanly applied to the dummy mob to give it its appearance.
-	target.alternate_worn_icon = fcopy_rsc(final) //Manually copy over the newly generated icon, so that everyone will see it.
+	//target.alternate_worn_icon = fcopy_rsc(final) //Manually copy over the newly generated icon, so that everyone will see it.
 	return final
 
 // Squad merch! Show off that squad pride baby.
@@ -102,7 +102,7 @@
 
 /obj/item/squad_pager/proc/apply_squad(datum/squad/squad)
 	if(squad_channel)
-		squad_channel.RemoveComponent()
+		squad_channel.ClearFromParent()
 		QDEL_NULL(squad_channel)
 	cut_overlays()
 	src.squad = squad //Ahoy mr squadward! Ack ack ack.
@@ -166,7 +166,7 @@
 /obj/item/clothing/head/helmet/ship/squad/space
 	name = "Space Helmet"
 	icon_state = "skinsuit_squad"
-	item_state = "spaceold"
+	inhand_icon_state = "spaceold"
 	desc = "A special helmet with solar UV shielding to protect your eyes from harmful rays. It bears a squad's insignia."
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | SHOWEROKAY | SNUG_FIT
 	permeability_coefficient = 0.01

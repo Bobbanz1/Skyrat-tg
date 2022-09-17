@@ -68,7 +68,7 @@
 	component_parts.Cut()
 
 	. = M
-	M.setAnchored(anchored)
+	M.set_anchored(anchored)
 	M.setDir(dir)
 	M.set_final_state()
 	M.max_barrels = max_ammo
@@ -145,6 +145,7 @@
 	. = ..()
 
 /obj/machinery/computer/deckgun/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "DeckGun")
@@ -352,7 +353,7 @@
 	icon_state = "spicypowder"
 	power = 1
 	volatility = 3 //DANGEROUSLY VOLATILE. Can send the entire magazine up in smoke.
-
+/*
 /obj/item/powder_bag/hungry
 	name = "gunpowder bag" // full name is built in update_name()
 	desc = "Cute!"
@@ -424,8 +425,8 @@
 	if(is_evolving || devouring)
 		to_chat(user, "<span class='info'>\The [src] can't eat right now.</span>")
 		return
-	var/obj/item/reagent_containers/food/snacks/F = I
-	var/list/food_reagents = F.reagents.reagent_list + F.bonus_reagents
+	var/obj/item/food/snacks/F = I
+	var/list/food_reagents = F.reagents.reagent_list + F.food_reagents
 	var/datum/reagent/toxin/plasma/plasma = locate() in food_reagents
 	if(plasma)
 		// Too spicy for Mr Bag's taste
@@ -569,7 +570,7 @@
 	. = ..()
 	if(enraged)
 		. += "<span class='notice'>It appears to be <font color=red><i><b>very</b></i></font> agitated.</span>"
-
+*/
 /obj/item/ship_weapon/ammunition/naval_artillery //Huh gee this sure looks familiar don't it...
 	name = "\improper FTL-13 Naval Artillery Round"
 	icon = 'nsv13/icons/obj/munitions.dmi'
@@ -579,7 +580,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG //Possible to pick up with two hands
 	density = TRUE
-	projectile_type = /obj/item/projectile/bullet/mac_round //What torpedo type we fire
+	projectile_type = /obj/projectile/bullet/mac_round //What torpedo type we fire
 	obj_integrity = 300 //Beefy, relatively hard to use as a grief tool.
 	max_integrity = 300
 	volatility = 3 //Majorly explosive
@@ -600,7 +601,7 @@
 	name = "cannon ball"
 	desc = "The QM blew the cargo budget on corgis, the clown stole all our ammo, we've got half a tank of plasma and are halfway to Dolos. Hit it."
 	icon_state = "torpedo_ball"
-	projectile_type = /obj/item/projectile/bullet/mac_round/cannonshot
+	projectile_type = /obj/projectile/bullet/mac_round/cannonshot
 	obj_integrity = 100
 	max_integrity = 100
 	w_class = WEIGHT_CLASS_GIGANTIC
@@ -615,7 +616,7 @@
 	desc = "This cannon ball seems to be so comically large it's impossible to scale!"
 	anchored = TRUE
 	no_trolley = TRUE //Can still be loaded into a gun if you're really dedicated.
-	projectile_type = /obj/item/projectile/bullet/mac_round/cannonshot/admin
+	projectile_type = /obj/projectile/bullet/mac_round/cannonshot/admin
 	climb_time = 600
 	climb_stun = 10
 	obj_integrity = 1000
@@ -625,13 +626,13 @@
 	name = "\improper TX-101 Armour Penetrating Naval Artillery Round"
 	desc = "A massive diamond-tipped round which can slice through armour plating with ease to deliver a lethal impact. Best suited for targets with heavy armour such as destroyers and up."
 	icon_state = "torpedo_ap"
-	projectile_type = /obj/item/projectile/bullet/mac_round/ap
+	projectile_type = /obj/projectile/bullet/mac_round/ap
 
 /obj/item/ship_weapon/ammunition/naval_artillery/homing
 	name = "FTL-1301 Magneton Naval Artillery Round"
 	desc = "A specialist artillery shell which can home in on a target using its hull's innate magnetism, while less accurate than torpedoes, these shells are still a very viable option."
 	icon_state = "torpedo_homing"
-	projectile_type = /obj/item/projectile/bullet/mac_round/magneton
+	projectile_type = /obj/projectile/bullet/mac_round/magneton
 
 /obj/item/ship_weapon/ammunition/naval_artillery/multitool_act(mob/living/user, obj/item/I)
 	. = ..()

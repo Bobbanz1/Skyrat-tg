@@ -129,7 +129,6 @@
 				loans_info -= H
 				playsound(src, 'sound/machines/terminal_insert_disc.ogg', 100, 0)
 				say("Fee processed. Have a secure day.")
-				ui_update()
 				return TRUE
 
 /obj/machinery/squad_vendor/proc/return_item(mob/living/user, obj/item/I, quiet=FALSE)
@@ -142,7 +141,6 @@
 			notify(user)
 		if(!length(must_return))
 			loans_info -= user
-		ui_update()
 		return TRUE
 	if(istype(I, /obj/item/storage/box/squad_kit))
 		if(length(I.contents))
@@ -157,7 +155,6 @@
 				say("Thank you for recycling.")
 		else if(!quiet)
 			to_chat(user, "<span class='warning'>The box must be empty to be returned.</span>")
-		ui_update()
 		return TRUE
 
 /obj/machinery/squad_vendor/proc/notify(mob/living/user)

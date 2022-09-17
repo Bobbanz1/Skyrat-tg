@@ -2,7 +2,7 @@
 	. = ..()
 	AddComponent(/datum/component/aiming)
 
-/obj/item/reagent_containers/food/snacks/grown/banana/Initialize() //Yes, you can hold someone at gunpoint with a banana.
+/obj/item/food/grown/banana/Initialize() //Yes, you can hold someone at gunpoint with a banana.
 	. = ..()
 	AddComponent(/datum/component/aiming)
 
@@ -40,10 +40,10 @@
 //Happens before the actual projectile creation
 /obj/item/gun/before_firing(atom/target,mob/user, aimed)
 	if(aimed)
-		if(chambered?.BB && !istype(src, /obj/item/gun/ballistic/automatic/toy))
-			chambered.BB.stamina = initial(chambered.BB.stamina) += 55
-			chambered.BB.jitter = initial(chambered.BB.jitter) += 2
-			chambered.BB.jitter = initial(chambered.BB.speed) *= 0.5 //Apparently "SPEED" makes the bullet go slower as SPEED increases. THANK YOU SS13.
+		if(chambered?.loaded_projectile && !istype(src, /obj/item/gun/ballistic/automatic/toy))
+			chambered.loaded_projectile.stamina = initial(chambered.loaded_projectile.stamina) += 55
+			chambered.loaded_projectile.jitter = initial(chambered.loaded_projectile.jitter) += 2
+			chambered.loaded_projectile.jitter = initial(chambered.loaded_projectile.speed) *= 0.5 //Apparently "SPEED" makes the bullet go slower as SPEED increases. THANK YOU SS13.
 	. = ..()
 
 /obj/effect/temp_visual/aiming

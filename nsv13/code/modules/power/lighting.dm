@@ -2,7 +2,7 @@
 	name = "runway light"
 	desc = "A small light which was traditionally included on planes and early spacecraft to allow them to be spotted even when instrumentation had failed. In keeping with tradition, these somewhat redundant lights persist on most Nanotrasen ships."
 	icon = 'nsv13/goonstation/icons/lighting.dmi'
-	overlayicon = 'nsv13/goonstation/icons//lighting_overlay.dmi'
+	overlay_icon = 'nsv13/goonstation/icons//lighting_overlay.dmi'
 	icon_state = "runway"
 	base_state = "runway"
 	brightness = 4

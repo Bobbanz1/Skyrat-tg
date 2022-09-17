@@ -3,23 +3,19 @@ Marine & all their unique stuff!
 */
 /datum/job/assistant
 	title = "Midshipman"
-	flag = ASSISTANT
 	display_rank = "MID"
-	department_flag = CIVILIAN
-	faction = "Station"
+	departments_list = list(
+		/datum/job_department/service
+	)
+	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "your squad leader and all other military crew during peacetime"
 	selection_color = "#c2d5ee"
-	chat_color = "#c2d5ee"
-	access = list()			//See /datum/job/Marine/get_access()
-	minimal_access = list()	//See /datum/job/Marine/get_access()
 	outfit = /datum/outfit/job/assistant //Nsv13 - Marine resprite
-	antag_rep = 7
-	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
+	paycheck = PAYCHECK_CREW // Get a job. Job reassignment changes your paycheck now. Get over it.
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_ASSISTANT
-	departments = DEPARTMENT_SERVICE
 
 /datum/reagent/colorful_reagent/powder
 	metabolization_rate = 0.15 * REAGENTS_METABOLISM
@@ -30,18 +26,12 @@ Marine & all their unique stuff!
 		. = 1
 	..()
 
-/datum/job/assistant/get_access()
-	if(CONFIG_GET(flag/assistants_have_maint_access) || !CONFIG_GET(flag/jobs_have_minimal_access)) //Config has Marine maint access set
-		. = ..()
-		. |= list(ACCESS_MAINT_TUNNELS)
-	else
-		return ..()
-
 /datum/outfit/job/assistant
 	name = "Midshipman"
 	jobtype = /datum/job/assistant
 	uniform = /obj/item/clothing/under/ship/marine
 	shoes = /obj/item/clothing/shoes/jackboots
+	id_trim = /datum/id_trim/job/assistant
 	head = /obj/item/clothing/head/beret/durathread
 
 //Sprite courtesy of TGMC!
@@ -50,7 +40,7 @@ Marine & all their unique stuff!
 	desc = "A cheaply made uniform worn by general combat officers."
 	icon_state = "marine"
 	item_color = "marine"
-	item_state = "bl_suit"
+	inhand_icon_state = "bl_suit"
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	can_adjust = TRUE
 

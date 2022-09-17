@@ -29,10 +29,10 @@
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/effect/temp_visual/countermeasure_cloud/proc/on_entered(datum/source, obj/item/projectile/guided_munition/B)
+/obj/effect/temp_visual/countermeasure_cloud/proc/on_entered(datum/source, obj/projectile/guided_munition/B)
 	SIGNAL_HANDLER
 
-	if(istype(B, /obj/item/projectile/guided_munition/torpedo) || istype(B, /obj/item/projectile/guided_munition/missile))
+	if(istype(B, /obj/projectile/guided_munition/torpedo) || istype(B, /obj/projectile/guided_munition/missile))
 		if(prob(50))
 			B.explode() //Kaboom on the chaff
 		else

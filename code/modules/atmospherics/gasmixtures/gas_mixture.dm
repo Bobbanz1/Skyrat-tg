@@ -398,6 +398,8 @@ GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
 
 /datum/gas_mixture/proc/get_moles(gas_type)
 /datum/gas_mixture/proc/set_moles(gas_type, moles)
+/datum/gas_mixture/proc/clear()
+
 /datum/gas_mixture/proc/adjust_moles(gas_type, amt = 0)
 	set_moles(gas_type, clamp(get_moles(gas_type) + amt,0,INFINITY))
 

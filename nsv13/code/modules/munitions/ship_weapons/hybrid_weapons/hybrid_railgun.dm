@@ -46,12 +46,12 @@
 	if(!try_use_power(active_power_usage))
 		if(capacitor_charge > 0)
 			capacitor_charge -= (capacitor_charge / capacitor_max_charge) * 500 //Slowly depletes capacitor if not maintaining power supply
-			set_light(3, 4, LIGHT_COLOR_RED)
+			set_light(3, 4, COLOR_RED_LIGHT)
 			if(capacitor_charge <= 0)
 				capacitor_charge = 0
 		return FALSE
 	if(capacitor_current_charge_rate == 0)
-		set_light(3, 4, LIGHT_COLOR_RED)
+		set_light(3, 4, COLOR_RED_LIGHT)
 		return FALSE
 	if(capacitor_charge < capacitor_max_charge)
 		capacitor_charge += capacitor_current_charge_rate
@@ -176,7 +176,7 @@
 	for(var/mob/living/M in orange(1, src))
 		if(iscarbon(M))
 			if(ishuman(M))
-				M.electrocute_act(20, "[name]", safety=1)
+				M.electrocute_act(20, "[name]")
 				return
 			M.electrocute_act(20, "[name]")
 			return

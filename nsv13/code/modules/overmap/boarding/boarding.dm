@@ -43,7 +43,7 @@
 
 	//20 or more players? You're allowed "real" boarders.
 	if(player_check >= 20) // Remove the low pop boarder camping
-		candidates = pollCandidatesForMob("Do you want to play as a boarding team member?", ROLE_OPERATIVE, null, ROLE_OPERATIVE, 10 SECONDS, src)
+		candidates = poll_candidates_for_mob("Do you want to play as a boarding team member?", ROLE_OPERATIVE, null, ROLE_OPERATIVE, 10 SECONDS, src)
 	//No candidates? Well! Guess you get to deal with some KNPCs :))))))
 	if(!LAZYLEN(candidates))
 		var/list/knpc_types = list()
@@ -68,7 +68,7 @@
 			return FALSE
 
 		var/obj/structure/closet/supplypod/centcompod/toLaunch = new /obj/structure/closet/supplypod/syndicate_odst
-		var/shippingLane = GLOB.areas_by_type[/area/centcom/supplypod/supplypod_temp_holding]
+		var/shippingLane = GLOB.areas_by_type[/area/centcom/central_command_areas/supplypod/supplypod_temp_holding]
 		toLaunch.forceMove(shippingLane)
 		for(var/I = 0; I < amount; I++)
 			var/soldier_type = pick(knpc_types)

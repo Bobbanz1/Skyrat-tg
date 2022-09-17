@@ -12,7 +12,7 @@ GLOBAL_DATUM_INIT(squad_manager, /datum/squad_manager, new)
 		SECURITY_SQUAD = list(ACCESS_BRIG, ACCESS_SEC_DOORS),
 		MUNITIONS_SUPPORT = list(ACCESS_MUNITIONS, ACCESS_MUNITIONS_STORAGE),
 		COMBAT_AIR_PATROL = list(ACCESS_COMBAT_PILOT, ACCESS_MUNITIONS), //Hangar is typically through munitions
-		CIC_OPS = list(ACCESS_HEADS, ACCESS_RC_ANNOUNCE),
+		CIC_OPS = list(ACCESS_COMMAND, ACCESS_RC_ANNOUNCE),
 	)
 	var/static/list/role_objective_map = list(
 		DC_SQUAD = "<span class='warning'><br/>During <b>General Quarters</b> report to the <i>squad vendors</i> to obtain your equipment.<br/>\

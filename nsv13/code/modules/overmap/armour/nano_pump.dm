@@ -61,7 +61,7 @@
 /obj/machinery/armour_plating_nanorepair_pump/process()
 	if(!OM)
 		OM = get_overmap()
-	if(online && is_operational() && !stress_shutdown)
+	if(online && is_operational && !stress_shutdown)
 		idle_power_usage = 0 //reset power use
 		var/weight_class = OM.mass
 		if(weight_class >= MASS_TITAN)
@@ -170,13 +170,14 @@
 
 
 /obj/machinery/armour_plating_nanorepair_pump/update_icon()
+	..()
 	cut_overlays()
 	if(!online)
 		icon_state = "pump_maint"
 		set_light(0)
 	if(stress_shutdown)
 		add_overlay("stressed")
-		light_color = LIGHT_COLOR_RED
+		light_color = COLOR_RED_LIGHT
 		set_light(1)
 	if(online)
 		icon_state = "pump"
@@ -230,7 +231,7 @@
 /obj/machinery/armour_plating_nanorepair_pump/ui_act(action, params, datum/tgui/ui)
 	if(..())
 		return
-	if(!(in_range(src, usr) | IsAdminGhost(usr)))
+	if(!(in_range(src, usr) | isAdminGhostAI(usr)))
 		return
 	var/adjust = text2num(params["adjust"])
 	if(action == "armour_allocation")

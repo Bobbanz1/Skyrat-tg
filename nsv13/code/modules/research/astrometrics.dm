@@ -32,6 +32,7 @@ you build.
 	linked_techweb = SSresearch.science_tech
 
 /obj/machinery/computer/ship/navigation/astrometrics/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		var/datum/asset/assets = get_asset_datum(/datum/asset/simple/starmap)

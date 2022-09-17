@@ -39,7 +39,7 @@
 
 /obj/item/control_rod/irradiated/Initialize()
 	.=..()
-	AddComponent(/datum/component/radioactive, 500, src)
+	AddElement(/datum/element/radioactive, 500, src)
 
 /datum/techweb_node/reactor_control_rods
 	id = "reactor_control_rods"
@@ -48,7 +48,6 @@
 	prereq_ids = list("engineering")
 	design_ids = list("reactor_control_rods")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 1000
 
 /datum/design/reactor_control_rods
 	name = "Techfab Manufactured Reactor Control Rod"
@@ -58,4 +57,4 @@
 	materials = list(/datum/material/iron = 500, /datum/material/titanium = 500)
 	build_path = /obj/item/control_rod/inferior
 	category = list("Power Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING

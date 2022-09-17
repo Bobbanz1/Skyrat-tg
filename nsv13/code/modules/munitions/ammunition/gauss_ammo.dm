@@ -6,7 +6,7 @@
 	righthand_file = 'nsv13/icons/mob/inhands/weapons/bombs_righthand.dmi'
 	icon = 'nsv13/icons/obj/munitions.dmi'
 	w_class = 4
-	projectile_type = /obj/item/projectile/bullet/gauss_slug
+	projectile_type = /obj/projectile/bullet/gauss_slug
 
 /obj/item/circuitboard/machine/gauss_dispenser
 	name = "\improper Gauss ammunition dispenser (Machine Board)"
@@ -40,13 +40,14 @@
 	. = ..()
 
 /obj/machinery/gauss_dispenser/RefreshParts()
+	..()
 	progress_rate = 0 SECONDS
 	for(var/obj/item/stock_parts/S in component_parts)
 		progress_rate += S.rating SECONDS
 
 /obj/machinery/gauss_dispenser/process()
 	cut_overlays()
-	if(stat & NOPOWER)
+	if(machine_stat & NOPOWER)
 		progress = 0 SECONDS
 		return PROCESS_KILL
 	progress += progress_rate

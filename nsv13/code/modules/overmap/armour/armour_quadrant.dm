@@ -19,8 +19,8 @@
 		if(270 to 360) //Then this represents the last quadrant of the circle, the northwest one
 			return ARMOUR_FORWARD_STARBOARD
 
-/obj/structure/overmap/proc/projectile_quadrant_impact(obj/item/projectile/P)
-	var/shield_angle_hit = SIMPLIFY_DEGREES(Get_Angle(P, src) - angle)
+/obj/structure/overmap/proc/projectile_quadrant_impact(obj/projectile/P)
+	var/shield_angle_hit = SIMPLIFY_DEGREES(get_angle(P, src) - angle)
 	switch(shield_angle_hit)
 		if(0 to 89) //0 - 90 deg is the first right quarter of the circle, it's like dividing up a pizza!
 			return ARMOUR_FORWARD_PORT
@@ -46,7 +46,7 @@
 	if(!armour_quadrants[quadrant])
 		return //Nonexistent quadrant. Work on your quads bro.
 	if ( nodamage )
-		return FALSE  // Mission critical targets like stations with cargo missions need to stay alive to not break things 
+		return FALSE  // Mission critical targets like stations with cargo missions need to stay alive to not break things
 	var/list/quad = armour_quadrants[quadrant] //Should be a string define in format. Get the quadrant that we seek.
 	//Time for some witchcraft that I stole from obj_defense.dm
 	var/delta = damage-quad["current_armour"]

@@ -81,7 +81,7 @@
 	next_repair = world.time + fire_delay
 	// First see if we need to make a new beam
 	if(QDELETED(current_beam))
-		current_beam = new(us,them,beam_icon='icons/effects/beam.dmi',time=INFINITY,maxdistance = INFINITY,beam_icon_state="medbeam",btype=/obj/effect/ebeam/medical)
+		current_beam = new(us,them,icon='icons/effects/beam.dmi',time=INFINITY,max_distance = INFINITY,icon_state="medbeam",beam_type=/obj/effect/ebeam/medical)
 		INVOKE_ASYNC(current_beam, /datum/beam.proc/Start)
 	new /obj/effect/temp_visual/heal(get_turf(them), COLOR_CYAN)
 	// Use some juice

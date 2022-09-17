@@ -25,10 +25,10 @@
 Procs for handling factions winning / losing
 */
 /datum/faction/proc/victory()
-	if(istype(SSticker.mode, /datum/game_mode/pvp))
-		var/datum/game_mode/pvp/mode = SSticker.mode
-		mode.winner = src //This should allow the mode to finish up by itself
-		mode.check_finished()
+	//if(istype(SSticker.mode, /datum/game_mode/pvp))
+	//	var/datum/game_mode/pvp/mode = SSticker.mode
+	//	mode.winner = src //This should allow the mode to finish up by itself
+	//	mode.check_finished()
 	return FALSE
 
 /datum/faction/proc/check_status(id)
@@ -91,7 +91,7 @@ Set up relationships.
 	possible_types += fleet_types
 	if(!force)
 		possible_types += randomspawn_only_fleet_types
-	var/fleet_type = pickweight(possible_types)
+	var/fleet_type = pick_weight(possible_types)
 	var/datum/fleet/F = new fleet_type
 	F.current_system = starsys
 	starsys.fleets += F
@@ -136,7 +136,7 @@ Set up relationships.
 	for(var/client/C in GLOB.clients)
 		if(!C.mob || !SSmapping.level_trait(C.mob.z, ZTRAIT_BOARDABLE))
 			continue
-		SSmedals.UnlockMedal(MEDAL_CREW_COMPETENT,C)
+		//SSmedals.UnlockMedal(MEDAL_CREW_COMPETENT,C)
 	priority_announce("Attention [station_name()]. You have completed your assigned patrol and are now eligible for a crew transfer. \
 	Your navigational computers have been programmed with the coordinates of the nearest starbase where you may claim your allotted shore leave. \
 	You are under no obligation to remain in this sector, and you have been taken off of active patrol status. If you wish to continue with exploratory missions or other activities you are free to do so.", "Naval Command")

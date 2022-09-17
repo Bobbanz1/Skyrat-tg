@@ -67,13 +67,12 @@ Method to try locate an overmap object that we should attach to. Recursively cal
 	color = "#CC8899"
 	metabolization_rate = 4
 	taste_description = "metallic hull repair juice"
-	process_flags = ORGANIC | SYNTHETIC
+	process_flags = REAGENT_ORGANIC | REAGENT_SYNTHETIC
 
 //Hull repair juice -> stabilizing agent, iron, carbon
 
-/obj/effect/particle_effect/foam/hull_repair_juice
+/obj/effect/particle_effect/fluid/foam/hull_repair_juice
 	name = "Hull Repair Foam"
-	slippery_foam = FALSE
 	color = "#CC8899"
 
 /obj/structure/reagent_dispensers/foamtank/hull_repair_juice
@@ -91,17 +90,15 @@ Method to try locate an overmap object that we should attach to. Recursively cal
 	tanktype = /obj/structure/reagent_dispensers/foamtank/hull_repair_juice
 
 /datum/chemical_reaction/hull_repair_juice
-	name = "Hull Repair Juice"
-	id = /datum/reagent/hull_repair_juice
 	results = list(/datum/reagent/hull_repair_juice = 10)
 	required_reagents = list(/datum/reagent/stabilizing_agent = 1, /datum/reagent/iron = 1,/datum/reagent/carbon = 1)
 
-/datum/reagent/hull_repair_juice/reaction_turf(turf/open/T, reac_volume)
+/datum/reagent/hull_repair_juice/proc/reaction_turf(turf/open/T, reac_volume)
 	if (!istype(T))
 		return
 
 	if(reac_volume >= 1)
-		var/obj/effect/particle_effect/foam/F = (locate(/obj/effect/particle_effect/foam) in T)
+		var/obj/effect/particle_effect/fluid/foam/F = (locate(/obj/effect/particle_effect/fluid/foam) in T)
 		if(!F)
 			F = new(T)
 		else if(istype(F))
@@ -145,6 +142,7 @@ Method to try locate an overmap object that we should attach to. Recursively cal
 		return
 
 /obj/structure/hull_plate/update_icon()
+	..()
 	var/progress = obj_integrity
 	var/goal = max_integrity
 	progress = CLAMP(progress, 0, goal)

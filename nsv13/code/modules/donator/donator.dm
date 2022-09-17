@@ -29,7 +29,7 @@ NSV13 Donator Item Definitions
 	A.hitsound = 'sound/weapons/rapierhit.ogg'
 	A.lefthand_file = 'nsv13/icons/mob/inhands/weapons/melee_lefthand.dmi'
 	A.righthand_file = 'nsv13/icons/mob/inhands/weapons/melee_righthand.dmi'
-	A.on_item_state = "ceyellasword"
-	A.item_state = "ceyellasword_off"
+	A.on_inhand_icon_state = "ceyellasword"
+	A.inhand_icon_state = "ceyellasword_off"
 	A.AddComponent(/datum/component/donator, ckey)
 	qdel(src)

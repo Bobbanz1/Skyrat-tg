@@ -28,7 +28,7 @@
 	sleep(5 SECONDS) //This is a sin, but it won't be used much.
 	var/turf/open/pickedstart = get_turf(pick(orange(10, src)))
 	var/turf/open/pickedgoal = get_turf(src)
-	var/obj/item/projectile/proj = new /obj/item/projectile/guided_munition/torpedo/nuclear(pickedstart)
+	var/obj/projectile/proj = new /obj/projectile/guided_munition/torpedo/nuclear(pickedstart)
 	proj.starting = pickedstart
 	proj.firer = null
 	proj.def_zone = "chest"

@@ -103,7 +103,7 @@
 	backpack_contents = list(
 		/obj/item/stamp/clown = 1,
 		/obj/item/reagent_containers/spray/waterflower = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/grown/banana = 1,
 		/obj/item/instrument/bikehorn = 1,
 		/obj/item/storage/box/hug/clown_uniform = 1,
 		)
@@ -236,7 +236,7 @@ For when the marines are being irritating.
 	head = /obj/item/clothing/head/beret/ship/admiral/general
 	belt = /obj/item/storage/belt/sabre
 	r_pocket = /obj/item/lighter
-	l_pocket = /obj/item/squad_pager/all_channels
+	//l_pocket = /obj/item/squad_pager/all_channels
 	back = /obj/item/storage/backpack/satchel/leather
 	id = /obj/item/card/id
 	mask = /obj/item/clothing/mask/cigarette/cigar/cohiba

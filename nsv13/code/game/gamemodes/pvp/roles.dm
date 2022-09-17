@@ -121,7 +121,7 @@ Singleton to handle conquest roles. This exists to populate the roles list and n
 /obj/item/card/id/syndi_crew
 	name = "\improper Syndicate ID Card"
 	icon_state = "syndicate"
-	item_state = "syndicate_id"
+	inhand_icon_state = "syndicate_id"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	assignment = "Crew"
 
@@ -421,12 +421,12 @@ Singleton to handle conquest roles. This exists to populate the roles list and n
 
 /obj/item/clothing/suit/space/syndicate/odst/marine
 	icon_state = "syndiemarine"
-	item_state = "syndiemarine"
+	inhand_icon_state = "syndiemarine"
 	item_color = "syndiemarine"
 
 /obj/item/clothing/head/helmet/space/syndicate/odst/marine
 	icon_state = "syndiemarine"
-	item_state = "syndiemarine"
+	inhand_icon_state = "syndiemarine"
 	item_color = "syndiemarine"
 
 /datum/antagonist/nukeop/syndi_crew/marine
@@ -537,7 +537,7 @@ Singleton to handle conquest roles. This exists to populate the roles list and n
 	name = "secondary ship ID console"
 	circuit = /obj/item/circuitboard/computer/card/secondary_ship_id_console
 	icon_screen = "idhos"
-	light_color = LIGHT_COLOR_RED
+	light_color = COLOR_RED_LIGHT
 	req_one_access = null //If this
 	var/list/target_accesses = list() //Format: K = Title to display this access as, V = the access itself, as an assoc list.
 	var/obj/item/card/id/modifying = null

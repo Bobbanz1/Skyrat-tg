@@ -130,7 +130,7 @@
 
 	if(closed || !anchored)
 		return 0
-	if(istype(leaving, /obj/item/projectile))
+	if(istype(leaving, /obj/projectile))
 		return 0 //who cares lol
 
 	if(leaving.throwing)

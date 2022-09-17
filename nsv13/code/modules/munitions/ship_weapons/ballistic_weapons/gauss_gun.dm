@@ -134,8 +134,8 @@
 /obj/machinery/ship_weapon/gauss_gun/Initialize()
 	. = ..()
 	cabin_air = new()
-	cabin_air.set_temperature(T20C)
-	cabin_air.set_volume(200)
+	cabin_air.temperature = (T20C)
+	cabin_air.volume = (200)
 	cabin_air.set_moles(GAS_O2, O2STANDARD*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
 	cabin_air.set_moles(GAS_N2, N2STANDARD*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
 	internal_tank = new /obj/machinery/portable_atmospherics/canister/air(src)
@@ -200,7 +200,7 @@
 	user.forceMove(src)
 	gunner = user
 	gunner.AddComponent(/datum/component/overmap_gunning, src)
-	gunner.add_verb(gauss_verbs)
+	add_verb(gunner, gauss_verbs)
 	ui_interact(user)
 
 /obj/machinery/ship_weapon/gauss_gun/proc/remove_gunner()
@@ -212,7 +212,7 @@
 			lower_chair()
 		else
 			oldGunner.forceMove(get_turf(src))
-		oldGunner.remove_verb(gauss_verbs)
+		remove_verb(oldGunner, gauss_verbs)
 	gunner = null
 
 //Directional subtypes
@@ -285,7 +285,7 @@
 /obj/machinery/ship_weapon/gauss_gun/process()
 	if(cabin_air && cabin_air.return_volume() > 0)
 		var/delta = cabin_air.return_temperature() - T20C
-		cabin_air.set_temperature(cabin_air.return_temperature() - max(-10, min(10, round(delta/4,0.1))))
+		cabin_air.temperature = (cabin_air.return_temperature() - max(-10, min(10, round(delta/4,0.1))))
 	if(internal_tank && cabin_air)
 		var/datum/gas_mixture/tank_air = internal_tank.return_air()
 		var/release_pressure = ONE_ATMOSPHERE
@@ -346,10 +346,10 @@
 	name = "Gauss Rack Autoload Module (Circuit)"
 	desc = "An upgrade which allows you to load gauss racks using conveyors."
 	id = "gauss_rack_upgrade"
-	materials = list(/datum/material/glass = 2000, /datum/material/copper = 2000, /datum/material/gold = 5000)
+	materials = list(/datum/material/glass = 2000, /datum/material/gold = 5000)
 	build_path = /obj/item/circuitboard/gauss_rack_upgrade
 	category = list("Advanced Munitions")
-	departmental_flags = DEPARTMENTAL_FLAG_MUNITIONS
+	departmental_flags = DEPARTMENT_BITFLAG_MUNITIONS
 
 //If your map is gamer.
 /obj/structure/gauss_rack/autoload
@@ -369,6 +369,7 @@
 	. = ..()
 
 /obj/structure/gauss_rack/update_icon()
+	..()
 	if(autoload)
 		icon_state = "loading_rack_autoload"
 	else
@@ -594,7 +595,7 @@ Chair + rack handling
 		return
 
 	var/mob/living/carbon/C = M
-	if(istype(C) && ((!C.get_bodypart(BODY_ZONE_L_ARM) && !C.get_bodypart(BODY_ZONE_R_ARM)) || C.restrained(TRUE))) //Can't shoot the gun if you have no hands, borgs get a pass on this
+	if(istype(C) && ((!C.get_bodypart(BODY_ZONE_L_ARM) && !C.get_bodypart(BODY_ZONE_R_ARM)) || HAS_TRAIT(C, TRAIT_RESTRAINED))) //Can't shoot the gun if you have no hands, borgs get a pass on this
 		if(M == user)
 			to_chat(user, "<span class='warning'>You can't operate the gauss gun without hands!!</span>")
 		else

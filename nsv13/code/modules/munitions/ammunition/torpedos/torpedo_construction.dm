@@ -9,7 +9,7 @@
 	var/obj/item/ship_weapon/parts/missile/guidance_system/gs = null
 	var/obj/item/ship_weapon/parts/missile/propulsion_system/ps = null
 	var/obj/item/ship_weapon/parts/missile/iff_card/iff = null
-	projectile_type = /obj/item/projectile/guided_munition/torpedo/dud //Forget to finish your torpedo? You get a dud torpedo that doesn't do anything
+	projectile_type = /obj/projectile/guided_munition/torpedo/dud //Forget to finish your torpedo? You get a dud torpedo that doesn't do anything
 	claimable_gulag_points = 0
 
 /obj/item/ship_weapon/ammunition/torpedo/torpedo_casing/examine(mob/user) //No better guide than an in-game play-by-play guide
@@ -263,6 +263,7 @@
 	. = ..()
 
 /obj/item/ship_weapon/ammunition/torpedo/torpedo_casing/update_icon()
+	..()
 	cut_overlays()
 	switch(state)
 		if(1)

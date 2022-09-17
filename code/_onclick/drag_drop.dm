@@ -113,8 +113,19 @@
 	SEND_SIGNAL(src, COMSIG_CLIENT_MOUSEDRAG, src_object, over_object, src_location, over_location, src_control, over_control, params)
 	return ..()
 
-/obj/item/proc/onMouseDrag(src_object, over_object, src_location, over_location, params, mob)
+//NSV13 start
+/client/MouseMove(object,location,control,params)
+	if(mob && LAZYLEN(mob.mousemove_intercept_objects))
+		for(var/datum/D in mob.mousemove_intercept_objects)
+			D.onMouseMove(object, location, control, params)
+	..()
+
+/datum/proc/onMouseMove(object, location, control, params)
 	return
+
+/datum/proc/onMouseDrag(src_object, over_object, src_location, over_location, params, mob)
+	return
+//NSV13 end
 
 /client/MouseDrop(atom/src_object, atom/over_object, atom/src_location, atom/over_location, src_control, over_control, params)
 	if (IS_WEAKREF_OF(src_object, middle_drag_atom_ref))

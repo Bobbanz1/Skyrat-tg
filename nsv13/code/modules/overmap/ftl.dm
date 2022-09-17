@@ -59,7 +59,7 @@
 	for(var/datum/fleet/F in fleets)
 		if(F.audio_cues?.len && F.alignment != OM.faction)
 			return TRUE
-	OM.play_music(pick(audio_cues))
+	//OM.play_music(pick(audio_cues))
 
 /datum/star_system/proc/try_spawn_event()
 	if(possible_events && prob(event_chance))
@@ -293,7 +293,7 @@
 /obj/structure/overmap/proc/jump_handle_shake(ftl_start)
 	for(var/mob/M in mobs_in_ship)
 		var/nearestDistance = INFINITY
-		var/obj/machinery/inertial_dampener/nearestMachine = null
+		/*var/obj/machinery/inertial_dampener/nearestMachine = null
 
 		// Going to helpfully pass this in after seasickness checks, to reduce duplicate machine checks
 		for(var/obj/machinery/inertial_dampener/machine as anything in GLOB.inertia_dampeners)
@@ -312,8 +312,8 @@
 					L.adjust_disgust( newNausea )
 				else
 					to_chat(L, "<span class='warning'>You can feel your head start to swim...</span>")
-					L.adjust_disgust(pick(70, 100))
-		shake_with_inertia(M, 4, 1, list(distance=nearestDistance, machine=nearestMachine))
+					L.adjust_disgust(pick(70, 100))*/
+		shake_with_inertia(M, 4, 1, list(distance=nearestDistance))
 
 /obj/item/ftl_slipstream_chip
 	name = "Quantum slipstream field generation matrix (tier II)"
@@ -336,7 +336,7 @@
 	materials = list(/datum/material/plasma = 25000,/datum/material/diamond = 15000, /datum/material/silver = 20000)
 	build_path = /obj/item/ftl_slipstream_chip
 	category = list("Ship Components")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/techweb_node/ftl_slipstream
 	id = "ftl_slipstream"
@@ -345,7 +345,7 @@
 	prereq_ids = list("comptech")
 	design_ids = list("ftl_slipstream_chip")
 	research_costs = list(TECHWEB_POINT_TYPE_WORMHOLE = 5000) //You need to have fully probed a wormhole to unlock this.
-	export_price = 15000 //This is EXTREMELY valuable to NT because it'll let their ships go super fast.
+	//export_price = 15000 //This is EXTREMELY valuable to NT because it'll let their ships go super fast.
 
 /obj/machinery/computer/ship/ftl_computer
 	name = "Seegson FTL drive computer"
@@ -489,7 +489,7 @@ A way for syndies to track where the player ship is going in advance, so they ca
 	STOP_PROCESSING(SSmachines, src)
 
 /obj/machinery/computer/ship/ftl_computer/process()
-	if(!is_operational())
+	if(!is_operational)
 		depower()
 		return
 	if(progress < spoolup_time)
@@ -519,6 +519,7 @@ A way for syndies to track where the player ship is going in advance, so they ca
 	ui_interact(user)
 
 /obj/machinery/computer/ship/ftl_computer/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "FTLComputer")
@@ -625,6 +626,7 @@ A way for syndies to track where the player ship is going in advance, so they ca
 	radio.recalculateChannels()
 
 /obj/machinery/computer/ship/ftl_computer/update_icon()
+	..()
 	return //Override computer updates
 
 /obj/machinery/computer/ship/ftl_computer/proc/depower()

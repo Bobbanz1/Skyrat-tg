@@ -37,7 +37,7 @@
 	dradis?.attack_hand(user)
 	user.click_intercept = src
 	if(position & (OVERMAP_USER_ROLE_PILOT | OVERMAP_USER_ROLE_GUNNER))
-		user.add_verb(overmap_verbs) //Add the ship panel verbs
+		add_verb(user, overmap_verbs) //Add the ship panel verbs
 	if(mass < MASS_MEDIUM)
 		return TRUE
 	user.client.overmap_zoomout = (mass <= MASS_MEDIUM) ? 5 : 10 //Automatically zooms you out a fair bit so you can see what's even going on.
@@ -47,7 +47,7 @@
 
 /obj/structure/overmap/proc/stop_piloting(mob/living/M)
 	LAZYREMOVE(operators,M)
-	M.remove_verb(overmap_verbs)
+	remove_verb(M, overmap_verbs)
 	M.overmap_ship = null
 	if(M.click_intercept == src)
 		M.click_intercept = null
@@ -119,7 +119,7 @@
 	name = "Inactive Camera Eye"
 	var/datum/action/innate/camera_off/overmap/off_action
 	animate_movement = 0 //Stops glitching with overmap movement
-	use_static = USE_STATIC_NONE
+	use_static = FALSE
 	var/obj/structure/overmap/last_target = null //Lets gunners lock on to their targets for accurate shooting.
 
 /datum/action/innate/camera_off/overmap

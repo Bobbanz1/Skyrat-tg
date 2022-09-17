@@ -166,7 +166,7 @@
 	var/obj/machinery/computer/ship/ftl_computer/ftl_drive
 	var/reserved_z = 0 //The Z level we were spawned on, and thus inhabit. This can be changed if we "swap" positions with another ship.
 	var/list/occupying_levels = list() //Refs to the z-levels we own for setting parallax and that, or for admins to debug things when EVERYTHING INEVITABLY BREAKS
-	var/torpedo_type = /obj/item/projectile/guided_munition/torpedo
+	var/torpedo_type = /obj/projectile/guided_munition/torpedo
 	var/next_maneuvre = 0 //When can we pull off a fancy trick like boost or kinetic turn?
 	var/flak_battery_amount = 0
 
@@ -240,8 +240,8 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 			SL.linked_overmap = OM
 			OM.occupying_levels += SL
 			log_game("Z-level [SL] linked to [OM].")
-		if(midround)
-			overmap_lighting_force(OM)
+		//if(midround)
+		//	overmap_lighting_force(OM)
 
 
 	return OM
@@ -443,7 +443,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 		weapon_types[FIRE_MODE_MISSILE] = new/datum/ship_weapon/missile_launcher(src)
 		weapon_types[FIRE_MODE_TORPEDO] = new/datum/ship_weapon/torpedo_launcher(src)
 
-/obj/item/projectile/Destroy()
+/obj/projectile/Destroy()
 	if(physics2d)
 		QDEL_NULL(physics2d)
 	return ..()

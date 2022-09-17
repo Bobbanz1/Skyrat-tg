@@ -9,7 +9,7 @@
 	climb_stun = 0
 	w_class = WEIGHT_CLASS_GIGANTIC
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
-	projectile_type = /obj/item/projectile/guided_munition/missile //What torpedo type we fire
+	projectile_type = /obj/projectile/guided_munition/missile //What torpedo type we fire
 	pixel_x = -17
 	volatility = 3 //Very volatile.
 	explode_when_hit = TRUE //Yeah, this can't ever end well for you.
@@ -22,8 +22,8 @@
 
 /obj/item/ship_weapon/ammunition/missile/attackby(obj/item/I, mob/living/user, params)
 	. = ..()
-	if(istype(I, /obj/item/card/id/prisoner))
-		var/obj/item/card/id/prisoner/P = I
+	if(istype(I, /obj/item/card/id/advanced/prisoner))
+		var/obj/item/card/id/advanced/prisoner/P = I
 		P.points += claimable_gulag_points
 		to_chat(user, "<span class='boldnotice'>You claim [claimable_gulag_points] from [src]... Your balance is now: [P.points]</span>")
 		//This one's been claimed!
@@ -38,7 +38,7 @@
 	. += "<span class='warning'>It's far too cumbersome to carry, and dragging it around might set it off!</span>"
 
 //What you get from an incomplete missile.
-/obj/item/projectile/guided_munition/missile/dud
+/obj/projectile/guided_munition/missile/dud
 	icon_state = "torpedo_dud"
 	damage = 0
 

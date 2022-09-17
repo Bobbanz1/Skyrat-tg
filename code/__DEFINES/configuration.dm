@@ -12,3 +12,12 @@
 
 /// Force the config directory to be something other than "config"
 #define OVERRIDE_CONFIG_DIRECTORY_PARAMETER "config-directory"
+
+/// Folder directory for strings
+#define STRING_DIRECTORY "strings"
+
+/// Folder directory for data
+#define DATA_DIRECTORY "data"
+
+/// Folder directory for maps
+#define MAP_DIRECTORY "_maps"

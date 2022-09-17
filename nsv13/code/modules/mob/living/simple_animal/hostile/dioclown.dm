@@ -10,11 +10,10 @@
 	speak = list("JOJO!", "HJONK!", "Let me feast on your blood!", "So thirsty!", "Escape is impossible!", "MWAHAHAHAH")
 	emote_see = list("honks", "squeaks")
 	speak_chance = 1
-	a_intent = INTENT_HARM
 	maxHealth = 200
 	health = 200
 	speed = 3
-	melee_damage = 10
+	melee_damage_upper = 10
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 	obj_damage = 10
 	del_on_death = TRUE
@@ -56,7 +55,7 @@
 	name = "vampiric mask"
 	desc = "An strange looking stone mask with what looks like spines coming out of it. The spines seem to have been sawed off."
 	icon = 'nsv13/icons/obj/clothing/masks.dmi' //Placeholder subtype for our own iconsets
-	alternate_worn_icon = 'nsv13/icons/mob/mask.dmi'
+	worn_icon = 'nsv13/icons/mob/mask.dmi'
 	icon_state = "pillarmen"
-	item_state = "pillarmen"
+	inhand_icon_state = "pillarmen"
 	actions_types = list(/datum/action/item_action/menacing_pose)

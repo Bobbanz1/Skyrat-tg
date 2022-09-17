@@ -81,6 +81,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	/// If set to TRUE, will update character_profiles on the next ui_data tick.
 	var/tainted_character_profiles = FALSE
+	//Nsv13 squads - we CM now
+	var/preferred_squad = "Able"
+	//Nsv13 - Syndicate role select
+	var/preferred_syndie_role = CONQUEST_ROLE_GRUNT
+
+	//NSV13 - Pilots
+	//var/preferred_pilot_role = PILOT_COMBAT
+
 
 /datum/preferences/Destroy(force, ...)
 	QDEL_NULL(character_preview_view)

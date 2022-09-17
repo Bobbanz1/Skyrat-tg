@@ -141,6 +141,7 @@
 	var/homing_inaccuracy_max = 0
 	var/homing_offset_x = 0
 	var/homing_offset_y = 0
+	var/targetAngle = 0 //NSV13 - required projectile child
 
 	var/damage = 10
 	var/damage_type = BRUTE //BRUTE, BURN, TOX, OXY, CLONE are the only things that should be in here
@@ -172,6 +173,10 @@
 	var/stutter = 0 SECONDS
 	/// Slurring applied on projectile hit
 	var/slur = 0 SECONDS
+	var/faction = null //NSV13 - bullets need factions for collision checks
+	var/relay_projectile_type = null	//NSV13 - backend for some projectiles creating a different projectile than they are when relayed to a ship after hitting. I hate having this this far up in inheritance, but no overmap bullet subtype.
+	var/next_homing_process = 0 //Nsv13 - performance enhancements
+	var/homing_delay = 0.7 SECONDS //Nsv13 - performance enhancements. 1 second delay is noticeably slow
 
 	var/dismemberment = 0 //The higher the number, the greater the bonus to dismembering. 0 will not dismember at all.
 	var/impact_effect_type //what type of impact effect to show when hitting something
@@ -372,6 +377,10 @@
 	beam_segments[beam_index] = point_cache
 	beam_index = point_cache
 	beam_segments[beam_index] = null
+/obj/projectile/CanPass(atom/movable/mover, border_dir)
+	. = ..()
+	if(!check_faction(mover))
+		return TRUE
 
 /obj/projectile/Bump(atom/A)
 	SEND_SIGNAL(src, COMSIG_MOVABLE_BUMP, A)
@@ -412,6 +421,30 @@
 			if(hitscan)
 				store_hitscan_collision(point_cache)
 			return TRUE
+	var/mob/checking = firer
+	if(faction && !ignore_source_check)//nsv13 start - multitile objects
+		if(istype(A, /obj/structure/overmap))
+			var/obj/structure/overmap/ship_target = A
+			if(faction == ship_target.faction)
+				trajectory_ignore_forcemove = TRUE
+				var/turf/TT = trajectory.return_turf()
+				if(!istype(TT))
+					qdel(src)
+					return
+				if(TT != loc)
+					forceMove(get_step_towards(src, TT))
+				trajectory_ignore_forcemove = FALSE
+				return FALSE
+	if(firer && (A == firer) || (((A in firer?.buckled_mobs) || (istype(checking) && (A == checking.buckled))) && (A != original)) || (A == firer?.loc && (ismecha(A) || istype(A, /obj/structure/overmap)))) //cannot shoot yourself or your mech //nsv13 - or your ship
+		trajectory_ignore_forcemove = TRUE
+		var/turf/TT = trajectory.return_turf()
+		if(!istype(TT))
+			qdel(src)
+			return
+		if(TT != loc)
+			forceMove(get_step_towards(src, TT))
+		trajectory_ignore_forcemove = FALSE
+		return FALSE			//nsv13 end
 
 	var/distance = get_dist(T, starting) // Get the distance between the turf shot from and the mob we hit and use that for the calculations.
 	def_zone = ran_zone(def_zone, max(100-(7*distance), 5)) //Lower accurancy/longer range tradeoff. 7 is a balanced number to use.
@@ -522,7 +555,7 @@
 //Returns true if the target atom is on our current turf and above the right layer
 //If direct target is true it's the originally clicked target.
 /obj/projectile/proc/can_hit_target(atom/target, direct_target = FALSE, ignore_loc = FALSE, cross_failed = FALSE)
-	if(QDELETED(target) || impacted[target])
+	if(QDELETED(target) || (LAZYFIND(impacted, target)))
 		return FALSE
 	if(!ignore_loc && (loc != target.loc) && !(can_hit_turfs && direct_target && loc == target))
 		return FALSE
@@ -533,6 +566,12 @@
 		var/mob/M = firer
 		if((target == firer) || ((target == firer.loc) && ismecha(firer.loc)) || (target in firer.buckled_mobs) || (istype(M) && (M.buckled == target)))
 			return FALSE
+	//NSV13 - projectiles invalid if same faction
+	if(isprojectile(target))
+		var/obj/projectile/P = target
+		if(P.faction == faction)
+			return FALSE
+	//NSV13 end.
 	if(ignored_factions?.len && ismob(target) && (!direct_target || ignore_direct_target)) //SKYRAT EDIT: ignore_direct_target
 		var/mob/target_mob = target
 		if(faction_check(target_mob.faction, ignored_factions))
@@ -890,7 +929,8 @@
 	var/datum/point/PT = RETURN_PRECISE_POINT(homing_target)
 	PT.x += clamp(homing_offset_x, 1, world.maxx)
 	PT.y += clamp(homing_offset_y, 1, world.maxy)
-	var/angle = closer_angle_difference(Angle, angle_between_points(RETURN_PRECISE_POINT(src), PT))
+	var/targetAngle = get_angle(src, homing_target)
+	var/angle = closer_angle_difference(Angle, targetAngle)
 	set_angle(Angle + clamp(angle, -homing_turn_speed, homing_turn_speed))
 
 /obj/projectile/proc/set_homing_target(atom/A)

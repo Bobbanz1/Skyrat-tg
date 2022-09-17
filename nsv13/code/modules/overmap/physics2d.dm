@@ -105,7 +105,7 @@ PROCESSING_SUBSYSTEM_DEF(physics_processing)
 		var/obj/structure/overmap/OM = holder
 		if(istype(OM))
 			OM.physics2d = null
-		var/obj/item/projectile/P = holder
+		var/obj/projectile/P = holder
 		if(istype(P))
 			P.physics2d = null
 	if(last_registered_z)

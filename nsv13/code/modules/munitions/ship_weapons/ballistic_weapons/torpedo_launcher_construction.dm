@@ -178,7 +178,7 @@
 				to_chat(user, "<span class='notice'>You finish the torpedo launcher.</span>")
 				var/obj/machinery/ship_weapon/TL = new output_path(loc)
 				TL.dir = dir
-				TL.setAnchored(anchored)
+				TL.set_anchored(anchored)
 				TL.on_construction()
 				for(var/obj/O in TL.component_parts)
 					qdel(O)

@@ -25,8 +25,8 @@
 
 /datum/ship_weapon/laser_ams
 	name = "Laser Anti Missile System"
-	default_projectile_type = /obj/item/projectile/beam/laser/point_defense
-	// default_projectile_type = /obj/item/projectile/bullet/fiftycal
+	default_projectile_type = /obj/projectile/beam/laser/point_defense
+	// default_projectile_type = /obj/projectile/bullet/fiftycal
 	burst_size = 1
 	fire_delay = 0.35 SECONDS
 	range_modifier = 30

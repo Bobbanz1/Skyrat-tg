@@ -24,7 +24,7 @@
 	. = ..()
 	time_created = world.time
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE)
-	AddComponent(/datum/component/radioactive, rad_strength, src) // This should be temporary for it won't make rads go lower than 350
+	AddElement(/datum/element/radioactive, rad_strength, src) // This should be temporary for it won't make rads go lower than 350
 	if(process)
 		START_PROCESSING(SSobj, src)
 
@@ -146,7 +146,7 @@
 				to_chat(user, "<span class='notice'>You insert [adding] [material_name_singular] into \the [src].</span>")
 			else
 				to_chat(user, "<span class='notice'>You insert [adding] [material_name] into \the [src].</span>")
-			M.zero_amount()
+			M.is_zero_amount()
 		else
 			to_chat(user, "<span class='warning'>\The [src]'s material slots are full!</span>")
 			return
@@ -214,7 +214,7 @@
 	name = "exhausted [name]"
 	desc = "A highly energetic, disguised titanium sheathed rod containing a number of slots filled with greatly expanded telecrystals which can be removed by hand. It's extremely efficient as nuclear fuel, but will cause the reaction to get out of control if not properly utilised."
 	icon_state = "tc_used"
-	AddComponent(/datum/component/radioactive, 3000, src)
+	AddElement(/datum/element/radioactive, 3000, src)
 
 /obj/item/fuel_rod/material/bananium
 	name = "bananium fuel rod"
@@ -242,4 +242,4 @@
 	name = "exhausted [name]"
 	desc = "A hilarious heavy-duty fuel rod which fissiles a bit slower than it cowardly counterparts. Its greatly grimacing grwoth stage is now over, and bananium outgrowth hums as if it's blatantly honking bike horns."
 	icon_state = "bananium_used"
-	AddComponent(/datum/component/radioactive, 1250, src)
+	AddElement(/datum/element/radioactive, 1250, src)

@@ -15,6 +15,7 @@
 	update_icon()//update icon when removed from a machine
 
 /obj/item/ammo_box/magazine/nsv/update_icon()
+	..()
 	if (isobj(loc)) //don't update if it's in an object
 		if (!(istype(loc, /obj/item/storage)||istype(loc, /obj/item/clothing)))//unless it's a backpack or something
 			return FALSE
@@ -31,14 +32,14 @@
 		return FALSE
 
 	var/new_frame = round(overlay_frames * (count/max_ammo) + 1)
-	if (new_frame == last_frame) 
+	if (new_frame == last_frame)
 		return FALSE
 	last_frame = new_frame
 	cut_overlays()
 
 	if (count >= max_ammo)
 		return FALSE
-	
+
 	add_overlay(icon("[icon]","[overlay_name]",frame = new_frame))
 	return TRUE
 
@@ -58,7 +59,7 @@
 /obj/item/ammo_casing/pdc
 	name = "30.12x82mm bullet casing"
 	desc = "A 30.12x82mm bullet casing."
-	projectile_type = /obj/item/projectile/bullet/pdc_round
+	projectile_type = /obj/projectile/bullet/pdc_round
 	caliber = "mm30.12"
 
 /obj/item/ammo_box/magazine/nsv/flak
@@ -71,7 +72,7 @@
 /obj/item/ammo_casing/flak
 	name = "mm40 flak round casing"
 	desc = "A mm40 bullet casing."
-	projectile_type = /obj/item/projectile/bullet/flak
+	projectile_type = /obj/projectile/bullet/flak
 	caliber = "mm40"
 
 /obj/item/ammo_box/magazine/nsv/anti_air
@@ -84,5 +85,5 @@
 /obj/item/ammo_casing/anti_air
 	name = "50mm round casing"
 	desc = "A 50mm bullet casing."
-	projectile_type = /obj/item/projectile/bullet/aa_round
+	projectile_type = /obj/projectile/bullet/aa_round
 	caliber = "mm50pdc"

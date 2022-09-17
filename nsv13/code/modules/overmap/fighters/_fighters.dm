@@ -533,7 +533,7 @@ Been a mess since 2018, we'll fix it someday (probably)
 		return FALSE
 	UnregisterSignal(src, COMSIG_MOB_OVERMAP_CHANGE)
 	M.stop_sound_channel(CHANNEL_SHIP_ALERT)
-	M.remove_verb(overmap_verbs)
+	remove_verb(M, overmap_verbs)
 	return ..()
 
 /obj/structure/overmap/small_craft/proc/eject(mob/living/M, force=FALSE)
@@ -859,7 +859,7 @@ due_to_damage: Was this called voluntarily (FALSE) or due to damage / external c
 /obj/item/fighter_component/proc/toggle()
 	active = !active
 
-/obj/item/fighter_component/proc/dump_contents()
+/obj/item/fighter_component/dump_contents()
 	if(!length(contents))
 		return FALSE
 	. = list()
@@ -1646,12 +1646,12 @@ Utility modules can be either one of these types, just ensure you set its slot t
 	var/proj_speed = 1
 	var/obj/item/ship_weapon/ammunition/americagobrr = pick_n_take(ammo)
 	proj_type = americagobrr.projectile_type
-	proj_speed = istype(americagobrr.projectile_type, /obj/item/projectile/guided_munition/missile) ? 5 : 1
+	proj_speed = istype(americagobrr.projectile_type, /obj/projectile/guided_munition/missile) ? 5 : 1
 	qdel(americagobrr)
 	if(proj_type)
 		var/sound/chosen = pick('nsv13/sound/effects/ship/torpedo.ogg','nsv13/sound/effects/ship/freespace2/m_shrike.wav','nsv13/sound/effects/ship/freespace2/m_stiletto.wav','nsv13/sound/effects/ship/freespace2/m_tsunami.wav','nsv13/sound/effects/ship/freespace2/m_wasp.wav')
 		F.relay_to_nearby(chosen)
-		if(proj_type == /obj/item/projectile/guided_munition/missile/dud) //Refactor this to something less trash sometime I guess
+		if(proj_type == /obj/projectile/guided_munition/missile/dud) //Refactor this to something less trash sometime I guess
 			F.fire_projectile(proj_type, target, homing = FALSE, speed=proj_speed, lateral = FALSE)
 		else
 			F.fire_projectile(proj_type, target, homing = TRUE, speed=proj_speed, lateral = FALSE)

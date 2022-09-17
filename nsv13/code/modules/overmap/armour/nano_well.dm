@@ -69,7 +69,7 @@ Starting Materials
 	var/system_stress = 0 //how overloaded the system has been over time
 	var/system_stress_threshold = 100 //Threshold at which stress beings to build up
 	var/system_cooling = 1 //Rate at which stress is reduced
-	var/material_modifier = 0 //efficiency of our materials
+	material_modifier = 0 //efficiency of our materials
 	var/material_tier = 0 //The selected tier recipe producing RR
 	var/apnw_id = null //The ID by which we identify our child devices - These should match the child devices and follow the formula: 1 - Main Ship, 2 - Secondary Ship, 3 - Syndie PvP Ship
 
@@ -108,7 +108,7 @@ Starting Materials
 			update_icon()
 			return FALSE
 
-		if(is_operational())
+		if(is_operational)
 			handle_repair_resources()
 			handle_repair_efficiency()
 			update_icon()
@@ -152,7 +152,7 @@ Starting Materials
 			return
 		var/datum/gas_mixture/env = L.return_air()
 		var/current_temp = env.return_temperature()
-		env.set_temperature(current_temp + 3)
+		env.temperature = (current_temp + 3)
 		air_update_turf()
 		if(prob(system_stress - system_stress_threshold))
 			var/list/overload_candidate = list()
@@ -173,7 +173,7 @@ Starting Materials
 		var/datum/gas_mixture/env = L.return_air()
 		var/current_temp = env.return_temperature()
 		if(current_temp < 398) //Spicy but not too spicy
-			env.set_temperature(current_temp + (power_allocation / 3e7)) //Heat the air
+			env.temperature = (current_temp + (power_allocation / 3e7)) //Heat the air
 			air_update_turf()
 
 /obj/machinery/armour_plating_nanorepair_well/proc/handle_repair_resources()
@@ -293,6 +293,7 @@ Starting Materials
 			system_cooling = 2.5 //2.5x the stress reduction
 
 /obj/machinery/armour_plating_nanorepair_well/update_icon()
+	..()
 	cut_overlays()
 	var/repair_resources_percent = (repair_resources / RR_MAX) * 100
 	switch(repair_resources_percent)
@@ -354,7 +355,7 @@ Starting Materials
 /obj/machinery/armour_plating_nanorepair_well/ui_act(action, params, datum/tgui/ui)
 	if(..())
 		return
-	if(!(in_range(src, usr) | IsAdminGhost(usr)))
+	if(!(in_range(src, usr) | isAdminGhostAI(usr)))
 		return
 	var/adjust = text2num(params["adjust"])
 	if(action == "power_allocation")
@@ -429,7 +430,7 @@ Starting Materials
 					return
 				var/datum/gas_mixture/env = L.return_air()
 				var/current_temp = env.return_temperature()
-				env.set_temperature(current_temp + 25)
+				env.temperature = (current_temp + 25)
 				air_update_turf()
 
 		if("unload")

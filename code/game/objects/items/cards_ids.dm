@@ -1648,5 +1648,10 @@
 	desc = "A card used to identify members of the green team for CTF"
 	icon_state = "ctf_green"
 
+/obj/item/card/id/syndicate/nuke_leader
+	name = "lead agent card"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_ENGINEERING, ACCESS_SYNDICATE_MARINE_ARMOURY, ACCESS_SYNDICATE_REQUISITIONS, ACCESS_SYNDICATE_LEADER)
+
+
 #undef INTERN_THRESHOLD_FALLBACK_HOURS
 #undef ID_ICON_BORDERS

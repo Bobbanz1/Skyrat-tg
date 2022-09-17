@@ -8,7 +8,6 @@
 		/obj/item/stack/sheet/mineral/plasma,
 		/obj/item/stack/sheet/mineral/gold,
 		/obj/item/stack/sheet/mineral/silver,
-		/obj/item/stack/sheet/mineral/copper,
 		/obj/item/stack/sheet/mineral/titanium,
 	)
 

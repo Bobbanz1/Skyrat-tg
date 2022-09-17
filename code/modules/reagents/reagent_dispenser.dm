@@ -21,6 +21,7 @@
 	var/leaking = FALSE
 	///How much reagent to leak
 	var/amount_to_leak = 10
+	var/reagent_temp = 300 // NSV -- reagent spawn temps to avoid cryo explosions
 
 /obj/structure/reagent_dispensers/Initialize(mapload)
 	. = ..()
@@ -68,7 +69,7 @@
 /obj/structure/reagent_dispensers/Initialize(mapload)
 	create_reagents(tank_volume, DRAINABLE | AMOUNT_VISIBLE)
 	if(reagent_id)
-		reagents.add_reagent(reagent_id, tank_volume)
+		reagents.add_reagent(reagent_id, tank_volume, reagtemp = reagent_temp)
 	. = ..()
 
 /obj/structure/reagent_dispensers/proc/boom(damage_type = BRUTE, guaranteed_violent = FALSE) //SKYRAT EDIT CHANGE

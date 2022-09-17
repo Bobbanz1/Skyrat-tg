@@ -64,7 +64,7 @@
 	component_parts = list()
 
 	. = M
-	M.setAnchored(anchored)
+	M.set_anchored(anchored)
 	M.setDir(dir)
 	M.set_final_state()
 	if(!disassembled)
@@ -77,10 +77,10 @@
 	// We have different sprites and behaviors for each torpedo
 	var/obj/item/ship_weapon/ammunition/torpedo/T = chambered
 	if(T)
-		if(istype(T, /obj/item/projectile/guided_munition/torpedo/dud)) //Some brainlet MAA loaded an incomplete torp
+		if(istype(T, /obj/projectile/guided_munition/torpedo/dud)) //Some brainlet MAA loaded an incomplete torp
 			linked.fire_projectile(T.projectile_type, target, homing = FALSE, lateral=TRUE)
 		else
-			var/obj/item/projectile/P = linked.fire_projectile(T.projectile_type, target, homing = TRUE, lateral = TRUE)
+			var/obj/projectile/P = linked.fire_projectile(T.projectile_type, target, homing = TRUE, lateral = TRUE)
 			if(T.contents.len)
 				for(var/atom/movable/AM in T.contents)
 					to_chat(AM, "<span class='warning'>You feel slightly nauseous as you're shot out into space...</span>")

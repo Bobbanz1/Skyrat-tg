@@ -181,6 +181,7 @@
 
 
 /obj/structure/shieldgen_frame/update_icon()
+	..()
 	icon_state = "shieldgen_build[state]"
 
 /obj/machinery/shield_generator

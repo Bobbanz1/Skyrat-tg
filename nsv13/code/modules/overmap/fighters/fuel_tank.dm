@@ -122,7 +122,7 @@
 		fuel_target = null
 	else
 		cut_overlay("cryofuel_nozzle")
-		current_beam = new(get_current_user(),src,beam_icon='nsv13/icons/effects/beam.dmi',time=INFINITY,maxdistance = INFINITY,beam_icon_state="hose",btype=/obj/effect/ebeam/fuel_hose)
+		current_beam = new(get_current_user(), src, icon='nsv13/icons/effects/beam.dmi', icon_state="hose", time=INFINITY, max_distance = INFINITY, beam_type=/obj/effect/ebeam/fuel_hose)
 		INVOKE_ASYNC(current_beam, /datum/beam.proc/Start)
 
 /obj/structure/reagent_dispensers/fueltank/cryogenic_fuel/attackby(obj/item/I, mob/user, params)
@@ -180,7 +180,7 @@
 	name = "cryofuel delivery hose"
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "atmos_nozzle"
-	item_state = "nozzleatmos"
+	inhand_icon_state = "nozzleatmos"
 	item_flags = NOBLUDGEON | ABSTRACT  // don't put in storage
 	slot_flags = 0
 	var/obj/structure/reagent_dispensers/fueltank/cryogenic_fuel/parent

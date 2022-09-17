@@ -47,7 +47,7 @@ Add this component to an atom to mark it as volatile, if it takes fire damage, i
 /datum/component/volatile/Initialize(volatility = 1, volatile_when_hit = FALSE, explosion_scale = 1)
 	if(volatility <= 0)
 		message_admins("Volatility component with volatility \"[volatility]\" added to [parent], deleting the volatility component...")
-		RemoveComponent()
+		ClearFromParent()
 		return
 	src.volatility = volatility
 	src.volatile_when_hit = volatile_when_hit

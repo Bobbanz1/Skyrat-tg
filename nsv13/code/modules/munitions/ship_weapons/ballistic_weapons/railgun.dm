@@ -85,7 +85,7 @@
 	component_parts.len = 0
 
 	. = M
-	M.setAnchored(anchored)
+	M.set_anchored(anchored)
 	M.setDir(dir)
 	M.set_final_state()
 	if(!disassembled)

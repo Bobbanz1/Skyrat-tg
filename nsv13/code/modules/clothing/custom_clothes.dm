@@ -284,14 +284,7 @@
 	var/stomp_cooldown_time = 0.3 SECONDS
 	var/current_cooldown = 0
 
-/obj/item/clothing/suit/space/hardsuit/syndi/peacekeeper/on_mob_move()
-	var/mob/living/carbon/human/H = loc
-	if(!istype(H) || H.wear_suit != src)
-		return
-	if(current_cooldown <= world.time) //Deliberately not using a timer here as that would spam create tonnes of timer objects, hogging memory.
-		current_cooldown = world.time + stomp_cooldown_time
-		var/list/sounds = list('nsv13/sound/effects/footstep/heavy1.ogg','nsv13/sound/effects/footstep/heavy2.ogg','nsv13/sound/effects/footstep/heavy3.ogg')
-		playsound(src, pick(sounds), 40, 1)
+
 /obj/machinery/suit_storage_unit/peacekeeper
 	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi/peacekeeper
 	mask_type = /obj/item/clothing/mask/gas/sechailer

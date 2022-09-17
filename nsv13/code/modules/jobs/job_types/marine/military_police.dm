@@ -81,7 +81,7 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 			destination = /area/security/checkpoint/science
 			spawn_point = locate(/obj/effect/landmark/start/depsec/science) in GLOB.department_security_spawns
 			accessory = /obj/item/clothing/accessory/armband/science
-		if(SEC_DEPT_MUNITIONS) 
+		if(SEC_DEPT_MUNITIONS)
 			ears = /obj/item/radio/headset/munitions/munitions_security_alt
 			dep_access = list(ACCESS_MUNITIONS, ACCESS_MUNITIONS_STORAGE)
 			accessory = /obj/item/clothing/accessory/armband/munitions
@@ -177,7 +177,7 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 	desc = "A durable uniform worn by military police officers, who enforce ship-law."
 	icon_state = "military_police"
 	item_color = "military_police"
-	item_state = "bl_suit"
+	inhand_icon_state = "bl_suit"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	can_adjust = TRUE
 

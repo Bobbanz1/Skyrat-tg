@@ -16,6 +16,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	desc = "A conveyor belt."
 	layer = BELOW_OPEN_DOOR_LAYER
 	processing_flags = NONE
+	var/stack_type = /obj/item/stack/conveyor //NSV13 - What does this conveyor drop when decon'd?
 	/// The current state of the switch.
 	var/operating = CONVEYOR_OFF
 	/// This is the default (forward) direction, set by the map dir.
@@ -256,7 +257,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		if(!attacking_item.use_tool(src, user, 4 SECONDS, volume = 40))
 			return
 		set_operating(FALSE)
-		var/obj/item/stack/conveyor/belt_item = new /obj/item/stack/conveyor(loc, 1, TRUE, null, null, id)
+		var/obj/item/stack/conveyor/belt_item = new stack_type(loc, 1, TRUE, null, null, id)
 		if(!QDELETED(belt_item)) //God I hate stacks
 			transfer_fingerprints_to(belt_item)
 
@@ -497,6 +498,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	singular_name = "conveyor belt"
 	w_class = WEIGHT_CLASS_BULKY
 	merge_type = /obj/item/stack/conveyor
+	var/conveyor_type = /obj/machinery/conveyor //NSV13 - allow for fast and slow conveyors
 	/// ID for linking a belt to one or more switches, all conveyors with the same ID will be controlled the same switch(es).
 	var/id = ""
 
@@ -512,7 +514,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	if(target == user.loc)
 		to_chat(user, span_warning("You cannot place a conveyor belt under yourself!"))
 		return
-	var/obj/machinery/conveyor/belt = new/obj/machinery/conveyor(target, belt_dir, id)
+	var/obj/machinery/conveyor/belt = new conveyor_type(target, belt_dir, id)
 	transfer_fingerprints_to(belt)
 	use(1)
 

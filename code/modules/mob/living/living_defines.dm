@@ -32,6 +32,7 @@
 	var/cloneloss = 0
 	///Stamina damage, or exhaustion. You recover it slowly naturally, and are knocked down if it gets too high. Holodeck and hallucinations deal this.
 	var/staminaloss = 0
+	var/radiation = 0 //If the mob is irradiated.
 	/// when the mob goes from "normal" to crit
 	var/crit_threshold = HEALTH_THRESHOLD_CRIT
 	///When the mob enters hard critical state and is fully incapacitated.

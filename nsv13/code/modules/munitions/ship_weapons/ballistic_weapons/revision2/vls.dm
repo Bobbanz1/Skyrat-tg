@@ -9,7 +9,7 @@
 
 /datum/ship_weapon/vls
 	name = "STS Missile System"
-	default_projectile_type = /obj/item/projectile/guided_munition/missile
+	default_projectile_type = /obj/projectile/guided_munition/missile
 	burst_size = 1
 	fire_delay = 0.35 SECONDS
 	range_modifier = 30
@@ -40,8 +40,7 @@
 	load_sound = 'nsv13/sound/effects/ship/freespace2/m_load.wav'
 	fire_mode = FIRE_MODE_AMS
 	ammo_type = list(/obj/item/ship_weapon/ammunition/missile, /obj/item/ship_weapon/ammunition/torpedo)
-	CanAtmosPass = FALSE
-	CanAtmosPassVertical = FALSE
+	can_atmos_pass = FALSE
 	semi_auto = TRUE
 	max_ammo = 2
 	density = FALSE
@@ -79,7 +78,7 @@
 	// We have different sprites and behaviors for each torpedo
 	var/obj/item/ship_weapon/ammunition/torpedo/T = chambered
 	if(T)
-		var/obj/item/projectile/P = linked.fire_projectile(T.projectile_type, target, homing = TRUE, lateral = weapon_type.lateral)
+		var/obj/projectile/P = linked.fire_projectile(T.projectile_type, target, homing = TRUE, lateral = weapon_type.lateral)
 		if(T.contents.len)
 			for(var/atom/movable/AM in T.contents)
 				to_chat(AM, "<span class='warning'>You feel slightly nauseous as you're shot out into space...</span>")
@@ -143,20 +142,19 @@
 	desc = "A hatch designed to let cruise missiles out, and keep air in for the deck below."
 	icon = 'nsv13/icons/obj/munitions/vls.dmi'
 	icon_state = "vls_closed"
-	CanAtmosPass = FALSE
-	CanAtmosPassVertical = FALSE
-	obj_flags = CAN_BE_HIT | BLOCK_Z_FALL
+	can_atmos_pass = FALSE
+	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN
 	anchored = TRUE
 	obj_integrity = 1000
 	max_integrity = 1000
 
 /obj/structure/fluff/vls_hatch/proc/toggle(state)
 	if(state == HT_OPEN)
-		obj_flags &= ~BLOCK_Z_FALL
+		obj_flags &= ~BLOCK_Z_OUT_DOWN
 		icon_state = "vls"
 		density = FALSE
 		return
-	obj_flags |= BLOCK_Z_FALL
+	obj_flags |= BLOCK_Z_OUT_DOWN
 	icon_state = "vls_closed"
 	density = TRUE
 
@@ -254,6 +252,7 @@
 	return data
 
 /obj/machinery/computer/ams/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "AMS")
@@ -262,7 +261,7 @@
 
 /datum/ams_mode/countermeasures/acquire_targets(obj/structure/overmap/OM)
 	var/list/targets = list()
-	for(var/obj/item/projectile/guided_munition/P in SSprojectiles.processing)
+	for(var/obj/projectile/guided_munition/P in SSprojectiles.processing)
 		if(!P || !istype(P))
 			continue
 		if(P.faction == OM.faction || P.overmap_firer == OM)

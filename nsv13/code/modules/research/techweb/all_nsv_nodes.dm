@@ -5,7 +5,6 @@
 	description = "Highly experimental shield technology to vastly increase survivability in ships. Although Nanotrasen researchers have had access to this technology for quite some time, the incredible amount of power required to maintain shields has proven to be the greatest challenge in implementing them."
 	design_ids = list("shield_fan", "shield_capacitor", "shield_modulator", "shield_interface", "shield_frame")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-	export_price = 5000
 	hidden = TRUE
 
 /datum/techweb_node/ship_circuits
@@ -15,7 +14,6 @@
 	prereq_ids = list("comptech")
 	design_ids = list("helm_circuit", "navigation_console_circuit", "tactical_comp_circuit", "astrometrics_console", "dradis_console", "cargo_dradis_console")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-	export_price = 1000
 
 //Munitions tech
 /datum/techweb_node/maa_circuits
@@ -25,7 +23,6 @@
 	prereq_ids = list("comptech")
 	design_ids = list("fighter_computer_circuit", "ordnance_comp_circuit", "fighter_launcher_circuit", "ammo_sorter_computer", "ammo_sorter")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-	export_price = 1000
 
 /datum/techweb_node/basic_torpedo_components
 	id = "basic_torpedo_components"
@@ -34,7 +31,6 @@
 	prereq_ids = list("explosive_weapons")
 	design_ids = list("warhead", "missile_warhead", "decoy_warhead", "freight_warhead", "guidance_system", "propulsion_system", "iff_card")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
-	export_price = 2000
 
 /datum/techweb_node/advanced_torpedo_components
 	id = "advanced_torpedo_components"
@@ -43,7 +39,6 @@
 	prereq_ids = list("basic_torpedo_components", "exotic_ammo")
 	design_ids = list("bb_warhead", "hellfire_warhead", "probe_warhead")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 7500
 
 /datum/techweb_node/prototype_disruption_warheads
 	id = "prototype_disruption_warheads"
@@ -52,8 +47,6 @@
 	prereq_ids = list("advanced_torpedo_components", "emp_adv")
 	design_ids = list("proto_disruption_warhead")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6500)
-	export_price = 7000
-	tech_tier = 3
 
 /datum/techweb_node/advanced_ballistics
 	id = "adv_ballistics"
@@ -62,7 +55,6 @@
 	prereq_ids = list("ballistic_weapons")
 	design_ids = list("naval_shell", "powder_bag", "gauss_rack_upgrade")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 5000
 
 /datum/techweb_node/macro_ballistics
 	id = "macro_ballistics"
@@ -71,7 +63,6 @@
 	prereq_ids = list("adv_ballistics", "adv_plasma")
 	design_ids = list("naval_shell_ap", "plasma_accelerant", "deck_gun_autorepair", "deck_gun_autoelevator")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
-	export_price = 10000
 
 /datum/techweb_node/missile_automation
 	id = "missile_automation"
@@ -80,7 +71,6 @@
 	prereq_ids = list("explosive_weapons")
 	design_ids = list("missilebuilder", "slowconveyor", "missilewelder", "missilescrewer", "missilewirer", "missileassembler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 5000
 
 //Fighter tech
 /datum/techweb_node/countermeasure_charge
@@ -90,7 +80,6 @@
 	prereq_ids = list("fighter_tier1")
 	design_ids = list("countermeasure_charge")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
-	export_price = 1000
 
 /datum/techweb_node/fighter_fabrication
 	id = "fighter_fabrication"
@@ -99,7 +88,6 @@
 	design_ids = list("light_frame", "heavy_frame", "utility_frame")
 	prereq_ids = list("base")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-	export_price = 1000
 
 /datum/techweb_node/fighter_tier1
 	id = "fighter_tier1"
@@ -108,7 +96,6 @@
 	design_ids = list("fuel_tank", "avionics", "apu", "armour_plating", "targeting_sensor", "fighter_engine", "countermeasure_dispenser", "oxygenator","docking_computer", "fighter_battery", "refuel_kit", "cargo_hold", "resupply")
 	prereq_ids = list("fighter_fabrication")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-	export_price = 1000
 
 /datum/techweb_node/fighter_tier2
 	id = "fighter_tier2"
@@ -117,7 +104,6 @@
 	design_ids = list("fuel_tank_tier2", "apu_tier2", "armour_plating_tier2", "fighter_engine_tier2", "oxygenator_tier2", "fighter_battery_tier2", "refuel_kit_tier2", "cargo_hold_tier2", "resupply_tier2")
 	prereq_ids = list("fighter_tier1", "adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 4000
 
 /datum/techweb_node/fighter_tier3
 	id = "fighter_tier3"
@@ -126,7 +112,6 @@
 	design_ids = list("fuel_tank_tier3", "apu_tier3", "armour_plating_tier3", "fighter_engine_tier3", "oxygenator_tier3", "fighter_battery_tier3", "refuel_kit_tier3", "cargo_hold_tier3", "resupply_tier3")
 	prereq_ids = list("fighter_tier2", "bluespace_travel", "bluespace_power")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
-	export_price = 7500
 
 /datum/techweb_node/fighter_guns_tier1
 	id = "fightergun1"
@@ -135,7 +120,6 @@
 	design_ids = list("ordnance_launcher", "fighter_missile_launcher", "primary_cannon")
 	prereq_ids = list("fighter_tier1", "weaponry")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-	export_price = 1000
 
 /datum/techweb_node/fighter_guns_tier2
 	id = "fightergun2"
@@ -144,7 +128,6 @@
 	design_ids = list("ordnance_launcher_tier2","fighter_missile_launcher_tier2", "heavy_cannon")
 	prereq_ids = list("fightergun1", "ballistic_weapons")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 2500
 
 /datum/techweb_node/fighter_guns_tier3
 	id = "fightergun3"
@@ -153,4 +136,3 @@
 	design_ids = list("ordnance_launcher_tier3","fighter_missile_launcher_tier3")
 	prereq_ids = list("fightergun2", "adv_weaponry")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 5000

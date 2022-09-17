@@ -227,7 +227,7 @@ GLOBAL_LIST_EMPTY(inertia_dampeners)
 	id = "area_inerts"
 	build_path = /obj/item/circuitboard/machine/inertial_dampener
 	category = list("Engineering Machinery")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/techweb_node/inertial_dampener
 	id = "area_inerts"

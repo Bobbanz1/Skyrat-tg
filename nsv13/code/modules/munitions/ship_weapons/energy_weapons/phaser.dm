@@ -114,7 +114,7 @@
 	return charge
 
 /obj/machinery/ship_weapon/energy/beam/animate_projectile(atom/target)
-	var/obj/item/projectile/P = ..()
+	var/obj/projectile/P = ..()
 	P.damage *= power_modifier
 
 /obj/machinery/ship_weapon/energy/process()

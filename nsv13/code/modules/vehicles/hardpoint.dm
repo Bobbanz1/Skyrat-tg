@@ -336,8 +336,8 @@
 			LAZYADD(stored_items, target)
 			target.forceMove(src)
 			to_chat(user, "<span class='notice'>You load [target] into [src]...</span>")
-			target.SetStasis(TRUE)
-			target.ExtinguishMob()
+			target.apply_status_effect(/datum/status_effect/grouped/stasis, STASIS_MACHINE_EFFECT) //Numbing is covered by this.
+			target.extinguish_mob()
 			update_icon()
 			return TRUE
 	to_chat(user, "<span class='notice'>Nothing happens...</span>")
@@ -347,7 +347,7 @@
 	. = ..()
 	if(isliving(AM))
 		var/mob/living/M = AM
-		M.SetStasis(FALSE)
+		M.remove_status_effect(/datum/status_effect/grouped/stasis, STASIS_MACHINE_EFFECT)
 
 //Research stuff
 /datum/design/vehicle_crate_loader
@@ -358,7 +358,7 @@
 	materials = list(/datum/material/iron = 15000)
 	build_path = /obj/item/vehicle_hardpoint/crate_loader
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/vehicle_cryo_stasis
 	name = "Vehicle cryo stasis module"
@@ -368,7 +368,7 @@
 	materials = list(/datum/material/iron = 15000, /datum/material/glass = 10000)
 	build_path = /obj/item/vehicle_hardpoint/cryo_stasis
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/pathetic_engine
 	name = "Speed-Limited 'Safety' Engine"
@@ -378,7 +378,7 @@
 	materials = list(/datum/material/iron = 10000)
 	build_path = /obj/item/vehicle_hardpoint/engine/pathetic
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v2_engine
 	name = "Basic engine"
@@ -388,27 +388,27 @@
 	materials = list(/datum/material/iron = 15000)
 	build_path = /obj/item/vehicle_hardpoint/engine
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v4_engine
 	name = "Upgraded engine"
 	desc = "A powerful engine for large vehicles."
 	id = "vehicle_engine_upgraded"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000, /datum/material/copper=5000)
+	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000)
 	build_path = /obj/item/vehicle_hardpoint/engine/upgraded
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v8_engine
 	name = "V8 engine"
 	desc = "An experimental, extremely powerful engine for large vehicles."
 	id = "vehicle_engine_maxupgrade"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000, /datum/material/copper=5000, /datum/material/diamond=10000)
+	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000, /datum/material/diamond=10000)
 	build_path = /obj/item/vehicle_hardpoint/engine/maxupgrade
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v1_wheels
 	name = "Basic Tyres"
@@ -418,17 +418,17 @@
 	materials = list(/datum/material/iron = 10000)
 	build_path = /obj/item/vehicle_hardpoint/wheels
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v4_wheels
 	name = "Heavy Duty Tyres"
 	desc = "Heavy duty Tyres for large vehicles."
 	id = "vehicle_tyres_upgraded"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000, /datum/material/copper=5000)
+	materials = list(/datum/material/iron = 15000, /datum/material/silver = 10000)
 	build_path = /obj/item/vehicle_hardpoint/wheels/heavy
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE
 
 /datum/design/v8_wheels
 	name = "Sports Tyres"
@@ -438,4 +438,4 @@
 	materials = list(/datum/material/iron = 15000, /datum/material/silver=10000, /datum/material/diamond=5000)
 	build_path = /obj/item/vehicle_hardpoint/wheels/sports
 	category = list("Vehicles")
-	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE

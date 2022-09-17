@@ -161,7 +161,7 @@
 		to_chat(user, "<span class='notice'>You slide the loading tray into place.</span>")
 		var/obj/machinery/ship_weapon/railgun/RG = new(loc)
 		RG.dir = dir
-		RG.setAnchored(anchored)
+		RG.set_anchored(anchored)
 		RG.on_construction()
 		for(var/obj/O in RG.component_parts)
 			qdel(O)

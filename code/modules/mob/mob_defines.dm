@@ -77,6 +77,7 @@
 
 	/// Tick time the mob can next move
 	var/next_move = null
+	var/list/mousemove_intercept_objects //NSV13 - Overmap movement
 
 	/**
 	  * Magic var that stops you moving and interacting with anything

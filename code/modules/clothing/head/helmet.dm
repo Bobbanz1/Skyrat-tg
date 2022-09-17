@@ -12,12 +12,24 @@
 	clothing_flags = SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEHAIR
+	var/obj/machinery/camera/builtInCamera = null
+	var/updating = FALSE
 
 	dog_fashion = /datum/dog_fashion/head/helmet
 
 /obj/item/clothing/head/helmet/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob, ITEM_SLOT_HEAD)
+	if(builtInCamera && ispath(builtInCamera)) //NSV13 - added helmet cams
+		builtInCamera = new builtInCamera(src)
+		builtInCamera.c_tag = "Helmet Cam #[rand(0,999)]"
+		builtInCamera.network = list("headcam")
+		builtInCamera.internal_light = FALSE
+
+/obj/item/clothing/head/helmet/Destroy()
+	if(builtInCamera)
+		QDEL_NULL(builtInCamera)
+	return ..()
 
 /obj/item/clothing/head/helmet/sec
 

@@ -171,7 +171,7 @@
 		animate(L, transform = L.transform, time = 0, loop = -1, flags = ANIMATION_END_NOW)
 		animate(transform = matrix(), time = T)
 
-/datum/hud/proc/update_parallax(mob/viewmob)
+/datum/hud/proc/update_parallax(mob/viewmob, force = FALSE)
 	var/mob/screenmob = viewmob || mymob
 	var/client/C = screenmob.client
 	var/turf/posobj = get_turf(C.eye)
@@ -182,7 +182,6 @@
 	// Update the movement direction of the parallax if necessary (for shuttles)
 	set_parallax_movedir(areaobj.parallax_movedir, FALSE, screenmob)
 
-	var/force = FALSE
 	if(!C.previous_turf || (C.previous_turf.z != posobj.z))
 		C.previous_turf = posobj
 		force = TRUE

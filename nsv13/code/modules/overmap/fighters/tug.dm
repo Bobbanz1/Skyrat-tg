@@ -10,7 +10,6 @@
 
 	movedelay = 0.6 SECONDS
 	key_type = /obj/item/key/fighter_tug
-	key_type_exact = TRUE
 	engine_sound = 'nsv13/sound/vehicles/tug_engine.ogg'
 	pixel_x = -16
 	pixel_y = -19

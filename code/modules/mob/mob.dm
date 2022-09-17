@@ -909,6 +909,10 @@
 		ghost.notify_cloning(message, sound, source, flashwindow)
 		return ghost
 
+///This might need a rename but it should replace the can this mob use things check
+/mob/proc/IsAdvancedToolUser()
+	return FALSE
+
 /**
  * Checks to see if the mob can cast normal magic spells.
  *
@@ -1306,7 +1310,7 @@
 		var/msg = span_notice("[key_name_admin(usr)] has put [key_name(src)] into a cryopod from [ADMIN_VERBOSEJMP(src)].")
 		message_admins(msg)
 		admin_ticket_log(src, msg)
-		
+
 		send_notice = send_notice == "Yes"
 		send_to_cryo(send_notice)
 

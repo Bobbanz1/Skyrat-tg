@@ -72,14 +72,14 @@ GLOBAL_LIST_EMPTY(knpcs)
 		return FALSE
 	var/obj/item/card/id/ID = H.get_idcard()
 	if(ID)
-		if(istype(ID, /obj/item/card/id/syndicate) || istype(ID, /obj/item/card/id/syndicate_command) || istype(ID, /obj/item/card/id/syndi_crew))
+		if(istype(ID, /obj/item/card/id/advanced/black) || istype(ID, /obj/item/card/id/advanced/black/syndicate_command) || istype(ID, /obj/item/card/id/advanced/black/syndicate_command/crew_id))
 			their_id.forceMove(get_turf(H))
 			H.visible_message("<span class='warning'>[H] snatches [their_id]. </span>")
 			ID.access |= their_id.access
 	else
 		H.put_in_inactive_hand(their_id)
 		if(H.equip_to_appropriate_slot(their_id))
-			H.update_inv_hands()
+			H.update_held_items()
 			return TRUE
 
 /datum/component/knpc/Destroy(force, silent)
@@ -127,7 +127,7 @@ GLOBAL_LIST_EMPTY(knpcs)
 		//Add a bit of randomness to their movement to reduce "traffic jams"
 		H.Move(get_step(H,pick(GLOB.cardinals)))
 		if(prob(10))
-			H.lay_down()
+			H.toggle_resting()
 			return FALSE
 
 	if(tries >= max_tries)
@@ -140,7 +140,7 @@ GLOBAL_LIST_EMPTY(knpcs)
 		return FALSE
 	if(length(path) > 1)
 		var/turf/next_turf = get_step_towards(H, path[1])
-		var/turf/this_turf = get_turf(H)	
+		var/turf/this_turf = get_turf(H)
 		//Walk when you see a wet floor
 		if(next_turf.GetComponent(/datum/component/wet_floor))
 			H.m_intent = MOVE_INTENT_WALK
@@ -293,14 +293,14 @@ GLOBAL_LIST_EMPTY(knpcs)
 			continue
 		. += M
 	//Check for nearby mechas....
-	if(length(GLOB.mechas_list))
+	/*if(length(GLOB.mechas_list))
 		for(var/obj/mecha/OM as() in GLOB.mechas_list)
 			if(OM.z != H.z)
 				continue
 			if(get_dist(H, OM) > HA.view_range || !can_see(H, OM, HA.view_range))
 				continue
 			if(OM.occupant && !H.faction_check_mob(OM.occupant))
-				. += OM.occupant
+				. += OM.occupant*/
 	for(var/obj/structure/overmap/OM as() in GLOB.overmap_objects) //Has to go through global objects due to happening on a ship's z level.
 		if(OM.z != H.z)
 			continue
@@ -346,7 +346,7 @@ This is to account for sec Ju-Jitsuing boarding commandos.
 	return score
 
 /datum/ai_goal/human/proc/CheckFriendlyFire(mob/living/us, mob/living/them)
-	for(var/turf/T as() in getline(us,them)) // Not 100% reliable but this is faster than simulating actual trajectory
+	for(var/turf/T as() in get_line(us,them)) // Not 100% reliable but this is faster than simulating actual trajectory
 		for(var/mob/living/L in T)
 			if(L == us || L == them)
 				continue
@@ -478,7 +478,7 @@ This is to account for sec Ju-Jitsuing boarding commandos.
 	var/obj/item/gun/ballistic/B = null
 	if(istype(A, /obj/item/gun/ballistic))
 		B = A
-	H.a_intent = (prob(65)) ? INTENT_HARM : INTENT_DISARM
+	H.combat_mode = (prob(65)) ? TRUE : FALSE
 	if(G && dist > 0)
 		if(!G.can_shoot())
 			//We need to reload first....

@@ -79,6 +79,7 @@
 	output_path = /obj/structure/overmap/small_craft/transport/sabre
 
 /obj/structure/fighter_frame/update_icon()
+	..()
 	icon_state = "[initial(icon_state)][build_state]"
 
 /obj/structure/fighter_frame/examine(mob/user)

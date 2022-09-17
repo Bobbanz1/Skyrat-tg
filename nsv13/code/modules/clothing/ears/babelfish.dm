@@ -3,7 +3,7 @@
 	desc = "A symbiotic fish that can translate any language."
 	icon = 'nsv13/icons/obj/clothing/ears.dmi'
 	icon_state = "babelfish"
-	item_state = "babelfish"
+	inhand_icon_state = "babelfish"
 	strip_delay = 45
 	equip_delay_other = 5
 	resistance_flags = UNACIDABLE

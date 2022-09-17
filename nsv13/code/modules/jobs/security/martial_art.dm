@@ -6,8 +6,8 @@
 /obj/item/book/granter/martial/jujitsu
 	martial = /datum/martial_art/jujitsu
 	name = "surviving edged weapons"
-	oneuse = TRUE
-	martialname = "Ju jitsu"
+	uses = TRUE
+	martial_name = "Ju jitsu"
 	icon = 'nsv13/icons/obj/library.dmi'
 	icon_state = "edgedweapons"
 	desc = "An instructional manual produced in the 2180s which instructs police officers in how to survive attacks by edged weapons and more. (Comes with a FREE Martian war commemorative knife!)"
@@ -15,20 +15,18 @@
 	You're now able to perform grappling moves to incapacitate suspects. You can learn more about your newfound art by using the Recall police training verb in the ju-jitsu tab.</span>"
 	remarks = list("A suspect with a knife can close 7 paces and deliver deadly force in less than 1 and 1/2 seconds...", "In case of satanic rituals, apply a full magazine to the perp...", "Remove his hat and visually inspect his hair without touching it during a search...", "Have your partner search the target while you restrain them...", "What's this about knife culture?...", "A minimum reactionary gap of 21 feet is required to react and deliver at least 2 rounds and to have enough time to move out of the attacker's path...")
 
-/obj/item/book/granter/martial/jujitsu/onlearned(mob/living/carbon/user)
+/obj/item/book/granter/martial/jujitsu/on_reading_finished(mob/living/carbon/user)
 	..()
-	if(oneuse)
+	if(uses)
 		desc = "The pages are too thicky encrusted with coffee stains and donut residue to be legibile anymore..."
 
 /datum/martial_art/jujitsu
 	name = "Ju jitsu"
 	id = MARTIALART_JUJITSU
-	deflection_chance = 0
-	no_guns = FALSE
+	block_chance = 0
 	allow_temp_override = FALSE
 	help_verb = /mob/living/carbon/human/proc/jujitsu_help
 	smashes_tables = FALSE
-	reroute_deflection = FALSE
 	var/cooldown = 5 SECONDS //While sec should be proficient at hand to hand, they shouldn't be able to simultaneously ju jitsu 10 different targets...
 	var/last_move = 0
 
@@ -93,7 +91,7 @@
 		return FALSE
 	if(A==D)
 		return FALSE //prevents grabbing yourself
-	if(A.a_intent == INTENT_GRAB)
+	if(A.grab_state == GRAB_PASSIVE)
 		add_to_streak("G",D)
 		if(check_streak(A,D)) //doing combos is prioritized over upgrading grabs
 			return TRUE

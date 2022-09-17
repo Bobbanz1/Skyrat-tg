@@ -6,7 +6,7 @@
 	name = "Squad Management Computer"
 	desc = "A console which allows you to manage the ship's squads and assign people to different squads."
 	icon_screen = "squadconsole"
-	req_one_access = ACCESS_HEADS
+	req_one_access = ACCESS_COMMAND
 	circuit = /obj/item/circuitboard/computer/squad_manager
 	var/next_major_action = 0 //To stop the infinite BOOOP spam.
 

@@ -202,19 +202,19 @@
 	name = "Ammo sorter console (circuitboard)"
 	desc = "The central control console for ammo sorters.."
 	id = "ammo_sorter_computer"
-	materials = list(/datum/material/glass = 2000, /datum/material/copper = 1000, /datum/material/gold = 500)
+	materials = list(/datum/material/glass = 2000, /datum/material/gold = 500)
 	build_path = /obj/item/circuitboard/computer/ammo_sorter
 	category = list("Advanced Munitions")
-	departmental_flags = DEPARTMENTAL_FLAG_MUNITIONS
+	departmental_flags = DEPARTMENT_BITFLAG_MUNITIONS
 
 /datum/design/board/ammo_sorter
 	name = "Ammo sorter (circuitboard)"
 	desc = "A helpful storage unit that allows for mass storage of ammunition, with the ability to retrieve it all from a central console."
 	id = "ammo_sorter"
-	materials = list(/datum/material/glass = 2000, /datum/material/copper = 1000, /datum/material/gold = 500)
+	materials = list(/datum/material/glass = 2000, /datum/material/gold = 500)
 	build_path = /obj/item/circuitboard/machine/ammo_sorter
 	category = list("Advanced Munitions")
-	departmental_flags = DEPARTMENTAL_FLAG_MUNITIONS
+	departmental_flags = DEPARTMENT_BITFLAG_MUNITIONS
 
 /obj/item/circuitboard/computer/ammo_sorter
 	name = "ammo sorter console (circuitboard)"
@@ -246,6 +246,7 @@
 	sortList(linked_sorters) //Alphabetise the list initially...
 
 /obj/machinery/computer/ammo_sorter/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "AmmoSorter")
@@ -301,12 +302,10 @@
 /obj/machinery/computer/ammo_sorter/proc/linkSorter(var/obj/machinery/ammo_sorter/AS)
 	linked_sorters += AS
 	AS.linked_consoles += src
-	ui_update()
 
 /obj/machinery/computer/ammo_sorter/proc/unlinkSorter(var/obj/machinery/ammo_sorter/AS)
 	linked_sorters -= AS
 	AS.linked_consoles -= src
-	ui_update()
 
 /obj/machinery/computer/ammo_sorter/ui_data(mob/user)
 	. = ..()
@@ -430,7 +429,6 @@
 /obj/machinery/ammo_sorter/Destroy()
 	for(var/obj/machinery/computer/ammo_sorter/AS as() in linked_consoles)
 		AS.linked_sorters -= src
-		AS.ui_update()
 	. = ..()
 
 /obj/machinery/ammo_sorter/examine(mob/user)
@@ -462,6 +460,7 @@
 			. += "<span class='notice'>[listofitems[i]["name"]] x[listofitems[i]["amount"]]</span>"
 
 /obj/machinery/ammo_sorter/RefreshParts()
+	..()
 	max_capacity = 0
 	for(var/obj/item/stock_parts/matter_bin/MB in component_parts)
 		max_capacity += MB.rating+3
@@ -519,8 +518,6 @@
 			loading = FALSE
 			loaded += A
 			weardown()
-			for(var/obj/machinery/computer/ammo_sorter/AS as() in linked_consoles)
-				AS.ui_update()
 			return TRUE
 		else
 			loading = FALSE

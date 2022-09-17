@@ -129,7 +129,7 @@
 	icon_state = "megamouth"
 	bound_height = 160
 	bound_width = 160
-	torpedo_type = /obj/item/projectile/guided_munition/torpedo/hellfire
+	torpedo_type = /obj/projectile/guided_munition/torpedo/hellfire
 	obj_integrity = 900
 	max_integrity = 900 //Max health
 	integrity_failure = 900
@@ -226,7 +226,7 @@
 	missiles = 10
 	bounty = 4000
 	ai_flags = AI_FLAG_BATTLESHIP | AI_FLAG_ELITE
-	
+
 /datum/map_template/boarding/carrier
 	name = "carrier (interior)"
 	mappath = "_maps/templates/boarding/syndicate/carrier.dmm"
@@ -295,7 +295,7 @@
 	ai_flags = AI_FLAG_BATTLESHIP | AI_FLAG_ELITE
 	combat_dice_type = /datum/combat_dice/battleship
 	possible_interior_maps = list()
-	torpedo_type = /obj/item/projectile/guided_munition/torpedo/hellfire
+	torpedo_type = /obj/projectile/guided_munition/torpedo/hellfire
 
 /obj/structure/overmap/syndicate/ai/battleship/apply_weapons()
 	weapon_types[FIRE_MODE_ANTI_AIR] = new /datum/ship_weapon/aa_guns(src)
@@ -409,7 +409,7 @@
 	ai_flags = AI_FLAG_DESTROYER
 	cloak_factor = 100 //Not a perfect cloak, mind you.
 	combat_dice_type = /datum/combat_dice/destroyer
-	torpedo_type = /obj/item/projectile/guided_munition/torpedo/disruptor
+	torpedo_type = /obj/projectile/guided_munition/torpedo/disruptor
 	possible_interior_maps = list()
 
 /obj/structure/overmap/syndicate/ai/submarine/Initialize()
@@ -499,7 +499,7 @@
 	weapon_types[FIRE_MODE_PDC] = new /datum/ship_weapon/pdc_mount(src)
 	weapon_types[FIRE_MODE_FLAK] = new /datum/ship_weapon/flak(src)
 	weapon_types[FIRE_MODE_MISSILE] = new /datum/ship_weapon/missile_launcher(src)
-	
+
 /obj/structure/overmap/hostile/ai/alicorn
 	name = "The Alicorn"
 	desc = "One Billion Lives!"
@@ -524,7 +524,7 @@
 	combat_dice_type = /datum/combat_dice/carrier
 	ai_can_launch_fighters = TRUE
 	ai_fighter_type = list(/obj/structure/overmap/hostile/ai/fighter)
-	torpedo_type = /obj/item/projectile/guided_munition/torpedo/hellfire
+	torpedo_type = /obj/projectile/guided_munition/torpedo/hellfire
 	flak_battery_amount = 2
 
 /obj/structure/overmap/hostile/ai/alicorn/Initialize()
@@ -553,12 +553,12 @@
 	max_integrity = 115 //Slightly less squishy!
 	integrity_failure = 115
 	ai_flags = AI_FLAG_SWARMER
-	bound_width = 32 
+	bound_width = 32
 	bound_height = 32
 	torpedoes = 1
 	missiles = 4
 	combat_dice_type = /datum/combat_dice/fighter
-	torpedo_type = /obj/item/projectile/guided_munition/torpedo/disruptor
+	torpedo_type = /obj/projectile/guided_munition/torpedo/disruptor
 
 /obj/structure/overmap/hostile/ai/fighter/apply_weapons()
 	weapon_types[FIRE_MODE_ANTI_AIR] = new/datum/ship_weapon/light_cannon(src)

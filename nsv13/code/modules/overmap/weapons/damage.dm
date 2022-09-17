@@ -24,7 +24,7 @@ Bullet reactions
 	add_overlay(new /obj/effect/temp_visual/overmap_shield_hit(get_turf(src), src))
 
 
-/obj/structure/overmap/bullet_act(obj/item/projectile/P)
+/obj/structure/overmap/bullet_act(obj/projectile/P)
 	if(istype(P, /obj/projectile/beam/overmap/aiming_beam))
 		return
 	if(shields && shields.absorb_hit(P.damage))
@@ -47,7 +47,7 @@ Bullet reactions
 		visible_message("<span class='danger'>[src] is hit by \a [P]!</span>", null, null, COMBAT_MESSAGE_RANGE)
 		if(!QDELETED(src)) //Bullet on_hit effect might have already destroyed this object
 			//var/datum/vector2d/point_of_collision = src.physics2d?.collider2d.get_collision_point(P.physics2d?.collider2d)//Get the collision point, see if the armour quadrants need to absorb this hit.
-			take_quadrant_hit(run_obj_armor(P.damage, P.damage_type, P.flag, null, P.armour_penetration), projectile_quadrant_impact(P)) //This looks horrible, but trust me, it isn't! Probably!. Armour_quadrant.dm for more info
+			take_quadrant_hit(run_atom_armor(P.damage, P.damage_type, P.armor_flag, null, P.armour_penetration), projectile_quadrant_impact(P)) //This looks horrible, but trust me, it isn't! Probably!. Armour_quadrant.dm for more info
 
 /obj/structure/overmap/proc/relay_damage(proj_type)
 	if(!length(occupying_levels))
@@ -57,13 +57,13 @@ Bullet reactions
 	var/startside = pick(GLOB.cardinals)
 	var/turf/pickedstart = spaceDebrisStartLoc(startside, theZ)
 	var/turf/pickedgoal = locate(round(world.maxx * 0.5, 1), round(world.maxy * 0.5, 1), theZ)
-	var/obj/item/projectile/proj = new proj_type(pickedstart)
+	var/obj/projectile/proj = new proj_type(pickedstart)
 	proj.starting = pickedstart
 	proj.firer = null
 	proj.def_zone = "chest"
 	proj.original = pickedgoal
 	spawn()
-		proj.fire(Get_Angle(pickedstart,pickedgoal))
+		proj.fire(get_angle(pickedstart,pickedgoal))
 		proj.set_pixel_speed(4)
 
 /obj/structure/overmap/small_craft/relay_damage(proj_type)
@@ -255,7 +255,7 @@ Bullet reactions
 	. = ..()
 	set_light(4)
 	for(var/mob/M in orange(src, 3))
-		if(isliving(M) && (M.client?.prefs.toggles & SOUND_AMBIENCE) && M.can_hear_ambience())
+		if(isliving(M) && (M.client?.prefs.toggles & SOUND_AMBIENCE)) // && M.can_hear_ambience()
 			to_chat(M, "<span class='userdanger'>You hear a loud creak coming from above you. Take cover!</span>")
 			SEND_SOUND(M, pick('nsv13/sound/ambience/ship_damage/creak5.ogg','nsv13/sound/ambience/ship_damage/creak6.ogg'))
 

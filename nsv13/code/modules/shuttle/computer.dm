@@ -17,7 +17,7 @@
 			dat += "<A href='?src=[REF(src)];move=[S.id]'>Send to [S.name]</A><br>"
 		if(!destination_found)
 			dat += "<B>Shuttle Locked</B><br>"
-			if(admin_controlled)
+			if(isAdminGhostAI)
 				dat += "Authorized personnel only<br>"
 				dat += "<A href='?src=[REF(src)];request=1]'>Request Authorization</A><br>"
 	dat += "<a href='?src=[REF(user)];mach_close=computer'>Close</a>"

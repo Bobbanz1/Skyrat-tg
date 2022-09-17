@@ -67,7 +67,7 @@
 	//If you wanna specify WHERE cargo is dropped. Otherwise we guess.
 	if(!length(trader_beacons))
 		if(OM.role == MAIN_OVERMAP)
-			landingzone = GLOB.areas_by_type[/area/quartermaster/warehouse]
+			//landingzone = GLOB.areas_by_type[/area/quartermaster/warehouse]
 
 		if ( !landingzone ) // Main overmap may or may not have a warehouse
 			landingzone = GLOB.areas_by_type[/area/quartermaster]
@@ -82,8 +82,8 @@
 			landingzone = pick(OM.linked_areas)
 		var/list/empty_turfs = list()
 		for(var/turf/open/floor/T in landingzone)//uses default landing zone
-			if(is_blocked_turf(T))
-				continue
+			//if(is_blocked_turf(T))
+		//		continue
 			if(empty_turfs.len >= 10)
 				break //Don't bother finding any more.
 			LAZYADD(empty_turfs, T)
@@ -104,7 +104,7 @@
 	else
 		toLaunch = new /obj/structure/closet/supplypod/centcompod()
 
-	var/shippingLane = GLOB.areas_by_type[/area/centcom/supplypod/supplypod_temp_holding]
+	var/shippingLane = GLOB.areas_by_type[/area/centcom/central_command_areas/supplypod/supplypod_temp_holding]
 	toLaunch.forceMove(shippingLane)
 	var/atom/movable/theItem
 	if ( isInitialized )

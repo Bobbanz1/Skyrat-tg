@@ -74,7 +74,7 @@
 /datum/component/overmap_gunning/proc/start_gunning()
 	var/obj/structure/overmap/OM = holder.loc.get_overmap()
 	if(!OM)
-		RemoveComponent() //Uh...OK?
+		ClearFromParent() //Uh...OK?
 		CRASH("Overmap gunning component created with no attached overmap.")
 	OM.gauss_gunners.Add(holder)
 	OM.start_piloting(holder, OVERMAP_USER_ROLE_SECONDARY_GUNNER)
@@ -105,7 +105,6 @@
 		autofire_target = object //When we start firing, we start firing at whatever you clicked on initially. When the user drags their mouse, this shall change.
 
 /datum/component/overmap_gunning/onMouseDrag(src_object, over_object, src_location, over_location, params, mob/M)
-	. = ..()
 	autofire_target = over_object
 
 /datum/component/overmap_gunning/proc/end_gunning()
@@ -116,7 +115,7 @@
 	var/obj/machinery/ship_weapon/gauss_gun/G = holder.loc
 	if(istype(G))
 		G.remove_gunner()
-	RemoveComponent()
+	ClearFromParent()
 	return
 
 /obj/machinery/computer/anti_air

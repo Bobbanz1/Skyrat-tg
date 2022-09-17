@@ -157,7 +157,7 @@
 		to_chat(user, "<span class='notice'>You slide the loading tray into place.</span>")
 		var/obj/machinery/ship_weapon/built = new output_path(loc)
 		built.dir = dir
-		built.setAnchored(anchored)
+		built.set_anchored(anchored)
 		built.on_construction()
 		for(var/obj/O in built.component_parts)
 			qdel(O)

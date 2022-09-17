@@ -274,9 +274,9 @@ That's it, ok bye!
 		LL.deck = count
 		count--
 
-	close_all_doors() //Start off by closing all the doors.
-	platform_location.unbolt_doors(open_doors_on_arrival) //But ensure that you can board the lift at some point.
-	set_music()
+	INVOKE_ASYNC(src, .proc/close_all_doors) //Start off by closing all the doors.
+	INVOKE_ASYNC(platform_location, .proc/unbolt_doors, open_doors_on_arrival)
+	INVOKE_ASYNC(src, .proc/set_music)
 
 //Lets you set the elevator music for this turbolift. Used by emags to make the music ~~horrible~~ amazing
 
@@ -398,7 +398,7 @@ That's it, ok bye!
 	//Finally, ensure that the bottom floor is always plating.
 	if(src != target)
 		for(var/turf/T as() in platform)
-			T.ChangeTurf(/turf/open/floor/plasteel/elevatorshaft, list(/turf/open/openspace, /turf/open/floor/plating), CHANGETURF_INHERIT_AIR)
+			T.ChangeTurf(/turf/open/floor/iron/elevatorshaft, list(/turf/open/openspace, /turf/open/floor/plating), CHANGETURF_INHERIT_AIR)
 
 //Special FX and stuff.
 
@@ -425,14 +425,14 @@ That's it, ok bye!
 					karmics_victim.gravity_crush(4, 3)
 		sleep(start_delay) //Sound time!
 		for(var/mob/M as() in moblist)
-			SEND_SOUND(M, sound(turbolift_loop_sound, repeat = TRUE, wait = 0, volume = 100, channel = CHANNEL_AMBIENT_EFFECTS))
+			SEND_SOUND(M, sound(turbolift_loop_sound, repeat = TRUE, wait = 0, volume = 100, channel = CHANNEL_AMBIENCE))
 		return
 	else
 		if(play_voice_lines)
 			playsound(platform_location, 'nsv13/sound/effects/lift/mindthegap.ogg', 100, FALSE)
 			platform_location.say("Please mind the gap.")
 		for(var/mob/M as() in moblist)
-			SEND_SOUND(M, sound(turbolift_end_sound, repeat = FALSE, wait = 0, volume = 100, channel = CHANNEL_AMBIENT_EFFECTS))
+			SEND_SOUND(M, sound(turbolift_end_sound, repeat = FALSE, wait = 0, volume = 100, channel = CHANNEL_AMBIENCE))
 		sleep(end_delay)
 		return
 

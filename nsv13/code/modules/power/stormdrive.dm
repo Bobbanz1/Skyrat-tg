@@ -293,14 +293,14 @@ Control Rods
 			update_icon()
 			return TRUE
 
-/obj/machinery/atmospherics/components/binary/stormdrive_reactor/bullet_act(obj/item/projectile/Proj)
+/obj/machinery/atmospherics/components/binary/stormdrive_reactor/bullet_act(obj/projectile/Proj)
 	if(state == REACTOR_STATE_RUNNING)
 		var/turf/L = loc
 		if(!istype(L))
 			return FALSE
 		if(!istype(Proj.firer, /obj/structure/particle_accelerator/particle_emitter))
-			investigate_log("has been hit by [Proj] fired by [key_name(Proj.firer)]", INVESTIGATE_ENGINES)
-		if(Proj.flag != "bullet")
+			investigate_log("has been hit by [Proj] fired by [key_name(Proj.firer)]", INVESTIGATE_ENGINE)
+		if(Proj.armor_flag != "bullet")
 			reactor_stability -= Proj.damage / 15
 		else
 			reactor_stability -= Proj.damage / 100 //It is pretty durable
@@ -567,7 +567,7 @@ Control Rods
 			var/datum/gas_mixture/buffer = air1.remove(min(25, moles)) //This doesn't appear to actually work. Feature.
 			var/heat_kelvin = heat + 273.15
 			air2.merge(buffer)
-			air2.set_temperature(heat_kelvin) //Gets spicy
+			air2.temperature = heat_kelvin //Gets spicy
 			update_parents()
 
 	if(state != REACTOR_STATE_RUNNING || heat <= start_threshold)
@@ -681,7 +681,7 @@ Control Rods
 	if(env.return_temperature() <= heat_kelvin)
 		var/delta_env = heat_kelvin - env.return_temperature()
 		var/temperature = env.return_temperature()
-		env.set_temperature(temperature += delta_env / 2)
+		env.temperature = (temperature += delta_env / 2)
 		air_update_turf()
 
 /obj/machinery/atmospherics/components/binary/stormdrive_reactor/proc/can_cool()
@@ -745,11 +745,11 @@ Control Rods
 		var/fuel_amount = air1.get_moles(GAS_PLASMA) + air1.get_moles(GAS_CONSTRICTED_PLASMA) + air1.get_moles(GAS_TRITIUM)
 		if(output_starting_pressure >= max_output_pressure) //if pressured capped, nucleium backs up into the drive
 			air1.adjust_moles(GAS_NUCLEIUM, ((fuel_amount / reaction_rate) / 10) * input_power_modifier)
-			air1.set_temperature(heat_kelvin)
+			air1.temperature = (heat_kelvin)
 			update_parents()
 		else
 			air2.adjust_moles(GAS_NUCLEIUM, (reaction_rate / 10) * input_power_modifier)
-			air2.set_temperature(heat_kelvin)
+			air2.temperature = (heat_kelvin)
 			update_parents()
 
 /obj/machinery/atmospherics/components/binary/stormdrive_reactor/proc/handle_temperature_reinforcement() //Adjusting temperature thresholds
@@ -994,7 +994,7 @@ Control Rods
 					else
 						L.flicker()
 			if(prob(0.01))
-				for(var/obj/machinery/power/grounding_rod/R in orange(5, src))
+				for(var/obj/machinery/power/energy_accumulator/grounding_rod/R in orange(5, src))
 					R.take_damage(rand(25, 50))
 				tesla_zap(src, 5, 1000)
 				reactor_stability -= rand(5, 10)
@@ -1007,12 +1007,13 @@ Control Rods
 				for(var/obj/machinery/light/L in orange(12, src))
 					L.burn_out() //If there are even any left by this stage
 			if(prob(0.1))
-				for(var/obj/machinery/power/grounding_rod/R in orange(8, src))
+				for(var/obj/machinery/power/energy_accumulator/grounding_rod/R in orange(8, src))
 					R.take_damage(rand(25, 75))
 				tesla_zap(src, 8, 2000)
 				reactor_stability -= rand(10, 20)
 
 /obj/machinery/atmospherics/components/binary/stormdrive_reactor/update_icon() //include overlays for radiation output levels and power output levels (ALSO 1k+ levels)
+	..()
 	if(state == REACTOR_STATE_MELTDOWN)
 		icon_state = "broken"
 		return
@@ -1057,11 +1058,11 @@ Control Rods
 			set_light(illumination)
 		else if(heat > reactor_temperature_critical && heat <= reactor_temperature_meltdown) //Final Warning
 			icon_state = "reactor_overheat"
-			light_color = LIGHT_COLOR_RED
+			light_color = COLOR_RED_LIGHT
 			set_light(illumination)
 		else if(heat > reactor_temperature_meltdown)
 			icon_state = "reactor_overheat"
-			light_color = LIGHT_COLOR_RED
+			light_color = COLOR_RED_LIGHT
 			set_light(illumination)
 			start_meltdown() //Epsilon or Death
 
@@ -1132,14 +1133,14 @@ Control Rods
 		cut_overlays()
 		flick("meltdown", src)
 		do_meltdown_effects()
-		fail_meltdown_objective()
+		//fail_meltdown_objective()
 		sleep(10)
 		icon_state = "broken"
 		reactor_end_times = FALSE //We don't need this anymore
 	else
 		warning_state = WARNING_STATE_NONE
 		reactor_end_times = FALSE
-
+/*
 /obj/machinery/atmospherics/components/binary/stormdrive_reactor/proc/fail_meltdown_objective()
 	for(var/client/C in GLOB.clients)
 		if(C)
@@ -1148,6 +1149,7 @@ Control Rods
 				if(M?.mind?.current && LAZYLEN(M.mind.crew_objectives) && (M.job == "Station Engineer" || M.job == "Chief Engineer" || M.job == "Atmospheric Technician"))
 					for(var/datum/objective/crew/meltdown/MO in M.mind.crew_objectives)
 						MO.meltdown = TRUE
+*/
 
 /obj/machinery/atmospherics/components/binary/stormdrive_reactor/proc/do_meltdown_effects()
 	explosion(get_turf(src), 0, 0, 10, 20, TRUE, TRUE)
@@ -1254,7 +1256,7 @@ Control Rods
 
 /obj/machinery/computer/ship/reactor_control_computer/Initialize()
 	. = ..()
-	new /obj/item/book/manual/wiki/stormdrive(get_turf(src))
+	//new /obj/item/book/manual/wiki/stormdrive(get_turf(src))
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/machinery/computer/ship/reactor_control_computer/LateInitialize()
@@ -1308,6 +1310,7 @@ Control Rods
 			reactor.dumping_fuel = !reactor.dumping_fuel
 
 /obj/machinery/computer/ship/reactor_control_computer/ui_interact(mob/user, datum/tgui/ui)
+	..()
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "StormdriveConsole")
@@ -1371,7 +1374,7 @@ Control Rods
 	id = "sd_r_c_c"
 	build_path = /obj/item/circuitboard/computer/stormdrive_reactor_control
 	category = list("Computer Boards")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/techweb_node/stormdrive_reactor_control
 	id = "sd_r_c_c"
@@ -1380,7 +1383,6 @@ Control Rods
 	prereq_ids = list("adv_engi", "adv_power")
 	design_ids = list("sd_r_c_c")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 5000
 
 ////// Magnetic Constrictors//////
 
@@ -1404,6 +1406,7 @@ Control Rods
 	..(dir, piping_layer)
 
 /obj/machinery/atmospherics/components/binary/magnetic_constrictor/RefreshParts()
+	..()
 	var/A
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		A += C.rating
@@ -1422,9 +1425,8 @@ Control Rods
 	on = !on
 	update_icon()
 
-/obj/machinery/atmospherics/components/binary/magnetic_constrictor/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS )
+/obj/machinery/atmospherics/components/binary/magnetic_constrictor/proc/ComponentInitialize()
+	AddComponent(/datum/component/simple_rotation,ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE )
 
 /obj/machinery/atmospherics/components/binary/magnetic_constrictor/process_atmos()
 	..()
@@ -1438,7 +1440,7 @@ Control Rods
 	var/plasma_moles = air1.get_moles(GAS_PLASMA)
 	var/plasma_transfer_moles = min(constriction_rate, plasma_moles)
 	air2.adjust_moles(GAS_CONSTRICTED_PLASMA, plasma_transfer_moles)
-	air2.set_temperature(air1.return_temperature())
+	air2.temperature = (air1.return_temperature())
 	air1.adjust_moles(GAS_PLASMA, -plasma_transfer_moles)
 	update_parents()
 
@@ -1459,6 +1461,7 @@ Control Rods
 	return TRUE
 
 /obj/machinery/atmospherics/components/binary/magnetic_constrictor/update_icon()
+	..()
 	cut_overlays()
 	if(panel_open)
 		icon_state = "constrictor_screw"
@@ -1488,7 +1491,7 @@ Control Rods
 	id = "mag_cons"
 	build_path = /obj/item/circuitboard/machine/magnetic_constrictor
 	category = list("Engineering Machinery")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/techweb_node/magnetic_constrictor
 	id = "mag_cons"
@@ -1497,7 +1500,6 @@ Control Rods
 	prereq_ids = list("adv_engi", "adv_power")
 	design_ids = list("mag_cons")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 5000
 
 /////// Constricted Plasma///////
 
@@ -1540,14 +1542,14 @@ Control Rods
 	weather_sound = 'nsv13/sound/effects/ship/reactor/falloutwind.ogg'
 	end_duration = 100
 	area_type = /area
-	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
-	/area/ai_monitored/turret_protected/ai, /area/storage/emergency/starboard, /area/storage/emergency/port, /area/shuttle)
+	protected_areas = list(/area/station/maintenance, /area/station/ai_monitored/turret_protected/ai_upload, /area/station/ai_monitored/turret_protected/ai_upload_foyer,
+	/area/station/ai_monitored/turret_protected/ai, /area/station/commons/storage/emergency/starboard, /area/station/commons/storage/emergency/port, /area/shuttle)
 	target_trait = ZTRAIT_STATION
 	end_message = "<span class='notice'>The ash stops falling.</span>"
 	immunity_type = "rad"
 
 /datum/weather/nuclear_fallout/weather_act(mob/living/L)
-	L.rad_act(100)
+	return
 
 /datum/weather/nuclear_fallout/telegraph()
 	..()
@@ -1672,7 +1674,7 @@ Control Rods
 		canshock = FALSE
 		if(iscarbon(M))
 			if(ishuman(M))
-				M.electrocute_act(shockdamage, "[name]", safety=1)
+				M.electrocute_act(shockdamage, "[name]")
 				return
 			M.electrocute_act(shockdamage, "[name]")
 			return
@@ -1713,7 +1715,6 @@ Control Rods
 			if(isliving(AM))
 				var/mob/living/M = AM
 				M.Paralyze(20)
-				M.Dizzy(5)
 				M.apply_damage(10)
 				var/atom/target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 				M.throw_at(target, 4, 2)
@@ -1733,8 +1734,6 @@ Control Rods
 
 /obj/effect/anomaly/stormdrive/squall/proc/polarise(mob/living/A)
 	if(istype(A))
-		A.Dizzy(10)
-		A.Jitter(5)
 		A.adjust_disgust(20)
 		A.visible_message("<span class='danger'>The space around [A] begins to shimmer!</span>", \
 		"<span class='userdanger'>Your head swims as space appears to bend around you!</span>",
@@ -1772,7 +1771,6 @@ Control Rods
 		if(isliving(AM))
 			var/mob/living/M = AM
 			M.Paralyze(40)
-			M.Dizzy(10)
 			M.apply_damage(20)
 			var/atom/target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 			M.throw_at(target, 6, 5)
@@ -1788,14 +1786,14 @@ Control Rods
 	atmos_spawn_air("o2=200,n2=200;TEMP=[temperature]") //Hope there is nothing flammable in here
 
 //////// MISC ///////
-
+/*
 /obj/item/book/manual/wiki/stormdrive
 	name = "\improper Stormdrive Class IV SOP"
 	icon_state ="bookEngineering2"
 	author = "CogWerk Engineering Reactor Design Department"
 	title = "Stormdrive Class IV SOP"
 	page_link = "Guide_to_the_Stormdrive_Engine"
-
+*/
 /obj/item/stormdrive_core
 	name = "\improper Class IV Nuclear Storm Drive Reactor Core"
 	desc = "This crate contains a live reactor core for a class IV nuclear storm drive."
@@ -1817,7 +1815,7 @@ Control Rods
 	extended_desc = "This program connects to specially calibrated sensors to provide information on the status of the storm drive."
 	requires_ntnet = TRUE
 	transfer_access = ACCESS_CONSTRUCTION
-	network_destination = "storm drive monitoring system"
+	//network_destination = "storm drive monitoring system"
 	size = 2
 	tgui_id = "NtosStormdriveMonitor"
 	var/active = TRUE //Easy process throttle
@@ -1849,7 +1847,7 @@ Control Rods
 	if(istype(computer))
 		computer.update_icon()
 
-/datum/computer_file/program/stormdrive_monitor/run_program(mob/living/user)
+/datum/computer_file/program/stormdrive_monitor/on_start(mob/living/user)
 	. = ..(user)
 	//No reactor? Go find one then.
 	if(!reactor)

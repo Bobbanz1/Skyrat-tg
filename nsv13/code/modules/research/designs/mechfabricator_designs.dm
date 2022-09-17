@@ -11,7 +11,7 @@
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 500, /datum/material/plasma = 1500, /datum/material/uranium = 200)
 	construction_time = 120
 	category = list("Cyborg Upgrade Modules")
-*/
+
 
 /////////////////////////////////////////
 //////////Mech Designs///////////////////
@@ -34,3 +34,4 @@
 	materials = list(/datum/material/iron=25000, /datum/material/glass=5000)
 	construction_time = 200
 	category = list("Exosuit Equipment")
+*/

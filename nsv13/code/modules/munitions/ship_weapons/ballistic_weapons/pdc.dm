@@ -79,6 +79,7 @@
 
 // Update the icon to reflect how far our magazine is depleted
 /obj/machinery/ship_weapon/pdc_mount/update_icon()
+	..()
 	if(!magazine)
 		icon_state = "[initial(icon_state)]_0"
 		return
@@ -134,7 +135,7 @@
 	component_parts = list()
 
 	. = M
-	M.setAnchored(anchored)
+	M.set_anchored(anchored)
 	M.setDir(dir)
 	if(!disassembled)
 		M.obj_integrity = M.max_integrity * 0.5 //the frame is already half broken

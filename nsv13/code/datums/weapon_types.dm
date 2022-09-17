@@ -6,7 +6,7 @@
 
 /datum/ship_weapon/mac
 	name = "Naval Artillery"
-	default_projectile_type = /obj/item/projectile/bullet/mac_round
+	default_projectile_type = /obj/projectile/bullet/mac_round
 	burst_size = 1
 	fire_delay = 3.5 SECONDS
 	range_modifier = 50
@@ -28,13 +28,13 @@
 
 /datum/ship_weapon/mac/dirty
 	name = "Dirty Naval Artillery"
-	default_projectile_type = /obj/item/projectile/bullet/mac_round/dirty
+	default_projectile_type = /obj/projectile/bullet/mac_round/dirty
 
 //Coaxial railguns
 
 /datum/ship_weapon/railgun
 	name = "Coaxial railguns"
-	default_projectile_type = /obj/item/projectile/bullet/railgun_slug
+	default_projectile_type = /obj/projectile/bullet/railgun_slug
 	burst_size = 1
 	fire_delay = 1.5 SECONDS
 	range_modifier = 20
@@ -57,7 +57,7 @@
 
 /datum/ship_weapon/hybrid_railgun //Railgun+
 	name = "Coaxial Railguns"
-	default_projectile_type = /obj/item/projectile/bullet/ //This is ultra dodgy
+	default_projectile_type = /obj/projectile/bullet/ //This is ultra dodgy
 	burst_size = 1
 	fire_delay = 1 SECONDS
 	range_modifier = 50
@@ -69,7 +69,7 @@
 //Deprecated by AMS. Still kept around for AI ships
 /datum/ship_weapon/torpedo_launcher
 	name = "Torpedo tubes"
-	default_projectile_type = /obj/item/projectile/guided_munition/torpedo
+	default_projectile_type = /obj/projectile/guided_munition/torpedo
 	burst_size = 1
 	fire_delay = 0.5 SECONDS
 	range_modifier = 30
@@ -88,7 +88,7 @@
 
 /datum/ship_weapon/torpedo_launcher/burst_disruptor
 	name = "Burst Disruption Torpedo tubes"
-	default_projectile_type = /obj/item/projectile/guided_munition/torpedo/disruptor
+	default_projectile_type = /obj/projectile/guided_munition/torpedo/disruptor
 	burst_size = 3
 	fire_delay = 4 SECONDS
 	range_modifier = 35
@@ -104,7 +104,7 @@
 
 /datum/ship_weapon/aa_guns
 	name = "Anti air guns"
-	default_projectile_type = /obj/item/projectile/bullet/aa_round
+	default_projectile_type = /obj/projectile/bullet/aa_round
 	burst_size = 4
 	fire_delay = 0.6 SECONDS
 	range_modifier = 10
@@ -119,7 +119,7 @@
 
 /datum/ship_weapon/aa_guns/heavy
 	name = "Point defense batteries"
-	default_projectile_type = /obj/item/projectile/bullet/aa_round/heavy
+	default_projectile_type = /obj/projectile/bullet/aa_round/heavy
 	burst_size = 2
 	fire_delay = 0.25 SECONDS
 	range_modifier = 5
@@ -129,7 +129,7 @@
 
 /datum/ship_weapon/burst_phaser // Little red laser
 	name = "Burst Phasers"
-	default_projectile_type = /obj/item/projectile/beam/laser/phaser
+	default_projectile_type = /obj/projectile/beam/laser/phaser
 	burst_size = 1
 	fire_delay = 0.5 SECONDS
 	range_modifier = 10
@@ -145,7 +145,7 @@
 
 /datum/ship_weapon/phaser // Big blue laser
 	name = "Phaser Banks"
-	default_projectile_type = /obj/item/projectile/beam/laser/heavylaser/phaser
+	default_projectile_type = /obj/projectile/beam/laser/heavylaser/phaser
 	burst_size = 1
 	fire_delay = 1.5 SECONDS
 	range_modifier = 60
@@ -166,7 +166,7 @@
 
 /datum/ship_weapon/bsa
 	name = "Bluespace Artillery"
-	default_projectile_type = /obj/item/projectile/beam/laser/heavylaser/bsa
+	default_projectile_type = /obj/projectile/beam/laser/heavylaser/bsa
 	burst_size = 1
 	fire_delay = 20 SECONDS
 	range_modifier = 255
@@ -189,7 +189,7 @@
 
 /datum/ship_weapon/missile_launcher
 	name = "Missile Launchers"
-	default_projectile_type = /obj/item/projectile/guided_munition/missile
+	default_projectile_type = /obj/projectile/guided_munition/missile
 	burst_size = 1
 	fire_delay = 0.5 SECONDS
 	range_modifier = 30
@@ -218,7 +218,7 @@
 
 /datum/ship_weapon/light_cannon
 	name = "light autocannon"
-	default_projectile_type = /obj/item/projectile/bullet/light_cannon_round
+	default_projectile_type = /obj/projectile/bullet/light_cannon_round
 	burst_size = 2
 	fire_delay = 0.25 SECONDS
 	range_modifier = 10
@@ -234,7 +234,7 @@
 
 /datum/ship_weapon/heavy_cannon
 	name = ".30 cal heavy cannon"
-	default_projectile_type = /obj/item/projectile/bullet/heavy_cannon_round
+	default_projectile_type = /obj/projectile/bullet/heavy_cannon_round
 	burst_size = 2
 	fire_delay = 0.5 SECONDS
 	range_modifier = 10
@@ -246,7 +246,7 @@
 
 /datum/ship_weapon/fighter_primary
 	name = "Primary Equipment Mount"
-	default_projectile_type = /obj/item/projectile/bullet/light_cannon_round //This is overridden anyway
+	default_projectile_type = /obj/projectile/bullet/light_cannon_round //This is overridden anyway
 	burst_size = 1
 	fire_delay = 0.25 SECONDS
 	range_modifier = 10
@@ -259,7 +259,7 @@
 
 /datum/ship_weapon/fighter_secondary
 	name = "Secondary Equipment Mount"
-	default_projectile_type = /obj/item/projectile/guided_munition/missile //This is overridden anyway
+	default_projectile_type = /obj/projectile/guided_munition/missile //This is overridden anyway
 	burst_size = 1
 	fire_delay = 0.5 SECONDS
 	range_modifier = 30
@@ -280,7 +280,7 @@
 
 /datum/ship_weapon/gauss
 	name = "Gauss guns"
-	default_projectile_type = /obj/item/projectile/bullet/gauss_slug
+	default_projectile_type = /obj/projectile/bullet/gauss_slug
 	burst_size = 2
 	fire_delay = 3 SECONDS
 	range_modifier = 10
@@ -295,7 +295,7 @@
 
 /datum/ship_weapon/pdc_mount // .50 cal flavored PDC bullets, which were previously just PDC flavored .50 cal turrets
 	name = "PDC"
-	default_projectile_type = /obj/item/projectile/bullet/pdc_round
+	default_projectile_type = /obj/projectile/bullet/pdc_round
 	burst_size = 3
 	fire_delay = 0.25 SECONDS
 	range_modifier = 10
@@ -323,7 +323,7 @@
 
 /datum/ship_weapon/flak
 	name = "Flak cannon"
-	default_projectile_type = /obj/item/projectile/bullet/flak
+	default_projectile_type = /obj/projectile/bullet/flak
 	burst_size = 1
 	fire_delay = 0.5 SECONDS
 	range_modifier = 1
@@ -343,7 +343,7 @@
 
 /datum/ship_weapon/twinmac
 	name = "Twin MAC" //Currently only used by the Fist of Sol
-	default_projectile_type = /obj/item/projectile/bullet/mac_round
+	default_projectile_type = /obj/projectile/bullet/mac_round
 	burst_size = 2
 	fire_delay = 3 SECONDS
 	range_modifier = 65
@@ -353,7 +353,7 @@
 
 /datum/ship_weapon/quadgauss
 	name = "Quad Gauss"
-	default_projectile_type = /obj/item/projectile/bullet/gauss_slug
+	default_projectile_type = /obj/projectile/bullet/gauss_slug
 	burst_size = 4
 	fire_delay = 0.5 SECONDS
 	range_modifier = 25
@@ -365,7 +365,7 @@
 
 /datum/ship_weapon/hailstorm
 	name = "Hailstorm System"
-	default_projectile_type = /obj/item/projectile/bullet/hailstorm_bullet
+	default_projectile_type = /obj/projectile/bullet/hailstorm_bullet
 	burst_size = 80
 	fire_delay = 20 SECONDS
 	range_modifier = 40
@@ -376,7 +376,7 @@
 
 /datum/ship_weapon/prototype_bsa
 	name = "Prototype Bluespace Artillery"
-	default_projectile_type = /obj/item/projectile/bullet/prototype_bsa
+	default_projectile_type = /obj/projectile/bullet/prototype_bsa
 	burst_size = 1
 	fire_delay = 32 SECONDS
 	range_modifier = 200
