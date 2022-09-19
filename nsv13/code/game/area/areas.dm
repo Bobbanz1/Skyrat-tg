@@ -12,7 +12,7 @@
 /area/space/instanced
 	area_flags = HIDDEN_AREA
 
-/area/maintenance
+/area/station/maintenance
 	ambient_buzz = 'nsv13/sound/ambience/maintenance.ogg'
 	ambientsounds = list('nsv13/sound/ambience/leit_motif.ogg','nsv13/sound/ambience/wind.ogg','nsv13/sound/ambience/wind2.ogg','nsv13/sound/ambience/wind3.ogg','nsv13/sound/ambience/wind4.ogg','nsv13/sound/ambience/wind5.ogg','nsv13/sound/ambience/wind6.ogg')
 
@@ -62,15 +62,15 @@
 	name = "Astrometrics Lab"
 	icon_state = "astrometrics"
 
-/area/nsv/engine/corridor
+/area/station/nsv/engine/corridor
 	name = "Engineering Corridor"
 	icon_state = "aux_base_construction"
 
-/area/nsv/engine/engine_room/core
+/area/station/nsv/engine/engine_room/core
 	name = "Engine Core"
 	icon_state = "engine_core"
 
-/area/nsv/engine/engine_room/auxiliary
+/area/station/nsv/engine/engine_room/auxiliary
 	name = "Engine Auxiliary Equipment"
 	icon_state = "engine_foyer"
 
@@ -82,394 +82,394 @@
 	name = "Starboard Atmospherics"
 	icon_state = "atmos"
 
-/area/maintenance/nsv/ftlroom
+/area/station/maintenance/nsv/ftlroom
 	name = "FTL Control Room"
 	icon_state = "ftl_room"
 
-/area/maintenance/nsv/turbolift/abandonedshaft
+/area/station/maintenance/nsv/turbolift/abandonedshaft
 	name = "Abandoned Elevator Shaft"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck1/airlock/forward/port
+/area/station/maintenance/nsv/deck1/airlock/forward/port
 	name = "Deck 1 Port Forward Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck1/airlock/forward/starboard
+/area/station/maintenance/nsv/deck1/airlock/forward/starboard
 	name = "Deck 1 Starboard Forward Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck1/airlock/aft/port
+/area/station/maintenance/nsv/deck1/airlock/aft/port
 	name = "Deck 1 Port Aft Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck1/airlock/aft/starboard
+/area/station/maintenance/nsv/deck1/airlock/aft/starboard
 	name = "Deck 1 Starboard Aft Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck1/port
+/area/station/maintenance/nsv/deck1/port
 	name = "Deck 1 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck1/central
+/area/station/maintenance/nsv/deck1/central
 	name = "Deck 1 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck1/starboard
+/area/station/maintenance/nsv/deck1/starboard
 	name = "Deck 1 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck1/starboard/aft
+/area/station/maintenance/nsv/deck1/starboard/aft
 	name = "Deck 1 Starboard Aft Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck1/starboard/fore
+/area/station/maintenance/nsv/deck1/starboard/fore
 	name = "Deck 1 Starboard Fore Maintenance"
 
-/area/maintenance/nsv/deck1/aft
+/area/station/maintenance/nsv/deck1/aft
 	name = "Deck 1 Aft Maintenance"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/deck1/port/aft
+/area/station/maintenance/nsv/deck1/port/aft
 	name = "Deck 1 Port Aft Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck1/port/fore
+/area/station/maintenance/nsv/deck1/port/fore
 	name = "Deck 1 Port Fore Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/port
+/area/station/maintenance/nsv/deck2/port
 	name = "Deck 2 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/starboard
+/area/station/maintenance/nsv/deck2/starboard
 	name = "Deck 2 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/airlock/forward/port
+/area/station/maintenance/nsv/deck2/airlock/forward/port
 	name = "Deck 2 Port Forward Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck2/airlock/forward/starboard
+/area/station/maintenance/nsv/deck2/airlock/forward/starboard
 	name = "Deck 2 Starboard Forward Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck2/airlock/aft/port
+/area/station/maintenance/nsv/deck2/airlock/aft/port
 	name = "Deck 2 Port Aft Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck2/airlock/aft/starboard
+/area/station/maintenance/nsv/deck2/airlock/aft/starboard
 	name = "Deck 2 Starboard Aft Airlock"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck2/frame1/port
+/area/station/maintenance/nsv/deck2/frame1/port
 	name = "Deck 2 Frame 1 Port Maintenence"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/frame1/starboard
+/area/station/maintenance/nsv/deck2/frame1/starboard
 	name = "Deck 2 Frame 1 Starboard Maintenence"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/frame1/central
+/area/station/maintenance/nsv/deck2/frame1/central
 	name = "Deck 2 Frame 1 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck2/frame2/port
+/area/station/maintenance/nsv/deck2/frame2/port
 	name = "Deck 2 Frame 2 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/frame2/starboard
+/area/station/maintenance/nsv/deck2/frame2/starboard
 	name = "Deck 2 Frame 2 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/frame2/central
+/area/station/maintenance/nsv/deck2/frame2/central
 	name = "Deck 2 Frame 2 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck2/frame3/port
+/area/station/maintenance/nsv/deck2/frame3/port
 	name = "Deck 2 Frame 3 Port Maintenence"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/frame3/starboard
+/area/station/maintenance/nsv/deck2/frame3/starboard
 	name = "Deck 2 Frame 3 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/frame3/central
+/area/station/maintenance/nsv/deck2/frame3/central
 	name = "Deck 2 Frame 3 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck2/frame4/port
+/area/station/maintenance/nsv/deck2/frame4/port
 	name = "Deck 2 Frame 4 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/frame4/starboard
+/area/station/maintenance/nsv/deck2/frame4/starboard
 	name = "Deck 2 Frame 4 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/frame4/central
+/area/station/maintenance/nsv/deck2/frame4/central
 	name = "Deck 2 Frame 4 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck2/frame5/port
+/area/station/maintenance/nsv/deck2/frame5/port
 	name = "Deck 2 Frame 5 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/frame5/starboard
+/area/station/maintenance/nsv/deck2/frame5/starboard
 	name = "Deck 2 Frame 5 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/frame5/central
+/area/station/maintenance/nsv/deck2/frame5/central
 	name = "Deck 2 Frame 5 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck3/frame1/port
+/area/station/maintenance/nsv/deck3/frame1/port
 	name = "Deck 3 Frame 1 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck3/frame1/starboard
+/area/station/maintenance/nsv/deck3/frame1/starboard
 	name = "Deck 3 Frame 1 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck3/frame2/port
+/area/station/maintenance/nsv/deck3/frame2/port
 	name = "Deck 3 Frame 2 Port Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck3/frame2/starboard
+/area/station/maintenance/nsv/deck3/frame2/starboard
 	name = "Deck 3 Frame 2 Starboard Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck3/frame3/port
+/area/station/maintenance/nsv/deck3/frame3/port
 	name = "Deck 3 Frame 3 Port Maintenence"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck3/frame3/starboard
+/area/station/maintenance/nsv/deck3/frame3/starboard
 	name = "Deck 3 Frame 3 Starboard Maintenence"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck3/frame3/central
+/area/station/maintenance/nsv/deck3/frame3/central
 	name = "Deck 3 Frame 3 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/deck3/frame4/central
+/area/station/maintenance/nsv/deck3/frame4/central
 	name = "Deck 3 Frame 4 Central Maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/bridge
+/area/station/maintenance/nsv/bridge
 	name = "Fore Bridge Maintenance"
 	icon_state = "maint_bridge"
 
-/area/maintenance/nsv/deck2/starboard/fore
+/area/station/maintenance/nsv/deck2/starboard/fore
 	name = "Deck 2 Starboard Fore Maintenance"
-	icon_state = "smaint"
+	icon_state = "starboardmaint"
 
-/area/maintenance/nsv/deck2/starboard/aft
+/area/station/maintenance/nsv/deck2/starboard/aft
 	name = "Deck 2 Starboard Aft Maintenance"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/deck2/port/fore
+/area/station/maintenance/nsv/deck2/port/fore
 	name = "Deck 2 Port Fore Maintenance"
-	icon_state = "pmaint"
+	icon_state = "portmaint"
 
-/area/maintenance/nsv/deck2/port/aft
+/area/station/maintenance/nsv/deck2/port/aft
 	name = "Deck 2 Port Aft Maintenance"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/weapons
+/area/station/maintenance/nsv/weapons
 	name = "Weapons Bay Maintenance"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/hangar
+/area/station/maintenance/nsv/hangar
 	name = "Hangar Bay Maintenance"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/port_substation
+/area/station/maintenance/nsv/port_substation
 	name = "Port Substation"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/central_substation
+/area/station/maintenance/nsv/central_substation
 	name = "Central Substation"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/maintenance/nsv/starboard_substation
+/area/station/maintenance/nsv/starboard_substation
 	name = "Starboard Substation"
-	icon_state = "amaint"
+	icon_state = "aftmaint"
 
-/area/hallway/nsv/deck2/forward
+/area/station/hallway/nsv/deck2/forward
 	name = "Deck 2 Forward Hallway"
 	icon_state = "hallF"
 
-/area/hallway/nsv/deck2/primary
+/area/station/hallway/nsv/deck2/primary
 	name = "Deck 2 Primary Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck1/aft
+/area/station/hallway/nsv/deck1/aft
 	name = "Deck 1 Aft Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck2/aft
+/area/station/hallway/nsv/deck2/aft
 	name = "Deck 2 Aft Hallway"
 	icon_state = "hallP"
 
-/area/maintenance/nsv/mining_ship
+/area/station/maintenance/nsv/mining_ship
 	has_gravity = TRUE
 	ambient_buzz = 'nsv13/sound/ambience/maintenance.ogg'
 
-/area/maintenance/nsv/mining_ship/central
+/area/station/maintenance/nsv/mining_ship/central
 	name = "Rocinante maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/mining_ship/forward
+/area/station/maintenance/nsv/mining_ship/forward
 	name = "Rocinante forward maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/maintenance/nsv/mining_ship/aft
+/area/station/maintenance/nsv/mining_ship/aft
 	name = "Rocinante aft maintenance"
-	icon_state = "maintcentral"
+	icon_state = "centralmaint"
 
-/area/hallway/nsv/deck2/frame1/port
+/area/station/hallway/nsv/deck2/frame1/port
 	name = "Deck 2 Frame 1 Port Hallway"
 	icon_state = "hallF"
 
-/area/hallway/nsv/deck2/frame1/central
+/area/station/hallway/nsv/deck2/frame1/central
 	name = "Deck 2 Frame 1 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame1/starboard
+/area/station/hallway/nsv/deck2/frame1/starboard
 	name = "Deck 2 Frame 1 Starboard Hallway"
 	icon_state = "hallF"
 
-/area/hallway/nsv/deck2/frame2/port
+/area/station/hallway/nsv/deck2/frame2/port
 	name = "Deck 2 Frame 2 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck2/frame2/central
+/area/station/hallway/nsv/deck2/frame2/central
 	name = "Deck 2 Frame 2 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame2/starboard
+/area/station/hallway/nsv/deck2/frame2/starboard
 	name = "Deck 2 Frame 2 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck2/frame3/port
+/area/station/hallway/nsv/deck2/frame3/port
 	name = "Deck 2 Frame 3 Port Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame3/central
+/area/station/hallway/nsv/deck2/frame3/central
 	name = "Deck 2 Frame 3 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame3/starboard
+/area/station/hallway/nsv/deck2/frame3/starboard
 	name = "Deck 2 Frame 3 Starboard Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame4/port
+/area/station/hallway/nsv/deck2/frame4/port
 	name = "Deck 2 Frame 4 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck2/frame4/starboard
+/area/station/hallway/nsv/deck2/frame4/starboard
 	name = "Deck 2 Frame 4 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck2/frame4/central
+/area/station/hallway/nsv/deck2/frame4/central
 	name = "Deck 2 Frame 4 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck2/frame5/port
+/area/station/hallway/nsv/deck2/frame5/port
 	name = "Deck 2 Frame 5 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck2/frame5/starboard
+/area/station/hallway/nsv/deck2/frame5/starboard
 	name = "Deck 2 Frame 5 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck2/frame5/central
+/area/station/hallway/nsv/deck2/frame5/central
 	name = "Deck 2 Frame 5 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck3/frame1/port
+/area/station/hallway/nsv/deck3/frame1/port
 	name = "Deck 3 Frame 1 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck3/frame1/starboard
+/area/station/hallway/nsv/deck3/frame1/starboard
 	name = "Deck 3 Frame 1 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck3/frame1/central
+/area/station/hallway/nsv/deck3/frame1/central
 	name = "Deck 3 Frame 1 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck3/frame2/central
+/area/station/hallway/nsv/deck3/frame2/central
 	name = "Deck 2 Frame 2 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck3/frame2/port
+/area/station/hallway/nsv/deck3/frame2/port
 	name = "Deck 2 Frame 2 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck3/frame2/starboard
+/area/station/hallway/nsv/deck3/frame2/starboard
 	name = "Deck 2 Frame 2 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck3/frame3/port
+/area/station/hallway/nsv/deck3/frame3/port
 	name = "Deck 3 Frame 3 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck3/frame3/starboard
+/area/station/hallway/nsv/deck3/frame3/starboard
 	name = "Deck 3 Frame 3 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck3/frame3/central
+/area/station/hallway/nsv/deck3/frame3/central
 	name = "Deck 3 Frame 3 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck3/frame4/central
+/area/station/hallway/nsv/deck3/frame4/central
 	name = "Deck 3 Frame 4 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck3/frame4/port
+/area/station/hallway/nsv/deck3/frame4/port
 	name = "Deck 3 Frame 4 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck3/frame4/starboard
+/area/station/hallway/nsv/deck3/frame4/starboard
 	name = "Deck 3 Frame 4 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/stairwell/lower
+/area/station/hallway/nsv/stairwell/lower
 	name = "Lower Stairwell"
 	icon_state = "hallS"
 
-/area/hallway/nsv/stairwell/upper
+/area/station/hallway/nsv/stairwell/upper
 	name = "Upper Stairwell"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck1/hallway
+/area/station/hallway/nsv/deck1/hallway
 	name = "Deck 1 Primary Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck1/frame1/central
+/area/station/hallway/nsv/deck1/frame1/central
 	name = "Deck 1 Frame 1 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck1/frame1/starboard
+/area/station/hallway/nsv/deck1/frame1/starboard
 	name = "Deck 1 Frame 1 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck1/frame2/port
+/area/station/hallway/nsv/deck1/frame2/port
 	name = "Deck 1 Frame 2 Port Hallway"
 	icon_state = "hallP"
 
-/area/hallway/nsv/deck1/frame2/central
+/area/station/hallway/nsv/deck1/frame2/central
 	name = "Deck 1 Frame 2 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck1/frame2/starboard
+/area/station/hallway/nsv/deck1/frame2/starboard
 	name = "Deck 1 Frame 2 Starboard Hallway"
 	icon_state = "hallS"
 
-/area/hallway/nsv/deck1/frame3/central
+/area/station/hallway/nsv/deck1/frame3/central
 	name = "Deck 1 Frame 3 Central Hallway"
 	icon_state = "hallC"
 
-/area/hallway/nsv/deck1/frame4/central
+/area/station/hallway/nsv/deck1/frame4/central
 	name = "Deck 1 Frame 4 Central Hallway"
 	icon_state = "hallC"
 
@@ -481,101 +481,101 @@
 	name = "Bridge Officer's Quarters"
 	icon_state = "Sleep"
 
-/area/nsv/hanger/deck3/starboard
+/area/station/nsv/hanger/deck3/starboard
 	name = "Deck 3 Starboard Hanger Bay"
 	icon_state = "hallS"
 
-/area/nsv/hanger/notkmcstupidhanger/launchtube/left
+/area/station/nsv/hanger/notkmcstupidhanger/launchtube/left
 	name = "Launch Tubes 1 & 2"
 	icon_state = "hallP"
 
-/area/nsv/hanger/notkmcstupidhanger/launchtube/right
+/area/station/nsv/hanger/notkmcstupidhanger/launchtube/right
 	name = "Launch Tubes 3 & 4"
 	icon_state = "hallS"
 
-/area/nsv/hanger/notkmcstupidhanger/launchtube/left/airlock
+/area/station/nsv/hanger/notkmcstupidhanger/launchtube/left/airlock
 	name = "Hangar Airlock 1"
 
-/area/nsv/hanger/notkmcstupidhanger/launchtube/right/airlock
+/area/station/nsv/hanger/notkmcstupidhanger/launchtube/right/airlock
 	name = "Hangar Airlock 2"
 
-/area/nsv/hanger/notkmcstupidhanger/hangar
+/area/station/nsv/hanger/notkmcstupidhanger/hangar
 	name = "Hangar Bay"
 	icon_state = "hallC"
 
-/area/nsv/hanger/notkmcstupidhanger/pilot
+/area/station/nsv/hanger/notkmcstupidhanger/pilot
 	name = "Pilot Lounge"
 	icon_state = "shuttlered"
 
-/area/nsv/hanger/notkmcstupidhanger/atc
+/area/station/nsv/hanger/notkmcstupidhanger/atc
 	name = "Air Traffic Control"
 	icon_state = "shuttlered"
 
-/area/nsv/hanger/deck2/port
+/area/station/nsv/hanger/deck2/port
 	name = "Deck 2 Port Hanger Bay"
 	icon_state = "hallP"
 
-/area/nsv/hanger/deck2/starboard
+/area/station/nsv/hanger/deck2/starboard
 	name = "Deck 2 Starboard Hanger Bay"
 	icon_state = "hallS"
 
-/area/nsv/hanger/mining
+/area/station/nsv/hanger/mining
 	name = "Mining Hangar Bay"
 	icon_state = "hallS"
 
-/area/nsv/weapons
+/area/station/nsv/weapons
 	name = "Weapons Bay"
 	icon_state = "weapons_bay"
 
-/area/nsv/weapons/ordnance
+/area/station/nsv/weapons/ordnance
 	name = "Ordnance Handling Bay"
 	icon_state = "magazine"
 
-/area/nsv/weapons/gauss
+/area/station/nsv/weapons/gauss
 	name = "Gauss Bay"
 	icon_state = "gauss"
 
-/area/nsv/weapons/port
+/area/station/nsv/weapons/port
 	name = "Port Weapons Bay"
 	icon_state = "weapons_bay"
 
-/area/nsv/weapons/starboard
+/area/station/nsv/weapons/starboard
 	name = "Starboard Weapons Bay"
 	icon_state = "weapons_bay"
 
-/area/nsv/weapons/fore
+/area/station/nsv/weapons/fore
 	name = "Fore Weapons Bay"
 	icon_state = "weapons_bay"
 
-/area/nsv/weapons/artillery
+/area/station/nsv/weapons/artillery
 	name = "Artillery Bay"
 	icon_state = "artillery"
 
-/area/nsv/weapons/access_corridor
+/area/station/nsv/weapons/access_corridor
 	name = "Munitions Access Corridor"
 	icon_state = "hallF"
 
-/area/nsv/magazine
+/area/station/nsv/magazine
 	name = "Ship's Magazine"
 	icon_state = "magazine"
 
-/area/nsv/magazine/port
+/area/station/nsv/magazine/port
 	name = "Port Magazine"
 	icon_state = "magazine"
 
-/area/nsv/magazine/starboard
+/area/station/nsv/magazine/starboard
 	name = "Starboard Magazine"
 	icon_state = "magazine"
 
-/area/nsv/briefingroom
+/area/station/nsv/briefingroom
 	name = "Briefing Room"
 	icon_state = "hallP"
 
-/area/nsv/crew_quarters/heads/maa
+/area/station/nsv/crew_quarters/heads/maa
 	name = "Master At Arms' Office"
 	icon_state = "shuttlegrn"
 
-/area/nsv/squad
+/area/station/nsv/squad
 	name = "Squad Equipment Room"
 	icon_state = "shuttlegrn"
 
@@ -587,72 +587,72 @@
 	name = "Security Locker Room"
 	icon_state = "checkpoint1"
 
-/area/nsv/shuttle
+/area/station/nsv/shuttle
 
-/area/nsv/shuttle/bridge
+/area/station/nsv/shuttle/bridge
 	name = "Mining Shuttle Bridge"
 	icon_state = "bridge"
 
-/area/nsv/shuttle/central
+/area/station/nsv/shuttle/central
 	name = "Mining Shuttle"
 	icon_state = "hallC"
 
-/area/nsv/shuttle/storage
+/area/station/nsv/shuttle/storage
 	name = "Mining Shuttle Equipment Storage"
 	icon_state = "storage"
 
-/area/nsv/shuttle/atmospherics
+/area/station/nsv/shuttle/atmospherics
 	name = "Mining Shuttle Maintenance"
 	icon_state = "atmos"
 
-/area/nsv/shuttle/airlock/aft
+/area/station/nsv/shuttle/airlock/aft
 	name = "Mining Shuttle Aft Airlock"
 	icon_state = "hallA"
 
-/area/nsv/shuttle/airlock/port
+/area/station/nsv/shuttle/airlock/port
 	name = "Mining Shuttle Port Airlock"
 	icon_state = "hallP"
 
-/area/nsv/shuttle/airlock/starboard
+/area/station/nsv/shuttle/airlock/starboard
 	name = "Mining Shuttle Starboard Airlock"
 	icon_state = "hallS"
 
-/area/nsv/shuttle/fob
+/area/station/nsv/shuttle/fob
 	has_gravity = STANDARD_GRAVITY //good luck trying to fit a gen here.
 
-/area/nsv/shuttle/fob/bridge
+/area/station/nsv/shuttle/fob/bridge
 	name = "Mining Shuttle Bridge"
 	icon_state = "bridge"
 
-/area/nsv/shuttle/fob/central
+/area/station/nsv/shuttle/fob/central
 	name = "Mining Shuttle"
 	icon_state = "hallC"
 
-/area/nsv/shuttle/fob/storage
+/area/station/nsv/shuttle/fob/storage
 	name = "Mining Shuttle Equipment Storage"
 	icon_state = "storage"
 
-/area/nsv/shuttle/fob/atmospherics
+/area/station/nsv/shuttle/fob/atmospherics
 	name = "Mining Shuttle Maintenance"
 	icon_state = "atmos"
 
-/area/nsv/shuttle/fob/airlock/aft
+/area/station/nsv/shuttle/fob/airlock/aft
 	name = "Mining Shuttle Aft Airlock"
 	icon_state = "hallA"
 
-/area/nsv/shuttle/fob/airlock/port
+/area/station/nsv/shuttle/fob/airlock/port
 	name = "Mining Shuttle Port Airlock"
 	icon_state = "hallP"
 
-/area/nsv/shuttle/fob/airlock/starboard
+/area/station/nsv/shuttle/fob/airlock/starboard
 	name = "Mining Shuttle Starboard Airlock"
 	icon_state = "hallS"
 
-/area/nsv/shuttle/fob/quarters
+/area/station/nsv/shuttle/fob/quarters
 	name = "Mining Shuttle Crew Quarters"
 	icon_state = "hallC"
 
-/area/nsv/shuttle/fob/lounge
+/area/station/nsv/shuttle/fob/lounge
 	name = "Mining Shuttle Lounge"
 	icon_state = "hallP"
 
@@ -752,7 +752,7 @@
 	name = "FTL Drive Core"
 	icon_state = "ftl_room"
 
-/area/maintenance/nsv/bunker
+/area/station/maintenance/nsv/bunker
 	name = "Nuclear Bunker"
 	icon_state = "bunker"
 	ambientsounds = list('nsv13/sound/ambience/leit_motif.ogg','nsv13/sound/ambience/wind.ogg','nsv13/sound/ambience/ship_damage/creak1.ogg','nsv13/sound/ambience/ship_damage/creak2.ogg','nsv13/sound/ambience/ship_damage/creak3.ogg','nsv13/sound/ambience/ship_damage/creak4.ogg','nsv13/sound/ambience/ship_damage/creak5.ogg','nsv13/sound/ambience/ship_damage/creak6.ogg','nsv13/sound/ambience/ship_damage/creak7.ogg')

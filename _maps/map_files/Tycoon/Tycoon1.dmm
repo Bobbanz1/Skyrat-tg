@@ -5900,56 +5900,56 @@
 	dir = 9
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nM" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 1
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nN" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 5
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nO" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 8
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nP" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 4
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nQ" = (
 /obj/machinery/ship_weapon/gauss_gun/north,
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nR" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 10
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nS" = (
 /obj/machinery/ship_weapon/gauss_gun/north,
 /obj/effect/turf_decal/ship/borderfloor/gunmetal,
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nT" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal,
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nU" = (
 /obj/effect/turf_decal/ship/borderfloor/gunmetal{
 	dir = 6
 	},
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nW" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ladder,
@@ -6158,7 +6158,7 @@
 	})
 "qR" = (
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "qS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -7935,7 +7935,7 @@
 /area/ai_monitored/nuke_storage)
 "Ry" = (
 /turf/open/floor/monotile/dark/airless,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "Rz" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4;

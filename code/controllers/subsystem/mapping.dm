@@ -65,15 +65,17 @@ SUBSYSTEM_DEF(mapping)
 	/// list of traits and their associated z leves
 	var/list/z_trait_levels = list()
 
-/datum/controller/subsystem/mapping/New()
-	..()
+//dlete dis once #39770 is resolved
+/datum/controller/subsystem/mapping/proc/HACK_LoadMapConfig()
+	if(!config)
 #ifdef FORCE_MAP
-	config = load_map_config(FORCE_MAP, FORCE_MAP_DIRECTORY)
+		config = load_map_config(FORCE_MAP)
 #else
-	config = load_map_config(error_if_missing = FALSE)
+		config = load_map_config(error_if_missing = FALSE)
 #endif
 
 /datum/controller/subsystem/mapping/Initialize(timeofday)
+	HACK_LoadMapConfig()
 	if(initialized)
 		return
 	if(config.defaulted)

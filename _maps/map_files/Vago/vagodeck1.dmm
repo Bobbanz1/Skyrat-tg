@@ -1758,7 +1758,7 @@
 /area/hallway/nsv/deck1/frame1/central)
 "ek" = (
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "el" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/heater{
 	dir = 4
@@ -2042,34 +2042,34 @@
 	},
 /obj/machinery/nuclearbomb/beer,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fb" = (
 /obj/machinery/vending/cigarette{
 	name = "Adama's Finest Cigars"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fc" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/machinery/computer/ship/fighter_controller,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fd" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fe" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fi" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fj" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 4
@@ -2385,10 +2385,10 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ga" = (
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gb" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4;
@@ -2741,13 +2741,13 @@
 	pixel_x = -24
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gQ" = (
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gR" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -3028,7 +3028,7 @@
 	},
 /obj/structure/closet/secure_closet/master_at_arms,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6;
@@ -3036,13 +3036,13 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hC" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hD" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -3054,7 +3054,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hF" = (
 /obj/machinery/vending/wardrobe/atmos_wardrobe,
 /turf/open/floor/plating,
@@ -3293,7 +3293,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "il" = (
 /obj/structure/closet/crate/rcd,
 /obj/machinery/light/broken,
@@ -3521,7 +3521,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iR" = (
 /obj/structure/rack,
 /obj/item/aiModule/supplied/freeform,
@@ -4126,7 +4126,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kb" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -4139,7 +4139,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kd" = (
 /obj/machinery/atmospherics/components/binary/valve/digital,
 /obj/machinery/camera/autoname{
@@ -4476,7 +4476,7 @@
 "kF" = (
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kG" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -4505,11 +4505,11 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kJ" = (
 /obj/machinery/ship_weapon/deck_turret/east,
 /turf/open/floor/plating/airless,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kK" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /obj/machinery/light{
@@ -4871,7 +4871,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ls" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -4881,7 +4881,7 @@
 	icon_state = "pipe11-1"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lt" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
@@ -4894,7 +4894,7 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lu" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 1
@@ -4907,7 +4907,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lv" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -4923,7 +4923,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10;
@@ -4935,7 +4935,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lx" = (
 /obj/machinery/flasher{
 	id = "Cell 3";
@@ -5228,7 +5228,7 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "md" = (
 /obj/machinery/flasher{
 	id = "Cell 4";
@@ -5298,7 +5298,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mk" = (
 /obj/machinery/computer/monitor{
 	dir = 8
@@ -5745,7 +5745,7 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
@@ -5762,7 +5762,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mY" = (
 /obj/machinery/light,
 /turf/open/floor/plating,
@@ -6036,7 +6036,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nv" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -6058,7 +6058,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nx" = (
 /obj/structure/closet/emcloset,
 /obj/structure/alien/weeds,
@@ -6364,7 +6364,7 @@
 	pixel_x = -30
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/green/visible,
@@ -6783,7 +6783,7 @@
 	pixel_y = -22
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oH" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/cable_coil,
@@ -6794,12 +6794,12 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oI" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/broken,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oJ" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/firealarm{
@@ -6811,11 +6811,11 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oK" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oL" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/camera/autoname{
@@ -6828,7 +6828,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oM" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/airalarm{
@@ -6842,7 +6842,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
@@ -10632,7 +10632,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xf" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -10763,7 +10763,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/nuclear_waste_spawner,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xu" = (
 /obj/machinery/camera/autoname{
 	dir = 1
@@ -10855,7 +10855,7 @@
 "xI" = (
 /obj/structure/ladder,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xJ" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
@@ -11010,7 +11010,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "yt" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
@@ -11040,7 +11040,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "yH" = (
 /obj/effect/turf_decal/tile/brown,
 /turf/open/floor/plating,
@@ -11082,7 +11082,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "yT" = (
 /turf/open/floor/plating,
 /area/nsv/hanger/notkmcstupidhanger/launchtube/right)
@@ -11260,7 +11260,7 @@
 "Af" = (
 /obj/machinery/ship_weapon/pdc_mount/north,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ag" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -11299,7 +11299,7 @@
 	},
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ar" = (
 /obj/effect/landmark/nuclear_waste_spawner,
 /turf/open/floor/plating,
@@ -11384,7 +11384,7 @@
 "Bf" = (
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Bk" = (
 /obj/structure/reagent_dispensers/foamtank,
 /turf/open/floor/plating,
@@ -11397,7 +11397,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Bt" = (
 /obj/machinery/door/poddoor/ship{
 	id = "launch3"
@@ -11815,7 +11815,7 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ej" = (
 /obj/machinery/suit_storage_unit/atmos,
 /obj/item/radio/intercom{
@@ -11841,7 +11841,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ev" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -11910,7 +11910,7 @@
 /obj/item/ammo_box/magazine/nsv/pdc,
 /obj/item/ammo_box/magazine/nsv/pdc,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "EU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -12026,7 +12026,7 @@
 "FH" = (
 /obj/machinery/ship_weapon/torpedo_launcher,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "FK" = (
 /turf/closed/wall/steel,
 /area/security/brig)
@@ -12065,7 +12065,7 @@
 "Gs" = (
 /obj/effect/gibspawner/robot,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Gu" = (
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate,
@@ -12203,7 +12203,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Hg" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -12222,7 +12222,7 @@
 "Hj" = (
 /obj/effect/landmark/start/master_at_arms,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Hm" = (
 /obj/structure/inflatable,
 /turf/open/floor/plating,
@@ -12509,7 +12509,7 @@
 "Jy" = (
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "JB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating{
@@ -12744,7 +12744,7 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "LH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump{
@@ -12785,7 +12785,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Mi" = (
 /turf/open/floor/plating/airless,
 /area/nsv/magazine/starboard)
@@ -12962,7 +12962,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Np" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13006,7 +13006,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "NE" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -13053,7 +13053,7 @@
 /area/tcommsat/computer)
 "NV" = (
 /turf/open/floor/plating/airless,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "NX" = (
 /obj/effect/landmark/nuclear_waste_spawner/strong,
 /turf/open/floor/plating,
@@ -13122,7 +13122,7 @@
 /obj/structure/bed/dogbed,
 /obj/item/ship_weapon/ammunition/torpedo/hellfire/antonio,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ON" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -13138,7 +13138,7 @@
 "OQ" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "OR" = (
 /obj/machinery/door/poddoor/ship{
 	id = "launch3"
@@ -13323,7 +13323,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "PW" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/structure/cable{
@@ -13367,7 +13367,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ql" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1;
@@ -13681,7 +13681,7 @@
 "Se" = (
 /obj/structure/fluff/vls_hatch,
 /turf/open/floor/plating/airless,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Sk" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
@@ -14246,7 +14246,7 @@
 	},
 /obj/effect/landmark/start/master_at_arms,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "VY" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/disposalpipe/trunk{
@@ -14254,7 +14254,7 @@
 	},
 /obj/machinery/disposal/bin,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "VZ" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/open/floor/plating,
@@ -14614,7 +14614,7 @@
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "YA" = (
 /obj/machinery/firealarm{
 	pixel_y = 27
@@ -14622,12 +14622,12 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "YB" = (
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "YC" = (
 /obj/machinery/door/poddoor/ship{
 	id = "launch1"

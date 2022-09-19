@@ -168,7 +168,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "afe" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
@@ -303,7 +303,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ahv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -562,7 +562,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "apR" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -685,7 +685,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "att" = (
@@ -819,7 +819,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "awD" = (
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/computer/monitor,
@@ -1047,7 +1047,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "aDd" = (
 /turf/closed/wall/r_wall,
 /area/nsv/hanger{
@@ -1175,7 +1175,7 @@
 /obj/item/ship_weapon/ammunition/gauss,
 /obj/item/ship_weapon/ammunition/gauss,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "aGo" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
@@ -1532,7 +1532,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "aQq" = (
@@ -1654,7 +1654,7 @@
 	},
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "aSV" = (
 /obj/machinery/light{
 	dir = 1
@@ -1825,7 +1825,7 @@
 	name = "bluespace matrix inverter"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "aWz" = (
@@ -2083,7 +2083,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bbk" = (
 /obj/structure/chair/pew/left{
 	dir = 4
@@ -2145,7 +2145,7 @@
 /area/maintenance/nsv/deck2/frame3/port)
 "bcP" = (
 /turf/closed/wall/r_wall,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "bcQ" = (
 /obj/effect/turf_decal/tile/ship/half/neutral,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -2182,7 +2182,7 @@
 /obj/machinery/power/smes,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "bdA" = (
@@ -2274,7 +2274,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bgo" = (
 /obj/effect/turf_decal/loading_area,
 /obj/structure/fluff/support_beam{
@@ -2303,7 +2303,7 @@
 	dir = 6
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bgB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -2334,7 +2334,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "bhG" = (
@@ -2480,7 +2480,7 @@
 	name = "Comedia"
 	},
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bjB" = (
 /obj/structure/closet/crate,
 /obj/item/ship_weapon/ammunition/railgun_ammo,
@@ -2495,7 +2495,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "bjF" = (
@@ -2603,7 +2603,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bmf" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/grid/lino,
@@ -2790,7 +2790,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bta" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -2953,7 +2953,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "bzh" = (
@@ -3020,7 +3020,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "bAM" = (
 /obj/effect/turf_decal/tile/ship/half/blue,
 /obj/structure/cable{
@@ -3199,7 +3199,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bHi" = (
 /obj/effect/turf_decal/tile/ship/half/red{
 	dir = 1
@@ -3674,7 +3674,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bSO" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -3767,7 +3767,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bWT" = (
 /obj/machinery/light/small,
 /obj/effect/turf_decal/stripes/line{
@@ -3955,7 +3955,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cch" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -4040,7 +4040,7 @@
 	icon_state = "5-10"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cef" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -4188,7 +4188,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ciI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -4299,7 +4299,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "clO" = (
 /turf/open/floor/plasteel/stairs{
 	dir = 4;
@@ -4495,7 +4495,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "csn" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 5
@@ -4674,7 +4674,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cyd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable/orange{
@@ -4879,7 +4879,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "cES" = (
 /turf/closed/wall/r_wall,
 /area/engine/atmospherics_engine)
@@ -4926,7 +4926,7 @@
 "cGl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "cGE" = (
@@ -5012,7 +5012,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cId" = (
 /obj/machinery/door/airlock/ship{
 	name = "Munitions Office";
@@ -5022,7 +5022,7 @@
 /obj/machinery/door/firedoor/border_only/directional/north,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cIk" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -5150,7 +5150,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cND" = (
 /obj/machinery/door/airlock/ship/maintenance{
 	req_access_txt = "12"
@@ -5182,7 +5182,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cNU" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -5349,7 +5349,7 @@
 	name = "emergency shower"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cQK" = (
 /obj/structure/displaycase/trophy,
 /obj/machinery/light,
@@ -5624,7 +5624,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "cYa" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible/layer1,
@@ -6226,7 +6226,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "dpL" = (
 /obj/machinery/door/poddoor/ship{
 	id = "janigarage"
@@ -6277,7 +6277,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "dsk" = (
@@ -6547,7 +6547,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "dyw" = (
@@ -6766,7 +6766,7 @@
 	dir = 1
 	},
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "dDL" = (
 /obj/structure/table/reinforced,
 /obj/item/pen,
@@ -6923,7 +6923,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "dLY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /turf/open/floor/monotile/dark,
@@ -6968,7 +6968,7 @@
 "dOJ" = (
 /obj/machinery/computer/ship/ordnance,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "dPf" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -7072,7 +7072,7 @@
 	pixel_y = -26
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "dRp" = (
@@ -7449,7 +7449,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ecc" = (
@@ -7478,7 +7478,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ect" = (
 /obj/structure/extinguisher_cabinet/west,
 /turf/open/floor/monotile/steel,
@@ -7509,7 +7509,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eec" = (
 /obj/effect/turf_decal/stripes/white/line,
 /turf/open/floor/plasteel/grid/techfloor/grid,
@@ -7692,7 +7692,7 @@
 	},
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eig" = (
 /obj/machinery/light{
 	dir = 8
@@ -7968,7 +7968,7 @@
 /area/maintenance/nsv/deck2/frame4/port)
 "eqg" = (
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eqj" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing{
@@ -7993,7 +7993,7 @@
 /obj/effect/landmark/zebra_interlock_point,
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eqJ" = (
 /obj/effect/turf_decal/tile/ship/half/red{
 	dir = 8
@@ -8153,7 +8153,7 @@
 	name = "secondary alignment matrix"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "euK" = (
@@ -8406,7 +8406,7 @@
 	icon_state = "0,2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "eDH" = (
 /obj/machinery/holopad,
 /obj/effect/landmark/observer_start,
@@ -8445,7 +8445,7 @@
 /area/engine/engineering/reactor_core)
 "eEK" = (
 /turf/closed/wall/r_wall,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "eEQ" = (
@@ -8605,7 +8605,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eJF" = (
 /turf/open/floor/plasteel/grid/techfloor/grid,
 /area/engine/engineering)
@@ -8698,7 +8698,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eMl" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -8746,7 +8746,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eNn" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
@@ -8839,7 +8839,7 @@
 /obj/machinery/atmospherics/pipe/simple/multiz/layer3,
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eQb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -8886,7 +8886,7 @@
 "eRD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "eRH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /obj/structure/cable{
@@ -8903,7 +8903,7 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "eSa" = (
@@ -9227,7 +9227,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "eZu" = (
@@ -9432,7 +9432,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "feI" = (
@@ -9453,7 +9453,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ffr" = (
@@ -9485,7 +9485,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ffF" = (
 /obj/structure/table/wood,
 /obj/item/lipstick/random{
@@ -9729,7 +9729,7 @@
 	icon_state = "1,0"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "fmd" = (
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1;
@@ -9959,7 +9959,7 @@
 	icon_state = "2,2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "ftU" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible/layer1{
@@ -10246,7 +10246,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "fBP" = (
@@ -10384,7 +10384,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fDn" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -10425,7 +10425,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fEt" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/brute,
@@ -10481,7 +10481,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "fFp" = (
@@ -10694,7 +10694,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "fLu" = (
@@ -10835,7 +10835,7 @@
 "fOQ" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "fPf" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible{
 	dir = 8
@@ -11183,7 +11183,7 @@
 	},
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fZw" = (
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck2/frame2/central)
@@ -11252,7 +11252,7 @@
 	dir = 5
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gaU" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 4
@@ -11369,7 +11369,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "gdA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -11774,7 +11774,7 @@
 "gon" = (
 /obj/effect/turf_decal/loading_area,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "gou" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible,
 /turf/closed/wall/r_wall,
@@ -11821,7 +11821,7 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gpj" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/tile/ship/half/neutral,
@@ -12002,7 +12002,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gtd" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -12269,7 +12269,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gzl" = (
 /obj/effect/turf_decal/tile/ship/half/green{
 	dir = 1
@@ -12285,7 +12285,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gzC" = (
 /turf/open/floor/monotile/dark,
 /area/maintenance/nsv/deck2/frame3/central)
@@ -13127,7 +13127,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gUs" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -13175,7 +13175,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gVp" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer1,
 /obj/effect/turf_decal/arrows,
@@ -13230,7 +13230,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gWy" = (
 /obj/effect/turf_decal/tile/ship/half/yellow{
 	dir = 1
@@ -13253,7 +13253,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "gXm" = (
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/bar{
@@ -13468,7 +13468,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hcE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -13742,7 +13742,7 @@
 "hmj" = (
 /obj/structure/chair/comfy/gauss/east,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "hms" = (
 /obj/machinery/atmospherics/pipe/simple/violet/visible/layer3{
 	dir = 4
@@ -13827,7 +13827,7 @@
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hoU" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced{
@@ -13956,7 +13956,7 @@
 	id = "bsashutter"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "htz" = (
@@ -14030,7 +14030,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "huS" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/nsv/deck2/frame2/starboard)
@@ -14381,7 +14381,7 @@
 	icon_state = "2,1"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "hDb" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -14534,7 +14534,7 @@
 	dir = 1
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "hJl" = (
@@ -14855,7 +14855,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "hUj" = (
@@ -14970,7 +14970,7 @@
 	},
 /obj/item/book/manual/wiki/sop/munitions,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "hYr" = (
@@ -14998,7 +14998,7 @@
 /obj/structure/chair/sofa/right,
 /obj/machinery/camera/autoname,
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hYW" = (
 /obj/structure/lattice/catwalk/over/ship,
 /obj/structure/cable/yellow{
@@ -15047,7 +15047,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hZg" = (
 /obj/machinery/light{
 	dir = 8
@@ -15056,7 +15056,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "hZi" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
@@ -15103,7 +15103,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ibr" = (
 /obj/machinery/door/airlock/ship/public/glass{
 	name = "Medbay Lobby"
@@ -15470,7 +15470,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "imf" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ladder,
@@ -15530,7 +15530,7 @@
 	icon_state = "9-10"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "imU" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -15575,7 +15575,7 @@
 "ioq" = (
 /obj/machinery/ship_weapon/vls,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ioW" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -15588,7 +15588,7 @@
 	icon_state = "1-2"
 	},
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ipn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
@@ -15669,7 +15669,7 @@
 /area/maintenance/nsv/deck2/frame4/starboard)
 "ipU" = (
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iqd" = (
 /obj/machinery/light{
 	dir = 1
@@ -15681,7 +15681,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iqh" = (
 /obj/machinery/modular_fabricator/exosuit_fab,
 /obj/effect/turf_decal/ship/delivery/yellow,
@@ -15711,7 +15711,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iqR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
@@ -15761,7 +15761,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "iti" = (
@@ -15835,7 +15835,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ivi" = (
@@ -15850,7 +15850,7 @@
 	},
 /obj/item/ship_weapon/parts/missile/propulsion_system,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ivv" = (
 /obj/machinery/conveyor{
 	dir = 10;
@@ -15953,7 +15953,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iyx" = (
 /obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable{
@@ -16011,7 +16011,7 @@
 "izU" = (
 /obj/machinery/rnd/production/protolathe/department/munitions,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iAb" = (
 /obj/machinery/vending/wardrobe/science_wardrobe,
 /obj/machinery/firealarm/directional/west,
@@ -16087,7 +16087,7 @@
 /obj/machinery/camera/autoname,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iCF" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -16173,7 +16173,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iED" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech/grid,
@@ -16187,7 +16187,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "iFl" = (
@@ -16373,7 +16373,7 @@
 "iKz" = (
 /obj/machinery/light_switch/west,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iKF" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -16542,7 +16542,7 @@
 /obj/effect/turf_decal/loading_area,
 /obj/effect/turf_decal/tile/ship/half/orange,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iSi" = (
 /obj/structure/closet/secure_closet/genpop,
 /obj/item/clothing/under/rank/prisoner,
@@ -16626,7 +16626,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "iWf" = (
 /obj/machinery/door/poddoor/shutters/ship{
 	id = "gaussgang";
@@ -16636,7 +16636,7 @@
 /obj/machinery/door/firedoor/border_only/directional/north,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "iWu" = (
 /obj/machinery/biogenerator,
 /obj/effect/turf_decal/tile/ship/red{
@@ -16761,7 +16761,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "iZT" = (
 /obj/effect/turf_decal/tile/ship/half/neutral,
 /turf/open/floor/monotile/dark,
@@ -16930,7 +16930,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jeM" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer1{
 	dir = 4
@@ -17129,7 +17129,7 @@
 	icon_state = "2-9"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jiZ" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/effect/spawner/structure/window/plasma/reinforced,
@@ -17211,7 +17211,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "jkR" = (
@@ -17357,7 +17357,7 @@
 "jnj" = (
 /obj/structure/closet/secure_closet/munitions_technician,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jnp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer1{
@@ -17560,7 +17560,7 @@
 "jse" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jsB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -17913,7 +17913,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jCN" = (
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
@@ -18122,7 +18122,7 @@
 	},
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jIZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -18540,7 +18540,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "jSQ" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -18558,7 +18558,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "jTi" = (
@@ -18664,7 +18664,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "jWw" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/ship/yellow{
@@ -18831,7 +18831,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kbC" = (
 /obj/machinery/defence_screen_relay{
 	density = 0;
@@ -19219,7 +19219,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "kmi" = (
@@ -19317,7 +19317,7 @@
 /obj/item/ammo_box/magazine/nsv/pdc,
 /obj/item/ammo_box/magazine/nsv/pdc,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kom" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/tech/grid,
@@ -19330,7 +19330,7 @@
 /obj/structure/chair/stool,
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "koH" = (
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck2/frame3/port)
@@ -19531,7 +19531,7 @@
 "kuc" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "kuD" = (
 /obj/effect/turf_decal/tile/ship/green,
 /obj/effect/turf_decal/tile/ship/green{
@@ -19712,7 +19712,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "kAf" = (
@@ -19795,7 +19795,7 @@
 /obj/item/ammo_box/magazine/nsv/pdc,
 /obj/structure/rack,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kCI" = (
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plating,
@@ -19818,7 +19818,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kDk" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer1{
 	dir = 4
@@ -19925,7 +19925,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kGR" = (
 /obj/machinery/disposal/deliveryChute{
 	dir = 1;
@@ -20304,7 +20304,7 @@
 /obj/item/ship_weapon/ammunition/gauss,
 /obj/item/ship_weapon/ammunition/gauss,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "kRz" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
@@ -20343,7 +20343,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "kRU" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -20428,7 +20428,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "kVK" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -20727,7 +20727,7 @@
 /area/maintenance/nsv/deck2/frame5/starboard)
 "leA" = (
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "leM" = (
@@ -20762,7 +20762,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "lfP" = (
@@ -20775,7 +20775,7 @@
 	},
 /obj/machinery/disposal/bin,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lgi" = (
 /turf/closed/wall/r_wall,
 /area/hydroponics)
@@ -20814,7 +20814,7 @@
 	},
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lgX" = (
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/atmospherics/pipe/simple/violet/visible/layer3,
@@ -20866,7 +20866,7 @@
 "lis" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "liu" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -20899,7 +20899,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "liQ" = (
 /obj/machinery/door/airlock/ship/external/glass{
 	name = "Pressurization Chamber";
@@ -20907,7 +20907,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "liY" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/structure/cable{
@@ -21108,7 +21108,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "lpt" = (
 /turf/open/floor/monotile/dark,
 /area/medical/medbay/lobby)
@@ -21375,7 +21375,7 @@
 	pixel_x = 24
 	},
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lvy" = (
 /obj/effect/turf_decal/tile/ship/green{
 	dir = 4
@@ -21481,7 +21481,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lyA" = (
 /obj/effect/turf_decal/ship/techfloor{
 	dir = 1
@@ -21625,7 +21625,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lDh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -21641,7 +21641,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lDy" = (
 /turf/open/floor/monotile/dark,
 /area/janitor)
@@ -21680,7 +21680,7 @@
 "lFa" = (
 /obj/structure/sign/ship/smoking,
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lFc" = (
 /obj/effect/turf_decal/tile/ship/half/red,
 /obj/machinery/computer/ship/viewscreen,
@@ -21960,7 +21960,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lJZ" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -22164,7 +22164,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lQb" = (
 /obj/machinery/door/airlock/ship/external/glass{
 	name = "Pressurization Chamber";
@@ -22177,11 +22177,11 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lQP" = (
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "lRb" = (
@@ -22269,7 +22269,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "lTb" = (
 /obj/machinery/door/airlock/ship/maintenance,
 /obj/structure/barricade/wooden/crude,
@@ -22353,7 +22353,7 @@
 "lUo" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lUu" = (
 /turf/closed/wall/steel,
 /area/science/robotics/mechbay)
@@ -22402,7 +22402,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "lWs" = (
 /obj/machinery/door/airlock/ship/external/glass{
 	name = "Labour Camp Shuttle Dock"
@@ -22429,7 +22429,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "lWL" = (
 /obj/effect/turf_decal/tile/ship/green{
 	dir = 4
@@ -22477,7 +22477,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "lXu" = (
@@ -22806,7 +22806,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mll" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -22895,7 +22895,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mmA" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer1{
 	dir = 1
@@ -22911,7 +22911,7 @@
 	req_one_access_txt = "69"
 	},
 /turf/closed/wall/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "mnj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch/east,
@@ -23108,7 +23108,7 @@
 	icon_state = "1-10"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "msz" = (
 /turf/open/floor/monotile/steel/airless,
 /area/nsv/hanger/notkmcstupidhanger)
@@ -23275,7 +23275,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mwx" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -23287,7 +23287,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mwL" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -23333,7 +23333,7 @@
 	req_one_access_txt = "69"
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mxV" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -23461,7 +23461,7 @@
 	},
 /obj/machinery/advanced_airlock_controller/directional/south,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mBw" = (
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating,
@@ -23637,7 +23637,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mEx" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light{
@@ -23775,7 +23775,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "mIz" = (
@@ -23964,7 +23964,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "mNV" = (
@@ -24060,13 +24060,13 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mPx" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mPD" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/ship/padded,
@@ -24111,7 +24111,7 @@
 "mRK" = (
 /obj/machinery/computer/ship/dradis/minor/console,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "mSj" = (
@@ -24135,7 +24135,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mSF" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -24151,7 +24151,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "mSY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
@@ -24416,7 +24416,7 @@
 	icon_state = "2,0"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "ndp" = (
 /obj/item/stack/sheet/cardboard,
 /turf/open/floor/plasteel/tech/grid,
@@ -24467,7 +24467,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nfr" = (
 /obj/effect/turf_decal/tile/ship/half/orange,
 /obj/structure/disposalpipe/segment{
@@ -24603,12 +24603,12 @@
 /obj/item/ship_weapon/parts/missile/warhead,
 /obj/item/ship_weapon/parts/missile/warhead,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nhK" = (
 /obj/structure/chair/office,
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nhM" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -24706,7 +24706,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "nkP" = (
@@ -24779,7 +24779,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nmB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -24833,7 +24833,7 @@
 /obj/effect/landmark/zebra_interlock_point,
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "npk" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/maintenance/nsv/deck2/frame3/port)
@@ -25029,14 +25029,14 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nyd" = (
 /obj/machinery/conveyor/slow{
 	dir = 1;
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nyt" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -25693,7 +25693,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nRc" = (
 /obj/structure/chair/stool,
 /obj/machinery/light{
@@ -25938,7 +25938,7 @@
 /obj/effect/turf_decal/tile/ship/half/orange,
 /obj/machinery/advanced_airlock_controller/directional/north,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "nZN" = (
 /obj/effect/turf_decal/tile/ship/green,
 /obj/effect/turf_decal/tile/ship/green{
@@ -26127,7 +26127,7 @@
 "oep" = (
 /obj/machinery/camera/autoname,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oeq" = (
 /obj/effect/turf_decal/ship/techfloor{
 	dir = 10
@@ -26148,7 +26148,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oeG" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26282,7 +26282,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ofQ" = (
@@ -26413,7 +26413,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "olh" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/effect/landmark/zebra_interlock_point,
@@ -26426,13 +26426,13 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "olL" = (
 /obj/structure/munitions_trolley,
 /obj/machinery/light,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "omb" = (
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating,
@@ -26583,7 +26583,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oqT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -26595,7 +26595,7 @@
 /obj/item/paper_bin/construction,
 /obj/item/pen/fountain,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "orf" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -26709,7 +26709,7 @@
 "otC" = (
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "otR" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -26733,7 +26733,7 @@
 	dir = 9
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "otY" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/nsv/deck2/frame5/starboard)
@@ -26831,7 +26831,7 @@
 	icon_state = "4-9"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ovz" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
@@ -26928,7 +26928,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "oxU" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible/layer1,
 /obj/structure/disposalpipe/segment,
@@ -26995,7 +26995,7 @@
 "ozG" = (
 /obj/structure/chair/sofa,
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ozI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -27048,7 +27048,7 @@
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/camera/autoname,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oAX" = (
 /obj/machinery/computer/rdconsole/core,
 /turf/open/floor/plasteel/techmaint,
@@ -27121,7 +27121,7 @@
 	icon_state = "5-6"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oCX" = (
 /obj/structure/sign/ship/smoking{
 	dir = 4;
@@ -27182,7 +27182,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "oDE" = (
@@ -27298,7 +27298,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oGy" = (
 /obj/machinery/camera/autoname{
 	dir = 1
@@ -27323,7 +27323,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oGU" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -27407,7 +27407,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oIE" = (
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/monotile/steel,
@@ -27492,7 +27492,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "oNh" = (
@@ -27506,7 +27506,7 @@
 /area/maintenance/nsv/deck2/frame1/starboard)
 "oNu" = (
 /turf/closed/wall/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oNC" = (
 /obj/structure/lattice/catwalk/over/ship,
 /obj/structure/disposalpipe/segment{
@@ -27649,7 +27649,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/loading_area,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oSN" = (
 /obj/structure/window/reinforced,
 /obj/structure/table,
@@ -27719,7 +27719,7 @@
 /area/maintenance/nsv/deck2/frame3/port)
 "oTH" = (
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oTP" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -27753,7 +27753,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oUy" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -27934,7 +27934,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oXO" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/effect/landmark/zebra_interlock_point,
@@ -27950,7 +27950,7 @@
 /obj/machinery/power/smes,
 /obj/structure/cable,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "oYr" = (
@@ -27980,13 +27980,13 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "oYy" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "oYC" = (
@@ -28034,7 +28034,7 @@
 	target_layer = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "oZW" = (
 /turf/closed/wall/steel,
 /area/security/prison)
@@ -28466,7 +28466,7 @@
 "pof" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "pop" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -29161,7 +29161,7 @@
 /obj/item/ship_weapon/ammunition/gauss,
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "pGe" = (
 /obj/machinery/light,
 /obj/structure/disposalpipe/segment{
@@ -29382,7 +29382,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "pOl" = (
 /obj/structure/table/wood,
 /obj/item/wrench,
@@ -29457,7 +29457,7 @@
 	},
 /obj/machinery/holopad,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "pQA" = (
 /obj/structure/closet/crate/trashcart,
 /obj/machinery/light,
@@ -29713,7 +29713,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "pWW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -29965,7 +29965,7 @@
 	},
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qfT" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance/three,
@@ -29989,7 +29989,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qgJ" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer1,
 /turf/open/floor/plasteel/grid/techfloor/grid,
@@ -30032,7 +30032,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qhs" = (
 /obj/effect/decal/cleanable/food/flour,
 /obj/structure/sink/kitchen{
@@ -30114,7 +30114,7 @@
 /obj/machinery/vending/wardrobe/muni_wardrobe,
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qiV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -30143,7 +30143,7 @@
 "qjl" = (
 /obj/effect/turf_decal/tile/ship/half/orange,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qjG" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -30218,7 +30218,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qln" = (
 /obj/machinery/smartfridge,
 /turf/closed/wall/steel,
@@ -30307,7 +30307,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qnd" = (
 /obj/item/ship_weapon/ammunition/missile,
 /obj/item/ship_weapon/ammunition/missile{
@@ -30370,7 +30370,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "qpq" = (
@@ -30432,7 +30432,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qrk" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle{
 	dir = 4
@@ -30459,7 +30459,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qsb" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/effect/landmark/zebra_interlock_point,
@@ -30610,7 +30610,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qvD" = (
 /obj/effect/turf_decal/tile/ship/full/blue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -30665,7 +30665,7 @@
 /obj/effect/landmark/event_spawn,
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qwz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/ship/preopen{
@@ -30702,7 +30702,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qxV" = (
 /obj/effect/turf_decal/tile/ship/half/red{
 	dir = 4
@@ -30898,7 +30898,7 @@
 /obj/structure/closet/secure_closet/master_at_arms,
 /obj/item/book/manual/wiki/sop/munitions,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qDI" = (
 /obj/effect/turf_decal/tile/ship/half/red{
 	dir = 1
@@ -30927,7 +30927,7 @@
 	},
 /obj/effect/turf_decal/ship/nt_floor_logo,
 /turf/open/floor/light,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qDO" = (
 /obj/machinery/atmospherics/pipe/simple/multiz/layer1,
 /turf/open/floor/plating,
@@ -30982,7 +30982,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qFr" = (
 /obj/effect/turf_decal/ship/letter{
 	icon_state = "C"
@@ -31062,7 +31062,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "qHt" = (
@@ -31096,7 +31096,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qIY" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -31105,7 +31105,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qJp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/freezer,
@@ -31188,7 +31188,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qLF" = (
 /obj/effect/landmark/start/janitor,
 /turf/open/floor/monotile/dark,
@@ -31235,7 +31235,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "qMV" = (
@@ -31361,7 +31361,7 @@
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/ship_weapon/pdc_mount/east,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qSc" = (
 /obj/machinery/air_sensor/atmos/air_tank,
 /turf/open/floor/engine/air,
@@ -31574,7 +31574,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qYS" = (
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plating,
@@ -31899,7 +31899,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "riV" = (
 /obj/effect/turf_decal/ship/letter,
 /obj/effect/turf_decal/stripes/line,
@@ -32022,7 +32022,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "roE" = (
@@ -32030,7 +32030,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "roI" = (
 /obj/structure/lattice/catwalk/over/ship,
 /obj/structure/disposalpipe/segment{
@@ -32269,7 +32269,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ruX" = (
@@ -32439,7 +32439,7 @@
 	},
 /obj/effect/landmark/start/master_at_arms,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rzz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -32531,7 +32531,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "rDj" = (
@@ -32674,7 +32674,7 @@
 	icon_state = "0,1"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "rHy" = (
 /turf/closed/wall/r_wall,
 /area/medical/chemistry)
@@ -32745,7 +32745,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rJl" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -32879,7 +32879,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rLc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -32927,7 +32927,7 @@
 "rMz" = (
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rMD" = (
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/monotile/steel,
@@ -32943,7 +32943,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rNm" = (
 /obj/machinery/button/door{
 	id = "maintshop";
@@ -33012,7 +33012,7 @@
 /obj/structure/chair/stool,
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "rPA" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/dna_scannernew,
@@ -33140,7 +33140,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "rTL" = (
@@ -33354,7 +33354,7 @@
 /obj/item/ship_weapon/ammunition/missile/missile_casing,
 /obj/item/ship_weapon/ammunition/missile/missile_casing,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sdd" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -33786,7 +33786,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "smn" = (
@@ -34011,7 +34011,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sqH" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-10"
@@ -34049,7 +34049,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "srI" = (
@@ -34561,7 +34561,7 @@
 	icon_state = "0,0"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "sGz" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -34588,7 +34588,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "sHb" = (
@@ -34991,7 +34991,7 @@
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sQO" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/layer1,
 /obj/machinery/portable_atmospherics/canister/toxins,
@@ -35047,7 +35047,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "sSo" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -35099,7 +35099,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sUa" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -35194,7 +35194,7 @@
 	id = "torp"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sXf" = (
 /obj/structure/chair,
 /obj/structure/cable{
@@ -35206,7 +35206,7 @@
 "sXm" = (
 /obj/structure/sign/poster/official/nanotrasen_logo,
 /turf/closed/wall/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sXo" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -35305,7 +35305,7 @@
 "sYT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sZc" = (
 /turf/open/floor/monotile/dark,
 /area/ai_monitored/security/armory/lockup)
@@ -35545,7 +35545,7 @@
 /obj/machinery/light,
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tfO" = (
 /obj/effect/turf_decal/tile/ship/half/orange,
 /obj/effect/turf_decal/tile/ship/orange{
@@ -35620,7 +35620,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tid" = (
 /obj/structure/fluff{
 	desc = "A crude, yet accurate papier mache model of one of Nanotrasen's most iconic spacecraft to ever sail the stars, although it hasn't technically been built yet....";
@@ -35698,7 +35698,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tjW" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /obj/machinery/door/firedoor/border_only/directional/north,
@@ -35819,7 +35819,7 @@
 	id = "munidelivery"
 	},
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tnr" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -35887,7 +35887,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "toD" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
@@ -36065,7 +36065,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ttl" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
@@ -36128,7 +36128,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "tuN" = (
@@ -36336,7 +36336,7 @@
 	dir = 6
 	},
 /turf/open/floor/carpet,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tCL" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/machinery/computer/ship/navigation/public,
@@ -36457,7 +36457,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tJA" = (
 /obj/effect/spawner/lootdrop/maintenance/four,
 /obj/structure/rack,
@@ -36646,7 +36646,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tNP" = (
 /obj/structure/sign/ship/deck/two,
 /turf/closed/wall/steel,
@@ -36720,7 +36720,7 @@
 "tPz" = (
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tPA" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/cyan{
@@ -36738,7 +36738,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "tPM" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-25"
@@ -37103,7 +37103,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "tZd" = (
@@ -37238,7 +37238,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "udR" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -37258,7 +37258,7 @@
 	icon_state = "1,2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "ueE" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -37273,7 +37273,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "ueQ" = (
@@ -37305,7 +37305,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ufm" = (
 /obj/structure/sign/ship/securearea/alt{
 	dir = 4;
@@ -37334,7 +37334,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "ugf" = (
 /obj/machinery/camera/autoname,
 /turf/open/floor/engine,
@@ -37392,7 +37392,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uhL" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer1{
 	dir = 8
@@ -37750,7 +37750,7 @@
 /area/nsv/hanger/notkmcstupidhanger)
 "urI" = (
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "urP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -37853,7 +37853,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "uuz" = (
@@ -37902,7 +37902,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "uvu" = (
@@ -38010,7 +38010,7 @@
 /area/maintenance/nsv/deck2/frame3/port)
 "uxA" = (
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "uxJ" = (
@@ -38046,7 +38046,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uyO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -38283,7 +38283,7 @@
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uFm" = (
 /obj/machinery/door/airlock/ship/public/glass{
 	name = "Medical Central";
@@ -38309,7 +38309,7 @@
 	},
 /obj/machinery/holopad,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "uGl" = (
 /obj/effect/turf_decal/tile/ship/half/green{
 	dir = 1
@@ -38681,7 +38681,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uQn" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -38862,7 +38862,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uWb" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -38944,7 +38944,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "uXJ" = (
@@ -38959,7 +38959,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "uXM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/curtain/obscuring/grey,
@@ -39077,7 +39077,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "vbr" = (
@@ -39359,7 +39359,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "viq" = (
 /obj/machinery/door/airlock/ship/security/glass{
 	name = "Brig Control";
@@ -39403,7 +39403,7 @@
 /area/quartermaster/lobby)
 "vjs" = (
 /turf/closed/wall/r_wall,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "vjw" = (
 /obj/item/seeds/lime{
 	pixel_x = 6
@@ -39521,7 +39521,7 @@
 	pixel_y = -26
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "vnF" = (
 /obj/structure/rack,
 /obj/item/clothing/mask/fakemoustache,
@@ -39589,7 +39589,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "voW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -39735,7 +39735,7 @@
 "vwd" = (
 /obj/machinery/light/small,
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "vwA" = (
 /obj/structure/window/reinforced,
 /obj/machinery/computer/operating{
@@ -39819,7 +39819,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "vyK" = (
 /obj/structure/extinguisher_cabinet/west,
 /turf/open/floor/plasteel/techmaint,
@@ -40207,7 +40207,7 @@
 /area/ai_monitored/security/armory/lockup)
 "vGW" = (
 /turf/open/floor/carpet/orange,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "vHr" = (
 /obj/structure/closet{
 	name = "red team closet"
@@ -40775,14 +40775,14 @@
 	name = "assembly line switch"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "vXh" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "vXm" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -40825,7 +40825,7 @@
 	},
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "waw" = (
 /obj/effect/turf_decal/tile/ship/half/neutral{
 	dir = 8
@@ -40979,7 +40979,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "weD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -41159,7 +41159,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "wks" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
 	id = "extra_2_input"
@@ -41396,7 +41396,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "wsd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -41575,7 +41575,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "wwm" = (
@@ -41635,7 +41635,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "wxg" = (
 /obj/structure/chair{
 	dir = 8
@@ -41706,7 +41706,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "wyj" = (
@@ -42121,7 +42121,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "wMn" = (
@@ -42138,7 +42138,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "wMw" = (
@@ -42328,7 +42328,7 @@
 "wSQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "wSX" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -42370,7 +42370,7 @@
 "wUD" = (
 /obj/machinery/computer/ship/munitions_computer/west,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "wUQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -42419,7 +42419,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "wVG" = (
 /obj/effect/turf_decal/tile/ship/half/red{
 	dir = 1
@@ -42585,7 +42585,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xbZ" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -42644,7 +42644,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xcZ" = (
 /obj/machinery/door/poddoor{
 	id = "chapelgun";
@@ -42867,7 +42867,7 @@
 	},
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "xjv" = (
@@ -42878,7 +42878,7 @@
 /obj/item/ammo_box/magazine/nsv/pdc,
 /obj/structure/rack,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xjH" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/machinery/button/door/incinerator_vent_atmos_main{
@@ -43012,7 +43012,7 @@
 /area/nsv/briefingroom)
 "xnR" = (
 /turf/closed/wall/steel,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "xob" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos{
 	dir = 4;
@@ -43049,7 +43049,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "xoB" = (
@@ -43298,7 +43298,7 @@
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xuC" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -43436,7 +43436,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "xxV" = (
@@ -43556,7 +43556,7 @@
 "xBo" = (
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xBy" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -43810,7 +43810,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xIS" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-9"
@@ -43885,12 +43885,12 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xLX" = (
 /obj/machinery/ship_weapon/vls,
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xMn" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -44082,7 +44082,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xTb" = (
 /obj/effect/turf_decal/ship/nt_floor_logo{
 	icon_state = "0,1"
@@ -44206,7 +44206,7 @@
 /obj/effect/landmark/nuclear_waste_spawner,
 /obj/machinery/ship_weapon/pdc_mount/east,
 /turf/open/floor/plating,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xVG" = (
 /obj/effect/turf_decal/tile/ship/half/neutral{
 	dir = 1
@@ -44286,7 +44286,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "xYW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_pump/layer1{
@@ -44427,7 +44427,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ycK" = (
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
@@ -44720,7 +44720,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	name = "Artillery Bay"
 	})
 "yjH" = (
@@ -44788,7 +44788,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "ylQ" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{

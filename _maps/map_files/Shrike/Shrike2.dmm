@@ -12,7 +12,7 @@
 /area/medical/nsv)
 "ad" = (
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "af" = (
 /obj/structure/shuttle/engine/large{
 	dir = 1
@@ -253,7 +253,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -269,7 +269,7 @@
 /turf/open/floor/monofloor/corner{
 	dir = 1
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -344,7 +344,7 @@
 "bd" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
@@ -403,7 +403,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "bo" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -431,7 +431,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -922,7 +922,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1345,7 +1345,7 @@
 	},
 /obj/structure/chair/comfy/gauss/east,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1355,7 +1355,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1374,7 +1374,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1413,7 +1413,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1494,7 +1494,7 @@
 	},
 /obj/structure/chair/comfy/gauss/west,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1502,7 +1502,7 @@
 "eR" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1514,7 +1514,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1529,7 +1529,7 @@
 /area/engine/gravity_generator)
 "eX" = (
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "fc" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -1598,7 +1598,7 @@
 /turf/open/floor/monofloor{
 	dir = 4
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -1675,7 +1675,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1722,7 +1722,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1748,7 +1748,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1884,7 +1884,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1908,7 +1908,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -1921,7 +1921,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2036,7 +2036,7 @@
 /area/crew_quarters/bar/mess_hall)
 "gC" = (
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2048,7 +2048,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2131,7 +2131,7 @@
 /obj/machinery/door/firedoor/window,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2145,7 +2145,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2162,7 +2162,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2324,7 +2324,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2351,7 +2351,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2449,7 +2449,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2458,7 +2458,7 @@
 /obj/effect/turf_decal/trimline/blue/arrow_cw,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2474,7 +2474,7 @@
 	},
 /obj/structure/closet/crate,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2492,7 +2492,7 @@
 	},
 /obj/item/clothing/ears/earmuffs,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2532,7 +2532,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/advanced_airlock_controller/directional/east,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2721,7 +2721,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2735,7 +2735,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2748,7 +2748,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2834,7 +2834,7 @@
 "jM" = (
 /obj/effect/turf_decal/trimline/blue/line,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -2871,7 +2871,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -3092,7 +3092,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -3104,7 +3104,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -3244,7 +3244,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -3264,7 +3264,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -3506,7 +3506,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -3747,7 +3747,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4047,7 +4047,7 @@
 	},
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -4183,7 +4183,7 @@
 /obj/item/ship_weapon/ammunition/railgun_ammo,
 /obj/item/ship_weapon/ammunition/railgun_ammo,
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4364,7 +4364,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4389,7 +4389,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4447,7 +4447,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4658,7 +4658,7 @@
 "qs" = (
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4671,7 +4671,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4766,7 +4766,7 @@
 /obj/structure/cable/white,
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -4817,7 +4817,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "qW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -4837,7 +4837,7 @@
 /obj/machinery/door/firedoor/border_only/directional/north,
 /obj/machinery/door/firedoor/border_only/directional/south,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4928,7 +4928,7 @@
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -4991,7 +4991,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -5431,7 +5431,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "sT" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -5770,7 +5770,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -5973,7 +5973,7 @@
 	icon_state = "2-9"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6114,7 +6114,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6146,7 +6146,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6269,7 +6269,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6295,7 +6295,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6313,7 +6313,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6777,7 +6777,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -6945,7 +6945,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -7104,7 +7104,7 @@
 /area/maintenance/nsv/central_substation)
 "yg" = (
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7174,7 +7174,7 @@
 /turf/open/floor/monofloor{
 	dir = 4
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -7310,7 +7310,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7323,7 +7323,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7446,7 +7446,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7461,7 +7461,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7484,7 +7484,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7552,7 +7552,7 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -7729,7 +7729,7 @@
 /obj/machinery/door/firedoor/window,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7770,7 +7770,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7922,7 +7922,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -7947,7 +7947,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/advanced_airlock_controller/directional/east,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8112,7 +8112,7 @@
 	},
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8261,7 +8261,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8322,7 +8322,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8445,7 +8445,7 @@
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/dark/corner,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8468,7 +8468,7 @@
 	color = "#FF3232"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8686,7 +8686,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Dc" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 8
@@ -8709,7 +8709,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8837,7 +8837,7 @@
 	icon_state = "1-10"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -8862,7 +8862,7 @@
 "DA" = (
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -9041,7 +9041,7 @@
 	},
 /obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9480,7 +9480,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9549,7 +9549,7 @@
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -9566,7 +9566,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -9661,7 +9661,7 @@
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9723,7 +9723,7 @@
 /area/engine/atmos/port_atmos)
 "Gb" = (
 /turf/closed/wall/ship,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Gc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -9739,7 +9739,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9761,7 +9761,7 @@
 /area/security/main)
 "Gg" = (
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -9796,7 +9796,7 @@
 	icon_state = "6-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9814,7 +9814,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9848,7 +9848,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -9918,7 +9918,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "GG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer1,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer3{
@@ -9997,7 +9997,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10011,7 +10011,7 @@
 	pixel_x = 10
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10090,7 +10090,7 @@
 	pixel_x = -10
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10111,7 +10111,7 @@
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10158,7 +10158,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10174,7 +10174,7 @@
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10205,7 +10205,7 @@
 	dir = 4
 	},
 /turf/open/floor/monofloor,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10224,7 +10224,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10247,7 +10247,7 @@
 	color = "#c1e1ff"
 	},
 /turf/open/floor/monofloor,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10257,7 +10257,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10364,7 +10364,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10399,7 +10399,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -10411,7 +10411,7 @@
 	},
 /obj/structure/plasticflaps/opaque,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10448,7 +10448,7 @@
 	dir = 1
 	},
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10515,7 +10515,7 @@
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "IC" = (
 /obj/effect/turf_decal/ship/borderfloor{
 	dir = 1
@@ -10645,7 +10645,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10667,7 +10667,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Je" = (
 /obj/structure/closet/firecloset{
 	anchored = 1
@@ -10693,7 +10693,7 @@
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/monofloor/corner,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Jg" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "loader_1";
@@ -10730,14 +10730,14 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Jh" = (
 /obj/machinery/conveyor/slow{
 	dir = 4;
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10778,7 +10778,7 @@
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10797,7 +10797,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -10852,7 +10852,7 @@
 	icon_state = "1-10"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11158,7 +11158,7 @@
 	},
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11273,14 +11273,14 @@
 	},
 /obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "KG" = (
 /obj/machinery/conveyor/slow{
 	dir = 1;
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11290,7 +11290,7 @@
 	name = "Railgun Aux Rack"
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11324,7 +11324,7 @@
 "KM" = (
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11426,7 +11426,7 @@
 	})
 "KZ" = (
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11488,7 +11488,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11619,7 +11619,7 @@
 /area/engine/stormdrive)
 "Lv" = (
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11682,7 +11682,7 @@
 	id = "railgun_conveyor"
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11699,7 +11699,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11713,7 +11713,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11787,7 +11787,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -11913,7 +11913,7 @@
 	id = "railgun_conveyor"
 	},
 /turf/open/floor/engine,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12051,7 +12051,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "MR" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -12076,7 +12076,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12172,7 +12172,7 @@
 	name = "Railgun Slug Rack II"
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12251,7 +12251,7 @@
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/machinery/door/firedoor/border_only/directional/north,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12313,7 +12313,7 @@
 /obj/effect/spawner/structure/window/reinforced/ship,
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12326,7 +12326,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 9
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12375,7 +12375,7 @@
 	id = "railgun_conveyor"
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12400,7 +12400,7 @@
 	dir = 1
 	},
 /turf/open/floor/monofloor,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -12483,12 +12483,12 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "NW" = (
 /turf/open/floor/plasteel/dark/side{
 	dir = 10
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12534,7 +12534,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12575,7 +12575,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/ship,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -12602,7 +12602,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12729,7 +12729,7 @@
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12849,7 +12849,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -12896,7 +12896,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Pm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -12955,7 +12955,7 @@
 	},
 /obj/effect/landmark/start/munitions_tech,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Pu" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
@@ -13013,7 +13013,7 @@
 	},
 /obj/effect/landmark/nuclear_waste_spawner,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "PC" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -13028,7 +13028,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "PD" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -13041,7 +13041,7 @@
 /area/engine/stormdrive)
 "PF" = (
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13070,7 +13070,7 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13089,7 +13089,7 @@
 	icon_state = "6-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13130,7 +13130,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13225,7 +13225,7 @@
 "Qb" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13269,7 +13269,7 @@
 /area/medical/nsv)
 "Qk" = (
 /turf/open/floor/engine,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13288,7 +13288,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13556,7 +13556,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Ri" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 8
@@ -13578,7 +13578,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons)
+/area/station/nsv/weapons)
 "Rk" = (
 /obj/machinery/conveyor/slow{
 	id = "loader_2"
@@ -13588,7 +13588,7 @@
 	id = "magazine_conveyor"
 	},
 /turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13633,7 +13633,7 @@
 /turf/open/floor/monofloor{
 	dir = 1
 	},
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13690,7 +13690,7 @@
 "Ry" = (
 /obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/dark/corner,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13702,7 +13702,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -13782,7 +13782,7 @@
 "RP" = (
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14114,7 +14114,7 @@
 /area/crew_quarters/theatre)
 "SO" = (
 /turf/open/floor/plating/foam,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14136,7 +14136,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14149,7 +14149,7 @@
 	id = "railgun_conveyor"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14251,7 +14251,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14291,7 +14291,7 @@
 "Tr" = (
 /obj/machinery/ship_weapon/pdc_mount/north,
 /turf/open/floor/engine,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14641,7 +14641,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel/dark,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14710,7 +14710,7 @@
 	},
 /obj/structure/chair/comfy/gauss/west,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14762,7 +14762,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14778,7 +14778,7 @@
 	pixel_x = -30
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14793,7 +14793,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -14990,7 +14990,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15135,7 +15135,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15164,7 +15164,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15238,7 +15238,7 @@
 	icon_state = "4-9"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -15292,7 +15292,7 @@
 	},
 /obj/machinery/camera/autoname,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -15446,7 +15446,7 @@
 	},
 /obj/structure/chair/comfy/gauss/east,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15478,7 +15478,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15648,7 +15648,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15667,7 +15667,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 1
 	},
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15746,7 +15746,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15779,7 +15779,7 @@
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15950,7 +15950,7 @@
 /area/quartermaster/storage)
 "XX" = (
 /turf/closed/wall/ship,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -15992,7 +15992,7 @@
 /area/nsv/engine/engine_room/auxiliary)
 "Ye" = (
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16064,7 +16064,7 @@
 "Yo" = (
 /obj/structure/foamedmetal,
 /turf/open/floor/plating/foam,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16118,7 +16118,7 @@
 /area/crew_quarters/theatre)
 "Yv" = (
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16178,7 +16178,7 @@
 	})
 "YG" = (
 /turf/closed/wall/ship,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -16235,7 +16235,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/starboard{
+/area/station/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16268,14 +16268,14 @@
 	icon_state = "0-5"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
 	})
 "YV" = (
 /turf/open/floor/engine,
-/area/nsv/weapons/fore{
+/area/station/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16295,7 +16295,7 @@
 	},
 /obj/structure/closet/crate,
 /turf/open/floor/monofloor,
-/area/nsv/weapons/gauss/battery/deck2/port{
+/area/station/nsv/weapons/gauss/battery/deck2/port{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16385,7 +16385,7 @@
 	dir = 1
 	},
 /turf/open/floor/monofloor,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -16508,7 +16508,7 @@
 /area/crew_quarters/bar/mess_hall)
 "Zy" = (
 /turf/closed/wall/ship,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16619,7 +16619,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/ship/techfloor/alt,
-/area/nsv/weapons/access_corridor{
+/area/station/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
@@ -16666,7 +16666,7 @@
 	pixel_x = -10
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/gauss/battery/deck2/starboard{
+/area/station/nsv/weapons/gauss/battery/deck2/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"

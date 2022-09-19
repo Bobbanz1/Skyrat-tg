@@ -66,7 +66,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "adj" = (
 /obj/structure/grille/wall,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
@@ -298,7 +298,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "alf" = (
 /obj/structure/sign/poster/contraband/lusty_xenomorph{
 	pixel_y = -32
@@ -488,7 +488,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "apM" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -1286,7 +1286,7 @@
 /obj/structure/chair/comfy/gauss/east,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "aWP" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1509,7 +1509,7 @@
 "beu" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bfs" = (
 /turf/closed/wall/r_wall/ship,
 /area/hallway/secondary/exit/departure_lounge)
@@ -1978,7 +1978,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "buO" = (
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/carpet/black,
@@ -2040,7 +2040,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bxf" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
 	dir = 4;
@@ -2178,7 +2178,7 @@
 "bCu" = (
 /obj/machinery/conveyor/auto,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bCy" = (
 /obj/structure/table/wood,
 /obj/item/paper{
@@ -2352,7 +2352,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bJn" = (
 /obj/structure/chair{
 	dir = 8
@@ -2550,7 +2550,7 @@
 	},
 /obj/machinery/computer/deckgun,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bPY" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/ship/external/glass{
@@ -2615,7 +2615,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bRv" = (
 /obj/machinery/door/airlock/ship/maintenance/defaultaccess,
 /obj/machinery/door/firedoor/border_only,
@@ -2693,7 +2693,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "bUm" = (
 /obj/machinery/door/airlock/ship/public/glass{
 	name = "Arrivals"
@@ -4752,7 +4752,7 @@
 	},
 /obj/machinery/computer/deckgun,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dga" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
@@ -4985,7 +4985,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dra" = (
 /obj/machinery/atmospherics/miner/oxygen,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -5076,7 +5076,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dvv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
@@ -5369,7 +5369,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dEZ" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -5531,14 +5531,14 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dII" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "dIL" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -6578,7 +6578,7 @@
 	},
 /obj/machinery/deck_turret,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "eqz" = (
 /obj/item/cigbutt,
 /obj/structure/cable{
@@ -6600,7 +6600,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "eqJ" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -6762,7 +6762,7 @@
 "euH" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "euX" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -6853,7 +6853,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "eyd" = (
 /obj/machinery/computer/ship/viewscreen,
 /turf/open/floor/carpet,
@@ -6865,7 +6865,7 @@
 	},
 /obj/machinery/ship_weapon/pdc_mount/north,
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "eyq" = (
 /obj/structure/table/wood,
 /obj/item/clothing/mask/fakemoustache,
@@ -7473,7 +7473,7 @@
 	},
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "eLK" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -8559,7 +8559,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "foC" = (
 /obj/structure/extinguisher_cabinet/west,
 /turf/open/floor/plasteel/freezer,
@@ -8590,7 +8590,7 @@
 /area/storage/primary)
 "fpw" = (
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "fpT" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/firealarm/directional/north,
@@ -8625,7 +8625,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "frj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -9195,7 +9195,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "fGy" = (
 /obj/structure/window/reinforced/spawner,
 /obj/item/kirbyplants/random,
@@ -9354,7 +9354,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "fLb" = (
 /obj/machinery/power/apc/auto_name/east,
 /obj/structure/cable{
@@ -9726,7 +9726,7 @@
 	},
 /obj/structure/rack,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "fUQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -10401,7 +10401,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "gmI" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/reagent_containers/food/condiment/pack/ketchup{
@@ -10934,7 +10934,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "gDg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -11040,7 +11040,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "gGN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -11654,7 +11654,7 @@
 /obj/machinery/ship_weapon/vls,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "har" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -12258,7 +12258,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "hqs" = (
 /obj/structure/toilet{
 	pixel_y = 8
@@ -12843,7 +12843,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "hKs" = (
 /obj/structure/table,
 /obj/machinery/newscaster/security_unit/south,
@@ -12900,7 +12900,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/deck_turret/powder_gate,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "hMp" = (
 /obj/machinery/door/airlock/ship/public{
 	name = "Laundromat"
@@ -12928,7 +12928,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "hNd" = (
 /obj/structure/closet/radiation,
 /turf/open/floor/plating,
@@ -14054,7 +14054,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "iqf" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -14676,7 +14676,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "iIy" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 8
@@ -14745,7 +14745,7 @@
 "iKn" = (
 /obj/machinery/ship_weapon/vls,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "iKE" = (
 /turf/open/floor/monotile/dark,
 /area/quartermaster/sorting)
@@ -14829,7 +14829,7 @@
 "iMs" = (
 /obj/machinery/computer/ship/munitions_computer/east,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "iMJ" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -15032,7 +15032,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "iSF" = (
 /obj/structure/lattice/catwalk/over/ship/dark,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -15615,7 +15615,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "jmw" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/item/reagent_containers/glass/bucket,
@@ -15764,7 +15764,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "jrB" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -16230,7 +16230,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "jDI" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/bot{
@@ -16744,7 +16744,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "jVI" = (
 /obj/machinery/atmospherics/pipe/manifold/yellow/visible{
 	dir = 4
@@ -16795,7 +16795,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "jXf" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -17537,7 +17537,7 @@
 	},
 /obj/structure/window/reinforced,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "kwr" = (
 /turf/open/floor/monotile/dark,
 /area/engine/atmos)
@@ -18295,7 +18295,7 @@
 	},
 /obj/structure/rack,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "kWz" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/turf_decal/stripes/line,
@@ -19057,7 +19057,7 @@
 	dir = 4
 	},
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "lug" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
@@ -19277,7 +19277,7 @@
 /area/crew_quarters/toilet)
 "lBb" = (
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "lBn" = (
 /obj/machinery/disposal/bin,
 /obj/machinery/light_switch/west,
@@ -19979,7 +19979,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "lTn" = (
 /obj/machinery/door/poddoor/shutters/ship{
 	id = "arrival_shutters";
@@ -20107,7 +20107,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "lXd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
@@ -20331,7 +20331,7 @@
 /area/engine/atmos)
 "mdB" = (
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mdF" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp,
@@ -20393,7 +20393,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mey" = (
 /turf/closed/wall/r_wall/ship,
 /area/engine/gravity_generator)
@@ -20663,7 +20663,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mmD" = (
 /obj/machinery/door/airlock/ship/maintenance/defaultaccess{
 	name = "Maintenance Access Tool Storage"
@@ -20862,7 +20862,7 @@
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mqc" = (
 /turf/closed/wall/ship,
 /area/maintenance/disposal)
@@ -20900,7 +20900,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "msB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -21126,7 +21126,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "myj" = (
 /obj/structure/lattice/catwalk/over/ship/dark,
 /obj/structure/cable{
@@ -21253,7 +21253,7 @@
 	},
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mBf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -21612,7 +21612,7 @@
 "mOC" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mPf" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -21830,7 +21830,7 @@
 	},
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "mUP" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -22049,7 +22049,7 @@
 /obj/item/clothing/ears/earmuffs,
 /obj/item/extinguisher,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nba" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance/two,
@@ -22971,7 +22971,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nEs" = (
 /obj/effect/landmark/carpspawn,
 /obj/structure/lattice,
@@ -23439,7 +23439,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "nQP" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -24375,7 +24375,7 @@
 	dir = 6
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "orx" = (
 /obj/structure/chair/office,
 /turf/open/floor/plasteel/grid/lino,
@@ -24584,7 +24584,7 @@
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /obj/item/ship_weapon/ammunition/naval_artillery,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "oyr" = (
 /obj/structure/filingcabinet/employment,
 /obj/machinery/newscaster/directional/west,
@@ -24803,7 +24803,7 @@
 	},
 /obj/machinery/ship_weapon/vls,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "oEZ" = (
 /obj/structure/closet/crate,
 /obj/item/stock_parts/matter_bin,
@@ -25587,7 +25587,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "pfh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -25991,7 +25991,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "ppz" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -26396,7 +26396,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "pBz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -26641,7 +26641,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "pJz" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
 	dir = 4;
@@ -27018,7 +27018,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "pSV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -27966,7 +27966,7 @@
 	id = "naval"
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "qtJ" = (
 /obj/structure/table,
 /obj/item/razor{
@@ -28151,7 +28151,7 @@
 	},
 /obj/structure/rack,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "qzr" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -28327,7 +28327,7 @@
 	dir = 8
 	},
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "qCV" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -29064,7 +29064,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "qWV" = (
 /obj/item/paper_bin{
 	pixel_x = 1;
@@ -29491,7 +29491,7 @@
 	pixel_y = 30
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rfm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -29627,7 +29627,7 @@
 /obj/machinery/gauss_dispenser,
 /obj/structure/closet/crate,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rlw" = (
 /obj/effect/turf_decal{
 	dir = 1
@@ -30383,7 +30383,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rHS" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
@@ -30469,7 +30469,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rKr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -30855,7 +30855,7 @@
 /obj/item/multitool,
 /obj/item/multitool,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rUl" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -30991,7 +30991,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "rXo" = (
 /obj/machinery/door/airlock/ship/public/glass{
 	name = "Crew Quarters Hallway"
@@ -31324,7 +31324,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "shK" = (
 /turf/closed/wall/ship,
 /area/security/checkpoint/supply)
@@ -31839,7 +31839,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "swF" = (
 /obj/effect/turf_decal/ship/delivery/yellow,
 /mob/living/simple_animal/bot/mulebot{
@@ -32364,7 +32364,7 @@
 /obj/machinery/deck_turret/payload_gate,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "sMI" = (
 /obj/structure/sign/poster/contraband/pwr_game{
 	pixel_y = 32
@@ -32391,7 +32391,7 @@
 /area/quartermaster/storage)
 "sNY" = (
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "sOc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -32426,7 +32426,7 @@
 /obj/item/ammo_box/magazine/nsv/pdc,
 /obj/item/ammo_box/magazine/nsv/pdc,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "sOs" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -33077,7 +33077,7 @@
 	},
 /obj/machinery/ship_weapon/pdc_mount/north,
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "thf" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -33123,7 +33123,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tiH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -33391,7 +33391,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tox" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -33692,7 +33692,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tzL" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -33753,7 +33753,7 @@
 	dir = 5
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tCB" = (
 /obj/structure/table,
 /obj/item/storage/box/papersack{
@@ -33823,7 +33823,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tFm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -33940,7 +33940,7 @@
 	pixel_y = 26
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tIg" = (
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for watching Prison Wing holding areas.";
@@ -34336,7 +34336,7 @@
 /obj/machinery/ship_weapon/vls,
 /obj/machinery/camera/autoname,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tUd" = (
 /obj/machinery/status_display/ai,
 /turf/closed/wall/ship,
@@ -34476,7 +34476,7 @@
 	dir = 1
 	},
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tZd" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -34509,7 +34509,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "tZS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -35072,7 +35072,7 @@
 	dir = 4
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "usW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -35277,7 +35277,7 @@
 	},
 /obj/structure/chair/comfy/gauss/west,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "uzQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
@@ -35487,7 +35487,7 @@
 	},
 /obj/structure/rack,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "uFp" = (
 /obj/effect/turf_decal/bot_red,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
@@ -35653,7 +35653,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/monotile/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "uJH" = (
 /obj/machinery/computer/ship/viewscreen,
 /obj/effect/turf_decal/stripes/line{
@@ -36964,7 +36964,7 @@
 	},
 /obj/machinery/deck_turret/powder_gate,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "vCa" = (
 /obj/machinery/newscaster/directional/south,
 /obj/structure/cable{
@@ -37342,7 +37342,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "vNu" = (
 /obj/machinery/door/firedoor/window,
 /obj/machinery/conveyor{
@@ -38529,7 +38529,7 @@
 	id = "naval"
 	},
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wya" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/ship/preopen{
@@ -38779,7 +38779,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/chair/comfy/gauss/west,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wFS" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
@@ -38800,7 +38800,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wHn" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -38907,7 +38907,7 @@
 	},
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wKx" = (
 /turf/open/floor/monotile/dark,
 /area/chapel/main)
@@ -38915,7 +38915,7 @@
 /obj/structure/chair/office/light,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wKY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -38931,7 +38931,7 @@
 /obj/machinery/computer/ship/munitions_computer/east,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wMm" = (
 /obj/effect/turf_decal/ship/techfloor{
 	dir = 4
@@ -39158,7 +39158,7 @@
 "wTG" = (
 /obj/structure/extinguisher_cabinet/south,
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "wUy" = (
 /obj/machinery/light{
 	dir = 1
@@ -39637,7 +39637,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xjf" = (
 /obj/machinery/door/airlock/ship/hatch{
 	name = "SMES Room";
@@ -39783,7 +39783,7 @@
 	},
 /obj/machinery/deck_turret/autoelevator,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xlF" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -39993,7 +39993,7 @@
 "xqd" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xqf" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -40013,7 +40013,7 @@
 	},
 /obj/machinery/ship_weapon/pdc_mount/north,
 /turf/open/floor/plasteel/ridged/steel,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xsc" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/monotile/steel,
@@ -40211,7 +40211,7 @@
 	dir = 8
 	},
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xyO" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -40221,7 +40221,7 @@
 	name = "weapon officer"
 	},
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xyQ" = (
 /turf/open/floor/monotile/dark,
 /area/hydroponics)
@@ -40730,7 +40730,7 @@
 	name = "WARNING: WEAR HEARING PROTECTION"
 	},
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xPB" = (
 /obj/machinery/camera/autoname,
 /obj/machinery/airalarm/directional/north,
@@ -40757,7 +40757,7 @@
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/monotile/dark,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xPO" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -41014,7 +41014,7 @@
 	},
 /obj/machinery/deck_turret/powder_gate,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "xXb" = (
 /obj/item/radio/intercom/directional/east,
 /obj/structure/cable{
@@ -41115,7 +41115,7 @@
 "yaC" = (
 /obj/structure/munitions_trolley,
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "yaQ" = (
 /obj/structure/disposalpipe/junction{
 	dir = 4
@@ -41231,7 +41231,7 @@
 /area/hallway/nsv/deck2/frame1/starboard)
 "yeT" = (
 /turf/closed/wall/r_wall/ship,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 "yfk" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -41403,7 +41403,7 @@
 /area/storage/art)
 "ymi" = (
 /turf/open/floor/plating,
-/area/nsv/weapons/gauss)
+/area/station/nsv/weapons/gauss)
 
 (1,1,1) = {"
 aaa

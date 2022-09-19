@@ -377,7 +377,7 @@
 /area/medical/medbay/pvp
 	name = "Syndicate Medbay"
 
-/area/nsv/weapons/pvp
+/area/station/nsv/weapons/pvp
 	name = "Syndicate Munitions"
 
 /area/nsv/hanger/pvp

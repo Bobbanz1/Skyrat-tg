@@ -5874,7 +5874,7 @@
 /area/ai_monitored/turret_protected/AIsatextAP)
 "qp" = (
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "qq" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1
@@ -8729,7 +8729,7 @@
 	pixel_y = -44
 	},
 /turf/open/floor/engine/airless,
-/area/nsv/weapons/gauss/battery)
+/area/station/nsv/weapons/gauss/battery)
 "yx" = (
 /obj/effect/turf_decal/tile/ship/half/neutral{
 	dir = 8
