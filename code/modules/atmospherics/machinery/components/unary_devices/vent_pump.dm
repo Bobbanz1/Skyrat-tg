@@ -41,6 +41,7 @@
 	var/radio_filter_out
 	///Radio connection from the air alarm
 	var/radio_filter_in
+	var/obj/machinery/advanced_airlock_controller/aac = null
 
 /obj/machinery/atmospherics/components/unary/vent_pump/New()
 	if(!id_tag)
@@ -52,6 +53,8 @@
 	if(vent_area)
 		vent_area.air_vent_info -= id_tag
 		GLOB.air_vent_names -= id_tag
+	if(aac)
+		aac.vents -= src
 
 	SSradio.remove_object(src,frequency)
 	radio_connection = null
@@ -167,7 +170,8 @@
 		"checks" = pressure_checks,
 		"internal" = internal_pressure_bound,
 		"external" = external_pressure_bound,
-		"sigtype" = "status"
+		"sigtype" = "status",
+		"has_aac" = aac != null
 	))
 
 	var/area/vent_area = get_area(src)

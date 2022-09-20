@@ -1306,3 +1306,44 @@
 	mats_per_unit = list(/datum/material/iron=500)
 	turf_type = /turf/open/floor/monotile/light
 
+//Bay grids
+/obj/item/stack/tile/grid
+	name = "grey grid tile"
+	singular_name = "grey grid tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile_grid"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/plasteel/grid
+
+/obj/item/stack/tile/ridge
+	name = "grey ridge tile"
+	singular_name = "grey ridge tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile_ridged"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/plasteel/ridged
+
+//Techtiles
+/obj/item/stack/tile/techgrey
+	name = "grey techfloor tile"
+	singular_name = "grey techfloor tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile_tech_grey"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/plasteel/tech
+
+/obj/item/stack/tile/techgrid
+	name = "grid techfloor tile"
+	singular_name = "grid techfloor tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile_tech_grid"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/plasteel/tech/grid
+
+/obj/item/stack/tile/techmaint
+	name = "dark techfloor tile"
+	singular_name = "dark techfloor tile"
+	desc = "A solid, heavy set of flooring plates."
+	icon_state = "tile_tech_maint"
+	mats_per_unit = list(/datum/material/iron=500)
+	turf_type = /turf/open/floor/plasteel/techmaint //NSV13 End

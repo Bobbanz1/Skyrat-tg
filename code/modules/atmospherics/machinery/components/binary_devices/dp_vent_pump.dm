@@ -32,9 +32,12 @@
 	var/output_pressure_max = 0
 	///Set the flag for the pressure bound
 	var/pressure_checks = EXT_BOUND
+	var/obj/machinery/advanced_airlock_controller/aac = null
 
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/Destroy()
 	SSradio.remove_object(src, frequency)
+	if(aac)
+		aac.vents -= src
 	return ..()
 
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/update_icon_nopipes()

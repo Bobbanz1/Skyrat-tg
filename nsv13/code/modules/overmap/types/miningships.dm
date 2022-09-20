@@ -37,7 +37,7 @@
 /obj/structure/overmap/nanotrasen/mining_cruiser/nostromo/fob
 	name = "NSV FOB"
 	mass = MASS_SMALL //providing a real difference between nostromo and fob - this probably isn't a thing anymore
-	area_type = /area/nsv/shuttle
+	area_type = /area/station/nsv/shuttle
 	armor = list("overmap_light" = 90, "overmap_medium" = 20, "overmap_heavy" = 0)
 	max_integrity = 400 //Max health
 	integrity_failure = 400

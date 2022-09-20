@@ -94,3 +94,14 @@
 /turf/open/water/overlay/hotspring/planet/outdoors
 	baseturfs = /turf/open/water/overlay/hotspring/planet/outdoors
 	planetary_atmos = TRUE
+
+/obj/effect/turf_decal/pool
+	name = "Pool siding"
+	icon = 'icons/obj/pool.dmi'
+	icon_state = "poolborder"
+
+/obj/effect/turf_decal/pool/corner
+	icon_state = "bordercorner"
+
+/obj/effect/turf_decal/pool/innercorner
+	icon_state = "innercorner"

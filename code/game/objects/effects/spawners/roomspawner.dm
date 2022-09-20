@@ -28,7 +28,7 @@
 				possibletemplates[cantidate] = cantidate.weight
 		cantidate = null
 	if(possibletemplates.len)
-		template = pickweight(possibletemplates)
+		template = pick_weight(possibletemplates)
 		template.stock --
 		template.weight = (template.weight / 2)
 		if(template.stock <= 0)

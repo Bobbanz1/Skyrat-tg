@@ -435,4 +435,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/security/telescreen/entertai
 	desc = "A telescreen that connects to the bar's camera network. Perfect for checking on customers."
 	network = list("bar")
 
+/obj/machinery/computer/security/telescreen/atc
+	name = "\improper Air Traffic Control Telescreen"
+	desc = "Used for monitoring launch stations from the ATC tower."
+	network = list("hangar")
+
 #undef DEFAULT_MAP_SIZE
