@@ -26,6 +26,6 @@
 /area/nsv/hanger/notkmcstupidhanger/hangar/squad_hangar
 	name = "Squad Hangar Bay"
 
-/area/bridge/cic
+/area/station/bridge/cic
 	name = "CIC"
 
