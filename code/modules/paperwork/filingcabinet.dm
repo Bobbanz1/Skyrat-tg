@@ -217,3 +217,9 @@ GLOBAL_LIST_EMPTY(employmentCabinets)
 		virgin = FALSE
 	return ..()
 
+/obj/structure/filingcabinet/documents
+    name = "classified filing cabinet"
+
+/obj/structure/filingcabinet/documents/Initialize(mapload)
+    . = ..()
+    new /obj/item/documents/nanotrasen(src)

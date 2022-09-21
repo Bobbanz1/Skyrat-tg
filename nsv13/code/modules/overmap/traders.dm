@@ -67,10 +67,10 @@
 	//If you wanna specify WHERE cargo is dropped. Otherwise we guess.
 	if(!length(trader_beacons))
 		if(OM.role == MAIN_OVERMAP)
-			//landingzone = GLOB.areas_by_type[/area/quartermaster/warehouse]
+			landingzone = GLOB.areas_by_type[/area/station/cargo/warehouse]
 
 		if ( !landingzone ) // Main overmap may or may not have a warehouse
-			landingzone = GLOB.areas_by_type[/area/quartermaster]
+			landingzone = GLOB.areas_by_type[/area/station/cargo]
 
 		if ( !landingzone ) // Main overmap may or may not have a cargobay
 			if(!OM.linked_areas.len)

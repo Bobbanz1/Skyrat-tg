@@ -35,7 +35,7 @@ SUBSYSTEM_DEF(star_system)
 
 /datum/controller/subsystem/star_system/fire() //Overmap combat events control system, adds weight to combat events over time spent out of combat
 	if(time_limit && world.time >= time_limit)
-		var/datum/faction/winner = get_winner()
+		//var/datum/faction/winner = get_winner()
 		//if(istype(SSticker.mode, /datum/game_mode/pvp))
 		//	var/datum/game_mode/pvp/mode = SSticker.mode
 		//	mode.winner = winner //This should allow the mode to finish up by itself

@@ -622,7 +622,7 @@ A way for syndies to track where the player ship is going in advance, so they ca
 	. = ..()
 	radio = new(src)
 	radio.keyslot = new radio_key
-	radio.listening = 0
+	//radio.listening = 0
 	radio.recalculateChannels()
 
 /obj/machinery/computer/ship/ftl_computer/update_icon()
