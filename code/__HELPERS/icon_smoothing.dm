@@ -172,7 +172,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		if(A.legacy_smooth)
 			A.legacy_smooth()
 			return
-		var/adjacencies = calculate_adjacencies(A)
+		//var/adjacencies = calculate_adjacencies(A)
 
 		if(A.smooth & SMOOTH_DIAGONAL)
 			corners_diagonal_smooth(calculate_adjacencies())

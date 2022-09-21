@@ -329,7 +329,8 @@
 /turf/open/floor/plating,
 /area/station/command/heads_quarters/hos)
 "bS" = (
-/turf/open/indestructible/sound/pool/end,
+/turf/open/floor/iron/pool,
+/obj/effect/spawner/liquids_spawner,
 /area/station/common/cafeteria)
 "bT" = (
 /obj/effect/spawner/random/maintenance/two,
@@ -852,7 +853,7 @@
 /turf/open/floor/carpet/blue,
 /area/station/common/cafeteria)
 "ep" = (
-/obj/machinery/computer/cloning,
+/obj/machinery/computer/scan_consolenew,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/monotile/dark,
 /area/station/medical/medbay)
@@ -2324,7 +2325,8 @@
 /area/station/ai_monitored/turret_protected/aisat)
 "lw" = (
 /obj/machinery/airalarm/directional/north,
-/turf/open/indestructible/sound/pool/end,
+/turf/open/floor/iron/pool,
+/obj/effect/spawner/liquids_spawner,
 /area/station/common/cafeteria)
 "lx" = (
 /turf/closed/wall/r_wall,
@@ -4484,7 +4486,8 @@
 /area/station/command/heads_quarters/hop)
 "xl" = (
 /obj/machinery/camera/autoname,
-/turf/open/indestructible/sound/pool/end,
+/turf/open/floor/iron/pool,
+/obj/effect/spawner/liquids_spawner,
 /area/station/common/cafeteria)
 "xm" = (
 /obj/effect/turf_decal/stripes/line{
@@ -5642,9 +5645,7 @@
 "DC" = (
 /obj/machinery/computer/ship/viewscreen,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/clonepod/prefilled{
-	dir = 1
-	},
+/obj/machinery/dna_scannernew,
 /obj/machinery/shower{
 	dir = 8
 	},
@@ -7861,8 +7862,8 @@
 /area/station/tcommsat/server)
 "NY" = (
 /obj/structure/cable,
-/obj/structure/cable,
-/obj/machinery/computer/bounty{
+/obj/machinery/modular_computer/console/preset/cargochat{
+	console_department = "Command";
 	dir = 4
 	},
 /obj/structure/railing{
@@ -9331,7 +9332,7 @@
 /turf/open/floor/plasteel/grid/mono,
 /area/station/medical/medbay)
 "VP" = (
-/obj/machinery/gravity_generator/main/station,
+/obj/machinery/gravity_generator/main,
 /turf/open/floor/monotile/dark,
 /area/station/engineering/gravity_generator)
 "VS" = (
@@ -9967,7 +9968,8 @@
 	dir = 1
 	},
 /obj/machinery/computer/ship/viewscreen,
-/turf/open/indestructible/sound/pool/end,
+/turf/open/floor/iron/pool,
+/obj/effect/spawner/liquids_spawner,
 /area/station/common/cafeteria)
 "ZL" = (
 /obj/structure/cable,
