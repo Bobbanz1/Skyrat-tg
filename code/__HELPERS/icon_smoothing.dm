@@ -169,9 +169,9 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	else if(smoothing_flags & SMOOTH_BITMASK)
 		bitmask_smooth()
 	else if(A.smooth & (SMOOTH_TRUE | SMOOTH_MORE))
-		if(A.legacy_smooth)
-			A.legacy_smooth()
-			return
+		//if(A.legacy_smooth)
+		//	A.legacy_smooth()
+		//	return
 		//var/adjacencies = calculate_adjacencies(A)
 
 		if(A.smooth & SMOOTH_DIAGONAL)

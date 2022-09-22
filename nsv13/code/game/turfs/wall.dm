@@ -1,8 +1,7 @@
+/*
 /turf/closed/wall
 	icon_state = "solid"
 	icon = 'nsv13/icons/turf/wall_masks.dmi'
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	canSmoothWith = list(/turf/closed/wall,/obj/machinery/door,/obj/structure/window/fulltile,/obj/structure/window/reinforced/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/falsewall)
 	var/list/wall_connections = list("0", "0", "0", "0")
 	var/list/other_connections = list("0", "0", "0", "0")
 	var/image/texture = null //EG: Concrete. Lets you texture a wall with one texture tile rather than making a new wall..every..single...time
@@ -13,15 +12,13 @@
 	if(texture_state)
 		texture = image(icon, texture_state)
 		texture.blend_mode = BLEND_MULTIPLY
-
+*/
 /turf/closed/wall/steel
-	color = "#787878"
-
+	//color = "#787878"
+/*
 /obj/structure/falsewall
 	icon_state = "solid"
 	icon = 'nsv13/icons/turf/wall_masks.dmi'
-	legacy_smooth = TRUE //Override /tg/ iconsmooths
-	canSmoothWith = list(/turf/closed/wall,/obj/machinery/door,/obj/structure/window/fulltile,/obj/structure/window/reinforced/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/falsewall)
 	var/list/wall_connections = list("0", "0", "0", "0")
 	var/list/other_connections = list("0", "0", "0", "0")
 	var/image/texture = null //EG: Concrete. Lets you texture a wall with one texture tile rather than making a new wall..every..single...time
@@ -44,7 +41,6 @@
 	texture = "reinf_over"
 	icon = 'nsv13/icons/turf/wall_masks.dmi'
 	color = "#787878"
-
 /turf/closed/wall/mineral
 	icon_state = "mineral"
 	icon = 'nsv13/icons/turf/wall_masks.dmi'
@@ -163,10 +159,8 @@
 //Turfs that are still oblique. Fix these later.
 
 /turf/closed/wall/mineral/titanium
-	legacy_smooth = FALSE
 
 /turf/closed/wall/mineral/plastitanium
-	legacy_smooth = FALSE
 
 /turf/closed/wall/mineral/abductor
-	legacy_smooth = FALSE
+*/

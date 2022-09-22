@@ -5,7 +5,6 @@
 	icon_state = "solid"
 	name = "Durasteel hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	smoothing_flags = SMOOTH_CORNERS
 	sheet_type = /obj/item/stack/sheet/durasteel
 	hardness = 20
 
@@ -13,7 +12,6 @@
 	icon = 'nsv13/icons/turf/interior_wall.dmi'
 	name = "Durasteel hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	smoothing_flags = SMOOTH_CORNERS
 	walltype = /turf/closed/wall/ship
 
 /turf/closed/wall/r_wall/ship
@@ -21,7 +19,6 @@
 	icon_state = "solid"
 	name = "Duranium hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	smoothing_flags = SMOOTH_CORNERS
 	color = null
 	sheet_type = /obj/item/stack/sheet/duranium
 	sheet_amount = 1
@@ -32,7 +29,6 @@
 	icon_state = "solid"
 	name = "Duranium hull"
 	desc = "A large hull segment designed to create vessels and structures capable of supporting life in even the most hazardous places."
-	smoothing_flags = SMOOTH_CORNERS
 	walltype = /turf/closed/wall/r_wall/ship
 	mineral = /obj/item/stack/sheet/duranium
 
@@ -105,7 +101,6 @@
 	name = "Nanocarbon reinforced window"
 	desc = "A heavyset window reinforced with tiny carbon structures which is designed to take a beating."
 	glass_type = /obj/item/stack/sheet/nanocarbon_glass
-	canSmoothWith = list(/turf/closed/wall,/obj/machinery/door,/obj/structure/window/fulltile,/obj/structure/window/reinforced/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/falsewall)
 	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 100, "overmap_light" = 65, "overmap_heavy" = 25)
 
 /obj/structure/window/reinforced/fulltile/ship/unanchored

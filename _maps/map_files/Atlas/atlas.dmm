@@ -655,8 +655,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
+/obj/effect/spawner/random/maintenance/two{
 	name = "2maintenance loot spawner"
 	},
 /obj/effect/landmark/trader_drop_point,
@@ -2471,8 +2470,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
+/obj/effect/spawner/random/maintenance/two{
 	name = "2maintenance loot spawner"
 	},
 /obj/effect/landmark/trader_drop_point,
@@ -4040,8 +4038,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
+/obj/effect/spawner/random/maintenance/two{
 	name = "2maintenance loot spawner"
 	},
 /obj/effect/landmark/trader_drop_point,
@@ -5067,7 +5064,7 @@
 /obj/machinery/conveyor/slow{
 	dir = 5;
 	id = "atlas_torp";
-	verted = -1
+	inverted = 1
 	},
 /turf/open/floor/monotile/dark,
 /area/station/nsv/weapons)
@@ -8026,7 +8023,7 @@
 	name = "leftover decoration budget"
 	},
 /obj/item/paper{
-	info = "WARNING! Do not order more than 6 crates at once. We had to cut a lot of corners to get a supply shuttle dock onto this thing and the crates will not fit if you order more than 6. Good luck, RSWJ.";
+	default_raw_text = "WARNING! Do not order more than 6 crates at once. We had to cut a lot of corners to get a supply shuttle dock onto this thing and the crates will not fit if you order more than 6. Good luck, RSWJ.";
 	name = "Note from Speedwagon"
 	},
 /turf/open/floor/monotile/steel,
@@ -8985,7 +8982,7 @@
 /obj/machinery/conveyor/slow{
 	dir = 6;
 	id = "atlas_torp";
-	verted = -1
+	inverted = 1
 	},
 /turf/open/floor/monotile/dark,
 /area/station/nsv/weapons)
@@ -9291,7 +9288,7 @@
 /obj/machinery/conveyor/slow{
 	dir = 10;
 	id = "atlas_torp";
-	verted = -1
+	inverted = 1
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -9663,10 +9660,9 @@
 	dir = 2;
 	dwidth = 9;
 	height = 25;
-	id = "emergency_home";
 	name = "Atlas evac bay";
 	width = 29;
-	port_destinations = "emergency_home"
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -12940,7 +12936,7 @@
 /obj/machinery/conveyor/slow{
 	dir = 9;
 	id = "atlas_torp";
-	verted = -1
+	inverted = 1
 	},
 /turf/open/floor/monotile/dark,
 /area/station/nsv/weapons)
@@ -13077,10 +13073,9 @@
 	dir = 2;
 	dwidth = 1;
 	height = 2;
-	id = "supply_home";
 	name = "Atlas Mini Cargo";
 	width = 3;
-	port_destinations = "supply_home"
+	shuttle_id = "supply_home"
 	},
 /turf/open/floor/engine,
 /area/station/cargo/storage)
@@ -13538,8 +13533,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
+/obj/effect/spawner/random/maintenance/two{
 	name = "2maintenance loot spawner"
 	},
 /obj/effect/landmark/trader_drop_point,

@@ -52,7 +52,7 @@
 	id = "adv_ballistics"
 	display_name = "Advanced Ballistics"
 	description = "More guns means better guns... Right?"
-	prereq_ids = list("ballistic_weapons")
+	prereq_ids = list("weaponry")
 	design_ids = list("naval_shell", "powder_bag", "gauss_rack_upgrade")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
@@ -126,7 +126,7 @@
 	display_name = "Advanced Fighter Weapons"
 	description = "Research into advanced ballistic fighter weapons."
 	design_ids = list("ordnance_launcher_tier2","fighter_missile_launcher_tier2", "heavy_cannon")
-	prereq_ids = list("fightergun1", "ballistic_weapons")
+	prereq_ids = list("fightergun1", "weaponry")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
 /datum/techweb_node/fighter_guns_tier3

@@ -4,7 +4,6 @@
 	icon = 'nsv13/icons/turf/dark_carpet.dmi'
 	icon_state = "dark_carpet"
 	floor_tile = /obj/item/stack/tile/carpet/ship
-	canSmoothWith = null
 
 /turf/open/floor/black/airless
 	name = "black floor"
