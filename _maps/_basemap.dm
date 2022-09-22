@@ -2,6 +2,8 @@
 
 #include "map_files\generic\CentCom.dmm"
 
+//#include "map_files\generic\CentCom_skyrat_z2.dmm" //SKYRAT EDIT ADDITION - SMMS
+
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
 		//Debug/Special Maps

@@ -133,8 +133,8 @@
 	parsed_bounds = bounds
 
 /// Load the parsed map into the world. See [/proc/load_map] for arguments.
-/datum/parsed_map/proc/load(x_offset, y_offset, z_offset, cropMap, no_changeturf, x_lower, x_upper, y_lower, y_upper, placeOnTop, list/blacklisted_turfs) // SKYRAT EDIT CHANGE - Added blacklisted_turfs
-	turf_blacklist = blacklisted_turfs // SKYRAT EDIT ADDITION
+/datum/parsed_map/proc/load(x_offset, y_offset, z_offset, cropMap, no_changeturf, x_lower, x_upper, y_lower, y_upper, placeOnTop) // SKYRAT EDIT CHANGE - Added blacklisted_turfs
+	//turf_blacklist = blacklisted_turfs // SKYRAT EDIT ADDITION
 	//How I wish for RAII
 	Master.StartLoadingMap()
 	. = _load_impl(x_offset, y_offset, z_offset, cropMap, no_changeturf, x_lower, x_upper, y_lower, y_upper, placeOnTop)

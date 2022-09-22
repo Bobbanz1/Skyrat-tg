@@ -55,23 +55,33 @@
 	var/library_areas = list()
 //NSV EDITED END
 
-/proc/load_map_config(filename = "next_map", foldername = DATA_DIRECTORY, default_to_box, delete_after, error_if_missing = TRUE)
-	if(IsAdminAdvancedProcCall())
-		return
+/proc/load_default_map_config()
+	return new /datum/map_config
 
-	filename = "[foldername]/[SANITIZE_FILENAME(filename)].json"
-	var/datum/map_config/config = new
-	if (default_to_box)
-		return config
+/proc/load_map_config(filename = null, directory = null, error_if_missing = TRUE)
+	var/datum/map_config/config = load_default_map_config()
+
+	if(filename)
+
+		if(directory)
+			if(!(directory in MAP_DIRECTORY_WHITELIST))
+				log_world("map directory not in whitelist: [directory] for map [filename]")
+				return config
+		else
+			directory = MAP_DIRECTORY_MAPS
+
+		filename = "[directory]/[filename].json"
+	else
+		filename = PATH_TO_NEXT_MAP_JSON
+
+
 	if (!config.LoadConfig(filename, error_if_missing))
 		qdel(config)
-		config = new /datum/map_config  // Fall back to Box
-		//config.LoadConfig(config.config_filename)
-	else if (delete_after)
-		fdel(filename)
+		return load_default_map_config()
 	return config
 
 #define CHECK_EXISTS(X) if(!istext(json[X])) { log_world("[##X] missing from json!"); return; }
+
 /datum/map_config/proc/LoadConfig(filename, error_if_missing)
 	if(!fexists(filename))
 		if(error_if_missing)
@@ -250,4 +260,4 @@
 	return votable && below_max && above_min
 
 /datum/map_config/proc/MakeNextMap()
-	return config_filename == "data/next_map.json" || fcopy(config_filename, "data/next_map.json")
+	return config_filename == PATH_TO_NEXT_MAP_JSON || fcopy(config_filename, PATH_TO_NEXT_MAP_JSON)

@@ -65,17 +65,15 @@ SUBSYSTEM_DEF(mapping)
 	/// list of traits and their associated z leves
 	var/list/z_trait_levels = list()
 
-//dlete dis once #39770 is resolved
-/datum/controller/subsystem/mapping/proc/HACK_LoadMapConfig()
-	if(!config)
+/datum/controller/subsystem/mapping/New()
+	..()
 #ifdef FORCE_MAP
-		config = load_map_config(FORCE_MAP)
+	config = load_map_config(FORCE_MAP, FORCE_MAP_DIRECTORY)
 #else
-		config = load_map_config(error_if_missing = FALSE)
+	config = load_map_config(error_if_missing = FALSE)
 #endif
 
 /datum/controller/subsystem/mapping/Initialize(timeofday)
-	HACK_LoadMapConfig()
 	if(initialized)
 		return
 	if(config.defaulted)
@@ -259,6 +257,7 @@ Used by the AI doomsday and the self-destruct nuke.
 		themed_ruins[theme] = SSmapping.themed_ruins[theme]
 
 	shuttle_templates = SSmapping.shuttle_templates
+	random_room_templates = SSmapping.random_room_templates
 	shelter_templates = SSmapping.shelter_templates
 	unused_turfs = SSmapping.unused_turfs
 	turf_reservations = SSmapping.turf_reservations
@@ -266,7 +265,6 @@ Used by the AI doomsday and the self-destruct nuke.
 	holodeck_templates = SSmapping.holodeck_templates
 	transit = SSmapping.transit
 	areas_in_z = SSmapping.areas_in_z
-	random_room_templates = SSmapping.random_room_templates
 	boarding_templates = SSmapping.boarding_templates //NSV13 - boarding maps
 
 	config = SSmapping.config
@@ -315,16 +313,16 @@ Used by the AI doomsday and the self-destruct nuke.
 		add_new_zlevel("[name][i ? " [i + 1]" : ""]", level)
 		++i
 
-	SSautomapper.preload_templates_from_toml(files) // SKYRAT EDIT ADDITION - We need to load our templates AFTER the Z level exists, otherwise, there is no z level to preload.
+	//SSautomapper.preload_templates_from_toml(files) // SKYRAT EDIT ADDITION - We need to load our templates AFTER the Z level exists, otherwise, there is no z level to preload.
 
 	// load the maps
 	for (var/P in parsed_maps)
 		var/datum/parsed_map/pm = P
-		if (!pm.load(1, 1, start_z + parsed_maps[P], no_changeturf = TRUE, blacklisted_turfs = SSautomapper.get_turf_blacklists(files))) // SKYRAT EDIT CHANGE - We use blacklisted turfs to carve out places for our templates.
+		if (!pm.load(1, 1, start_z + parsed_maps[P], no_changeturf = TRUE)) // SKYRAT EDIT CHANGE - We use blacklisted turfs to carve out places for our templates.
 			errorList |= pm.original_path
 	// SKYRAT EDIT ADDITION BEGIN - We need to load our templates from cache after our space has been carved out.
-	if(!LAZYLEN(errorList))
-		SSautomapper.load_templates_from_cache(files)
+	//if(!LAZYLEN(errorList))
+	//	SSautomapper.load_templates_from_cache(files)
 	// SKYRAT EDIT ADDITION END
 	if(!silent)
 		add_startup_message("Loaded [name] in [(REALTIMEOFDAY - start_time)/10]s!") //SKYRAT EDIT CHANGE

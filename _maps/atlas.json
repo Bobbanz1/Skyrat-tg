@@ -1,11 +1,19 @@
 {
+	"version": 1,
     "map_name": "NSV Atlas",
-    "map_link": "Atlas",
     "map_path": "map_files/Atlas",
     "map_file": [
         "Atlas.dmm",
         "Atlas2.dmm"
     ],
+    "space_ruin_levels": -1,
+    "space_empty_levels": 0,
+    "shuttles": {
+        "cargo": "cargo_atlas",
+        "ferry": "ferry_fancy",
+        "arrival": "arrival_atlas",
+        "emergency": "emergency_atlas"
+    },
     "traits": [
         {
             "Up": 1,
@@ -16,19 +24,11 @@
             "Linkage": "Self"
         }
     ],
-    "space_ruin_levels": -1,
-    "space_empty_levels": 0,
-    "shuttles": {
-        "cargo": "cargo_atlas",
-        "ferry": "ferry_fancy",
-        "arrival": "arrival_atlas",
-        "emergency": "emergency_atlas"
-    },
-    "mine_disable": 1,
-    "ship_type": "/obj/structure/overmap/nanotrasen/missile_cruiser/starter",
 	"job_changes": {
 		"Cook": {
 			"additional_cqc_areas": ["/area/station/service/bar", "/area/station/commons/lounge"]
 		}
-	}
+	},
+    "mine_disable": 1,
+    "ship_type": "/obj/structure/overmap/nanotrasen/missile_cruiser/starter"
 }

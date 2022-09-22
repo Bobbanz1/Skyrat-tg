@@ -7,10 +7,10 @@
 
 	if(!length(C.parallax_layers_cached))
 		C.parallax_layers_cached = list()
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, C.view, screenmob)
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, C.view, screenmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, C.view, viewmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, C.view, viewmob)
 		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/ftl_parallax
-		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, C.view, screenmob)
+		C.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3(null, C.view, viewmob)
 		/*
 		if(SSparallax.random_layer)
 			C.parallax_layers_cached += new SSparallax.random_layer(null, screenmob)
@@ -179,8 +179,11 @@
 		return
 
 	var/area/areaobj = posobj.loc
+	var/area/mobarea = get_area(mymob)
+
 	// Update the movement direction of the parallax if necessary (for shuttles)
-	set_parallax_movedir(areaobj.parallax_movedir, FALSE, screenmob)
+	var/new_parallax_movedir = (areaobj.parallax_movedir) ? areaobj.parallax_movedir : mobarea.parallax_movedir //NSV13 - So that shuttles still have parallax.
+	set_parallax_movedir(new_parallax_movedir, FALSE, screenmob)
 
 	if(!C.previous_turf || (C.previous_turf.z != posobj.z))
 		C.previous_turf = posobj
@@ -262,16 +265,18 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/parallax_layer)
 	screen_loc = "CENTER-7,CENTER-7"
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
-/atom/movable/screen/parallax_layer/Initialize(mapload, mob/owner)
+/atom/movable/screen/parallax_layer/Initialize(mapload, view)
 	. = ..()
-	var/client/boss = owner?.client
-	if(!boss) // If this typepath all starts to harddel your culprit is likely this
-		return INITIALIZE_HINT_QDEL
+	//var/client/boss = owner?.client
+	//if(!boss) // If this typepath all starts to harddel your culprit is likely this
+	//	return INITIALIZE_HINT_QDEL
 
 	// I do not want to know bestie
-	var/view = boss.view || world.view
+	//var/view = boss.view || world.view
+	if (!view)
+		view = world.view
 	update_o(view)
-	RegisterSignal(boss, COMSIG_VIEW_SET, .proc/on_view_change)
+	//RegisterSignal(boss, COMSIG_VIEW_SET, .proc/on_view_change)
 
 /atom/movable/screen/parallax_layer/proc/on_view_change(datum/source, new_size)
 	SIGNAL_HANDLER
@@ -341,6 +346,14 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/parallax_layer)
 	speed = 3
 	layer = 30
 
+/atom/movable/screen/parallax_layer/planet/update_status(mob/M)
+	var/turf/T = get_turf(M)
+	if(is_station_level(T.z))
+		invisibility = 0
+	else
+		invisibility = INVISIBILITY_ABSTRACT
+
+/*
 /atom/movable/screen/parallax_layer/planet/Initialize(mapload, mob/owner)
 	. = ..()
 	if(!owner?.client)
@@ -364,6 +377,6 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/parallax_layer)
 	if(!posobj)
 		return
 	invisibility = is_station_level(posobj.z) ? 0 : INVISIBILITY_ABSTRACT
-
+*/
 /atom/movable/screen/parallax_layer/planet/update_o()
 	return //Shit won't move

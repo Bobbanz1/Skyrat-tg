@@ -555,8 +555,7 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "cf" = (
-/obj/machinery/air_sensor{
-	id_tag = "sdmix_sensor";
+/obj/machinery/air_sensor/mix_tank{
 	name = "reactor mix sensor"
 	},
 /turf/open/floor/engine/vacuum,
@@ -4910,9 +4909,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/nsv/deck2/port/fore)
 "ro" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored{
-	dir = 8;
-	id_tag = "sdmix_out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
+	dir = 8
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
@@ -6092,12 +6090,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/science)
-"vH" = (
-/obj/machinery/computer/atmos_control/mix_tank{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/station/engineering/atmos)
 "vJ" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -9673,7 +9665,8 @@
 	height = 25;
 	id = "emergency_home";
 	name = "Atlas evac bay";
-	width = 29
+	width = 29;
+	port_destinations = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -11299,9 +11292,8 @@
 /turf/open/floor/monotile/dark,
 /area/station/nsv/weapons)
 "QB" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
-	dir = 4;
-	id = "sdmix_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
+	dir = 4
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
@@ -11504,14 +11496,11 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/machinery/computer/atmos_control/air_tank{
-	density = 0;
+/obj/machinery/computer/atmos_control/mix_tank{
 	dir = 4;
-	input_tag = "sdmix_in";
+	density = 0;
 	name = "Reactor Mix Control";
-	output_tag = "sdmix_out";
-	pixel_x = -9;
-	sensors = list("sdmix_sensor"="Reactor Mix Tank")
+	pixel_x = -9
 	},
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
@@ -13090,7 +13079,8 @@
 	height = 2;
 	id = "supply_home";
 	name = "Atlas Mini Cargo";
-	width = 3
+	width = 3;
+	port_destinations = "supply_home"
 	},
 /turf/open/floor/engine,
 /area/station/cargo/storage)
@@ -47559,7 +47549,7 @@ mV
 Nn
 nT
 HW
-vH
+mj
 YT
 SK
 nk

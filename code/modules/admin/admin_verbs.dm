@@ -207,7 +207,7 @@ GLOBAL_PROTECT(admin_verbs_debug)
 	/client/proc/cmd_display_overlay_log,
 	/client/proc/reload_configuration,
 	/client/proc/reload_interactions, //SKYRAT EDIT ADDITION
-	/client/proc/test_area_spawner, // SKYRAT EDIT ADDITION - AUTOMAPPER
+	//client/proc/test_area_spawner, // SKYRAT EDIT ADDITION - AUTOMAPPER
 	/client/proc/atmos_control,
 	/client/proc/reload_cards,
 	/client/proc/validate_cards,

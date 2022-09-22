@@ -86,5 +86,6 @@ Cyborg=3,3
 
 # Misc.
 
-Assistant=-1,-1
-Prisoner=12,12
+#Assistant=-1,-1
+Midshipman=-1,-1
+#Prisoner=12,12
