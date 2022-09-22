@@ -101,7 +101,7 @@
 	name = "Nanocarbon reinforced window"
 	desc = "A heavyset window reinforced with tiny carbon structures which is designed to take a beating."
 	glass_type = /obj/item/stack/sheet/nanocarbon_glass
-	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 100, "overmap_light" = 65, "overmap_heavy" = 25)
+	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 25, "bio" = 100, "fire" = 80, "acid" = 100, "overmap_light" = 65, "overmap_heavy" = 25)
 
 /obj/structure/window/reinforced/fulltile/ship/unanchored
 	anchored = FALSE

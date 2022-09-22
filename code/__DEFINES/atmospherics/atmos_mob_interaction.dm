@@ -79,13 +79,13 @@
 #define BODYTEMP_COLD_WARNING_3 (BODYTEMP_COLD_DAMAGE_LIMIT - 150) //120k
 
 /// The amount of pressure damage someone takes is equal to (pressure / HAZARD_HIGH_PRESSURE)*PRESSURE_DAMAGE_COEFFICIENT, with the maximum of MAX_PRESSURE_DAMAGE
-#define PRESSURE_DAMAGE_COEFFICIENT 2
-#define MAX_HIGH_PRESSURE_DAMAGE 2
+//#define PRESSURE_DAMAGE_COEFFICIENT 2
+//#define MAX_HIGH_PRESSURE_DAMAGE 2
 /// The amount of damage someone takes when in a low pressure area (The pressure threshold is so low that it doesn't make sense to do any calculations, so it just applies this flat value).
-#define LOW_PRESSURE_DAMAGE 2
+//#define LOW_PRESSURE_DAMAGE 2
 
 /// Humans are slowed by the difference between bodytemp and BODYTEMP_COLD_DAMAGE_LIMIT divided by this
-#define COLD_SLOWDOWN_FACTOR 20
+//#define COLD_SLOWDOWN_FACTOR 20
 
 
 //CLOTHES
@@ -112,6 +112,7 @@
 /// what max_heat_protection_temperature is set to for firesuit quality suits and helmets. MUST NOT BE 0.
 #define FIRE_IMMUNITY_MAX_TEMP_PROTECT 35000
 
+/*
 /// For normal helmets
 #define HELMET_MIN_TEMP_PROTECT 160
 /// For normal helmets
@@ -129,3 +130,4 @@
 #define SHOES_MIN_TEMP_PROTECT 2.0
 /// For gloves
 #define SHOES_MAX_TEMP_PROTECT 1500
+*/

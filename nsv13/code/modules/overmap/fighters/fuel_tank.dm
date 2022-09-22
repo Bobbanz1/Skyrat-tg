@@ -1,9 +1,4 @@
 
-/datum/looping_sound/refuel
-	mid_sounds = list('nsv13/sound/effects/fighters/refuel.ogg')
-	mid_length = 8 SECONDS
-	volume = 100
-
 /obj/structure/reagent_dispensers/fueltank/cryogenic_fuel
 	name = "\improper Tyrosene fuel pump"
 	desc = "A tank full of high performance cryogenic fuel with an inbuilt fuel pump for rapid fuel delivery. Highly advisable to avoid exposure of cryogenic contents to significant heat sources"
@@ -14,7 +9,6 @@
 	tank_volume = 3500
 	var/obj/item/cryofuel_nozzle/nozzle = null
 	var/obj/structure/overmap/small_craft/fuel_target
-	var/datum/looping_sound/refuel/soundloop
 	var/max_range = 2
 	var/datum/beam/current_beam
 	var/allow_refuel = FALSE
@@ -25,7 +19,6 @@
 	if(!in_range(src, usr) && get_current_user() != usr) //Topic check
 		return
 	if(action == "stopfuel" && fuel_target)
-		soundloop?.stop()
 		visible_message("<span class='warning'>[icon2html(src)] refuelling cancelled.</span>")
 		playsound(src, 'sound/machines/buzz-two.ogg', 100)
 		fuel_target = null
@@ -89,7 +82,6 @@
 	add_overlay("cryofuel_nozzle")
 	nozzle = new(src)
 	nozzle.parent = src
-	soundloop = new(list(src), FALSE)
 	reagents.flags |= REFILLABLE
 
 /obj/structure/reagent_dispensers/fueltank/cryogenic_fuel/attack_hand(mob/user)
@@ -116,7 +108,6 @@
 			UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 		add_overlay("cryofuel_nozzle")
 		visible_message("<span class='warning'>[nozzle] snaps back into [src]!</span>")
-		soundloop?.stop()
 		qdel(current_beam)
 		nozzle.forceMove(src)
 		fuel_target = null
@@ -141,7 +132,6 @@
 /obj/structure/reagent_dispensers/fueltank/cryogenic_fuel/proc/start_fuelling(target)
 	if(!target)
 		return
-	soundloop?.start()
 	fuel_target = target
 	START_PROCESSING(SSobj, src)
 
@@ -154,22 +144,18 @@
 
 /obj/structure/reagent_dispensers/fueltank/cryogenic_fuel/process()
 	if(!fuel_target)
-		soundloop.stop()
 		return PROCESS_KILL
 	var/obj/item/fighter_component/fuel_tank/sft = fuel_target.loadout.get_slot(HARDPOINT_SLOT_FUEL)
 	if(!sft)
-		soundloop.stop()
 		visible_message("<span class='warning'>[icon2html(src)] [fuel_target] does not have a fuel tank installed!</span>")
 		return PROCESS_KILL
 	var/transfer_amount = min(50, fuel_target.get_max_fuel()-fuel_target.get_fuel()) //Transfer as much as we can
 	if(transfer_amount <= 0)
-		soundloop?.stop()
 		visible_message("<span class='warning'>[icon2html(src)] refuelling complete.</span>")
 		playsound(src, 'sound/machines/ping.ogg', 100)
 		fuel_target = null
 		return PROCESS_KILL
 	if(reagents.total_volume < transfer_amount)
-		soundloop?.stop()
 		visible_message("<span class='warning'>[icon2html(src)] insufficient fuel.</span>")
 		playsound(src, 'sound/machines/buzz-two.ogg', 100)
 		fuel_target = null

@@ -23,8 +23,8 @@
 /obj/structure/grille/wall
 	color = "#707070" //So close to being "nice" that it hurts.
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = list(SMOOTH_GROUP_WINDOW_FULLTILE)
-	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE)
+	smoothing_groups = list(SMOOTH_GROUP_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_WALLS)
 	//legacy_smooth = TRUE //Override /tg/ iconsmooths
 	icon = 'nsv13/icons/obj/grille.dmi'
-	canSmoothWith = list(/turf/closed/wall,/obj/machinery/door,/obj/structure/window/fulltile,/obj/structure/window/reinforced/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/falsewall)
+	//canSmoothWith = list(/turf/closed/wall,/obj/machinery/door,/obj/structure/window/fulltile,/obj/structure/window/reinforced/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/falsewall)

@@ -678,7 +678,7 @@
 	inhand_icon_state = "skinsuit_helmet"
 	desc = "An airtight helmet meant to protect the wearer during emergency situations."
 	//permeability_coefficient = 0.01
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0, "stamina" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0)
 	min_cold_protection_temperature = EMERGENCY_HELM_MIN_TEMP_PROTECT
 	heat_protection = NONE
 	flash_protect = 0
@@ -698,7 +698,7 @@
 	clothing_flags = STOPSPRESSUREDAMAGE
 	//gas_transfer_coefficient = 0.5
 	//permeability_coefficient = 0.5
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "stamina" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0)
 	min_cold_protection_temperature = EMERGENCY_SUIT_MIN_TEMP_PROTECT
 	heat_protection = NONE
 	max_heat_protection_temperature = 100
