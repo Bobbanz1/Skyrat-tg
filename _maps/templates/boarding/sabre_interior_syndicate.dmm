@@ -98,7 +98,7 @@
 /turf/open/space/transit/north,
 /area/dropship/generic)
 "qn" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /obj/structure/chair/comfy/dropship{
 	dir = 4
 	},
@@ -139,7 +139,7 @@
 	},
 /area/dropship/generic)
 "zc" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden{
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden{
 	dir = 10
 	},
 /obj/structure/chair/comfy/dropship{
@@ -295,7 +295,7 @@
 	},
 /area/dropship/generic)
 "VY" = (
-/turf/closed/indestructible/cordon{
+/turf/cordon{
 	alpha = 0
 	},
 /area/dropship/generic)
@@ -305,7 +305,7 @@
 	},
 /area/dropship/generic)
 "WV" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden{
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden{
 	dir = 9
 	},
 /obj/machinery/computer/operating{

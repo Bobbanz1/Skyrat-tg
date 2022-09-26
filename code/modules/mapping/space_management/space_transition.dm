@@ -56,9 +56,11 @@
 	if(y-1 >= 1)
 		neigbours |= grid[x][y-1]
 
-/datum/controller/subsystem/mapping/proc/setup_map_transitions() //listamania
+/datum/controller/subsystem/mapping/proc/setup_map_transitions(datum/space_level/level) //listamania
 	var/list/SLS = list()
 	var/list/cached_z_list = z_list
+	if(level)
+		cached_z_list = list(level)
 	var/conf_set_len = 0
 	for(var/A in cached_z_list)
 		var/datum/space_level/D = A

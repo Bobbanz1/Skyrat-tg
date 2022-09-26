@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aK" = (
-/obj/machinery/atmospherics/pipe/manifold/general/hidden{
+/obj/machinery/atmospherics/pipe/smart/manifold/general/hidden{
 	dir = 4
 	},
 /obj/effect/landmark/trader_drop_point,
@@ -100,7 +100,7 @@
 /turf/open/space/transit/north,
 /area/dropship/generic)
 "qn" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /turf/open/indestructible/dropship{
 	icon_state = "rasputin3"
 	},
@@ -143,7 +143,7 @@
 	},
 /area/dropship/generic)
 "zc" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden{
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden{
 	dir = 10
 	},
 /obj/structure/chair/comfy/dropship{
@@ -292,7 +292,7 @@
 	},
 /area/dropship/generic)
 "VY" = (
-/turf/closed/indestructible/cordon{
+/turf/cordon{
 	alpha = 0
 	},
 /area/dropship/generic)
@@ -302,7 +302,7 @@
 	},
 /area/dropship/generic)
 "WV" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden{
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden{
 	dir = 9
 	},
 /obj/effect/turf_decal/ship/delivery/yellow,

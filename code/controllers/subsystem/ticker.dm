@@ -231,6 +231,8 @@ SUBSYSTEM_DEF(ticker)
 	var/can_continue = 0
 	can_continue = src.mode.pre_setup() //Choose antagonists
 	CHECK_TICK
+	SSovermap_mode.setup_overmap_mode()
+	CHECK_TICK
 	can_continue = can_continue && SSjob.DivideOccupations() //Distribute jobs
 	CHECK_TICK
 
@@ -283,6 +285,7 @@ SUBSYSTEM_DEF(ticker)
 
 	current_state = GAME_STATE_PLAYING
 	Master.SetRunLevel(RUNLEVEL_GAME)
+	SSovermap_mode.start_reminder()
 
 	if(SSevents.holidays)
 		to_chat(world, span_notice("and..."))

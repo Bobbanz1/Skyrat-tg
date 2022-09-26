@@ -298,7 +298,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 		npc_combat_dice = new combat_dice_type()
 
 	if(!istype(src, /obj/structure/overmap/asteroid))
-		SSpoints_of_interest.other_points_of_interest += src
+		SSpoints_of_interest.make_point_of_interest(src)
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/overmap/LateInitialize()
@@ -341,8 +341,8 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 			//101 kPa =
 			// PV=nRT
 			// PV/RT = n
-			cabin_air.add_gas(GAS_O2, O2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
-			cabin_air.add_gas(GAS_N2, N2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
+			cabin_air.set_moles(GAS_O2, O2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
+			cabin_air.set_moles(GAS_N2, N2STANDARD*ONE_ATMOSPHERE*cabin_air.return_volume()/(R_IDEAL_GAS_EQUATION*cabin_air.return_temperature()))
 			bounce_factor = 1 //Stops dead in its tracks
 			lateral_bounce_factor = 1
 			move_by_mouse = TRUE //You'll want this. Trust.
@@ -453,7 +453,7 @@ Proc to spool up a new Z-level for a player ship and assign it a treadmill.
 		message_admins("[src] has occupants and will not be deleted")
 		return QDEL_HINT_LETMELIVE
 
-	SSpoints_of_interest.other_points_of_interest -= src
+	SSpoints_of_interest.remove_point_of_interest(src)
 	if(current_system)
 		current_system.system_contents.Remove(src)
 		if(faction != "nanotrasen" && faction != "solgov")

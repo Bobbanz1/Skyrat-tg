@@ -27,7 +27,7 @@
 
 	// raw strings used to represent regexes more accurately
 	// '' used to avoid confusing syntax highlighting
-	var/static/regex/dmmRegex = new(@'"([a-zA-Z]+)" = \(((?:.|\n)*?)\)\n(?!\t)|\((\d+),(\d+),(\d+)\) = \{"([a-zA-Z\n]*)"\}', "g")
+	var/regex/dmmRegex = new(@'"([a-zA-Z]+)" = \(((?:.|\n)*?)\)\n(?!\t)|\((\d+),(\d+),(\d+)\) = \{"([a-zA-Z\n]*)"\}', "g")
 	var/static/regex/trimQuotesRegex = new(@'^[\s\n]+"?|"?[\s\n]+$|^"|"$', "g")
 	var/static/regex/trimRegex = new(@'^[\s\n]+|[\s\n]+$', "g")
 
@@ -207,6 +207,7 @@
 						#endif
 						CHECK_TICK
 					++xcrd
+				CHECK_TICK
 			--ycrd
 
 		CHECK_TICK

@@ -675,7 +675,7 @@
 	},
 /area/dropship/generic)
 "Wc" = (
-/turf/closed/indestructible/cordon{
+/turf/cordon{
 	alpha = 0
 	},
 /area/dropship/generic)
