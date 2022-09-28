@@ -31,7 +31,13 @@
 
 /// Get a list of all z which have the specified trait
 /datum/controller/subsystem/mapping/proc/levels_by_trait(trait)
-	return z_trait_levels[trait] || list()
+	. = list()
+	var/list/_z_list = z_list
+	for(var/A in _z_list)
+		var/datum/space_level/S = A
+		if(S.traits[trait])
+			. += S.z_value
+	//return z_trait_levels[trait] || list()
 
 /// Get a list of all z which have any of the specified traits
 /datum/controller/subsystem/mapping/proc/levels_by_any_trait(list/traits)

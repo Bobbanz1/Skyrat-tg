@@ -316,7 +316,7 @@
 	inhand_icon_state = "security"
 
 /obj/item/storage/belt/utility/syndicate/full
-	preload = TRUE
+	preload = FALSE
 
 /obj/item/storage/belt/utility/syndicate/full/PopulateContents()
 	new /obj/item/screwdriver/nuke(src)

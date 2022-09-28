@@ -243,7 +243,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 			current_initializing_subsystem = subsystem
 
 			rustg_time_reset(SS_INIT_TIMER_KEY)
-			subsystem.Initialize()
+			subsystem.Initialize(REALTIMEOFDAY)
 
 			CHECK_TICK
 		current_initializing_subsystem = null
