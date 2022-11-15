@@ -134,7 +134,7 @@
 #define INIT_ORDER_TCG 55
 //#define INIT_ORDER_AUTOMAPPER 51 // SKYRAT EDIT ADDITION - We need to load just before mapping.
 #define INIT_ORDER_MAPPING 50
-#define INIT_ORDER_STARSYSTEM	48 //NSV13 - Needs to init before ships....
+#define INIT_ORDER_STARSYSTEM	49 //NSV13 - Needs to init before ships....
 #define INIT_ORDER_EARLY_ASSETS 48
 #define INIT_ORDER_RESEARCH 47
 #define INIT_ORDER_TIMETRACK 46
