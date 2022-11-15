@@ -38,7 +38,15 @@
 			sleep(delay)
 	active_mousedown_item = mob.canMobMousedown(object, location, params)
 	if(active_mousedown_item)
-		active_mousedown_item.onMouseDown(object, location, params, mob)
+		//active_mousedown_item.onMouseDown(object, location, params, mob)
+		//NSV13 type conversion before mousedown - formerly active_mousedown_item.onMouseDown(object, location, params, mob)
+		if(istype(active_mousedown_item, /obj/item))
+			var/obj/item/I = active_mousedown_item
+			I.onMouseDown(object, location, params, mob)
+		else if(istype(active_mousedown_item, /obj/structure/overmap))
+			var/obj/structure/overmap/OM = active_mousedown_item
+			OM.onMouseDown(object, location, params, mob)
+		//NSV13 end
 
 /client/MouseUp(object, location, control, params)
 	if(SEND_SIGNAL(src, COMSIG_CLIENT_MOUSEUP, object, location, control, params) & COMPONENT_CLIENT_MOUSEUP_INTERCEPT)
@@ -47,7 +55,15 @@
 		mouse_pointer_icon = mouse_up_icon
 	selected_target[1] = null
 	if(active_mousedown_item)
-		active_mousedown_item.onMouseUp(object, location, params, mob)
+		//active_mousedown_item.onMouseUp(object, location, params, mob)
+		//NSV13 type conversion before mouseup - formerly active_mousedown_item.onMouseUp(object, location, params, mob)
+		if(istype(active_mousedown_item, /obj/item))
+			var/obj/item/I = active_mousedown_item
+			I.onMouseUp(object, location, params, mob)
+		else if(istype(active_mousedown_item, /obj/structure/overmap))
+			var/obj/structure/overmap/OM = active_mousedown_item
+			OM.onMouseUp(object, location, params, mob)
+		//NSV13 end
 		active_mousedown_item = null
 
 /mob/proc/CanMobAutoclick(object, location, params)
@@ -65,6 +81,8 @@
 	var/obj/item/H = get_active_held_item()
 	if(H)
 		. = H.canItemMouseDown(object, location, params)
+	else if(src.overmap_ship && (src.overmap_ship.gunner == src) || (GetComponent(/datum/component/overmap_gunning))) //NSV13 - let us mouse-down if we're a gunner
+		. = src.overmap_ship
 
 /obj/item/proc/CanItemAutoclick(object, location, params)
 

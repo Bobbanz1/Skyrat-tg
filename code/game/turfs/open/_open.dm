@@ -169,7 +169,7 @@
 
 	current_cycle = time
 
-	init_immediate_calculate_adjacent_turfs()
+	immediate_calculate_adjacent_turfs()
 	for(var/turf/open/enemy_tile as anything in atmos_adjacent_turfs)
 		if(air.compare(enemy_tile.return_air()))
 			//testing("Active turf found. Return value of compare(): [is_active]")

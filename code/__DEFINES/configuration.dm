@@ -21,3 +21,6 @@
 
 /// Folder directory for maps
 #define MAP_DIRECTORY "_maps"
+
+// NSV13 - starmap file
+#define STARMAP_FILE "starmap/starmap.json"
