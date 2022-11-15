@@ -58,7 +58,7 @@ SUBSYSTEM_DEF(overmap_mode)
 	//Set starting systems for the player ships
 	//Load and set objectives
 
-	mode_cache = typecacheof(/datum/overmap_gamemode, TRUE)
+	mode_cache = typecacheof(/datum/overmap_gamemode, ignore_root_path = TRUE)
 
 	for(var/D in subtypesof(/datum/overmap_gamemode))
 		var/datum/overmap_gamemode/N = new D()

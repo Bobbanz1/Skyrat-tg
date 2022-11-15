@@ -188,9 +188,9 @@ Called by add_sensor_profile_penalty if remove_in is used.
 	RegisterSignal(OM, COMSIG_FTL_STATE_CHANGE, .proc/reset_dradis_contacts, override=TRUE)
 
 /datum/looping_sound/dradis
-	mid_sounds = list('nsv13/sound/effects/ship/dradis.ogg')
-	mid_length = 2 SECONDS
-	volume = 60
+	//mid_sounds = list('nsv13/sound/effects/ship/dradis.ogg')
+	//mid_length = 2 SECONDS
+	//volume = 60
 
 /obj/machinery/computer/ship/dradis/power_change()
 	..()
